@@ -1,0 +1,6 @@
+language: bash
+deploy:
+  provider: script
+  script: bash travis-repo.sh
+  on:
+    branch: master
