@@ -1,19 +1,10 @@
 #!/bin/bash
 
 git remote remove origin
+git remote remove upstream
 
-if [ "${TRAVIS_EVENT_TYPE}" = "cron" ]; then
-  git remote add origin https://${GITHUB_PERSONAL_TOKEN}@github.ibm.com/${TRAVIS_REPO_SLUG}.wiki > /dev/null 2>&1
-  git remote add upstream https://${GITHUB_PERSONAL_TOKEN}@github.ibm.com/${TRAVIS_REPO_SLUG} > /dev/null 2>&1
-else
-  git remote add origin https://${GITHUB_PERSONAL_TOKEN}@github.ibm.com/${TRAVIS_REPO_SLUG} > /dev/null 2>&1
-  git remote add upstream https://${GITHUB_PERSONAL_TOKEN}@github.ibm.com/${TRAVIS_REPO_SLUG}.wiki > /dev/null 2>&1
-fi
+git remote add origin https://${GITHUB_PERSONAL_TOKEN}@github.ibm.com/${TRAVIS_REPO_SLUG}
+git remote add upstream https://${GITHUB_PERSONAL_TOKEN}@github.ibm.com/${TRAVIS_REPO_SLUG}.wiki
 
-git add *
-git add -u
-git fetch origin
-git fetch upstream
-git merge upstream/master --no-edit
-git push origin HEAD:master > /dev/null 2>&1
-git push upstream HEAD:master > /dev/null 2>&1
+git pull origin master --no-edit
+git push upstream master --force
