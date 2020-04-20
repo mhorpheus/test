@@ -11,6 +11,7 @@ else
 fi
 
 git add *
+git add -u
 git fetch origin
 git fetch upstream
 git merge upstream/master --no-edit
