@@ -1,5 +1,6 @@
 # DFIR
-- [Home](https://github.ibm.com/IRIS-NA/IRIS-master-wiki/wiki)
+- [IRIS-master-wiki](https://github.ibm.com/IRIS-NA/IRIS-master-wiki/wiki)
+- [Home](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki)
 
 ### Delivery Overview
 - [Link 1]()
