@@ -4,3 +4,6 @@ deploy:
   script: bash travis.sh
   on:
     branch: master
+notifications:
+  slack:
+    secure: jcFalmIGHBSm/2qnkyc6Z1+VFtSHjoGFfmY1lOo+IO1B6+4NCJ6iK7KS9edUBqr1XAmi/ZLp8Ru8FFbVaAt7/IhJQuykLc8GEK41BzEcK0/rDdSXF/ev+p11h5iiRAN1SZJ+gPK/p9oetCzur+jMcf5GFoO17dndZyMf61FHz0wA9CXEByZH0wdCIsvbzb+gn6Dk8ytHNFp/xg38fQNW/HCfj0sX216TcPmNXBEy0yK/qDJaW/MPFomk8+nYBKdJhKA6zv9Bp0x27OVuJHHPtmiaQjnpvPKyhNAX3VQwXBhstHhAQXN1zP6tqARw+iUyVEo2ovJI9kcaWyPHHTOSIc8GFEYhvI/kcRchqnACS6CDcOPrvpL+2lcIqFjoZ6lDNTzwqBKs50crBB5nWwMKPwWAA8yosUhtAi4+f8RBSFK4k7lOGwZrQeimPG60OPRq4yKgBRzZYMBAyhfcA/qamx/dp8Lz0cb7cWVPz4pmAyKO3gOiqk89cEMQAqwF825fo2mwx2oQbS6T6Tl3/6jo/SyPEHcMrHYOdNgTDqG7dROPN085FkvN3hxnelUlWQtmor5E1RrX29S0IjAX8PSgFpjtJFHyY3v2wf8mmbTYwmtfk6r9/HuA1ohsUGCU6eL14/+pLCNXfn8QjiDqNwaRcpfYd81rWrAeTLxDtXOTZ5w=
