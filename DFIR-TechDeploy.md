@@ -49,7 +49,7 @@ The following table lists some of the capabilities and how they compare between 
 
 ## Requesting EDR Technology
 
-Once a decision has been made on the EDR/Technology solution, you will need to put in an official request to our vendor partner for a new EDR/Technology instance. This process is pretty straight forward but is slightly different depending on the vendor. Also please review the overall technology request documentation [here](https://github.ibm.com/IRIS-NA/internal-wiki-ci-stager/blob/master/Requesting-Tech.md).
+Once a decision has been made on the EDR/Technology solution, you will need to put in an official request to our vendor partner for a new EDR/Technology instance. This process is pretty straight forward but is slightly different depending on the vendor. Also please review the overall technology request documentation [here](https://github.ibm.com/IRIS-NA/DFIR-wiki-ci-stager/blob/master/Requesting-Tech.md).
 
 Use the following table to identify the appropriate vendor request process for your chosen solution.
 

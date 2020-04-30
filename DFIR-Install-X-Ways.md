@@ -18,10 +18,10 @@ Username: forensics
 Password: H8akrZu3Cy
 ```
 
-[[https://github.ibm.com/IRIS-NA/internal-wiki/wiki/img/xwfim_creds.png]]
+[[https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/img/xwfim_creds.png]]
 
 When you open the tool, it's fairly self explanatory - but the recommended settings I have are below:   
-[[https://github.ibm.com/IRIS-NA/internal-wiki/wiki/img/xwfim_settings.png]]
+[[https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/img/xwfim_settings.png]]
 
 ## Licensing
 ### Dongle

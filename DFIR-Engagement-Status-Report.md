@@ -30,7 +30,7 @@ At that time, Windows event logs recorded lateral movement to CNZEP001 by the co
 
 • **On September 10, 2018 at 02:23:17 UTC, the attacker installed a QuasarRAT backdoor on the system**
 
-The attacker installed the QuasarRAT backdoor on the system as a Windows Service that communicated with the command and control IP address “181.129.35.250” over TCP port 443. The attacker also uploaded additional utilities to the system, such as the VBS backdoor “get.vbs” and SysInternals’ “PsPing.exe”.
+The attacker installed the QuasarRAT backdoor on the system as a Windows Service that communicated with the command and control IP address “181.129.35.250” over TCP port 443. The attacker also uploaded additional utilities to the system, such as the VBS backdoor “get.vbs” and SysDFIRs’ “PsPing.exe”.
 
 • **On September 10, 2018 between 09:39:05 UTC, and 14:23:21 UTC, file system artifacts recorded the creation of two (2) multipart RAR archives totaling in approximately 2.3GB**
 

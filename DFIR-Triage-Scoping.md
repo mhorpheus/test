@@ -38,12 +38,12 @@ In general try to keep the Triage/Scoping call staffed with minimum required IRI
 	 - Update Resilient Notes
 	 - Did the client engage IRIS?
 		- **Yes**	>> Begin the ***IR Spin-Up Process***
-		- **No**	>> Follow the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-Resilient) for closing the ticket
+		- **No**	>> Follow the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Resilient) for closing the ticket
 	- Client Follow up
 	
 During the Triage/Scoping call, the IRIS team participating should identify someone to take detailed notes. It is also highly recommended to fill out the Resilient Hotline Triage Worksheet during the call while the details are fresh. If the client is engaging IRIS for incident response services, an IRIS member can begin the ***IR Spin-Up Process***. 
 
-Regardless of the engagement status, at the conclusion of the Triage/Scoping call the Resilient ticket needs to be updated with the relevant engagement information, or the Hotline Triage Ticket should be closed. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-Resilient) for more information.
+Regardless of the engagement status, at the conclusion of the Triage/Scoping call the Resilient ticket needs to be updated with the relevant engagement information, or the Hotline Triage Ticket should be closed. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Resilient) for more information.
 
 ### Conducting Triage and Scoping Calls
 While conducting the Triage/Scoping call keep in mind the client's point of view. They could be experiencing their worst day and tensions could be high. It is important to get the facts and as much detail as possible. Identify someone to run the call and someone to take notes. It is also good practice to fill out the Triage Worksheet on the Resilient ticket during the call. 
@@ -62,7 +62,7 @@ Some things to consider:
 Take all of the relevant information and provide options for next steps. If the goals of the engagement are well defined and agreed upon, inform the client that IRIS will follow up in an email with a summary of the engagement goals and the agreed upon next steps. This will give the IRIS team involved time to properly estimate the number of hours required and the availability of resources. 
 
 ## Post Triage and Scoping Procedures
-Following the Triage/Scoping call, there are some follow up activities that should be handled as soon as possible. If the client decided not to engage us, the Resilient ticket, Triage worksheet, and Notes should be filled out and the Hotline Triage ticket should be closed. The notes should include as much detail as possible about the client and the incident in the case that they decided to call us back or engage us at a later time. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-Resilient) for more information on closing tickets.
+Following the Triage/Scoping call, there are some follow up activities that should be handled as soon as possible. If the client decided not to engage us, the Resilient ticket, Triage worksheet, and Notes should be filled out and the Hotline Triage ticket should be closed. The notes should include as much detail as possible about the client and the incident in the case that they decided to call us back or engage us at a later time. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Resilient) for more information on closing tickets.
 
 If the client has decided to engage IRIS for incident response services, it is the responsibility of the Team-Lead/Manager who was present on the Triage/Scoping call to work with other Leads/Managers  properly estimate the required number of hours IRIS will need to support the engagement. As well as identifying the available IRIS members who can support the engagement regionally as well as globally if needed.
 

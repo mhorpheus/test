@@ -24,14 +24,14 @@ The following documentation is a guideline for IRIS consultants for the IRIS Inc
 
 When a client or potential customer engages IRIS for incident response services there are steps required on the back end to ensure that process is accurate and efficient. Certain aspects of the IR Spin-Up process are variables depending on the type of engagement. However, there are some items that need to be completed regardless of those variables.
 
- 1. Set up the [Engagement Box Folder](#engagement-management); this is important to establish internal engagement management and proper documentation. The Engagement Box Folder will be the central repository for all internal data regarding the IR engagement. 
+ 1. Set up the [Engagement Box Folder](#engagement-management); this is important to establish DFIR engagement management and proper documentation. The Engagement Box Folder will be the central repository for all DFIR data regarding the IR engagement. 
 
 The Engagement Box folder is NOT for client data transfers. For more information on establishing data transfer between IRIS and clients see the ***Client Data Transfer*** section.
 
 2. The [Engagement Slack Channel](#engagement-slack-channel) is required for communication with other IRIS members, engagement management, and general analysis information and tasking. 
 3. Update the [Resilient Engagement Ticket](#resilient-engagement-ticket) early and often. Resilient is the primary client and engagement management tool we use at IRIS. 
 
-We log and track hours, reporting and QA tasks, communications between IRIS and the client, engage Intel and much more using Resilient. Visit the [Resilient Overview](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-Resilient) for more information.
+We log and track hours, reporting and QA tasks, communications between IRIS and the client, engage Intel and much more using Resilient. Visit the [Resilient Overview](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Resilient) for more information.
 
 4. Every IR engagement requires an [Intel Engagement Ticket](#intel-engagement-ticket). When we engage Intel for malware analysis, dark-web analysis, or any other Intel specific task related to an IR engagement, that work needs to be tracked and associated with an `Engagement Work` Intel ticket. 
 
@@ -39,7 +39,7 @@ We log and track hours, reporting and QA tasks, communications between IRIS and 
 
 The Engagement Box Folder is a requirement for every engagement regardless of the size and scope of that IR engagement. The intent and purpose of this Box folder is to provide a repository for various data points and engagement tracking documents that are integral for proper documentation and engagement management function.
 
-The Engagement Box Folder should only be used internally and should only include data that is relevant to the current IR engagement. If your IR engagement requires a Box folder for data transfer between IRIS and the client, a separate Box folder should be established to facilitate that data transfer, and proper access controls should be implemented to ensure access is granted only to people who have a legitimate need to access that data. For more on Box as a client data transfer mechanism see the ***Client Data Transfer*** section below.
+The Engagement Box Folder should only be used DFIRly and should only include data that is relevant to the current IR engagement. If your IR engagement requires a Box folder for data transfer between IRIS and the client, a separate Box folder should be established to facilitate that data transfer, and proper access controls should be implemented to ensure access is granted only to people who have a legitimate need to access that data. For more on Box as a client data transfer mechanism see the ***Client Data Transfer*** section below.
 
 The steps for creating an Engagement Box Folder are outlined below:
 
@@ -49,7 +49,7 @@ The steps for creating an Engagement Box Folder are outlined below:
 
 Once you've authenticated you should see something similar to the following:
 
-<img src="https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box.png" width="650">
+<img src="https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box.png" width="650">
 
  2. Navigate to the `0-Active Engagements` Folder
 
@@ -57,27 +57,27 @@ All Engagement Box Folders should be created within the `0-Active Engagements` B
 
  3. Select the additional options for the `0-Engagement Template Folder` at the top if sorted by "Name"
 
-<img src="https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box-Template-02.png" width="650">
+<img src="https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box-Template-02.png" width="650">
 
  4. Select  `Move or Copy` from the options menu
 
-<img src="https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box-Template-03.png" width="250">
+<img src="https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box-Template-03.png" width="250">
 
  5. You will be presented with options to Move or Copy the `0-Engagement Template Folder`. Select `Copy` and a folder named `0-Engagement Template Folder (1)` will be created with all of the template folders and ***Engagement Tracking Sheet*** included.
 
-<img src="https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box-Move-Copy.png" width="500">
+<img src="https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box-Move-Copy.png" width="500">
 
  6. Rename the newly copied folder `0-Engagement Template Folder (1)` to the relevant name for your engagement (example: `IR19-1337`). Click the "Rename" icon next to the folder name.
  
 *Pro-Tip: You can get the ticket number for your engagement from the Resilient Ticket that was created during the Hotline or Triage process*
 
-![Rename](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box-Rename.png)
+![Rename](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box-Rename.png)
 
-<img src="https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box-Rename-02.png" width="335">
+<img src="https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box-Rename-02.png" width="335">
 
  6. Once you have renamed the template folder you will see the Box Folder named with your IR ticket number which has predefined sub-folders for engagement management purposes as well as a blank IRIS engagement tracking sheet.
 
-![Engagement Box Folder](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box-Template-04.png)
+![Engagement Box Folder](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box-Template-04.png)
 
  
 ## Engagement Slack Channel
@@ -86,15 +86,15 @@ The Engagement Slack channel is extremely important during an IR engagement. Thi
 
 When creating your Engagement Slack channel make sure you are in the `X-Force IRIS` Slack workspace `x-forceiris.slack.com`
 
-![Slack](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/Slack_02.jpg)
+![Slack](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Slack_02.jpg)
 
 1. Within the `Channels` side menu click on the `+`
 
-![Slack](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/Slack_01.jpg)
+![Slack](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Slack_01.jpg)
 
 2. Select the `Make Private` option and give your channel a name and description. The name should be the same as the Resilient Engagement Entry
 
-![Slack](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/Slack_03.jpg)
+![Slack](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Slack_03.jpg)
 
 Once the channel is created you will be able to add additional IRIS members to the channel and begin communicating. It is important to communicate effectively in the Slack channel for an engagement to reduce the chances of important information getting lost.
 
@@ -116,9 +116,9 @@ Here are some general rules to help keep the clutter down and to avoid potential
 
 Updating the `Resilient Engagement Ticket` is the primary engagement management function required from end-to-end on any IR engagement. If the client is engaging us after they called the Hotline there should already be `Hotline Triage` ticket at this point. If this is the case, simply add the `IR` tag and make sure the `Triage Worksheet`, `Notes`, and `Engagement Members` are updated.
 
-If the client has engaged us through other means you will need to create an engagement ticket. For more information on the `IR Ticketing Process` go [here](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-IR-Resilient).
+If the client has engaged us through other means you will need to create an engagement ticket. For more information on the `IR Ticketing Process` go [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-IR-Resilient).
 
-For more information on Resilient in general visit the [Resilient Overview](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-Resilient) 
+For more information on Resilient in general visit the [Resilient Overview](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Resilient) 
 
 Some general rules and best practices for engagement management in Resilient:
 
@@ -130,7 +130,7 @@ Some general rules and best practices for engagement management in Resilient:
 
 All IRIS engagements of the type `IR` require an initial `Engagement Work` Intel ticket. Intel uses Jira for ticketing and associates additional tickets created in support of an engagement with this initial `Engagement Work` ticket. For example, if you submit three malware analysis tickets for your engagement, Intel will track the relationship between those tickets through the initial Intel ticket.
 
-This makes the task of tracking those tickets easier for Intel and facilitates better workflow between IR consultants and Intel analysts working on an engagement together. IRIS uses functionality within Resilient to create and associate these tickets with our client engagements. For more information see the [Intel Analysis Ticketing](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-IR-IntelTicketing) section.
+This makes the task of tracking those tickets easier for Intel and facilitates better workflow between IR consultants and Intel analysts working on an engagement together. IRIS uses functionality within Resilient to create and associate these tickets with our client engagements. For more information see the [Intel Analysis Ticketing](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-IR-IntelTicketing) section.
 
 # Situational IR Spin-Up Procedures
 
@@ -172,15 +172,15 @@ To create a new Client Data Transfer folder use the following instructions:
 
 Once you've authenticated you should see something similar to the following:
 
-<img src="https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/IRIS-Box.png" width="650">
+<img src="https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/IRIS-Box.png" width="650">
 
 2. Create a folder within the root of your Box access `https://ibm.ent.box.com/folder/0` and name it accordingly. You can do this by selecting `New` from the options in the upper right hand of the page and select `Folder`
 
-![New](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/Box_Client_01.png)
+![New](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Box_Client_01.png)
 
 3. Name the folder accordingly and then add the relevant contacts from your client and hit `create`. Make sure to set the permissions to `Viewer Uploader` unless you specifically need the client to have editing functionality.
 
-![New](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/DFIR/Box_Client_02.png)
+![New](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Box_Client_02.png)
 
 Once you've created the folder, whoever you shared the folder with will receive an email informing them of your collaboration folder and a link to Box. They will then need to either create a free Box account using the same email or authenticate to an existing Box account under that email.
 

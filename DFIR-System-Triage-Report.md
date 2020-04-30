@@ -3,7 +3,7 @@ The IRIS System Triage Report is an intermediary reporting document between an S
 
 The current IRIS System Triage Report template and an example Triage Report are available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
 
-The IRIS System Triage Report should be completed in a manner that is consistent with the [IRIS Documentation & Reporting Style Guide](https://github.ibm.com/IRIS-NA/internal-wiki/wiki/IRIS-Documentation-and-Reporting-Style-Guide) and on-par with the quality of a final IRIS deliverable, just containing less detail. 
+The IRIS System Triage Report should be completed in a manner that is consistent with the [IRIS Documentation & Reporting Style Guide](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Documentation-and-Reporting-Style-Guide) and on-par with the quality of a final IRIS deliverable, just containing less detail. 
 
 ## Sections
 The current IRIS Triage Document contains four (4) sections:

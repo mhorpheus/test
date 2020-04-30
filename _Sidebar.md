@@ -6,7 +6,7 @@
 - [Link 1]()
 
 ### Scoping & Kickoff
-- [Link 1]()
+- []()
 
 ### Technical Analysis
 - [Link 1]()
