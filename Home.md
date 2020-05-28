@@ -8,7 +8,7 @@ Digital Forensics & Incident Response as a service is at the core of what we do 
 
 The documentation outlined here is intended to be a set of guidelines for IRIS consultants delivering DFIR services and is a living document. If there is something you want to see documented here or explained with further detail please contact one the regional Wiki managers:
 
-|Regional Lead| Contact  |
+|Regional IR Lead| Contact  |
 |--|--|
 | **Chris Tappin** Asia Pacific (APAC) | chris.tappin@ibm.com |
 | **Adam Smutnicki** Europe, the Middle East and Africa (EMEA) | adam.smutnicki@pl.ibm.com |

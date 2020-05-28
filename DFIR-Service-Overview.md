@@ -1,5 +1,3 @@
-# DFIR Service Overview
-
 Go [here](#ir-process-flow) for a high level process flow.
 
 # Table of Contents
@@ -12,7 +10,7 @@ Go [here](#ir-process-flow) for a high level process flow.
 6. [Intel Analysis Ticketing](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-IR-IntelTicketing)
 7. Engagement Management
 8. Data Acquisition/Retention and Privacy
-9. [Reporting](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Documentation)
+9. [Reporting](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Reporting-Style-Guide)
 
 ## IR Process Flow
 
