@@ -55,12 +55,12 @@ Use the following table to identify the appropriate vendor request process for y
 
 | Vendor | Platform | On-Prem/Cloud | Process |
 |--|--|--|--|
-| Carbon Black | Response (CbR) | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/blob/master/ATA%20Documentation/Carbon%20Black%20Infrastructure%20Request%20Form.docx) and email the request form to PartnerSolutions@carbonblack.com |
-| Carbon Black | Defense (CbD) | Cloud Only | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/blob/master/ATA%20Documentation/Carbon%20Black%20Infrastructure%20Request%20Form.docx) and email the request form to PartnerSolutions@carbonblack.com |
-| Carbon Black | Predictive Security Cloud (PSC) | Cloud Only | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/blob/master/ATA%20Documentation/Carbon%20Black%20Infrastructure%20Request%20Form.docx) and email the request form to PartnerSolutions@carbonblack.com |
-| CrowdStrike | Falcon EDR | Cloud Only | Request a new Customer ID (CID) by sending an email to: engagements@crowdstrike.com with a CC to the following people: kurt.rohrbacher@ibm.com, cd.scott@ibm.com, jjpisula@us.ibm.com, shannon.roy@crowdstrike.com, support@crowdstrike.com, matthew.polly@crowdstrike.com  |
-| Fidelis | Endpoint | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/blob/master/ATA%20Documentation/Fidelis%20Infrastructure%20Request%20Form.docx) and email the request form to ibm-ta-mss@fidelissecurity.com |
-| Fidelis | Network | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/blob/master/ATA%20Documentation/Fidelis%20Infrastructure%20Request%20Form.docx) and email the request form to ibm-ta-mss@fidelissecurity.com	 |
+| Carbon Black | Response (CbR) | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Carbon-Black-Response-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
+| Carbon Black | Defense (CbD) | Cloud Only | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Carbon-Black-Response-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
+| Carbon Black | Predictive Security Cloud (PSC) | Cloud Only | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Carbon-Black-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
+| CrowdStrike | Falcon EDR | Cloud Only | Follow the request directions [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Crowdstrike-Infrastructure-Request-Form)  |
+| Fidelis | Endpoint | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Fidelis-Infrastructure-Request-Form) and email the request form to ibm-ta-mss@fidelissecurity.com |
+| Fidelis | Network | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Fidelis-Infrastructure-Request-Form) and email the request form to ibm-ta-mss@fidelissecurity.com	 |
 
 ## Deployment Checklist
 
