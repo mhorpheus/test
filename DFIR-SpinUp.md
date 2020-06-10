@@ -4,7 +4,7 @@ The purpose of this page is to document the IRIS Incident Response Service Spin-
 
 Once IRIS has been engaged for Incident Response services regardless of the scope and size of that effort there are some fundamental procedures that are required for every IR engagement. In addition to the basic IR engagement spin-up, and depending on several factors, there are a number of procedures that could also apply to your engagement that will be documented here.
 
-The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Spin-Up process and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Spin-Up process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 ## Table of Contents
 
