@@ -4,7 +4,7 @@ The purpose of this page is to document the IRIS Incident Response ticketing pro
 
 Depending on the situation you may need to leverage Endpoint Detection and Response (EDR) and/or Network Sensor technology in support of your Incident Response engagement. This guide serves as a reference point for that process.
 
-The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Technology Deployment process and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Technology Deployment process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 ## EDR Technology @ IBM
 IBM will always attempt to provide an environment that is "Vendor Agnostic". Having said that IRIS will likely always have to rely, to some degree, on external vendors for various technology solutions. Our partnership agreements with these EDR vendors allow us to use the technology free of charge for up to 60 days.
