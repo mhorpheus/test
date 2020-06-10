@@ -113,7 +113,7 @@ In the event that one region receives a Hotline call from a current or potential
 The following guidelines are designed to be a reference in the event that you receive a Hotline call from client within another region:
 
 1. Follow the [Global Hotline Procedures](#global-hotline-procedures) for handling the initial call
-	 - If a triage call is required follow the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-IR-Triage-Scoping)
+	 - If a triage call is required follow the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-Triage-Scoping.md)
 
 2. Communicate with the on-coming region's Hotline duty members and client's regional Hotline duty members within the `#iris-shift-turnover` Slack channel and report the status of the hotline and/or triage call.
 
@@ -148,7 +148,7 @@ There are no hard and fast rules to greeting the caller on an initial in-bound h
 - Reason for call (Get as much detail as possible)
 - Identify appropriate next steps (Triage/Scoping Call, Client needs more info, etc)
 
-In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. It is highly recommended to schedule a Triage/Scoping call with the client and their technical team following the initial hotline call. For more information visit the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-IR-Triage-Scoping) page.
+In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. It is highly recommended to schedule a Triage/Scoping call with the client and their technical team following the initial hotline call. For more information visit the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-Triage-Scoping.md) page.
 
 As a general rule, whichever IRIS member answered the initial Hotline call should be present in the Triage/Scoping call for continuity. The other member should remain free and available to take additional Hotline calls if needed.
 
