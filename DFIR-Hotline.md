@@ -41,7 +41,6 @@ Please use the following tables to identify individual regional/country hotline 
 | Singapore | (+65) 800 616 7095 |
 | India | (+91) 0008 000 401 045 |
 | Indonesia | (+62) 00 180 361 859 |
-| Japan | (+81) 356 952 751 |
 
 ___
 
@@ -90,7 +89,6 @@ ___
 
 | Country/Region | Emergency Number |
 |--|--|
-| World Wide Number | (+1) 312 212 8034 |
 | Japan | (+81) 356 952 751 |
 
 ___
