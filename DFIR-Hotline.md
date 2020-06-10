@@ -27,6 +27,8 @@ It is important to keep in mind that IRIS is a global team and regions will be h
 
 ### Regional Numbers
 
+A [Leaflet](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IRIS%20Hotline%20Numbers.pdf) in PDF containing all hotline numbers can be shared with a customer.
+
 Please use the following tables to identify individual regional/country hotline numbers:
 
 **Asia & Pacific (APAC)**
