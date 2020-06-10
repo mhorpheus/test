@@ -6,7 +6,7 @@ The purpose of this page is to document the IRIS Triage and Scoping call procedu
 
 As a result from an in-bound hotline call or other means in order to properly scope the requirements and gauge expectations from the client during an incident engagement, a proper scoping call should be conducted to facilitate better understanding of the incident and what type of IR engagement and effort are necessary. Typically the Triage and/or Scoping call is the next logical step from the initial hotline call. As a guideline, the Triage/Scoping call should be scheduled as soon as possible following the initial hotline call.
 
-The following documentation is a guideline for IRIS consultants for IRIS Triage and Scoping call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants for IRIS Triage and Scoping call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 ## Table of Contents
 
