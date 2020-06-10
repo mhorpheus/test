@@ -5,7 +5,7 @@ The purpose of this page is to document the IRIS Incident Response ticketing pro
 
 During an Incident Response engagement as the need for various Intel services or support arises, you will need to create a ticket for those support services including Malware Analysis, DarkWeb Analysis, Engagement Support, etc.
 
-The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Intel ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Intel ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
  - [**Intel Support**](#intel-support)  
  - [**Intel Ticketing in Resilient**](#intel-ticketing-in-resilient) 
