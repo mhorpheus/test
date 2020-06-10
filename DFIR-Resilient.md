@@ -6,7 +6,7 @@ The purpose of this page is to document the IRIS Incident Response ticketing pro
 
 Once IRIS has been engaged for Incident Response services regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created or updated.
 
-The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 ## Resilient
 Resilient is the application IRIS uses for client tracking and engagement ticketing. For general usage and intructions please see the overall Resilient instructions [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/IRIS-Resilient).
