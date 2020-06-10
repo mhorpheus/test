@@ -6,7 +6,7 @@ The purpose of this page is to document the IRIS Hotline procedures both generic
 
 IRIS uses a 24/7 availability, Follow the Sun Emergency Hotline. The Hotline is intended to be a way that both ad-hoc and existing clients can reach a technical member of the IRIS team day or night if they are experiencing an incident. This is one of the main avenues our clients use to engage IRIS and in some cases this is the client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming hotline calls.
 
-The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 ## Table of Contents
 
