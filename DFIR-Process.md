@@ -6,7 +6,7 @@ This page aims to document the IRIS Incident Response service and covers what yo
 
 Incident Response as a service is at the core of what we do here at IRIS. Much of our service posturing is designed around helping clients be better prepared for an incident. However, no client is the same and while preparation is key to helping clients handle the inevitability of a security incident; eventually they will face one. It is our duty to our clients and to IRIS to prepare ourselves and deliver these services as professionals to the best of our ability.
 
-The following documentation is a guideline for IRIS consultants delivering Incident Response services and is a living document. If there is something you want to see documented here or explained with further detail please contact Matthew DeFir (matthew.defir@ibm.com)
+The following documentation is a guideline for IRIS consultants delivering Incident Response services and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 
 # Table of Contents
