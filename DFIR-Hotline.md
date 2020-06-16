@@ -118,10 +118,12 @@ Shift distribution among participating Geographies is presented in the table bel
 
 The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty system (https://ibm.pagerduty.com/). Account setup process together with technical guidelines are documented on [PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-PagerDuty) page.
 
-Each Geography is responsible on its own for ensuring that two on-call people are available to cover the assigned shift and are properly scheduled within call routing system. 
+Shifts are allocated on a weekly basis - each cycle starts on Monday morning. Every new cycles is started by APAC team on Sunday 23:00 UTC. Each Geography is responsible on its own for ensuring that two on-call people are available to cover the assigned shift and are properly scheduled within call routing system. 
+
+Shift assignment is done automatically by PagerDuty based on the Round Robin algorithm from a pool of people assigned to a shift. There is no process of building an on-call schedule according to everyone's preferences, as this would be too complex. For this reason, everyone is responsible themselves to check when they have been assigned a shift. If there is any collision with other activities, eg. customer travel, personal plans, holidays, etc. it's person responsibility to find someone to swap or raise a need for a backup to local geography lead. 
 
 ## Hotline Operations
-Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person, and if no one pick ups, PagerDuty will redirect a call to a Secondary on call person. To provide additional failsafe, in the event that neither of them are able to pick up a call, there is an option to leave voicemail.
+Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person. If this person is not available or do not pick up a call within 60 secons, PagerDuty will redirect a call to a Secondary on call person. To provide additional failsafe, in the event that neither of is available or pick up a call, there is an option to leave voicemail.
 
 Every member of IRIS who is tasked with Hotline duty should maintain their Pager Duty profile with the correct phone number, and be aware of their on-call rotation schedule. For additional information regarding PagerDuty go [here](#pager-duty).
 
