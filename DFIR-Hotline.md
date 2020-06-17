@@ -162,6 +162,7 @@ There are no hard and fast rules to greeting the caller on an initial in-bound h
 	- if applicable, determine clients availability for a Triage/Scoping Call.
 
 It is essential to request contact details listed above at the beginning of the call, to ensure that caller can be reached in case phone connection gets broken. Spelling personal IBM email addresses to non-native English speakers is error prone and often creates delays related to spelling errors. For this reason, every geography maintains simple group mail addresses, which should be easy to provide to a caller over the phone allowing to engage into written communication. 
+
 | Region | Main address | Additional aliases |
 | -- | -- | -- |
 | APAC | xfiris@au1.ibm.com |
