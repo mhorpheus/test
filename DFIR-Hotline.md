@@ -184,7 +184,7 @@ The aim of the hotline and on-call team is to support IBM clients in emergency s
 - notify Account Manager of this customer that such request was submitted to the hotline and pushed back,
 - provide Resilient ticket number to the Account Manager.
 
-### Processing Hotline Calls
+### Processing Hotline Call
 
 The `#iris-hotline-ic` Slack channel is for communicating with the broader team about hotline calls that are currently active and in progress. It is recommended to have notifications turned on for this Slack channel as important information about active Hotline & Triage calls are often posted here. The `#iris-hotline-ic` Slack channel is also a place where IRIS members who are participating in Hotline Triage call can post questions for the member of the IRIS team who is running call.
 
