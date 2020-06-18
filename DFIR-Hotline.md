@@ -124,7 +124,7 @@ Shift assignment is done automatically by PagerDuty based on the Round Robin alg
 ## Hotline Operations
 Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person. If this person is not available or do not pick up a call within 60 secons, PagerDuty will redirect a call to a Secondary on call person. To provide additional failsafe, in the event that neither of is available or pick up a call, there is an option to leave voicemail.
 
-Every member of IRIS who is tasked with Hotline duty should maintain their Pager Duty profile with the correct phone number, and be aware of their on-call rotation schedule. For additional information regarding PagerDuty go [here](#pager-duty).
+Every member of IRIS who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-PagerDuty.md#newcomer-on-boarding).
 
 Number of IRIS clients maintain a close business relationship with IRIS Consultants they already have worked with or who are their Account Managers. They tend to request IRIS assistance reaching out to this person, instead of calling Hotline. In such a case, IRIS Consultant should kindly push back on such a request and ask customer to follow official process and call IRIS Hotline. 
 
