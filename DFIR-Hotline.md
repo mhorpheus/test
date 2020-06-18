@@ -2,12 +2,6 @@
 
 # IRIS Global Hotline Rotation and Procedures
 
-The purpose of this page is to document the IRIS Hotline procedures both generically and as they pertain to Incident Response in-bounds from the Hotline.
-
-IRIS uses a 24/7 availability, Follow the Sun Emergency Hotline. The Hotline is intended to be a way that both ad-hoc and existing clients can reach a technical member of the IRIS team day or night if they are experiencing an incident. This is one of the main avenues our clients use to engage IRIS and in some cases this is the client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming hotline calls.
-
-The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
-
 ## Table of Contents
 **TO BE UPDATED**
 
@@ -30,9 +24,14 @@ The following documentation is a guideline for IRIS consultants for IRIS Hotline
 
 ## Hotline
 ### Introduction
-X-Force IRIS maintains several hotline numbers in different geographies - they are used by customers to declare a security incident and request emergency assistance. Such call, denoted as "initial call" is used to gather basic understanding of an incident as well as customer details so a Triage and Scoping call can proceed, resulting in an investigation being launched. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
 
-Hotline numbers are publicly available in the Internet. Additionally, non-subscription customers can call the hotline and request assistance in "Ad-hoc" approach. 
+The purpose of this page is to document the IRIS Hotline procedures both generically and as they pertain to Incident Response in-bounds from the Hotline.
+
+X-Force IRIS maintains several hotline numbers in different geographies - they are used by Clients to declare a security incident and request emergency assistance. Such call, denoted as "initial call" is used to gather basic understanding of an incident as well as customer details so a Triage and Scoping call can proceed, resulting in an investigation being launched. IRIS uses a 24/7 availability, Follow the Sun Emergency Hotline. Using IRIS Hotline, Clients can reach a technical member of the IRIS team day or night if they are experiencing an incident. This is one of the main avenues our clients use to engage IRIS and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming hotline calls.
+
+Hotline numbers are publicly available in the Internet. Additionally, non-subscription customers can call the hotline and request assistance in "Ad-hoc" approach. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
+
+The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
 
 ### Regional Numbers
 IRIS maintains several hotline numbers for multiple countries. Due to history of integration, four main regions maintaining their local hotline numbers, delivered by different telecommunication providers. With introduction of [Follow the Sun] for incident intake, all except Japan, have been integrated and now lead to the same on-call person. 
@@ -298,7 +297,7 @@ Hand over process is defined as follows:
 3.	Reach out to identified person to brief him/her that there is a need for an incident hand over. This should be done using `#iris-shift-turnover` slack channel or directly contacting the person. Provide necessary information such as:
 a.	Resilient ticket number.
 b.	Case background.
-c.	Customer's expectations.
+c.	Clients's expectations.
 d. Next steps to be performed by person taking it over.
 e. If applicable, reference to related discussion on `#iris-hotline-ic`  Slack channel.
 4.	Ensure that person taking over an incident acknowledges it and is comfortable with all information provided.
