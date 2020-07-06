@@ -31,7 +31,7 @@ X-Force IRIS maintains several hotline numbers in different geographies - they a
 
 Hotline numbers are publicly available in the Internet. Additionally, non-subscription customers can call the hotline and request assistance in "Ad-hoc" approach. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
 
-The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/Home.md)).
 
 ### Regional Numbers
 IRIS maintains several hotline numbers for multiple countries. Due to history of integration, four main regions maintaining their local hotline numbers, delivered by different telecommunication providers. With introduction of [Follow the Sun] for incident intake, all except Japan, have been integrated and now lead to the same on-call person. 
@@ -115,7 +115,7 @@ Shift distribution among participating Geographies is presented in the table bel
 | | | MT | 09:00-17:00 | 08:00-16:00 |
 | | | PST | 08:00-16:00 | 07:00-15:00 |
 
-The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty system (https://ibm.pagerduty.com/). Account setup process together with technical guidelines are documented on [PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-PagerDuty) page.
+The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty system (https://ibm.pagerduty.com/). Account setup process together with technical guidelines are documented on [PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty) page.
 
 Shifts are allocated on a weekly basis - each cycle starts on Monday morning. Every new cycles is started by APAC team on Sunday 23:00 UTC. Each Geography is responsible on its own for ensuring that two on-call people are available to cover the assigned shift and are properly scheduled within call routing system. 
 
@@ -124,7 +124,7 @@ Shift assignment is done automatically by PagerDuty based on the Round Robin alg
 ## Hotline Operations
 Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person. If this person is not available or do not pick up a call within 60 secons, PagerDuty will redirect a call to a Secondary on call person. To provide additional failsafe, in the event that neither of is available or pick up a call, there is an option to leave voicemail.
 
-Every member of IRIS who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-PagerDuty.md#newcomer-on-boarding).
+Every member of IRIS who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty.md#newcomer-on-boarding).
 
 Number of IRIS clients maintain a close business relationship with IRIS Consultants they already have worked with or who are their Account Managers. They tend to request IRIS assistance reaching out to this person, instead of calling Hotline. In such a case, IRIS Consultant should kindly push back on such a request and ask customer to follow official process and call IRIS Hotline. 
 
@@ -146,7 +146,7 @@ The main aim of the on-call person is be available to pick up and initiate IRIS 
 
 Responsibility to organize a Triage call, does not mean that on-call person must be present on such a call. Triage call may be led by other Consultant to make sure that on-call person remains available to pick up other incoming Hotline calls or ensure that Secondary person is available to answer them. 
 
-Technical guide on handling Voice Messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-PagerDuty). 
+Technical guide on handling Voice Messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty). 
 
 
 ### Answering Hotline Call
@@ -178,7 +178,7 @@ One of the aims of the hotline call is to get basic understanding of the inciden
 - Who owns and manages system within the scope of incident? 
 
  
-In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. It is highly recommended to schedule a Triage/Scoping call with the client and their technical team following the initial hotline call. For more information visit the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-Triage-Scoping.md) page.
+In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. It is highly recommended to schedule a Triage/Scoping call with the client and their technical team following the initial hotline call. For more information visit the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping.md) page.
 
 No case related information should be divulged to a caller just based upon the name the he/she claims. This is to prevent impersonation of clients by third parties such as journalists. Caller verification can be performed by calling the person back on a number held on record in Resilient or having them email from their corporate email address to confirm identity. <!--- we need to also confirm if the caller is authorized to declare incidents, if not they should have the authorized incident declarer email us ? --->
 The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a customer. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his IRIS Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
@@ -224,7 +224,7 @@ The following steps should be performed after the Initial call has completed.
 		- IRIS cannot control who attends client bridges – other security vendors may join the call and may not be announced.
 		- It is challenging to conduct an efficient and thorough triage call if IRIS is not in control of the bridge.
 
-Triage/Scoping call details are documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR-Triage-Scoping.md). On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, IRIS is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to organize Triage call, before incident is handed over.  <!--- make sure to set a password for triage call and dont use the personal webex link , email template we use to sent to clients after a triage call
+Triage/Scoping call details are documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping.md). On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, IRIS is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to organize Triage call, before incident is handed over.  <!--- make sure to set a password for triage call and dont use the personal webex link , email template we use to sent to clients after a triage call
 https://apps.na.collabserv.com/wikis/home?lang=en-us#!/wiki/Wc4272d3eb770_4c65_9dad_a2a30eb85d56/page/Engagement%20Initiation%20Email --->
 
 ### Logging Hotline Call
