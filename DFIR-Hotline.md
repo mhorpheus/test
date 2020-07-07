@@ -42,13 +42,15 @@ Please use the following tables to identify individual regional/country hotline 
 | Country/Region | Emergency Number |
 |--|--|
 | Australia | (+61) 1800 637 539 |
-| Philippines | (+63) 1800 1611 0322 |
-| Thailand | (+66) 1800 011 806 |
-| New Zealand | (+64) 0800 426 111 |
-| Malaysia | (+60) 1800 818 276 |
-| Singapore | (+65) 800 616 7095 |
 | India | (+91) 0008 000 401 045 |
 | Indonesia | (+62) 00 180 361 859 |
+| Hong Kong | (+852) 800900704 |
+| Malaysia | (+60) 1800 818 276 |
+| New Zealand | (+64) 0800 426 111 |
+| Philippines | (+63) 1800 1611 0322 |
+| Singapore | (+65) 800 616 7095 |
+| Thailand | (+66) 1800 011 806 |
+
 ___
 
 #### Europe, Middle East, & Africa (EMEA)
