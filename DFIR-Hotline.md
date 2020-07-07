@@ -44,7 +44,7 @@ Please use the following tables to identify individual regional/country hotline 
 | Australia | (+61) 1800 637 539 |
 | India | (+91) 0008 000 401 045 |
 | Indonesia | (+62) 00 180 361 859 |
-| Hong Kong | (+852) 800900704 |
+| Hong Kong | (+852) 800 900 704 |
 | Malaysia | (+60) 1800 818 276 |
 | New Zealand | (+64) 0800 426 111 |
 | Philippines | (+63) 1800 1611 0322 |
