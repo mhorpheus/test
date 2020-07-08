@@ -4,9 +4,9 @@
 **TO BE UPDATED**
 
  1. [**Introduction**](#Introduction)
- 2. [**How Does it Work?**](#How-does-it-work?)
+ 2. [**How Does it Work?**](#How-does-it-work)
  3. [**Scheduling**](#Scheduling)
- 4. [**Newcomer On-boarding**](Newcomer-on-boarding)
+ 4. [**Newcomer On-boarding**](#Newcomer-on-boarding)
  5. [**Daily Operations**](#Daily-operations)
  6. [**Tutorials**](#tutorials)
 	 - [Setting-up Your Environment for the First Time](#Setting-up-your-environment-for-the-first-time)
