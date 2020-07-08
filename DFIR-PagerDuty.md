@@ -17,8 +17,6 @@
 	 - [Creating Overrides](#Creating-Overrides)
 
 ## Introduction
-**TO BE FILLED IN**
-
 Hotline numbers are maintained by three main regions: EMEA, North America and APAC. Japan operates and maintains Hotline infrastructure independently. PagerDuty (PD) is an application that facilitates the management of on-call rotations for those three main geographies. 
 
 PagerDuty administrators for IRIS teams are:
@@ -91,26 +89,43 @@ For details on above steps, refer to a guide on how to initially set up your PD 
 
 ## Daily Operations
 
-Intro for a caller
-Message that this is PD calling
-Caller phone number pass through and issue with NA
+**2DO:**
+* Provide details about intro for a caller
+* Message that this is PD calling, before connecting src of the call - also you need to press 1 to ACK connection, if not it goes to L2.
+* Caller phone number pass through and issue with NA
+* Mobile App
+* A call is in incident. Explain Open, ACK and Resolved statuses.
 
 ## Tutorials
 
 ### Setting-up Your Environment for the First Time
-
-Make sure you have our IRIS team enabled in the right cornet, to see only IRIS related configuration.
-
+1. Navigate to [https://ibm.pagerduty.com/](https://ibm.pagerduty.com/) and sign in with IBM credentials.
+2. In the upper right corner, next to your profile, change your team to IRIS, to avoid seeing configurations from a whole IBM. 
+![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-initial-config1.png)
 
 ### Working with PD Incidents to Track Hotline Calls
 
 ### Handling Voice Messages
-PD will chase - already mentioned.
-One can listed over web or via mobile app.
+Voice Messages can be left by a person calling hotline, who did not managed to connect to both L1 and L2 person. From a PagerDuty perspective, such ticket is not assigned to anyone and it will be chasing people from Escalation Path to ensure that someone picks it up. This means, that you can received phone calls, text messages and mails from PD, until someone acknowledges this incident (representing a hotline call) and got it assigned to himself. 
+
+VoiceMail message can be listened from a PagerDuty mobile application (both for Android and iOS) or PagerDuty web page.
+
+Using Web GUI:
+1. Navigate to Incidents.
+2. Under Open Incidents find a relevant hotline connection.
+3. Unfold "SHOW DETAILS" without entering into this ticket.
+![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-voicemail1.png)
+4. Click on "Listen to Recording".
+![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-voicemail2.png)
 
 ### Using Calendar Feeds to Track On-call Schedule
+Entering "My Profile" settings, it it possible to get WebCal feed or iCalendar file with up-to-date schedule of a personal on-call schedule.
+![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-calendar-feed.png)
+All schedules (L1 and L2) are combined in this feed, so all necessary information are provided in a single place.
 
 ### Checking Who Is Currently On-call
+Click PagerDuty in the top left corner or navigate to "Incidents". Pane on a right side will contain information who is currently on call.
+![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-who-is-on-call.png)
 
 ### Creating Overrides
 
