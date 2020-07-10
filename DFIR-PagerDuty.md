@@ -1,19 +1,15 @@
 # PagerDuty
 
 ## Table of Contents
-**TO BE UPDATED**
-
  1. [**Introduction**](#Introduction)
  2. [**How Does it Work?**](#How-does-it-work)
 	- [Integration of Different Hotline Systems](#Integration-of-Different-Hotline-Systems)
 	- [What Happens When a Call Reaches PagerDuty?](#What-Happens-When-a-Call-Reaches-PagerDuty)
 	- [Tracking Hotline Calls](#Tracking-Hotline-Calls)
 	- [Scheduling](#Scheduling)
- 4. [**Newcomer On-boarding**](#Newcomer-on-boarding)
- 5. [**Daily Operations**](#Daily-operations)
- 6. [**Tutorials**](#tutorials)
+ 3. [**Newcomer On-boarding**](#Newcomer-on-boarding)
+ 4. [**Tutorials**](#tutorials)
 	 - [Setting-up Your Environment for the First Time](#Setting-up-your-environment-for-the-first-time)
-	 - [Working with PD Incidents to Track Hotline Calls](#Working-with-PD-Incidents-to-track-Hotline-calls)
 	 - [Handling Voice Messages](#Handling-Voice-Messages)
 	 - [Using Calendar Feeds to Track On-call Schedule](#Using-Calendar-Feeds-to-Track-On-Call-Schedule)
 	 - [Checking Who Is Currently On-call](#Checking-Who-Is-Currently-On-call)
@@ -33,13 +29,11 @@ All topics discussed on this page are not applicable to Japan.
 
 PagerDuty is a shared instance among multiple teams. There is no sufficient access control, so please do not put any sensitive information there as well as do not mess up with configuration for other people, eg. in the call module - only one item there is 'ours'.
 
-PagerDuty IBM instance link: [https://ibm.pagerduty.com/incidents](https://ibm.pagerduty.com/incidents) - log in using your IBM Intranet credentials.
-
-Point of contact inside IBM for support: Bhaskar Roy/Watson/Contr/IBM ([royb@us.ibm.com](mailto:royb@us.ibm.com)) or generic PagerDuty support on IBM side: pagerduty@us.ibm.com
-
-Initial setup was built by Adam Smutnicki (adam.smutnicki@pl.ibm.com) from IRIS EMEA - shall you have any questions reach out to him. 
-
-There is a mobile (both iOS and Android) PD application and is it recommended to install it - helps handle Hotline calls when you're away from your computer.
+Few additional important information:
+* PagerDuty IBM instance link: [https://ibm.pagerduty.com/incidents](https://ibm.pagerduty.com/incidents) - log in using your IBM Intranet credentials.
+* Point of contact inside IBM for support: Bhaskar Roy/Watson/Contr/IBM ([royb@us.ibm.com](mailto:royb@us.ibm.com)) or generic PagerDuty support on IBM side: pagerduty@us.ibm.com
+* Initial setup was built by Adam Smutnicki (adam.smutnicki@pl.ibm.com) from IRIS EMEA - shall you have any questions reach out to him. 
+* There is a mobile (both iOS and Android) PD application and is it recommended to install it - helps handle Hotline calls when you're away from your computer.
 
 ## How Does it Work?
 ### Integration of Different Hotline Systems
@@ -90,7 +84,6 @@ By design, schedules are not modified except adding and removing permanently a m
 
 Due to using a single set up for global IRIS team and lack granular enough rights configuration, umber of people who can schedule an override has been limited to ensure some level of protection against mistakes. Currently, overrides can be set up by anyone having a 'Manager' or 'Responder' role - to find necessary contact check out PD IRIS Admins list in the [Introduction](#Introduction) section.
 
-
 ## Newcomer On-boarding
 Every new team member who will be supporting Hotline, must configure his mobile phone and PagerDuty profile according to following steps:
 1. Log into [PagerDuty](https://ibm.pagerduty.com/incidents) with IBM Intranet credentials, so your account is created.
@@ -102,6 +95,7 @@ Every new team member who will be supporting Hotline, must configure his mobile 
 5. Check when you're on call for the first time.
 6. Set up mobile app for your own usage (optional).
 7. Read [Tutorial](#tutorials) section below.
+8. Reach out to your geography IR Functional Lead or your manager if you have any questions.
 
 **Disabling personal Voice Mail is critical for Hotline operations**, and everyone should double check that they have it really disabled. Not doing it, can cause severe consequences for IRIS. The last thing we want is a customer leaving message on personal IBM Voice Mail, instead of PD Voice Mail, which is not accessible by other team members. PD Voice Mail has advantage, that everyone can access it and react upon as well as PD will chase other on-call person, which will not happen in case Client leaves message on personal IBM VoiceMail. 
 
