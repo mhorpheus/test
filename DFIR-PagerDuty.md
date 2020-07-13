@@ -23,7 +23,7 @@ PagerDuty administrators for IRIS teams are:
 |--|--|--|
 | North America (NA)| Fred Chidsey (fachidse@us.ibm.com) | Phil Harrold (rpharrol@us.ibm.com) |
 | Asia-Pacific (APAC) | Amanda Nelson (anelson@au1.ibm.com) | Stephen Burmester (sburmester@au1.ibm.com) |
-| Europe, Middle East, & Africa (EMEA) | Adam Smutnicki (adam.smutnicki@pl.ibm.com) | Adam Harrison (adam.mj.harrison@ibm.com)|
+| Europe, Middle East, & Africa (EMEA) | Adam Smutnicki (adam.smutnicki@pl.ibm.com) | Eben Louw (eben.louw@ibm.com)|
 
 All topics discussed on this page are not applicable to Japan.
 
