@@ -3,8 +3,6 @@
 # IRIS Global Hotline Rotation and Procedures
 
 ## Table of Contents
-**TO BE UPDATED**
-
  1. **[Hotline](#hotline)**
 	- [Introduction](#introduction)
 	- [Regional Numbers](#regional-numbers)
@@ -27,16 +25,16 @@
 
 The purpose of this page is to document the IRIS Hotline procedures both generically and as they pertain to Incident Response in-bounds from the Hotline.
 
-X-Force IRIS maintains several hotline numbers in different geographies - they are used by Clients to declare a security incident and request emergency assistance. Such call, denoted as "initial call" is used to gather basic understanding of an incident as well as customer details so a Triage and Scoping call can proceed, resulting in an investigation being launched. IRIS uses a 24/7 availability, Follow the Sun Emergency Hotline. Using IRIS Hotline, Clients can reach a technical member of the IRIS team day or night if they are experiencing an incident. This is one of the main avenues our clients use to engage IRIS and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming hotline calls.
+X-Force IRIS maintains several hotline numbers in different geographies - they are used by Clients to declare an IT security incident and request IRIS assistance. Such call, denoted as "initial call" is used to gather basic understanding of an incident as well as client details so a Triage and Scoping call can proceed, resulting in an investigation being launched. IRIS uses a 24/7 available Follow the Sun Emergency Hotline. Using IRIS Hotline, Clients can reach a technical member of the IRIS team day or night if they are experiencing an incident. This is one of the main avenues our Clients use to engage IRIS and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming hotline calls.
 
-Hotline numbers are publicly available in the Internet. Additionally, non-subscription customers can call the hotline and request assistance in "Ad-hoc" approach. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
+Hotline numbers are publicly available in the Internet. Additionally, non-subscription Clients can call the hotline and request assistance in "Ad-hoc" approach. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
 
 The following documentation is a guideline for IRIS consultants for IRIS Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/Home)).
 
 ### Regional Numbers
-IRIS maintains several hotline numbers for multiple countries. Due to history of integration, four main regions maintaining their local hotline numbers, delivered by different telecommunication providers. With introduction of [Follow the Sun] for incident intake, all except Japan, have been integrated and now lead to the same on-call person. 
+IRIS maintains several hotline numbers for multiple countries. Due to history of integration, four main regions maintain their local hotline numbers, supported by different telecommunication providers. With introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), all except Japan, have been integrated and now lead to the same on-call person. 
 
-Please use the following tables to identify individual regional/country hotline numbers. The list is also available in the form of PDF [Leaflet](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IRIS%20Hotline%20Numbers.pdf) to be shared with a customer.
+Please use the following tables to identify individual regional/country hotline numbers. The list is also available in the form of PDF [Leaflet](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IRIS%20Hotline%20Numbers.pdf) to be shared with a Client.
 
 #### Asia & Pacific (APAC)
 | Country/Region | Emergency Number |
@@ -121,24 +119,24 @@ The Hotline rotation and call escalation paths for on call personnel on are main
 
 Shifts are allocated on a weekly basis - each cycle starts on Monday morning. Every new cycles is started by APAC team on Sunday 23:00 UTC. Each Geography is responsible on its own for ensuring that two on-call people are available to cover the assigned shift and are properly scheduled within call routing system. 
 
-Shift assignment is done automatically by PagerDuty based on the Round Robin algorithm from a pool of people assigned to a shift. There is no process of building an on-call schedule according to everyone's preferences, as this would be too complex. For this reason, everyone is responsible themselves to check when they have been assigned a shift. If there is any collision with other activities, eg. customer travel, personal plans, holidays, etc. it's person responsibility to find someone to swap or raise a need for a backup to local geography lead. 
+Shift assignment is done automatically by PagerDuty based on the Round Robin algorithm from a pool of people assigned to a shift. There is no process of building an on-call schedule according to everyone's preferences, as this would be too complex. For this reason, everyone is responsible themselves to check when they have been assigned a shift. If there is any collision with other activities, eg. Client travel, personal plans, holidays, etc. it's person responsibility to find someone to swap or raise a need for a backup to local geography lead. 
 
 ## Hotline Operations
 Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person. If this person is not available or do not pick up a call within 60 secons, PagerDuty will redirect a call to a Secondary on call person. To provide additional failsafe, in the event that neither of is available or pick up a call, there is an option to leave voicemail.
 
 Every member of IRIS who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty#newcomer-on-boarding).
 
-Number of IRIS clients maintain a close business relationship with IRIS Consultants they already have worked with or who are their Account Managers. They tend to request IRIS assistance reaching out to this person, instead of calling Hotline. In such a case, IRIS Consultant should kindly push back on such a request and ask customer to follow official process and call IRIS Hotline. 
+Number of IRIS Clients maintain a close business relationship with IRIS Consultants they already have worked with or who are their Account Managers. They tend to request IRIS assistance reaching out to this person, instead of calling Hotline. In such a case, IRIS Consultant should kindly push back on such a request and ask Client to follow official process and call IRIS Hotline. 
 
 ### On-Call Person Responsibilities
 Both Primary and Secondary people on call are responsible for following activities during their shift:
 - Picking up all hotline calls.
 - Processing all Voice Messages for hotline calls which were not picked up by both Primary and Secondary on call person. If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
 - Logging all hotline calls in Resilient according to the requirements described in [Logging Hotline Call](#Logging-Hotline-Call).
-- Organizing triage calls for all new incidents if they fall within timeframe of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a customer. 
+- Organizing triage calls for all new incidents if they fall within timeframe of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
 - Performing a shift hand over with a following geography according to process described in [Shift Turnover](#Shift-Turnover).
 - If applicable, performing an incident hand over to a following geography according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
-- Providing support to a customer and performing initial IR steps, even if incident will be handed over to another Geography.
+- Providing support to a Client and performing initial IR steps, even if incident will be handed over to another Geography.
 
 The main aim of the on-call person is be available to pick up and initiate IRIS response to all hotline calls. This means that on-call person:
 - may be already working on other engagements, and even may not have availability to pick up any analysis,
@@ -153,7 +151,7 @@ Technical guide on handling Voice Messages left in Pager Duty is available [here
 
 ### Answering Hotline Call
 
-The Hotline is one of the main ways our clients and non-clients alike engage us during an incident. In some cases this is the client or potential client's first impression of IRIS and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
+The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of IRIS and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
 
 Be professional and courteous during all communications with clients in general. However, this cannot be stressed enough on the initial Hotline call. Often, the client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the client and it is our duty to help guide them as trusted advisors when they reach out to us.
 
@@ -172,7 +170,7 @@ It is essential to request contact details listed above at the beginning of the 
 | EMEA | emea_ers@uk.ibm.com |XFORCE_IRIS_EU@uk.ibm.com, XFORCE_IRIS_MEA@uk.ibm.com |
 | NA | ?? |
 
-One of the aims of the hotline call is to get basic understanding of the incident customer is dealing with. It is hard to define strict list of questions which should be answered by a caller, especially if this person is non technical. On-call person should use common sense and experience to gather necessary data. Some example questions which can be asked are: 
+One of the aims of the hotline call is to get basic understanding of the incident client is dealing with. It is hard to define strict list of questions which should be answered by a caller, especially if this person is non technical. On-call person should use common sense and experience to gather necessary data. Some example questions which can be asked are: 
 - How incident was detected?
 - What is the scope of incident, eg. number and type of systems affected?
 - What is the business impact of this incident?
@@ -181,9 +179,9 @@ One of the aims of the hotline call is to get basic understanding of the inciden
 In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. It is highly recommended to schedule a Triage/Scoping call with the client and their technical team following the initial hotline call. For more information visit the [Triage and Scoping Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping) page.
 
 No case related information should be divulged to a caller just based upon the name the he/she claims. This is to prevent impersonation of clients by third parties such as journalists. Caller verification can be performed by calling the person back on a number held on record in Resilient or having them email from their corporate email address to confirm identity. <!--- we need to also confirm if the caller is authorized to declare incidents, if not they should have the authorized incident declarer email us ? --->
-The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a customer. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his IRIS Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
+The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his IRIS Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
 - create and fill in a Resilient ticket marked with `Hotline` tag **(TO BE CLARIFIED)**,
-- notify Account Manager of this customer that such request was submitted to the hotline and pushed back,
+- notify Account Manager of this client that such request was submitted to the hotline and pushed back,
 - provide Resilient ticket number to the Account Manager. 
 
 ### Processing Hotline Call  
@@ -191,11 +189,11 @@ The `#iris-hotline-ic` Slack channel is for communicating with the broader team 
 
 It is expected that initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the IRIS Incident Response team, or should the caller be re-directed. For cases potentially within a scope of IBM CSIRT, see guidelines [below](#csirt). Should the call be a legitimate concern, even if the client is calling from outside of the responder’s responsible Geography, it is critical to ensure the engagement initiation process is commenced . 
 
-One of the main reasons behind Follow the Sun for Incident Intake is to ensure healthy work-private life balance. For this reason, if current on-call person determines that the incident must be handed over to another Geography, waking up another team should only happen if this is necessary. Guidelines on determination who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a customer, until the Geography which should take over the incident becomes available. The cross geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) Even in GDPR constraint cases, the on-call person can provide significant support to a customer without accessing data he may not be allowed to (eg. NA person on-call who received a call from EU customer). Such activities can include, but are not limited to:
+One of the main reasons behind Follow the Sun for Incident Intake is to ensure healthy work-private life balance. For this reason, if current on-call person determines that the incident must be handed over to another Geography, waking up another team should only happen if this is necessary. Guidelines on determination who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a client, until the Geography which should take over the incident becomes available. The cross geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) Even in GDPR constraint cases, the on-call person can provide significant support to a client without accessing data he may not be allowed to (eg. NA person on-call who received a call from EU client). Such activities can include, but are not limited to:
 - issue recommendations on containment
 - discuss what evidence should be collected
 - provide evidence collection manuals
-- support customer’s team in evidence collection
+- support client’s team in evidence collection
 - prepare for delivery to team who will be taking over the incident. 
 
 The following steps should be performed after the Initial call has completed.
@@ -210,7 +208,7 @@ The following steps should be performed after the Initial call has completed.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 4.	**Notify Leads? (TO BE DISCUSSED)**
 5.	Schedule a triage call at the discretion of the client. Include in the meeting invitation the client, requested client’s personnel, and X-Force IRIS consultants that will be attending the call.
-	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a customer, which can be done in a number of ways:
+	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a client, which can be done in a number of ways:
 		- on-call person sends Triage call invite, and then on call introduces Lead Consultant for this case,
 		- on-call person notified Client about designated Lead Consultant for this case, who then sets up Triage call and directly engage in work with Client.
 	- If the caller is an existing IRIS retainer client, ensure to follow the appropriate Service Level Agreement (SLA) for the respective Vision Retainer tiers. If SLA is not defined, default SLAa are:
@@ -241,10 +239,10 @@ Following fields must be populated while logging Hotline Initial Call:
 		- Discovery: how incident was discovered.
 		- Date discovered: timestamp of a hotline call
 		- Hotline quick notes: provide description of incident based on information from person calling hotline.
-	- Expectations: Fill in what customer is asking for (eg. on-site, remote, IR, only forensics, what are the investigation goals, etc).
+	- Expectations: Fill in what client is asking for (eg. on-site, remote, IR, only forensics, what are the investigation goals, etc).
 - Members tab:
 	- Owner/Account manager: on call person receiving the call. The incident is owned by this person, unless it is handed over to someone else from same or other geography. This should not be account manager.
-	- Members/Engagement Leads: Add Account manager person for this particular customer to ensure that he/she is informed about new engagement.
+	- Members/Engagement Leads: Add Account manager person for this particular client to ensure that he/she is informed about new engagement.
 		- Add Account Manager to Members for awareness
 
 Fill in remaining fields depending on availability of information.
@@ -324,7 +322,7 @@ When the IRIS team is actively working or is notified of an incident involving I
 
 A cybersecurity incident that is within scope of IBM CSIRT response and involvement is:
 
-An incident where an IBM managed asset and/or IBM managed customer data and/or an IBM employee/contractor/vendor is involved or at the heart of a cybersecurity allegation or cybersecurity incident. A cybersecurity incident or cybersecurity allegation could involve an IBM Commercial Customer (Target, Sony, American Express, BNSF, etc.) or an IBM Internal Customer (Sametime, w3, Lotus Notes, etc.) 
+An incident where an IBM managed asset and/or IBM managed client data and/or an IBM employee/contractor/vendor is involved or at the heart of a cybersecurity allegation or cybersecurity incident. A cybersecurity incident or cybersecurity allegation could involve an IBM Commercial Client (Target, Sony, American Express, BNSF, etc.) or an IBM Internal client (Sametime, w3, Lotus Notes, etc.) 
 
 Other types of incidents where IBM CSIRT should be notified:
 - Loss or compromise of IBM intellectual property
@@ -340,7 +338,7 @@ Other types of incidents where IBM CSIRT should be notified:
 
 Examples of incidents requiring notification to CSIRT include:
 - GTS Strategic Outsourcing (SO) team supporting client Y has a system found to contain unknown malware and the system is owned by the client but managed by IBM.
-- A client calls IRIS to report an incident involving an IBM-owned and managed system containing customer data which has been found to have unknown account creations and other suspicious activity.
+- A client calls IRIS to report an incident involving an IBM-owned and managed system containing client data which has been found to have unknown account creations and other suspicious activity.
 
 If any of the conditions is true, such incident should be handed over to IBM CSIRT. Handover process is defined in Section “CSIRT Engagement”.
 
