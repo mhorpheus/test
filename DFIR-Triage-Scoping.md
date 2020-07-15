@@ -14,6 +14,7 @@ The following documentation is a guideline for IRIS consultants for IRIS Triage 
 	 - [General Triage and Scoping Guidelines](#general-triage-and-scoping-guidelines)
 	 - [Conducting Triage and Scoping Calls](#conducting-triage-and-scoping-calls)    
  2. [**Post Triage and Scoping Procedures**](#post-triage-and-scoping-procedures) 
+ 3. [**Ad-hoc Assistance Request**](#Ad-hoc-Assistance-Request)
 
 ## Triage and Scoping Procedures
 The Triage call typically follows an initial hotline call regarding some type of potential security incident. It is highly recommended to have the IRIS member who answered the initial Hotline call on the Triage/Scoping call for continuity. In addition to the IRIS Hotline duty member a Lead/Manager or senior member of the team is required to properly scope the engagement. 
@@ -78,3 +79,6 @@ Once the resources have been aligned and the estimated hours are determined, the
 *Note: If the client is AdHoc work with leadership to get the Statement of Work (SOW) process initiated once the client has agreed to the estimated hours.*
 
 Once the client has agreed in writing (usually via email reply), the Engagement Lead or other IRIS stakeholder can begin the ***IR Spin-Up Process***. Once IRIS has staffed the engagement the `Owner/Manager` and `Engagement Leads/Members` can be edited to reflect the assigned resources.
+
+## Ad-hoc Assistance Request
+IMPORTANT: If section name (link) is changed, update Hotline pages as it links here!
