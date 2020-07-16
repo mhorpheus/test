@@ -87,7 +87,7 @@ ___
 ## Follow the Sun for Incident Intake
 
 ### Concept description
-Three main regions maintain almost all hostline numbers: Asia Pacific, EMEA and North America. To provide a unified, standardized approach and to avoid the need for IRIS team members to work outside business hours, a Follow the Sun model is employed. In this approach, 24 hours are divided into three 8-hour shifts. Each shift is allocated within business hours of the owning geography. All hotline calls from any of the three respective Geographies participating in Follow the Sun, are answered by the Geography currently on shift during those designated hours. This means, that call to any of the EMEA, North America or APAC number will reach out to the same person. 
+Three main regions maintain almost all Hotline numbers: Asia Pacific, EMEA and North America. To provide a unified, standardized approach and to avoid the need for IRIS team members to work outside business hours, a Follow the Sun model is employed. In this approach, 24 hours are divided into three 8-hour shifts. Each shift is allocated within business hours of the owning geography. All hotline calls from any of the three respective Geographies participating in Follow the Sun, are answered by the Geography currently on shift during those designated hours. This means, that call to any of the EMEA, North America or APAC number will reach out to the same person. 
 
 South America do not have dedicated hotline numbers and use World Wide number, while their team do not participate in shifts. Japan operated independently and their hotline number will reach only team in Japan. 
 
@@ -125,7 +125,7 @@ Both Primary and Secondary people on call are responsible for following activiti
 - Picking up all hotline calls.
 - Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person. If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
 - Logging all hotline calls in Resilient according to the requirements described in [Logging Hotline Call](#Logging-Hotline-Call).
-- Organizing triage calls for all new incidents if they fall within timeframe of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
+- Organizing triage calls for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
 - Performing a shift hand over with a following geography according to process described in [Shift Turnover](#Shift-Turnover).
 - If applicable, performing an incident hand over to a following geography according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 - Providing support to a Client and performing initial IR steps, even if incident will be handed over to another Geography.
@@ -295,8 +295,14 @@ The receiving geography on-call person is responsible for raising this incident 
 
 
 ## Ad-hoc IR Requests
-**(WORK IN PROGRESS)**
-Ad-hoc assistance requests should be handled according to [this process](https://github.ibm.com/IRIS-NA/DFIR-wiki/edit/master/DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request).
+IRIS Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call it. The intention is to allow also non-IBM Clients to call and request assistance with so called "Ad-hoc IR request". In this concept, a Triage call is considered "for free" - we want to show IRIS expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
+
+During initial discussion with a Client representative when received a Hotline call, on-call person should explain that IRIS is more that happy to assist and offers immediately a Triage call to:
+- evaluate Client situation
+- present proposed approach
+It should be clearly explained, that if Client decides to engage IRIS to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. IRIS will not proceed with any work beyond Triage call without signed contract. 
+
+On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by Sales team. Dedicated [process](https://github.ibm.com/IRIS-NA/DFIR-wiki/edit/master/DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
 
 ## CSIRT
 THIS SECTION CONTAINS CONTENT MOVED FROM OLD DOCUMENT - TO BE REVIEWED
