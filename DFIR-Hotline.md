@@ -122,7 +122,7 @@ A number of IRIS Clients maintain a close business relationship with IRIS Consul
 
 ### On-Call Person Responsibilities
 Both Primary and Secondary people on call are responsible for following activities during their shift:
-- Picking up all hotline calls.
+- Picking up all Hotline calls.
 - Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person. If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
 - Logging all hotline calls in Resilient according to the requirements described in [Logging Hotline Call](#Logging-Hotline-Call).
 - Organizing triage calls for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
@@ -136,13 +136,13 @@ The main aim of the on-call person is be available to pick up and initiate IRIS 
 - is not responsible for allocating people to the incident, as this should be done by Geography Leads **(TO BE CLARIFIED),**
 - **ANY OTHER HINTS?**
 
-Responsibility to organize a Triage call, does not mean that on-call person must be present on such a call. Triage call may be led by other Consultant to make sure that on-call person remains available to pick up other incoming Hotline calls or ensure that Secondary person is available to answer them. 
+Responsibility to organize a Triage call, does not mean that on-call person must be present on such a call. Triage call may be led by other Consultant to make sure that on-call person remains available to pick up other incoming Hotline calls or ensure that Secondary person is available to answer them. If needed, `iris-hotline-ic` Slack channel should be used to ask for assistance in running a Triage call. 
 
 Technical guide on handling voice messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty). 
 
+Time spent on supporting Hotline can not be claimed as billable in ILC (or other systems) as we do not have any dedicated code. 
 
 ### Answering Hotline Call
-
 The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of IRIS and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
 
 Be professional, calm and courteous during all communications with clients in general. Often, the client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the client and it is our duty to help guide them as trusted advisors when they reach out to us.
@@ -201,7 +201,7 @@ The following steps should be performed after the Initial call has completed.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 4.	**Notify Delivery Leads? (TO BE DISCUSSED)**
 5.	Schedule a triage call at the discretion of the client. Include in the meeting invitation the client, requested client’s personnel, and X-Force IRIS consultants that will be attending the call.
-	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `iris-hotline-ic` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support.
+	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `iris-hotline-ic` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support. It is recommended to initially look for assistance among IRIS consultants from your geography. 
 	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a client, which can be done in a number of ways:
 		- on-call person sends Triage call invite, and then on call introduces Lead Consultant for this case,
 		- on-call person notified Client about designated Lead Consultant for this case, who then sets up Triage call and directly engage in work with Client.
@@ -234,9 +234,10 @@ Following fields must be populated while logging Hotline Initial Call:
 		- Hotline quick notes: provide description of incident based on information from person calling hotline.
 	- Expectations: Fill in what client is asking for (eg. on-site, remote, IR, only forensics, what are the investigation goals, etc).
 - Members tab:
-	- Owner/Account manager: on call person receiving the call. The incident is owned by this person, unless it is handed over to someone else from same or other geography. This should not be account manager.
-	- Members/Engagement Leads: Add Account manager person for this particular client to ensure that he/she is informed about new engagement.
-		- Add Account Manager to Members for awareness
+	- Owner/Account manager: on call person receiving the call. The incident is owned by this person, unless it is handed over to someone else from same or other geography. This should not be Account Manager (IRIS consultant assigned to this customer).
+	- Members/Engagement Leads: 
+		- Add Account Manager person for this particular Client to ensure that he/she is informed about new engagement. 
+			- In EMEA all Clients have "Owner / Account Manager" set to Neil Jones, who is IRIS EMEA Ops Manager. The Account Manager who should be added to every new incident ticket is listed as "Members / Engagement Leads" in Resilient Client ticket. 
 
 Fill in remaining fields depending on availability of information.
 
@@ -252,9 +253,6 @@ At the end of an Incident Responder’s shift please ensure:
  - A hand-over with all necessary information, has been provided for the upcoming Geography.
 
 If there is an active cross-regional IR engagement, summarize the status of that engagement and coordinate details within the specific engagement Slack channel. If members of the Hotline duty personnel are assisting with that effort to support Follow the Sun, make sure the on-coming members have access to the engagement Slack channel and supporting technology such as Box/Aspera folders, EDR console, forensic data, summary reports, etc.
-
-**TO BE DISCUSSED:**
-* do we comment every PD entry on the turnover channel, eg. dead air ones?
 
 ### Determining Geography Owning the Incident
 It is the responsibility of the on-call staff to determine which region should lead an engagement, with guidance and input from regional management if required. Beyond standard allocation rule based on time zone and team members availability, the following factors should be taken into consideration:
