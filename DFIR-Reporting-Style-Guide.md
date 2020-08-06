@@ -85,7 +85,7 @@ All dates/times should be UTC unless the client requests otherwise, or there is 
 
 **Note**: The timezone should follow each timestamp in the body of the report, but can be detailed in the header for tables and figures. 
 
-Dates in the body of a paragraph should be in the format Month DD, YYYY with a leading 0 in the date where appropriate:
+Dates in the body of a paragraph should be in the format DD Month YYYY with a leading 0 in the date where appropriate:
 ```
 06 January 2019
 06-19 January 2019
