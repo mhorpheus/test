@@ -136,7 +136,7 @@ The main aim of the on-call person is be available to pick up and initiate IRIS 
 - is not responsible for allocating people to the incident, as this should be done by Geography Leads **(TO BE CLARIFIED),**
 - **ANY OTHER HINTS?**
 
-Responsibility to organize a Triage call, does not mean that on-call person must be present on such a call. Triage call may be led by other Consultant to make sure that on-call person remains available to pick up other incoming Hotline calls or ensure that Secondary person is available to answer them. If needed, `iris-hotline-ic` Slack channel should be used to ask for assistance in running a Triage call. 
+Responsibility to organize a Triage call, does not mean that on-call person must be present on such a call. Triage call may be led by other Consultant to make sure that on-call person remains available to pick up other incoming Hotline calls or ensure that Secondary person is available to answer them. If needed, `IR-triage-scoping` Slack channel should be used to ask for assistance in running a Triage call. 
 
 Technical guide on handling voice messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty). 
 
@@ -178,7 +178,7 @@ The aim of the hotline and on-call team is to support IBM clients in emergency s
 - provide Resilient ticket number to the Account Manager. 
 
 ### Processing Hotline Call  
-The `iris-hotline-ic` Slack channel is for communicating with the broader team about hotline calls that are currently active and in progress. It is recommended to have notifications turned on for this Slack channel as important information about active Hotline & Triage calls are often posted here. The `iris-hotline-ic` Slack channel is also a place where IRIS members who are participating in Hotline Triage call can post questions for the member of the IRIS team who is running call.
+The `IR-triage-scoping` Slack channel is for communicating with the broader team about hotline calls that are currently active and in progress. It is recommended to have notifications turned on for this Slack channel as important information about active Hotline & Triage calls are often posted here. The `IR-triage-scoping` Slack channel is also a place where IRIS members who are participating in Hotline Triage call can post questions for the member of the IRIS team who is running call.
 
 It is expected that initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the IRIS Incident Response team, or should the caller be re-directed. For cases potentially within a scope of IBM CSIRT, see guidelines [below](#csirt). Should the call be a legitimate concern, even if the client is calling from outside of the responder’s responsible Geography, it is critical to ensure the engagement initiation process is commenced . 
 
@@ -197,11 +197,11 @@ The following steps should be performed after the Initial call has completed.
 2.	~~Locate the client in Resilient and verify whether the caller is listed as an authorized ‘Incident Declarer’, i.e. one of the nominated individuals who are authorized  to engage IRIS on behalf of the client.~~
 	- ~~If the caller is not an incident declarer, the triage call may proceed but inform them IRIS will need to written permission of an incident declarer to officially engage IRIS.~~ 
 3.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography.
-	- If incident will be handled by currently on call team, notify everyone using `iris-hotline-ic` Slack channel.
+	- If incident will be handled by currently on call team, notify everyone using `IR-triage-scoping` Slack channel.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 4.	**Notify Delivery Leads? (TO BE DISCUSSED)**
 5.	Schedule a triage call at the discretion of the client. Include in the meeting invitation the client, requested client’s personnel, and X-Force IRIS consultants that will be attending the call.
-	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `iris-hotline-ic` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support. It is recommended to initially look for assistance among IRIS consultants from your geography. 
+	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `IR-triage-scoping` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support. It is recommended to initially look for assistance among IRIS consultants from your geography. 
 	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a client, which can be done in a number of ways:
 		- on-call person sends Triage call invite, and then on call introduces Lead Consultant for this case,
 		- on-call person notified Client about designated Lead Consultant for this case, who then sets up Triage call and directly engage in work with Client.
@@ -242,9 +242,9 @@ Following fields must be populated while logging Hotline Initial Call:
 Fill in remaining fields depending on availability of information.
 
 ### Shift Turnover
-The `iris-shift-turnover` Slack channel is for communicating with the previous and next shift rotation personnel about action items that the next shift needs to be aware of and to facilitate turnover of cross-regional Hotline or Triage calls. At the end of every shift, the `Primary` on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `iris-shift-turnover` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `iris-shift-turnover` about every Hotline call, allowing to trace back recent activity. 
+The `IR-hotline` Slack channel is for communicating with the previous and next shift rotation personnel about action items that the next shift needs to be aware of and to facilitate turnover of cross-regional Hotline or Triage calls. At the end of every shift, the `Primary` on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `IR-hotline` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `IR-hotline` about every Hotline call, allowing to trace back recent activity. 
 
-The `iris-shift-turnover` channel used to hand over shift, should not be confused with `#iris-hotline-ic` channel where a discussion about hotline cases is taking place. As a rule of thumb, `#iris-shift-turnover` channel is more focused on hotline calls itself (administrating them) and related tasks hand over, while `#iris-hotline-ic` is more focused on handling incidents raised by hotline calls, less concerned about the hotline call itself.
+The `IR-hotline` channel used to hand over shift, should not be confused with `IR-triage-scoping` channel where a discussion about hotline cases is taking place. As a rule of thumb, `IR-hotline` channel is more focused on hotline calls itself (administrating them) and related tasks hand over, while `IR-triage-scoping` is more focused on handling incidents raised by hotline calls, less concerned about the hotline call itself.
 
 At the end of an Incident Responder’s shift please ensure:
  - All voicemails have been responded to, which means that all `Incident` tickets in PagerDuty with voice messages have been acted upon and closed in PD to avoid any "leftovers".
@@ -278,12 +278,12 @@ In the event that the incident has to be transferred to another Geography, which
 Hand over process is defined as follows:
 1.	Ensure that Resilient ticket contains all information already collected.
 2.	Identify on-call representative of next Geography who will be picking up the incident to hand over.
-3.	Reach out to identified person to brief him/her that there is a need for an incident hand over. This should be done using `#iris-shift-turnover` slack channel or directly contacting the person. Provide necessary information such as:
+3.	Reach out to identified person to brief him/her that there is a need for an incident hand over. This should be done using `IR-hotline` slack channel or directly contacting the person. Provide necessary information such as:
 a.	Resilient ticket number.
 b.	Case background.
 c.	Clients's expectations.
 d. Next steps to be performed by person taking it over.
-e. If applicable, reference to related discussion on `iris-hotline-ic`  Slack channel.
+e. If applicable, reference to related discussion on `IR-triage-scoping`  Slack channel.
 4.	Ensure that person taking over an incident acknowledges it and is comfortable with all information provided.
 5.	Update Resilient “Members” tab -> “Owner/Account manager field” with name of person taking over an incident.
 
