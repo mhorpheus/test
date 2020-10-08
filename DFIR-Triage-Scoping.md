@@ -82,3 +82,18 @@ Once the client has agreed in writing (usually via email reply), the Engagement 
 
 ## Ad-hoc Assistance Request
 IMPORTANT: If section name (link) is changed, update Hotline pages as it links here!
+
+## DRAFT:
+From hotline page:
+	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `ir-triage-scoping-ic` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support. It is recommended to initially look for assistance among IRIS consultants from your geography. 
+	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a client, which can be done in a number of ways:
+		- on-call person sends Triage call invite, and then on call introduces Lead Consultant for this case,
+		- on-call person notified Client about designated Lead Consultant for this case, who then sets up Triage call and directly engage in work with Client.
+	- If the caller is an existing IRIS retainer client, ensure to follow the appropriate Service Level Agreement (SLA) for the respective Vision Retainer tiers. If SLA is not defined, default SLAa are:
+		- Legacy ERS subscriptions – 1 hour
+		- Vision Retainer Tier 2 and Tier 3 – 1 hour
+		- Vision Retainer Tier 1 – 4 hours.
+	- When scheduling a triage call, try to provide at least 30 minutes between the hotline call and the triage call to allow IRIS team members to join the call. 
+	- Where possible, avoid joining client bridges/teleconferences.
+		- IRIS cannot control who attends client bridges – other security vendors may join the call and may not be announced.
+		- It is challenging to conduct an efficient and thorough triage call if IRIS is not in control of the bridge.

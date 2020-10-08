@@ -13,7 +13,6 @@
 	- [On-Call Person Responsibilities](#On-Call-Person-Responsibilities)
 	- [Answering Hotline Call](#Answering-Hotline-Call)
 	- [Processing Hotline Call](#Processing-Hotline-Call)
-	- [Logging Hotline Call](#Logging-Hotline-Call)
 	- [Shift Turnover](#Shift-Turnover)
 	- [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident)
 	- [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography)
@@ -130,7 +129,7 @@ Both Primary and Secondary people on call are responsible for following activiti
 - If applicable, performing an incident hand over to a following geography according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 - Providing support to a Client and performing initial IR steps, even if incident will be handed over to another Geography.
 
-The main aim of the on-call person is be available to pick up and initiate IRIS response to all hotline calls. This means that on-call person:
+The main aim of the on-call person is be available to pick up and initiate X-Force IR response to all hotline calls. This means that on-call person:
 - may be already working on other engagements, and even may not have availability to pick up any analysis,
 - is not automatically assigned to all new incoming incidents originating from hotline call,
 - is not responsible for allocating people to the incident, as this should be done by Geography Leads **(TO BE CLARIFIED),**
@@ -143,11 +142,11 @@ Technical guide on handling voice messages left in Pager Duty is available [here
 Time spent on supporting Hotline can not be claimed as billable in ILC (or other systems) as we do not have any dedicated code. 
 
 ### Answering Hotline Call
-The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of IRIS and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
+The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of X-Force IR and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
 
 Be professional, calm and courteous during all communications with clients in general. Often, the client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the client and it is our duty to help guide them as trusted advisors when they reach out to us.
 
-There are no hard and fast rules to greeting the caller on an initial in-bound hotline call. However, it is recommended to start with "IBM X-Force IRIS Hotline, This is `<Consultant>` how may I help you". There are many reasons why clients call the hotline. At the very minimum the following information should be captured:
+There are no hard and fast rules to greeting the caller on an initial in-bound hotline call. However, it is recommended to start with "IBM X-Force IR Hotline, This is `<Consultant>` how may I help you". There are many reasons why clients call the hotline. At the very minimum the following information should be captured:
 - caller's contact details such as: name, title, phone, ~~email~~ (**SHALL WE ask for email? THIS IS ERROR PRONE FOR NON ENGLISH NATIONS)**, 
 - organization name (company name, if an IBMer is calling then who are they calling for?),
 - reason for call (get as much detail as possible),
@@ -172,13 +171,13 @@ In most cases, the initial hotline call itself is not the appropriate venue for 
 
 No case related information should be divulged to a caller just based upon the name the he/she claims. This is to prevent impersonation of clients by third parties such as journalists. Caller verification can be performed by calling the person back on a number held on record in Resilient or having them email from their corporate email address to confirm identity. 
 
-The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his IRIS Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
+The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his X-Force IR Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
 - create and fill in a Resilient ticket marked with `Hotline` tag **(TO BE CLARIFIED)**,
 - notify Account Manager of this client that such request was submitted to the hotline and pushed back,
 - provide Resilient ticket number to the Account Manager. 
 
 ### Processing Hotline Call  
-It is expected that initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the IRIS Incident Response team, or should the caller be re-directed. For cases potentially within a scope of IBM CSIRT, see guidelines [below](#csirt). Should the call be a legitimate concern, even if the client is calling from outside of the responder’s responsible Geography, it is critical to ensure the engagement initiation process is commenced . 
+It is expected that initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the X-Force IR team, or should the caller be re-directed. For cases potentially within a scope of IBM CSIRT, see guidelines [below](#csirt). Should the call be a legitimate concern, even if the client is calling from outside of the responder’s responsible Geography, it is critical to ensure the engagement initiation process is commenced . 
 
 One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake) is to ensure healthy work-private life balance. For this reason, if current on-call person determines that the incident must be handed over to another Geography, waking up another team should only happen if this is necessary. Guidelines on determination who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a client, until the Geography which should take over the incident becomes available. The cross geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) Even in GDPR constraint cases, the on-call person can provide significant support to a client without accessing data he may not be allowed to (eg. NA person on-call who received a call from EU client). Such activities can include, but are not limited to:
 - issue recommendations on containment
@@ -189,62 +188,25 @@ One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-
 
 The following steps should be performed after the Initial call has completed.
 1.	Log an incident ticket in Resilient. 
-	- Section [Logging Hotline Call](#Logging-Hotline-Call) defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
-	- Every genuine hotline call must be recorded in Resilient, including those where it is ultimately determined that IRIS support is not required. In such cases, the ticket can be closed immediately after the appropriate information has been completed. 
+	- Section [Logging Hotline Call](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Hotline-Call) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
+	- Every genuine hotline call must be recorded in Resilient, including those where it is ultimately determined that X-Force IR support is not required. In such cases, the ticket can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in the Resilient.
-2.	~~Locate the client in Resilient and verify whether the caller is listed as an authorized ‘Incident Declarer’, i.e. one of the nominated individuals who are authorized  to engage IRIS on behalf of the client.~~
-	- ~~If the caller is not an incident declarer, the triage call may proceed but inform them IRIS will need to written permission of an incident declarer to officially engage IRIS.~~ 
+2.	~~Locate the client in Resilient and verify whether the caller is listed as an authorized ‘Incident Declarer’, i.e. one of the nominated individuals who are authorized  to engage X-Force IR on behalf of the client.~~
+	- ~~If the caller is not an incident declarer, the triage call may proceed but inform them X-Force IR will need to written permission of an incident declarer to officially engage X-Force IR.~~ 
 3.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography.
 	- If incident will be handled by currently on call team, notify everyone using `ir-triage-scoping-ic` Slack channel.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 4.	**Notify Delivery Leads? (TO BE DISCUSSED)**
-5.	Schedule a triage call at the discretion of the client. Include in the meeting invitation the client, requested client’s personnel, and X-Force IRIS consultants that will be attending the call.
-	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `ir-triage-scoping-ic` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support. It is recommended to initially look for assistance among IRIS consultants from your geography. 
-	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a client, which can be done in a number of ways:
-		- on-call person sends Triage call invite, and then on call introduces Lead Consultant for this case,
-		- on-call person notified Client about designated Lead Consultant for this case, who then sets up Triage call and directly engage in work with Client.
-	- If the caller is an existing IRIS retainer client, ensure to follow the appropriate Service Level Agreement (SLA) for the respective Vision Retainer tiers. If SLA is not defined, default SLAa are:
-		- Legacy ERS subscriptions – 1 hour
-		- Vision Retainer Tier 2 and Tier 3 – 1 hour
-		- Vision Retainer Tier 1 – 4 hours.
-	- When scheduling a triage call, try to provide at least 30 minutes between the hotline call and the triage call to allow IRIS team members to join the call. 
-	- Where possible, avoid joining client bridges/teleconferences.
-		- IRIS cannot control who attends client bridges – other security vendors may join the call and may not be announced.
-		- It is challenging to conduct an efficient and thorough triage call if IRIS is not in control of the bridge.
+5.	Organize Triage/Scoping call following process documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping,md). 
 
-On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, IRIS is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to organize Triage call, before incident is handed over.
+On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, X-Force IR is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to organize Triage call, before incident is handed over.
 
-If needed, a dedicated Slack channel `ir-triage-scoping-ic` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping). 
-
-### Logging Hotline Call
-Following fields must be populated while logging Hotline Initial Call:
-- Engagement details tab:
-	- Description:
-		- a **brief** description of incident, eg. "A BEC in UK" or "Ransomware outbreak in the factory in Austria".
-		- Do **not** use multi sentence/multi line descriptions. There are separate fields where you can add more text.
-		- there is no need to add client name, as there is a separate field dedicated for it.
-	- Engagement type: "IR" (usage of "FOR" tag has been discontinued, even for purely Forensics cases).
-	- Region: Fill in with correct value.
-	- Client: Client this incident is assigned to. For Ad-hoc incidents, a new Client ticket should to be created.
-- Triage worksheet tab:
-	- Contact information: details of person calling hotline, including phone number with international code.
-	- Incident Details:
-		- Discovery: how incident was discovered.
-		- Date discovered: timestamp of a hotline call
-		- Hotline quick notes: provide description of incident based on information from person calling hotline.
-	- Expectations: Fill in what client is asking for (eg. on-site, remote, IR, only forensics, what are the investigation goals, etc).
-- Members tab:
-	- Owner/Account manager: on call person receiving the call. The incident is owned by this person, unless it is handed over to someone else from same or other geography. This should not be Account Manager (IRIS consultant assigned to this customer).
-	- Members/Engagement Leads: 
-		- Add Account Manager person for this particular Client to ensure that he/she is informed about new engagement. 
-			- In EMEA all Clients have "Owner / Account Manager" set to Neil Jones, who is IRIS EMEA Ops Manager. The Account Manager who should be added to every new incident ticket is listed as "Members / Engagement Leads" in Resilient Client ticket. 
-
-Fill in remaining fields depending on availability of information.
+If needed, a dedicated Slack channel `ir-triage-scoping-ic` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are 
 
 ### Shift Turnover
 The `ir-hotline` Slack channel is used for communicating with the previous and next shift rotation personnel about action items that the next shift needs to be aware of and to facilitate turnover of cross-regional Hotline or Triage calls which require further actions. At the end of every shift, the `Primary` on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `ir-hotline` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `ir-hotline` about every Hotline call, allowing to trace back recent activity. 
 
-The `ir-hotline` channel used to hand over shift, should not be confused with `ir-triage-scoping-ic` channel where a discussion about new IR cases is taking place. As a rule of thumb, `ir-hotline` channel is focused on hotline calls itself (administrating them) and related tasks hand over, while `ir-triage-scoping-ic` is focused on handling incidents (raised by hotline calls or by other means of communications), and is not concerned about the hotline call itself.
+The `ir-hotline` channel used to hand over shift, should not be confused with `ir-triage-scoping-ic` channel where a discussion about new IR cases is taking place. As a rule of thumb, `ir-hotline` channel is focused on hotline calls itself (administrating them) and related tasks hand over, while `ir-triage-scoping-ic` is focused on handling incidents (raised by hotline calls or by other means of communications), and is not concerned about the hotline call itself. The `ir-hotline` channel should not be used to hand over existing cases analysis/monitoring in the Follow the Sun approach. 
 
 At the end of an Incident Responder’s shift please ensure:
  - All voicemails have been responded to, which means that all `Incident` tickets in PagerDuty with voice messages have been acted upon and closed in PD to avoid any "leftovers".
@@ -256,11 +218,11 @@ If there is an active cross-regional IR engagement, summarize the status of that
 
 ### Determining Geography Owning the Incident
 It is the responsibility of the on-call staff to determine which region should lead an engagement, with guidance and input from regional management if required. Beyond standard allocation rule based on time zone and team members availability, the following factors should be taken into consideration:
-- Where is the client physically located and is there a potential requirement for IRIS staff presence on client premises?
+- Where is the client physically located and is there a potential requirement for X-Force IR staff presence on client premises?
 - What is incident location (may not be same as main client location).
 - Is there a specific language requirement (i.e. the client only speaks Spanish).
 - Are there potential data handling considerations such as: GDPR, country laws that would dictate data is only viewable by a specific country citizen?
-- Is the client requesting specific IRIS staff from a designated region due to relationship or account management responsibilities?
+- Is the client requesting specific X-Force IR staff from a designated region due to relationship or account management responsibilities?
 - Are there any client specific requirements documents in the Notes filed in client record in Resilient?
 
 If it was decided that incident should be owned by another Geography (either by on-call person, or Engagement Lead) – a hand over process described below should be followed.
@@ -293,19 +255,19 @@ The receiving geography on-call person is responsible for raising this incident 
 
 
 ## Ad-hoc IR Requests
-IRIS Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call it. The intention is to allow also non-IBM Clients to call and request assistance with so called "Ad-hoc IR request". In this concept, a Triage call is considered "for free" - we want to show IRIS expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
+X-Force IR Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call it. The intention is to allow also non-IBM Clients to call and request assistance with so called "Ad-hoc IR request". In this concept, a Triage call is considered "for free" - we want to show X-Force IR expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
 
-During initial discussion with a Client representative when received a Hotline call, on-call person should explain that IRIS is more that happy to assist and offers immediately a Triage call to:
+During initial discussion with a Client representative when received a Hotline call, on-call person should explain that X-Force IR is more that happy to assist and offers immediately a Triage call to:
 - evaluate Client situation
 - present proposed approach
-It should be clearly explained, that if Client decides to engage IRIS to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. IRIS will not proceed with any work beyond Triage call without signed contract. 
+It should be clearly explained, that if Client decides to engage X-Force IR to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. X-Force IR will not proceed with any work beyond Triage call without signed contract. 
 
 On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by Sales team. Dedicated [process](https://github.ibm.com/IRIS-NA/DFIR-wiki/edit/master/DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
 
 ## CSIRT
 THIS SECTION CONTAINS CONTENT MOVED FROM OLD DOCUMENT - TO BE REVIEWED
 ### IBM CSIRT notification
-When the IRIS team is actively working or is notified of an incident involving IBM-owned or managed systems, it is required that notification be given to the IBM CSIRT team. This direction has been given by the IBM CIO’s office and is required when IRIS becomes involved in an incident that may cause significant impact to IBM business in either operational, financial, client relationship, or reputation form.
+When the X-Force IR team is actively working or is notified of an incident involving IBM-owned or managed systems, it is required that notification be given to the IBM CSIRT team. This direction has been given by the IBM CIO’s office and is required when X-Force IR becomes involved in an incident that may cause significant impact to IBM business in either operational, financial, client relationship, or reputation form.
 
 A cybersecurity incident that is within scope of IBM CSIRT response and involvement is:
 
@@ -325,30 +287,30 @@ Other types of incidents where IBM CSIRT should be notified:
 
 Examples of incidents requiring notification to CSIRT include:
 - GTS Strategic Outsourcing (SO) team supporting client Y has a system found to contain unknown malware and the system is owned by the client but managed by IBM.
-- A client calls IRIS to report an incident involving an IBM-owned and managed system containing client data which has been found to have unknown account creations and other suspicious activity.
+- A client calls X-Force IR to report an incident involving an IBM-owned and managed system containing client data which has been found to have unknown account creations and other suspicious activity.
 
 If any of the conditions is true, such incident should be handed over to IBM CSIRT. Handover process is defined in Section “CSIRT Engagement”.
 
 ### IBM CSIRT Notification Process
-When it has been determined that an active IRIS incident, or notification of an incident, meets the requirements listed in the previous section, IBM IRIS will notify the IBM CSIRT team (numbers below). NOTE: If an incident involves an IBM SO account, notify the SO DPE/PE first that you will be making contact with the ICC to eliminate confusion about the role of CSIRT.
+When it has been determined that an active X-Force IR incident, or notification of an incident, meets the requirements listed in the previous section, X-Force IR will notify the IBM CSIRT team (numbers below). NOTE: If an incident involves an IBM SO account, notify the SO DPE/PE first that you will be making contact with the ICC to eliminate confusion about the role of CSIRT.
 
-IRIS will make notification to the Incident Contact Center (ICC).
+X-Force IR will make notification to the Incident Contact Center (ICC).
 - Incident Contact Center: 1-877-842-8642
 - International Toll Number: 1-506-646-4222
 - VRU option to Call Center for North America: 1-888-426-4357
 - Tie-Line: 696-4222
 
-IBM IRIS will ensure the appropriate case details are shared with IBM CSIRT, at the time of notification, and discuss whether IBM CSIRT involvement is required. 
+X-Force IR will ensure the appropriate case details are shared with IBM CSIRT, at the time of notification, and discuss whether IBM CSIRT involvement is required. 
 
-NOTE: In the case of an incident involving other IBM entities such as SO, MSS or others, IBM IRIS should notify them, in the absence of the client, of the need to involve the IBM CSIRT team and why.
+NOTE: In the case of an incident involving other IBM entities such as SO, MSS or others, X-Force IR should notify them, in the absence of the client, of the need to involve the IBM CSIRT team and why.
 
 ### IBM CSIRT Involvment
-If IBM CSIRT involvement in an incident is required, the IBM IRIS Engagement Lead and IBM CSIRT lead should discuss the best way to proceed with the investigation.  For example, in the case of an SO incident, this should involve a call with the account DPE, IRIS engagement lead, and IBM CSIRT lead to discuss the best way to work the case with the client and ensure continued progress towards resolution. 
+If IBM CSIRT involvement in an incident is required, the X-Force IR Engagement Lead and IBM CSIRT lead should discuss the best way to proceed with the investigation.  For example, in the case of an SO incident, this should involve a call with the account DPE, X-Force IR engagement lead, and IBM CSIRT lead to discuss the best way to work the case with the client and ensure continued progress towards resolution. 
 
 When the IBM CSIRT team is involved, incidents can be worked in one of three ways depending on what is best for the client and IBM’s interests.
-- IBM CSIRT may transition to leading the investigation and continuing the forensics and other tasks with the IBM internal team.  In this case, IBM CSIRT will excuse IBM IRIS from the investigation, take over communications and status, and provide necessary resources to complete the investigation. 
-- IBM IRIS will continue to lead and work the investigation as normal, however, they will provide regular communication to the IBM CSIRT team on investigation progress and findings to ensure appropriate legal involvement and protection of IBM’s interests as required.
-- IBM IRIS and IBM CSIRT will work jointly with resources conducting investigative tasks and regular status flowing through a designated focal point to the IBM team and client.  This focal point will be an engagement lead from IBM IRIS or IBM CSIRT as determined appropriate for the security incident.
+- IBM CSIRT may transition to leading the investigation and continuing the forensics and other tasks with the IBM internal team.  In this case, IBM CSIRT will excuse IBM X-Force IR from the investigation, take over communications and status, and provide necessary resources to complete the investigation. 
+- X-Force IR will continue to lead and work the investigation as normal, however, they will provide regular communication to the IBM CSIRT team on investigation progress and findings to ensure appropriate legal involvement and protection of IBM’s interests as required.
+- X-Force IR and IBM CSIRT will work jointly with resources conducting investigative tasks and regular status flowing through a designated focal point to the IBM team and client.  This focal point will be an engagement lead from X-Force IR or IBM CSIRT as determined appropriate for the security incident.
 
 ### Authority
-When CSIRT is involved, IRIS still represents the interests of the IRIS subscription / ad-hoc client. While IRIS and CSIRT will likely collaborate on the response, any and all incident response work should be approved by the IRIS client. Should the incident response work not be approved by the client and has been requested by CSIRT, CSIRT will be responsible for absorbing the cost of the analysis (Note: have written approval from CSIRT prior to performing any analysis where CSIRT will incur charges).
+When CSIRT is involved, X-Force IR still represents the interests of the X-Force IR subscription / ad-hoc client. While X-Force IR and CSIRT will likely collaborate on the response, any and all incident response work should be approved by the X-Force IR client. Should the incident response work not be approved by the client and has been requested by CSIRT, CSIRT will be responsible for absorbing the cost of the analysis (Note: have written approval from CSIRT prior to performing any analysis where CSIRT will incur charges).
