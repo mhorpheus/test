@@ -17,8 +17,8 @@ If the chain of custody is broken, the Accused and their Legal Counsel will ask 
 
 ## IRIS CoC Templates
 IRIS maintains Chain of Custody documents for:
-* [Single Item](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IRIS%20Chain%20of%20Custody%20-%20Single%20Item.docx)
-* [Multiple Items](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IRIS%20Chain%20of%20Custody%20-%20Mulitple%20Items.docx)
+* [Single Item](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IR%20Chain%20of%20Custody%20-%20Single%20Item.docx)
+* [Multiple Items](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IR%20Chain%20of%20Custody%20-%20Mulitple%20Items.docx)
 
 
 ## CoC Example
