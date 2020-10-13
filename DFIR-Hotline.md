@@ -123,7 +123,7 @@ A number of X-Force IR Clients maintain a close business relationship with X-For
 Both Primary and Secondary people on call are responsible for following activities during their shift:
 - Picking up all Hotline calls.
 - Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person. If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
-- Logging all hotline calls in Resilient according to the requirements described in [Logging Hotline Call](#Logging-Hotline-Call).
+- Logging all hotline calls in Resilient.
 - Organizing triage calls for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
 - Performing a shift hand over with a following geography according to process described in [Shift Turnover](#Shift-Turnover).
 - If applicable, performing an incident hand over to a following geography according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
@@ -188,7 +188,7 @@ One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-
 
 The following steps should be performed after the Initial call has completed.
 1.	Log an incident ticket in Resilient. 
-	- Section [Logging Hotline Call](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Hotline-Call) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
+	- Section [Logging-Requirements-for-New-IR-Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
 	- Every genuine hotline call must be recorded in Resilient, including those where it is ultimately determined that X-Force IR support is not required. In such cases, the ticket can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in the Resilient.
 2.	~~Locate the client in Resilient and verify whether the caller is listed as an authorized ‘Incident Declarer’, i.e. one of the nominated individuals who are authorized  to engage X-Force IR on behalf of the client.~~
