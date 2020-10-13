@@ -68,7 +68,7 @@ PD has many functions supporting handling and escalating incidents. Due to sensi
 ### Scheduling
 On call person is determined using PD Schedules - separate for Primary and Secondary person. Each Schedule consists of three layers, while each layer represents separate geography thus shift. See below picture for reference.
 
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty_schedule_view.PNG)
+![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty_schedule_view.png)
 
 People allocation within each layers is constrained to shift timeframe of this geography (do not confuse layers within a schedule with terms L1/L2 used to name main and backup schedule):
 * Layer 1 represents APAC and allocation is done only for 23:00-07:00 UTC
