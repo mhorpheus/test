@@ -58,7 +58,7 @@ All incoming calls will always be routed initially to the first person on-call, 
 
 ### Tracking Hotline Calls
 Every call is recorded as an Incident in PD, which is marked as Acknowledged when on-call person answers it and marked as resolved when call ends. If Hotline call is not picked up, but Voice Message is left, PD will start chasing on-call people from both schedules via phone calls and text messages to notify about phone call (Incident in PD) requiring attention. Every PD incident contains a source phone number of a caller, which can be checked in the incident (if you picked up a call, then look within resolved incidents):
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-identify-caller.png)
+![Identifying caller number](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-identify-caller.png)
 For Hotline numbers managed by NA team (NA and worldwide numbers), source phone number most probably will be a Hotline number. This is related to the fact how RACC is configured. For this reason, you should not relay entirely on the source phone numbers recorded in PD.
 
 There is one specific case in which PagerDuty will not create an Incident ticket for incoming call: when both on-call assigned people do not answer the call, and the caller does not leave a VoiceMail message. In such a case there is no option to use Incident information to track a hotline call.
@@ -68,10 +68,10 @@ PD has many functions supporting handling and escalating incidents. Due to sensi
 ### Scheduling
 On call person is determined using PD Schedules - separate for Primary and Secondary person. Each Schedule consists of three layers, while each layer represents separate geography thus shift. See below picture for reference.
 
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty_schedule_view.PNG)
+![PagerDuty Schedule view](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty_schedule_view.PNG)
 
 People allocation within each layers is constrained to shift timeframe of this geography (do not confuse layers within a schedule with terms L1/L2 used to name main and backup schedule):
-* Layer 1 represents APAC and allocation is done only for 23:00-07:00 UTC
+* Layer 1 represents APAC and is limited to timeframe 23:00-07:00 UTC
 * Layer 2 represents EMEA and is limited to timeframe 07:00-15:00 UTC
 * Layer 3 represents NA and is limited to timeframe 15:00-23:00 UTC.
 
@@ -94,7 +94,7 @@ Every new team member who will be supporting Hotline, must configure his mobile 
 	- adding to both L1 and L2 schedules.
 5. Check when you're on call for the first time.
 6. Set up mobile app for your own usage (optional).
-7. Read [Tutorial](#tutorials) section below.
+7. Read [Tutorials](#tutorials) section below.
 8. Reach out to your geography IR Functional Lead or your manager if you have any questions.
 
 **Disabling personal Voice Mail is critical for Hotline operations**, and everyone should double check that they have it really disabled. Not doing it, can cause severe consequences for X-Force IR. The last thing we want is a customer leaving message on personal IBM Voice Mail, instead of PD Voice Mail, which is not accessible by other team members. PD Voice Mail has advantage, that everyone can access it and react upon as well as PD will chase other on-call person, which will not happen in case Client leaves message on personal IBM VoiceMail. 
@@ -108,7 +108,7 @@ For details on above steps, refer to a guide on how to initially set up your PD 
 ### Setting-up Your Environment for the First Time
 1. Navigate to [https://ibm.pagerduty.com/](https://ibm.pagerduty.com/) and sign in with IBM credentials.
 2. In the upper right corner, next to your profile, change your team to X-Force IR, to avoid seeing configurations from a whole IBM. 
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-initial-config1.png)
+![Initial configuration of PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-initial-config1.png)
 
 ### Handling Voice Messages
 Voice Messages can be left by a person calling hotline, who did not managed to connect to both L1 and L2 person. From a PagerDuty perspective, such ticket is not assigned to anyone and it will be chasing people from Escalation Path to ensure that someone picks it up. This means, that you can received phone calls, text messages and mails from PD, until someone acknowledges this incident (representing a hotline call) and got it assigned to himself. 
@@ -119,17 +119,17 @@ Using Web GUI:
 1. Navigate to Incidents.
 2. Under Open Incidents find a relevant hotline connection.
 3. Unfold "SHOW DETAILS" without entering into this ticket.
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-voicemail1.png)
+![Finding VoiceMail messages in PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-voicemail1.png)
 4. Click on "Listen to Recording".
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-voicemail2.png)
+![Listening to VoiceMail messages in PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-voicemail2.png)
 
 It is very IMPORTANT to resolve PD Incidents having Voice Messages as resolved, as they are not automatically marked as resolved (which happens in case of a hotline call which is picked up by on-call person). This prevents having a left-over incidents in PD.
 
 ### Using Calendar Feeds to Track On-call Schedule
 Entering "My Profile" settings, it it possible to get WebCal feed or iCalendar file with up-to-date schedule of a personal on-call schedule.
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-calendar-feed.png)
+![Exporting on-call calendar feed in PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-calendar-feed.png)
 All schedules (L1 and L2) are combined in this feed, so all necessary information are provided in a single place.
 
 ### Checking Who Is Currently On-call
 Click PagerDuty in the top left corner or navigate to "Incidents". Pane on a right side will contain information who is currently on call.
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-who-is-on-call.png)
+![Identifying current on-call person](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/PagerDuty-who-is-on-call.png)

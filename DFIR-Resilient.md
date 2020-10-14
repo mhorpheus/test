@@ -1,9 +1,11 @@
+
+
 # X-Force IR Resilient Ticketing Process
 
 ## Table of Contents
 1. **[Introduction](#Introduction)**
 2. **[Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements)**
-3. **[Populating Subscriptions Hours Usage](#Populating-Subscriptions-Hours-Usage)**
+3. **[Tracking Subscriptions Hours Usage](#Tracking-Subscriptions-Hours-Usage)**
 4. **[Tutorials](#Tutorials)**
 	- [Creating New Engagement Ticket](#Creating-New-Engagement-Ticket)
 	- [Creating New Client Ticket](#Creating-New-Client-Ticket)
@@ -47,7 +49,24 @@ Following fields must be populated while logging New IR Engagement (this means t
 
 Fill in remaining fields depending on availability of information.
 
-## Populating Subscriptions Hours Usage
+## Tracking Subscriptions Hours Usage
+Subscription hours usage is summarized in the master Client entry ticket. Navigating to the "Subscription Details" tab, one can obtain all necessary details: number of annual subscription hours, subscription roll-over date and number of subscription hours remaining in a current subscription year.
+![Details on subscription hours usage in the client master ticket](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_tracking_subscription_hours_usage.png)
+However, details of the hours usage related to particular engagement are tracked in this engagement ticket - at the bottom of the "Engagement Details" tab, there is a section "Hours Utilized" where hours usage should be filled in.
+![Tracking hours usage of single engagement](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_tracking_hours_usage_in_engagement.png)
+Fill in hours usage according to below requirements:
+- always provide full name of the person who billed hours,
+- always used the same format of your name, so avoid variations,
+- pick up "Item" value to describe type of activity,
+- use "Subscription" from "Hours Type" by default,
+- enter hours in a daily breakdown,
+- hours usage should be consistent with what was entered into Claim systems
+- add "Quick note" if necessary.
+
+Hours usage for each engagement should be populated at least on the weekly basis together with Claiming those hours in IBM systems.
+
+When counting hours against subscription usage, Resilient is not using a date when hours were consumed, but date when engagement ticket was created. For this reason, if engagement is close to the end of subscription year, it may happen that hours consumed in the new year, are counted against previous year. There is no protection or notification if by mistake number of hours from previous year is exceeded. 
+
 
 ## Tutorials
 
@@ -62,7 +81,7 @@ This process is responsible to create an IR Engagement ticket, which then should
  7. "Name" under "Notes" is automatically populated to just enter some random value.
 
 Example:
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_New_IR_Engagement.png)
+![Creating new IR Engagement in Resilient](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_New_IR_Engagement.png)
 
 All other fields needs to be populated after ticket is created.
 
@@ -96,3 +115,5 @@ Most of the time you will be updating an existing Resilient Hotline Triage ticke
 5. Add a Note on the `Notes` tab with more details regarding the type of IR and initial response actions required by the client
 
 Be detailed in your descriptions and notes. Are we going to be deploying technology? If so, what type of tech? How many endpoints? Be specific when defining the goals established between X-Force IR and the client on the Triage call.
+
+
