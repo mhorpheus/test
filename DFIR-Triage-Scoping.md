@@ -1,36 +1,143 @@
 
 
-# IRIS Global Triage/Scoping Call Procedures
-
-The purpose of this page is to document the IRIS Triage and Scoping call procedures.
-
-As a result from an in-bound hotline call or other means in order to properly scope the requirements and gauge expectations from the client during an incident engagement, a proper scoping call should be conducted to facilitate better understanding of the incident and what type of IR engagement and efforts are necessary. Typically the Triage and/or Scoping call is the next logical step from the initial hotline call. As a guideline, the Triage/Scoping call should be scheduled as soon as possible following the initial hotline call.
-
-The following documentation is a guideline for IRIS consultants for IRIS Triage and Scoping call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+# IRIS Global Triage and Scoping Call Procedures
 
 ## Table of Contents
 
- 1. [**Triage and Scoping Procedures**](#triage-and-scoping-procedures)
-	 - [General Triage and Scoping Guidelines](#general-triage-and-scoping-guidelines)
-	 - [Conducting Triage and Scoping Calls](#conducting-triage-and-scoping-calls)    
- 2. [**Post Triage and Scoping Procedures**](#post-triage-and-scoping-procedures) 
- 3. [**Ad-hoc Assistance Request**](#Ad-hoc-Assistance-Request)
+ 1. [**Introduction**](#Introduction)
+ 2. [**Organizing a Triage and Scoping Call**](#Organizing-a-Triage-and-Scoping-Call)
+	- [X-Force IR Representatives](#X-Force-IR-Representatives)
+3. [**Phases of a Triage and Scoping Call**](#Phases-of-a-Triage-and-Scoping-Call)
+4. [**Responsibilities of a Triage Call Lead**](#Responsibilities-of-a-Triage-Call-Lead)
+5. [**Triage and Scoping Call Summary Note**](#Triage-and-Scoping-Call-Summary-Note)
+ 5. [**Ad-hoc Assistance Request**](#Ad-hoc-Assistance-Request)
 
-## Triage and Scoping Procedures
-The Triage call typically follows an initial hotline call regarding some type of potential security incident. It is highly recommended to have the IRIS member who answered the initial Hotline call on the Triage/Scoping call for continuity. In addition to the IRIS Hotline duty member a Lead/Manager or senior member of the team is required to properly scope the engagement. 
+## Introduction
+The purpose of this page is to document the IRIS Triage and Scoping Call procedure. The following documentation is a guideline for IRIS consultants for IRIS Triage and Scoping call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+
+A dedicated Triage and Scoping Call must be conducted for each assistance request received by X-Force IR. The intention of such a call is:
+- get necessary understanding of the incident Client is facing,
+- evaluate scope of he incident,
+- determine type of assistance requested by a Client, eg.:
+	- full IR support or maybe just forensics analysis,
+	- on-site or remote assistance or mixed approach,
+- determine necessary effort from X-Force IR.
+
+A Triage and Scoping Call most often (but is not limited to) originates from:
+- a call to X-Force IR Hotline,
+- a direct contact from a Client to X-Force IR Consultant he/she has relationship with,
+- a direct contact from IBM employees aware that Client is facing a security incident.
+
+## Organizing a Triage and Scoping Call
+X-Force IR is contractually obliged to organize a Triage and Scoping Call and meet defined SLA. The value of SLA depends on the type of the subscription. Default values are presented below (but there are exceptions documented in Resilient Client ticket):
+- Legacy Emergency Response Service (ERS) subscriptions – 1 hour
+- Vision Retainer Tier 2 and Tier 3 – 1 hour
+- Vision Retainer Tier 1 – 4 hours.
+
+When scheduling a Triage call, it is recommended to provide at least 30 minutes between the hotline call and the Triage call to allow all participants to prepare.
+
+A Triage and Scoping Call should be explicitly set up by X-Force IR Consultants, to ensure that X-Force IR owns and holds full control of the Triage. For this reason:
+- do not join already ongoing calls and always set up dedicated Triage and Scoping Call,
+- if possible avoid using Client's or 3rd party teleconferencing bridges, due inability to control participants,
+- do not use personal Webex links, but create a one-time Webex meeting,
+Joining ongoing calls pose a significant risk, that X-Force IR would not be driving the call, but will just be one of many parties involved and important topics related to security incident may be lost in discussions among big group of participants. 
+
+If a Triage and Scoping Call originates from a Hotline Call, then on-call person who picked up a call is responsible to:
+1. ensure that X-Force IR is represented by required people (see Section [Roles of Participants](#Roles-of-Participants)),
+2. set up a call, by sending meeting invite to necessary participants,
+3. initiate a Call:
+	- open teleconference bridge and join the call,
+	- provide a quick summary of a current X-Force IR understanding of a case,
+	- introduce X-Force IR members present on the call, clearly marking who would be leading the call.
+The intention of this approach, is to ensure continuity of the contact with a Client, however on-call person is not responsible for running a Triage and Scoping Call. This means, that after completing actions listed above, on-call person is not required to participate further in the call and can drop off, unless has been assigned any of the roles described in the Section [Roles of Participants](#Roles-of-Participants).
+
+Use `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Call organization and discuss any topics related to that case. Please keep in mind, that `ir-hotline` Slack channel, should not be used to discuss case related topics. 
+
+### X-Force IR Representatives
+Roles of participants from X-Force IR during Triage and Scoping Call can be defines as following:
+- **Senior Consultant** (required) - responsible for maintaining necessary quality of whole Triage and Scoping process. Can be Functional Lead, Manager, Geography Lead or other person considered by Leadership as Senior Consultant with sufficient experience.
+- **Triage Call Lead** (required) - responsible tun run a call and Triage and Incident.
+- **Special Matter Expert (SME)** (optional) - Consultant required to provide assistance in with his specific experience/knowledge/technology. 
+- **Assigned Consultants** (optional) - ones who will be working on this engagement
+- **Junior** or **Newcommer** (optional) - To build expertise of Junion Consultants or to share our approach for running Triage Calls with new team members.
+
+It is not required to represent all above roles, as it should be decided on the case by case basis. *Senior Consultant* may lead the call holding *Triage Call Lead* role. Alternatively, *Senior Consultant* may be present on the call just to support or shadow other Consultant who would perform a role of a *Triage Call Lead*. Additionally, Triage Call Lead should not be mistaken with a Incident Response Lead for this particular case, as it is possible that such person was not yet designated before Triage and Scoping call.
+
+Only necessary people should be invited to a Triage and Scoping Call, to avoid over-representation of X-Force IR team, which could overwhelm Client. 
+
+Identification of individuals to represent necessary roles during Triage and Scoping Call can be performed according to one of the scenarios:
+1. The person who received a trigger for a Triage and Scoping call is capable of running a call on his/her own being a Senior Consultant as well as has necessary availability. A trigger can be a Hotline call or any other contact requesting X-Force IR assistance.
+2. `ir-triage-scoping` Slack channel can be used to query for volunteers willing to support Triage and Scoping Call as well as SMEs if necessary
+3. In absence of volunteers, anyone from Leads team (Team Leads, Functional Leads or Geography Leads) should be contacted to help to designate people supporting Triage and Scoping Call.
+
+## Phases of a Triage and Scoping Call
+TO BE POPULATED
+DRAFT:
+1. Introduction of participants
+2. Discovery phase
+	- Client provides incident description - identify most important topics, such as: number of systems impacted, etc. Define those things
+	- open floor for questions to ensure proper understanding of an incident and collect more details
+3. Identify customer needs/expectations/objectives. What we need to perform a successful delivery.
+	- what they want from us: IR or only Forencis, on-site or remote, 8x5 or 24/7
+4. Provide our approach/solution to address customer problem.
+	- eg. full blown forensics
+	- deploy EDR
+	- triage some systems, and define steps based on findings to avoid full blown forensics.
+	- review what we have proposed against customer expectations, maybe Client wants to update their expectations/objectives for us.
+	- provide initial/containment recommendation which client can start immediately working on, while we set up our environment
+5. Predefined (can be written as a "script") statement on next steps, what Clients needs to do (eg. Incident Declarer needs to ACK the T&S Summary Note mail
+
+## Responsibilities of a Triage Call Lead
+Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities are as follows:
+- leading Triage and Scoping Call,
+- taking notes or designating note taking person,
+- preparing [Triage and Scoping Call Summary Note](#Triage-and-Scoping-Call-Summary-Note)
+	- sending "Triage and Scoping Call Summary Note" to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient,
+- ensuring that incident details and Triage call outcome is recorded in Resilient:
+	- if there is no ticket, create a new one following guidelines from [Logging Requirements for New IR Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
+	- update Resilient ticket with additional details obtained during Triage and Scoping Call,
+	- paste "Triage and Scoping Call Summary Note" which was sent to a Client to a Notes section in Resilient
+
+It is important to note, that every triage call MUST be fully documented in the Resilient, regardless final decision whether X-Force IR was engaged or not. 
+
+## Triage and Scoping Call Summary Note
+(DRAFT)
+Sections to include in the Note (filled in with bullet points):
+- X-Force IR understanding of the case
+- Client expectations and goals for X-Force IR
+- Information exchange points:
+- Next steps proposed by X-Force IR
+- Approximation of number of hours needed.
+	- TODO: a clear (predefined) statement is needed to have proper working around the fact that this is 
+		- approximate value
+		- for a listed set of tasks (to avoid it open)
+		- can change if the scope changes
+- Clear statement, that for X-Force IR to proceed, we need an Incident Declarer to ACK that mail to:
+	- ensure that we have not lost anything
+	- avoid any misunderstandings or "games" from a Client side
+	- receive green light to engage from Incident Declarer
+This can be nicely templates, including all key statements, so just bullet points need to be populated. Also include case number as a reference in the mail body and topic.
+
+Depending on the Client answer, potential next steps are:
+1. Engaged - Start Spin up process
+2. 
+
+## Ad-hoc Assistance Request
+IMPORTANT: If section name (link) is changed, update Hotline pages as it links here!
+Just a draft copy paste from Neil Jones, EMEA:
+Adhoc requests that come in from the team or clients.  
+- Request for hours and description comes in via Email or Slack into the Ops Manager.  
+- Ops Manager works with Relevant Digital seller and at times IR team member to pull together pricing, order, SOW, contract and DOU.  
+- Digital seller to send paperwork directly to client or country seller who will send to client or work with GTS/GBS on the DOU who will in turn work with the end client.  
+- Ops Manager to chase country seller or GBS/GTS contact regarding order/contract signature.  
+- Once signed the Ops manager work with the digital seller to collect information for updating resilient.  
+- Ops manager responsible for updating resilient.  
+- Ops manager to verify apttus order once booked(ie check TCV, etc)
+
+# OLD DOCUMENT 
 
 ### General Triage and Scoping Guidelines
-
- - IRIS should have the following members on the call at minimum:
-	 - IRIS Hotline personnel who took the call (`Primary` or `Secondary`)
-	 - A Team-Lead or Manager 
-	 - Subject Matter Experts (SMEs) 
-
-To provide the best service and continuity with the client, the IRIS member who answered the initial Hotline call should be present on the Triage/Scoping call. We need to provide our clients and potential customers with an end-to-end experience and it starts with how we communicate.
-
 To best help the client with their requests, a Team-Lead, Manager, or senior member of the team should be present on the call to help answer questions about our services and how they can be used. Additionally, having a senior member of the team available is important for properly scoping the incident and mapping that to our availability.
-
-Depending on the situation, one or more SMEs could be required for the call to provide guidance and requests for additional information. Work with your team using the `iris-hotline-ic` Slack channel to identify the required SMEs and their availability for your Triage/Scoping call.
 
 In general try to keep the Triage/Scoping call staffed with minimum required IRIS team members needed as to not overwhelm the client or tie up too many resources from the IRIS side. 
 
@@ -79,21 +186,3 @@ Once the resources have been aligned and the estimated hours are determined, the
 *Note: If the client is AdHoc work with leadership to get the Statement of Work (SOW) process initiated once the client has agreed to the estimated hours.*
 
 Once the client has agreed in writing (usually via email reply), the Engagement Lead or other IRIS stakeholder can begin the [IR Spin-Up Process](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-SpinUp). Once IRIS has staffed the engagement the `Owner/Manager` and `Engagement Leads/Members` can be edited to reflect the assigned resources.
-
-## Ad-hoc Assistance Request
-IMPORTANT: If section name (link) is changed, update Hotline pages as it links here!
-
-## DRAFT:
-From hotline page:
-	- If on call person is not able to coordinate Triage call or need additional assistance (eg. due to lack of experience in particular are, etc), notify people on `ir-triage-scoping-ic` asking for help (provide problem description or expertise needed). In case of lack of response, it is advised to reach out to one of the Managers or Leads directly asking for support. It is recommended to initially look for assistance among IRIS consultants from your geography. 
-	- Current on-call should ensure that a consultant designated as Lead Consultant for this case is introduced to a client, which can be done in a number of ways:
-		- on-call person sends Triage call invite, and then on call introduces Lead Consultant for this case,
-		- on-call person notified Client about designated Lead Consultant for this case, who then sets up Triage call and directly engage in work with Client.
-	- If the caller is an existing IRIS retainer client, ensure to follow the appropriate Service Level Agreement (SLA) for the respective Vision Retainer tiers. If SLA is not defined, default SLAa are:
-		- Legacy ERS subscriptions – 1 hour
-		- Vision Retainer Tier 2 and Tier 3 – 1 hour
-		- Vision Retainer Tier 1 – 4 hours.
-	- When scheduling a triage call, try to provide at least 30 minutes between the hotline call and the triage call to allow IRIS team members to join the call. 
-	- Where possible, avoid joining client bridges/teleconferences.
-		- IRIS cannot control who attends client bridges – other security vendors may join the call and may not be announced.
-		- It is challenging to conduct an efficient and thorough triage call if IRIS is not in control of the bridge.

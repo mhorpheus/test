@@ -122,22 +122,21 @@ A number of X-Force IR Clients maintain a close business relationship with X-For
 ### On-Call Person Responsibilities
 Both Primary and Secondary people on call are responsible for following activities during their shift:
 - Picking up all Hotline calls.
-- Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person. If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
+- Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person.
+	- If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
+	- Technical guide on handling voice messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty). 
 - Logging all hotline calls in Resilient.
-- Organizing triage calls for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
+- Organizing Triage and Scoping call for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
 - Performing a shift hand over with a following geography according to process described in [Shift Turnover](#Shift-Turnover).
 - If applicable, performing an incident hand over to a following geography according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
-- Providing support to a Client and performing initial IR steps, even if incident will be handed over to another Geography.
 
 The main aim of the on-call person is be available to pick up and initiate X-Force IR response to all hotline calls. This means that on-call person:
 - may be already working on other engagements, and even may not have availability to pick up any analysis,
 - is not automatically assigned to all new incoming incidents originating from hotline call,
-- is not responsible for allocating people to the incident, as this should be done by Geography Leads **(TO BE CLARIFIED),**
-- **ANY OTHER HINTS?**
+- is not responsible for allocating people to the incident, as this should be done by Leadership/Management of each Geography,
+- is not responsible for leading the Triage and Scoping call, however is responsible for organising it.
 
-Responsibility to organize a Triage call, does not mean that on-call person must be present on such a call. Triage call may be led by other Consultant to make sure that on-call person remains available to pick up other incoming Hotline calls or ensure that Secondary person is available to answer them. If needed, `ir-triage-scoping-ic` Slack channel should be used to ask for assistance in running a Triage call. 
 
-Technical guide on handling voice messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty). 
 
 Time spent on supporting Hotline can not be claimed as billable in ILC (or other systems) as we do not have any dedicated code. 
 
@@ -167,13 +166,13 @@ One of the aims of the hotline call is to get basic understanding of the inciden
 - What is the business impact of this incident?
 - Who owns and manages system within the scope of incident? 
  
-In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. It is highly recommended to schedule a Triage/Scoping call with the client and their technical team following the initial hotline call. 
+In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. In other situations, a person calling Hotline may have extensive technical knowledge and may push to immediately discuss details of the incident, converting discussion into "mini triage". In call those situations, on-call consultant should explain that a dedicated Triage and Scoping Call is necessary to proceed with engagement.  
 
 No case related information should be divulged to a caller just based upon the name the he/she claims. This is to prevent impersonation of clients by third parties such as journalists. Caller verification can be performed by calling the person back on a number held on record in Resilient or having them email from their corporate email address to confirm identity. 
 
 The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his X-Force IR Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
-- create and fill in a Resilient ticket marked with `Hotline` tag **(TO BE CLARIFIED)**,
-- notify Account Manager of this client that such request was submitted to the hotline and pushed back,
+- create and fill in a Resilient ticket marked with a correct tag representing requested activity,
+- notify Account Manager of this client that such request was submitted to the Hotline and pushed back,
 - provide Resilient ticket number to the Account Manager. 
 
 ### Processing Hotline Call  
@@ -186,22 +185,19 @@ One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-
 - support client’s team in evidence collection
 - prepare for delivery to team who will be taking over the incident. 
 
-The following steps should be performed after the Initial call has completed.
+The following steps must be performed after the Initial call has completed.
 1.	Log an incident ticket in Resilient. 
-	- Section [Logging-Requirements-for-New-IR-Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
+	- Section [Logging Requirements for New IR Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
 	- Every genuine hotline call must be recorded in Resilient, including those where it is ultimately determined that X-Force IR support is not required. In such cases, the ticket can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in the Resilient.
-2.	~~Locate the client in Resilient and verify whether the caller is listed as an authorized ‘Incident Declarer’, i.e. one of the nominated individuals who are authorized  to engage X-Force IR on behalf of the client.~~
-	- ~~If the caller is not an incident declarer, the triage call may proceed but inform them X-Force IR will need to written permission of an incident declarer to officially engage X-Force IR.~~ 
-3.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography.
+2.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography.
 	- If incident will be handled by currently on call team, notify everyone using `ir-triage-scoping-ic` Slack channel.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
-4.	**Notify Delivery Leads? (TO BE DISCUSSED)**
-5.	Organize Triage/Scoping call following process documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping,md). 
+3.	Organize Triage/Scoping call following process documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping,md). 
 
-On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, X-Force IR is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to organize Triage call, before incident is handed over.
+On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, X-Force IR is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to ensure that whoever performs a Triage call, SLA is met.
 
-If needed, a dedicated Slack channel `ir-triage-scoping-ic` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are 
+If needed, a dedicated Slack channel `ir-triage-scoping-ic` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are available on [Triage and Scoping page](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping,md).
 
 ### Shift Turnover
 The `ir-hotline` Slack channel is used for communicating with the previous and next shift rotation personnel about action items that the next shift needs to be aware of and to facilitate turnover of cross-regional Hotline or Triage calls which require further actions. At the end of every shift, the `Primary` on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `ir-hotline` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `ir-hotline` about every Hotline call, allowing to trace back recent activity. 
