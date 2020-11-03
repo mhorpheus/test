@@ -86,14 +86,14 @@ DRAFT:
 	- triage some systems, and define steps based on findings to avoid full blown forensics.
 	- review what we have proposed against customer expectations, maybe Client wants to update their expectations/objectives for us.
 	- provide initial/containment recommendation which client can start immediately working on, while we set up our environment
-5. Predefined (can be written as a "script") statement on next steps, what Clients needs to do (eg. Incident Declarer needs to ACK the T&S Summary Note mail
+5. Predefined (can be written as a "script") statement on next steps, what Clients needs to do (eg. Incident Declarer needs to ACK the T&S Summary Note mail, etc.
 
 ## Responsibilities of a Triage Call Lead
 Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities are as follows:
 - leading Triage and Scoping Call,
 - taking notes or designating note taking person,
 - preparing [Triage and Scoping Call Summary Note](#Triage-and-Scoping-Call-Summary-Note)
-	- sending "Triage and Scoping Call Summary Note" to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient,
+	- sending "Triage and Scoping Call Summary Note" to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient. Point to respective guides from Resilient.
 - ensuring that incident details and Triage call outcome is recorded in Resilient:
 	- if there is no ticket, create a new one following guidelines from [Logging Requirements for New IR Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
 	- update Resilient ticket with additional details obtained during Triage and Scoping Call,
@@ -108,6 +108,7 @@ Sections to include in the Note (filled in with bullet points):
 - Client expectations and goals for X-Force IR
 - Information exchange points:
 - Next steps proposed by X-Force IR and who is their owner (but this is not detailed as action tracker)
+- Number of hours left from subscription and if in a close timeframe, when a roll over date is. Optionally how to engage or recommendation to engage into commercial discussion if there is not enough hours to cover incident or you predict that there may be not enough hours.
 - Approximation of number of hours needed.
 	- TODO: a clear (predefined) statement is needed to have proper working around the fact that this is 
 		- approximate value
@@ -122,6 +123,7 @@ This can be nicely templates, including all key statements, so just bullet point
 Depending on the Client answer, potential next steps are:
 1. Engaged - start Spin up process.
 2. Do not engage - upload evidence with Client decision to do not engage to Notes section in Resilient ticket and close ticket with "Not Engaged" resolution. 
+If there is no response for XXX hours, then send a follow up mail or make a call. TO BE DISCUSSED.
 
 ## Claiming
 X-Foce IR service is build in such a way, that anyone can request assistance, mainly by calling Hotline. Triage is offered free of charge irrespective of having subscription or not. It is not possible to provide claiming for all Triage participants. Only Triage Call Lead should claim 1 hour "not against subscription" in this Engagement ticket.
