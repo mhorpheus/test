@@ -1,13 +1,13 @@
 
-# IRIS Incident Response Technology Deployment Guide
-The purpose of this page is to document the IRIS Incident Response ticketing process for Technology Deployment.
+# XFIR Incident Response Technology Deployment Guide
+The purpose of this page is to document the XFIR Incident Response ticketing process for Technology Deployment.
 
 Depending on the situation you may need to leverage Endpoint Detection and Response (EDR) and/or Network Sensor technology in support of your Incident Response engagement. This guide serves as a reference point for that process.
 
-The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Technology Deployment process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+The following documentation is a guideline for XFIR consultants for the XFIR Incident Response Technology Deployment process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/Home.md)).
 
 ## EDR Technology @ IBM
-IBM will always attempt to provide an environment that is "Vendor Agnostic". Having said that IRIS will likely always have to rely, to some degree, on external vendors for various technology solutions. Our partnership agreements with these EDR vendors allow us to use the technology free of charge for up to 60 days.
+IBM will always attempt to provide an environment that is "Vendor Agnostic". Having said that XFIR will likely always have to rely, to some degree, on external vendors for various technology solutions. Our partnership agreements with these EDR vendors allow us to use the technology free of charge for up to 60 days.
 
 It is imperative that you set the expectations surrounding this timeframe with the client at the beginning of an engagement where this technology will be incorporated. The client will not have access to this technology after that 60 day time period has expired unless an agreement to use the technology through follow-on services or licensing of the technology itself has been established.
 
@@ -49,18 +49,18 @@ The following table lists some of the capabilities and how they compare between 
 
 ## Requesting EDR Technology
 
-Once a decision has been made on the EDR/Technology solution, you will need to put in an official request to our vendor partner for a new EDR/Technology instance. This process is pretty straight forward but is slightly different depending on the vendor. Also please review the overall technology request documentation [here](https://github.ibm.com/IRIS-NA/DFIR-wiki-ci-stager/blob/master/Requesting-Tech.md).
+Once a decision has been made on the EDR/Technology solution, you will need to put in an official request to our vendor partner for a new EDR/Technology instance. This process is pretty straight forward but is slightly different depending on the vendor. Also please review the overall technology request documentation [here](https://github.ibm.com/XFIR/DFIR-wiki-ci-stager/blob/master/Requesting-Tech.md).
 
 Use the following table to identify the appropriate vendor request process for your chosen solution.
 
 | Vendor | Platform | On-Prem/Cloud | Process |
 |--|--|--|--|
-| Carbon Black | Response (CbR) | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Carbon-Black-Response-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
-| Carbon Black | Defense (CbD) | Cloud Only | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Carbon-Black-Response-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
-| Carbon Black | Predictive Security Cloud (PSC) | Cloud Only | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Carbon-Black-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
-| CrowdStrike | Falcon EDR | Cloud Only | Follow the request directions [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Crowdstrike-Infrastructure-Request-Form)  |
-| Fidelis | Endpoint | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Fidelis-Infrastructure-Request-Form) and email the request form to ibm-ta-mss@fidelissecurity.com |
-| Fidelis | Network | Both | Fill out the request form [here](https://github.ibm.com/IRIS-NA/ATA/wiki/Fidelis-Infrastructure-Request-Form) and email the request form to ibm-ta-mss@fidelissecurity.com	 |
+| Carbon Black | Response (CbR) | Both | Fill out the request form [here](https://github.ibm.com/XFIR/ATA/wiki/Carbon-Black-Response-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
+| Carbon Black | Defense (CbD) | Cloud Only | Fill out the request form [here](https://github.ibm.com/XFIR/ATA/wiki/Carbon-Black-Response-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
+| Carbon Black | Predictive Security Cloud (PSC) | Cloud Only | Fill out the request form [here](https://github.ibm.com/XFIR/ATA/wiki/Carbon-Black-Infrastructure-Request-Form) and email the request form to CB-PartnerSolutions@vmware.com  |
+| CrowdStrike | Falcon EDR | Cloud Only | Follow the request directions [here](https://github.ibm.com/XFIR/ATA/wiki/Crowdstrike-Infrastructure-Request-Form)  |
+| Fidelis | Endpoint | Both | Fill out the request form [here](https://github.ibm.com/XFIR/ATA/wiki/Fidelis-Infrastructure-Request-Form) and email the request form to ibm-ta-mss@fidelissecurity.com |
+| Fidelis | Network | Both | Fill out the request form [here](https://github.ibm.com/XFIR/ATA/wiki/Fidelis-Infrastructure-Request-Form) and email the request form to ibm-ta-mss@fidelissecurity.com	 |
 
 ## Deployment Checklist
 
@@ -74,4 +74,4 @@ Reference the following checklist for pre-deployment procedures:
  4. Ask the client for a list of operating systems in their environment paying special attention to versions of Linux/Unix as the endpoint agents for these operating systems are often specific to the version and distribution flavor of those systems.
  5. Setup a box folder with the agent installers, user guides and whitelisting documentation for the EDR tool in questions and share that folder with the client.
 
-Check the ATA Documentation folder on the wiki [here](https://github.ibm.com/IRIS-NA/ATA/tree/master/ATA%20Documentation) for individual EDR user guides and whitelisting documentation details.
+Check the ATA Documentation folder on the wiki [here](https://github.ibm.com/XFIR/ATA/tree/master/ATA%20Documentation) for individual EDR user guides and whitelisting documentation details.

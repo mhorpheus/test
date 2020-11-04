@@ -19,7 +19,7 @@ The purpose of this page is to document the X-Force IR ticketing process. X-Forc
 
 Once X-Force IR has been engaged for Incident Response services regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created.
 
-The following documentation is a guideline for X-Force IR consultants for the X-Force IR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+The following documentation is a guideline for X-Force IR consultants for the X-Force IR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/Home.md)).
 
 X-Force IR Resilient instance is located here: https://xforce-iris.resilientsystems.com. Use w3 IBM Intranet credentials to log in.
 
@@ -42,18 +42,18 @@ Following fields must be populated while logging New IR Engagement (this means t
 		- Hotline quick notes: provide description of incident based on information from person calling hotline.
 	- Expectations: Fill in what client is asking for (eg. on-site, remote, IR, only forensics, what are the investigation goals, etc).
 - Members tab:
-	- Owner/Account manager: on call person receiving the call. The incident is owned by this person, unless it is handed over to someone else from same or other geography. This should not be Account Manager (IRIS consultant assigned to this customer).
+	- Owner/Account manager: on call person receiving the call. The incident is owned by this person, unless it is handed over to someone else from same or other geography. This should not be Account Manager (XFIR consultant assigned to this customer).
 	- Members/Engagement Leads: 
 		- Add Account Manager person for this particular Client to ensure that he/she is informed about new engagement. 
-			- In EMEA all Clients have "Owner / Account Manager" set to Neil Jones, who is IRIS EMEA Ops Manager. The Account Manager who should be added to every new incident ticket is listed as "Members / Engagement Leads" in Resilient Client ticket. 
+			- In EMEA all Clients have "Owner / Account Manager" set to Neil Jones, who is XFIR EMEA Ops Manager. The Account Manager who should be added to every new incident ticket is listed as "Members / Engagement Leads" in Resilient Client ticket. 
 
 Fill in remaining fields depending on availability of information.
 
 ## Tracking Subscriptions Hours Usage
 Subscription hours usage is summarized in the master Client entry ticket. Navigating to the "Subscription Details" tab, one can obtain all necessary details: number of annual subscription hours, subscription roll-over date and number of subscription hours remaining in a current subscription year.
-![Details on subscription hours usage in the client master ticket](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_tracking_subscription_hours_usage.png)
+![Details on subscription hours usage in the client master ticket](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_tracking_subscription_hours_usage.png)
 However, details of the hours usage related to particular engagement are tracked in this engagement ticket - at the bottom of the "Engagement Details" tab, there is a section "Hours Utilized" where hours usage should be filled in.
-![Tracking hours usage of single engagement](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_tracking_hours_usage_in_engagement.png)
+![Tracking hours usage of single engagement](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_tracking_hours_usage_in_engagement.png)
 Fill in hours usage according to below requirements:
 - always provide full name of the person who billed hours,
 - always used the same format of your name, so avoid variations,
@@ -81,7 +81,7 @@ This process is responsible to create an IR Engagement ticket, which then should
  7. "Name" under "Notes" is automatically populated to just enter some random value.
 
 Example:
-![Creating new IR Engagement in Resilient](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_New_IR_Engagement.png)
+![Creating new IR Engagement in Resilient](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_New_IR_Engagement.png)
 
 All other fields needs to be populated after ticket is created.
 
@@ -103,13 +103,13 @@ Most of the time you will be updating an existing Resilient Hotline Triage ticke
 
 1. Identify the Resilient Hotline Triage ticket assigned to the current project.
 
-![RESHOT](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline.png)
+![RESHOT](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline.png)
  
 2. On the `Engagement Details` tab of the Hotline Triage ticket click the `Edit` button.
 
 3. Add the `IR` tag to the `Engagement Type` field.
 
-![IRTAG](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline02.png)
+![IRTAG](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline02.png)
 
 4. Add additional details to the description regarding the engagement goals.
 5. Add a Note on the `Notes` tab with more details regarding the type of IR and initial response actions required by the client

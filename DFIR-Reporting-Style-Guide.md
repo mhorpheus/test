@@ -2,10 +2,10 @@
 
 
 ## Active Voice & Past Tense
-IRIS IR and Forensic reports should be written in active voice and past tense. Learning to consistently write in active voice and past tense takes time and effort, but leads to reports that are easier to read, are more accurate, and sound more confident. 
+XFIR IR and Forensic reports should be written in active voice and past tense. Learning to consistently write in active voice and past tense takes time and effort, but leads to reports that are easier to read, are more accurate, and sound more confident. 
 
 ### Active Voice
-Active voice should be used in IRIS IR and Forensic documentation whenever possible. 
+Active voice should be used in XFIR IR and Forensic documentation whenever possible. 
 
 Using active voice in your writing means that the subject of the sentence comes first and performs the action that the rest of the sentence describes. This is the most straightforward way to present your ideas, because it creates a clear image in the reader's mind of who is doing what. This makes your writing much easier to understand, which is why good writers prefer the active voice.
 
@@ -108,12 +108,12 @@ Dates in tables and figures should be modified ISO 8601 e.g.:
 2019-01-06 13:45:12 - 14:12:21 UTC
 2019-01-06 13:45:12 - 2019-01-19 01:01:01 UTC
 ```
-## References to IBM X-Force IRIS
-The team will be referenced once in full within the executive summary of a report and once in full in the body of the report, thereafter it should be referred to as IRIS. On both occasions where referenced in full the IRIS replacement should be introduced. e.g.:
+## References to IBM X-Force XFIR
+The team will be referenced once in full within the executive summary of a report and once in full in the body of the report, thereafter it should be referred to as XFIR. On both occasions where referenced in full the XFIR replacement should be introduced. e.g.:
 
->ACME Co. engaged IBM X-Force Incident Response and Intelligence Services Team ('IRIS')to investigate a suspected network intrusion into the `ACME.NET` domain. During the course of the engagement IRIS did a jolly good job.
+>ACME Co. engaged IBM X-Force Incident Response and Intelligence Services Team ('XFIR')to investigate a suspected network intrusion into the `ACME.NET` domain. During the course of the engagement XFIR did a jolly good job.
 
->IRIS examined the Windows event logs associated with the compromised host 'ACMEDC001' and identified the following: ...”
+>XFIR examined the Windows event logs associated with the compromised host 'ACMEDC001' and identified the following: ...”
 
 
 ## Common Words and Phrases

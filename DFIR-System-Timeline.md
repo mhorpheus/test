@@ -3,13 +3,13 @@
 
 
 
-# IRIS System Timeline 
+# XFIR System Timeline 
 
-The IRIS System Timeline is used to document findings identified on systems of interest during the course of IRIS investigations. The IRIS System Timeline contains six (6) tabs that are used to record findings, the contents of processed artifacts, and information that may be useful during timeline review. 
+The XFIR System Timeline is used to document findings identified on systems of interest during the course of XFIR investigations. The XFIR System Timeline contains six (6) tabs that are used to record findings, the contents of processed artifacts, and information that may be useful during timeline review. 
 
-The current IRIS System Timeline is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
+The current XFIR System Timeline is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
 
-The current tabs in the IRIS System Timeline are:
+The current tabs in the XFIR System Timeline are:
 
  1. System Timeline - Timeline of events of interest, see below for more details
  2. Malware - Details for malware or attacker tools/utilities identified on the system
@@ -22,7 +22,7 @@ Each of the tabs will be elaborated upon in the sections below.
 *Note: Additional Tabs can be created when needed for evidence that does not match the current Tabs*
 
 ## System Timeline Tab
-The System Timeline tab is the most critical component of the IRIS System Timeline and is used to document all findings. During the course of an IRIS investigation, each of the System Timeline tabs of complete system timelines are incorporated into a master timeline that is stored in the Engagement Tracking Sheet (ETS). Since each timeline is added to the master timeline in the ETS upon completion, it is very important that data is entered into the System Timeline tab in a consistent manner. 
+The System Timeline tab is the most critical component of the XFIR System Timeline and is used to document all findings. During the course of an XFIR investigation, each of the System Timeline tabs of complete system timelines are incorporated into a master timeline that is stored in the Engagement Tracking Sheet (ETS). Since each timeline is added to the master timeline in the ETS upon completion, it is very important that data is entered into the System Timeline tab in a consistent manner. 
 
 The System Timeline tab consists of the following columns:
 
@@ -84,7 +84,7 @@ If dealing with NTFS file system, regular `MACB` timestamps will be treated as \
 `MACB` Source Types can also correspond to artifacts such as INDX allocation record entries that record file system events, such as files being Modified, Born (created), etc. 
 
  ##### Timeline Entry Source Types
-The following section details various IRIS System Timeline Source Types for Windows, Linux, and macOS. 
+The following section details various XFIR System Timeline Source Types for Windows, Linux, and macOS. 
 
 **Note: File System Source Types**: If there are multiple file system events (events derived from \$MFT or similar) associated with a single timestamp, they can be included in a single entry, such as `MACB` , `.A.B`, `MA..`, etc. 
 

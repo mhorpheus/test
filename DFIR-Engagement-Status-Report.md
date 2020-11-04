@@ -1,9 +1,9 @@
-# IRIS Engagement Status Report
-The IRIS Engagement Status Report is a document that can be provided to a client periodically throughout an engagement to provide a high-level overview of the current status of the engagement. 
+# XFIR Engagement Status Report
+The XFIR Engagement Status Report is a document that can be provided to a client periodically throughout an engagement to provide a high-level overview of the current status of the engagement. 
 
-The current IRIS Engagement Status Report is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
+The current XFIR Engagement Status Report is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
 
-The IRIS Engagement Status Report contains the following sections:
+The XFIR Engagement Status Report contains the following sections:
 
  - Summary of Findings
  - Open Items
@@ -22,7 +22,7 @@ Be accurate and specific in the Summary of Findings sections, but don't overwhel
 
 **Example of Summary of Findings:**
 
-IBM IRIS performed forensic analysis of the disk image associated with the ACME host “CNZEP001” and determined the following:
+IBM XFIR performed forensic analysis of the disk image associated with the ACME host “CNZEP001” and determined the following:
 
 •**The earliest confirmed evidence of compromise occurred on September 08, 2018 at 10:26:26 UTC**
 
@@ -57,7 +57,7 @@ The Open Items/Issues section is used to track open action items and issues. Ent
 Guiding questions:
  - What items are needed from the customer or some other external source?  
  - What issues exist that are slowing or preventing progress on the project? 
- - What items does IRIS owe the client?
+ - What items does XFIR owe the client?
 
 ## Issues
 The Issues section is used to issues that are slowing down the investigation or preventing aspects of the investigation altogether . Entries in Issues section should be removed from subsequent ESRs if they have been completed. 
@@ -70,7 +70,7 @@ Guiding questions:
 ## Billable Hours
 The Billable Hours section of the ESR contains an editable chart that allows for the `Hours Used` and `Hours Remaining` values to be updated to reflect the current status of the engagement. 
 
-The Billable Hours chart should include hours for all consultants supporting the incident, including hours for IRIS Threat Research, Malware Reverse Engineering, etc. 
+The Billable Hours chart should include hours for all consultants supporting the incident, including hours for XFIR Threat Research, Malware Reverse Engineering, etc. 
 
 ## Activities Completed Since Last Update
 
@@ -79,9 +79,9 @@ The “Activities Completed Since Last Update” section should include a table 
 Each Engagement Status Report (ESR) is for the period going back to the last update and does not cover the entire engagement.
 
 Examples of entries for Activities Completed Since Last Update:
- - IRIS & ACME Co. personnel deployed Carbon Black Response agents to 5,000 systems in the `ACME.NET` domain.
- - IRIS personnel created a disk image for the compromised web server "ACMEWEB001"
- - IRIS completed the forensic analysis of the `ACME.NET` Domain Controller "ACMEDC01"
+ - XFIR & ACME Co. personnel deployed Carbon Black Response agents to 5,000 systems in the `ACME.NET` domain.
+ - XFIR personnel created a disk image for the compromised web server "ACMEWEB001"
+ - XFIR completed the forensic analysis of the `ACME.NET` Domain Controller "ACMEDC01"
 
 ## Planned Activities
 What activities are planned for the near future? Remove items from this list when they are completed.

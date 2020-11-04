@@ -1,11 +1,11 @@
 # Engagement Tracking Sheet
-The IRIS Engagement Tracking Sheet is a document used to centralize and organize data relevant to an incident. The ETS is meant to be updated primarily by the Engagement Lead, but others members of the incident are allowed to update the ETS as requested or needed. 
+The XFIR Engagement Tracking Sheet is a document used to centralize and organize data relevant to an incident. The ETS is meant to be updated primarily by the Engagement Lead, but others members of the incident are allowed to update the ETS as requested or needed. 
 
 **Note**: It is important to ensure the ETS isn't being edited by multiple people at the same time. It is best practice to lock the ETS in Box while it is being edited to ensure data entered into the ETS isn't lost in the event multiple people are working on the ETS concurrently. Box's Excel Online option can be used to allow for multiple people to contribute to the ETS concurrently, but the Excel Online feature is not as robust as the actual MS Excel application and is best used for small entries or edits. 
 
-The current IRIS Engagement Tracking Sheet (ETS) is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
+The current XFIR Engagement Tracking Sheet (ETS) is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
 
-The current tabs in the IRIS ETS are:
+The current tabs in the XFIR ETS are:
 
  - TL;DR 
  - Timeline
@@ -50,26 +50,26 @@ The TL;DR contains the following data points:
 
 ## Timeline
 
-The Timeline section of the ETS functions as a master timeline of all identified activity. The format follows the IRIS System Timeline exactly and is meant to be a location to centralize all completed IRIS System Timelines. Data outside of what was recorded in IRIS System Timelines can be added to the Timeline tab, such as firewall log entries, EDR real-time events, etc. 
+The Timeline section of the ETS functions as a master timeline of all identified activity. The format follows the XFIR System Timeline exactly and is meant to be a location to centralize all completed XFIR System Timelines. Data outside of what was recorded in XFIR System Timelines can be added to the Timeline tab, such as firewall log entries, EDR real-time events, etc. 
 
-IRIS System Timelines should only be added to the ETS's Timeline tab by the Engagement Lead (or whoever the EL appoints to do so). Additionally, IRIS System Timelines should only be added to the ETS Timeline **after** they have been peer-reviewed and finalized. 
+XFIR System Timelines should only be added to the ETS's Timeline tab by the Engagement Lead (or whoever the EL appoints to do so). Additionally, XFIR System Timelines should only be added to the ETS Timeline **after** they have been peer-reviewed and finalized. 
 
-If data of interest is identified on a system whose timeline has been finalized, it is important to not only update the IRIS System Timeline for the system in question, but to also update the ETS Timeline with the new entries. 
+If data of interest is identified on a system whose timeline has been finalized, it is important to not only update the XFIR System Timeline for the system in question, but to also update the ETS Timeline with the new entries. 
 
 **Note**: It is best practice to add events to the ETS as they are identified to prevent having to play catch-up. For example, if you identify malicious activity in Carbon Black Response, make sure to add the events to the ETS Timeline tab as soon as you can - otherwise valuable data may be forgotten about or may time-out of of the EDR console. Additionally, keeping the Timeline tab accurate and up-to-date can provide a better datasource to understand what activity has been identified to-date. 
 
 ## To-Dos & Action Items
 
-The To-Dos & Action Items is a tab of the ETS used to keep track of IRIS and client requests, the responsible parties, and the status of the requests. It is common for multiple requests and action items to be established during an incident and tracking the requests and the status of the requests is critical to preventing things from falling through the cracks and being forgotten about. 
+The To-Dos & Action Items is a tab of the ETS used to keep track of XFIR and client requests, the responsible parties, and the status of the requests. It is common for multiple requests and action items to be established during an incident and tracking the requests and the status of the requests is critical to preventing things from falling through the cracks and being forgotten about. 
 
 Common items track include:
 
- - IRIS requests for logs, disk images, or other data relevant to an investigation
- - Client requests for IRIS to investigate or review particular systems or issues
- - IRIS recommendations for the client to take containment or remediation measures
+ - XFIR requests for logs, disk images, or other data relevant to an investigation
+ - Client requests for XFIR to investigate or review particular systems or issues
+ - XFIR recommendations for the client to take containment or remediation measures
 
 ## Evidence Tags
-The Evidence Tags tab is used to keep track of data relevant to disk images and other data collected or provided to IRIS. 
+The Evidence Tags tab is used to keep track of data relevant to disk images and other data collected or provided to XFIR. 
 
 The Evidence Tags tab contains the following columns:
 
@@ -142,20 +142,20 @@ The Compromised Accounts tab contains the following columns:
 	 - Compromised, Suspected Compromised, or False Positive
  - Earliest Evidence of Compromise
  -  Reason 
-	 - What does IRIS believe the account to be compromised?
+	 - What does XFIR believe the account to be compromised?
 	 - Ex. Installed malicious service on domain controller "SVADDC03"
  - Evidence
-	 - What evidence does IRIS have to support why we believe the account to be compromised?
+	 - What evidence does XFIR have to support why we believe the account to be compromised?
  - Account Used by Attacker?
 	 - Did the attacker leverage the compromised account or was it just compromised during mass credential harvesting or something along those lines?
  - Reported to Client?
-	 - Did IRIS report the compromised account to the client?
+	 - Did XFIR report the compromised account to the client?
  - Credentials
 	 - Record the credentials of the compromised account, if identified
 
 
 ## Malware
-The Malware tab is used to record data relevant to malicious software and/or utilities IRIS identified associated with the incident. 
+The Malware tab is used to record data relevant to malicious software and/or utilities XFIR identified associated with the incident. 
 
 The Malware tab includes the following columns:
 
@@ -165,7 +165,7 @@ The Malware tab includes the following columns:
  - Status
 	 - Malicious, Suspicious, False Positive
  - System(s)
-	 - Which system(s) did IRIS identify the malware on?
+	 - Which system(s) did XFIR identify the malware on?
  - FIle Name
 	 - Base file name of malware
 	 - Ex. `Mimikatz.exe`

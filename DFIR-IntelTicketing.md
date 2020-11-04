@@ -1,11 +1,11 @@
 
-# IRIS Incident Response Intel Analysis Ticketing Process
+# XFIR Incident Response Intel Analysis Ticketing Process
 
-The purpose of this page is to document the IRIS Incident Response ticketing process for Intel support.
+The purpose of this page is to document the XFIR Incident Response ticketing process for Intel support.
 
 During an Incident Response engagement as the need for various Intel services or support arises, you will need to create a ticket for those support services including Malware Analysis, DarkWeb Analysis, Engagement Support, etc.
 
-The following documentation is a guideline for IRIS consultants for the IRIS Incident Response Intel ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+The following documentation is a guideline for XFIR consultants for the XFIR Incident Response Intel ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/Home.md)).
 
  - [**Intel Support**](#intel-support)  
  - [**Intel Ticketing in Resilient**](#intel-ticketing-in-resilient) 
@@ -14,7 +14,7 @@ The following documentation is a guideline for IRIS consultants for the IRIS Inc
  - [**Creating a Malware Analysis Ticket**](#creating-a-malware-analysis-ticket)
 
 ## Intel Support
-Intel supports IRIS during our engagements through various services IRIS consultants can leverage including dedicated intel analyst support for IR engagements, malware reverse engineering, dark web analysis, and more. 
+Intel supports XFIR during our engagements through various services XFIR consultants can leverage including dedicated intel analyst support for IR engagements, malware reverse engineering, dark web analysis, and more. 
 
 Intel uses Jira for their ticketing process and to engage intel a Jira ticket must be created for that support. The good news is that most of that can be completed through the Resilient ticket for your IR engagement. 
 
@@ -23,7 +23,7 @@ In some scenarios you might need to provide additional details or update a ticke
 ## Intel Ticketing in Resilient
 The most common method for engaging Intel for direct support on your IR engagement is to create an Intel ticket within Resilient. If you are creating the IR engagement ticket as well, there is an option for creating an Intel ticket and automatically associating that ticket with your IR ticket.
 
-If there is already a `Hotline Triage` ticket and the client has engaged IRIS for IR services. After you have updated the Resilient ticket with the `IR` tag and provided additional details surrounding the engagement, you can create a separate Intel ticket and correlate that with your IR engagement.
+If there is already a `Hotline Triage` ticket and the client has engaged XFIR for IR services. After you have updated the Resilient ticket with the `IR` tag and provided additional details surrounding the engagement, you can create a separate Intel ticket and correlate that with your IR engagement.
 
 Both of these scenarios are documented in the following sections.
 
@@ -33,31 +33,31 @@ In the case where you want to create an IR ticket and an Intel ticket at the sam
 
 Click the `Create` button at the top of the main Resilient page.
 
-![IRTAG](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
+![IRTAG](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
 
 2. In the `Ticket Type` field select `Engagement Project`.
 
-![IRTYPE](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline04.png)
+![IRTYPE](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline04.png)
 
 3. In the `Region` field select the appropriate region that correlates with the client's region.
 
-![IRREGION](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
+![IRREGION](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
 
 4. In the `Client` field type or select the client entry associated with the respective client.
 
-![IRCLIENT](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline06.png)
+![IRCLIENT](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline06.png)
 
-5. In the `Engagement Type` field select `IR` and then add a description for the IR that includes how IRIS was engaged and the goals of the engagement.
+5. In the `Engagement Type` field select `IR` and then add a description for the IR that includes how XFIR was engaged and the goals of the engagement.
 
-![IRTYPE](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline07.png)
+![IRTYPE](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline07.png)
 
 6. In the `Request Intel Support` field select `Yes`. All engagements of the type `IR` require an initial Intel Ticket for engagement support. This helps Intel facilitate the correlation of other tickets that might be required for an IR such as (Malware, DarkWeb Analysis, etc).
 
-![IRINTEL](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline08.png)
+![IRINTEL](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline08.png)
 
 Once you have completed filling out these fields click `Next` to create the ticket. A corresponding Intel ticket will be created and associated with your Resilient IR ticket.
 
-![IRINTEL](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel01.png)
+![IRINTEL](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel01.png)
 
 This step is important as any additional Intel tickets created for an engagement will be associated in Jira with the initial Intel support ticket that is created. This helps Intel keep track of relationships between different tickets.
 
@@ -67,19 +67,19 @@ In the case where an IR engagement ticket has already been created or you need t
 
 1. Click the `Create` button at the top of the main Resilient page.
 
-![Create](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
+![Create](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
 
 2. In the `Ticket Type` field select `INTEL Ticket`.
 
-![Type](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel02.png)
+![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel02.png)
 
 3. In the `Region` field select the appropriate region that correlates with the client's region.
 
-![IRREGION](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
+![IRREGION](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
 
 4. In the `Type of Intel Support` field select the appropriate Intel ticket type.
 
-![Type](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel03.png)
+![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel03.png)
 
 Currently the options are:
 
@@ -91,7 +91,7 @@ If this is the first Intel ticket that will be associated with your IR engagemen
 
 5. In the `Related Resilient Engagement` field type the Resilient ticket ID for your IR engagement. (`IR19-3818` for example). And provide a brief but detailed description in the `Description` field.
 
-![Description](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel04.png)
+![Description](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel04.png)
 
 6. In the `(Intel) Type of Engagement` field select `IR - Incident Response` as this documentation is for the IR Intel ticketing process and you are creating an initial `Engagement Work` ticket for your IR engagement.
 
@@ -99,7 +99,7 @@ Fill out the `Client` detail field and provide a more detailed description in th
 
 Finally, fill out the `(Intel) Engagement Data URL` with the URL for the Engagement Box folder.
 
-![TypeClientDetails](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel05.png)
+![TypeClientDetails](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel05.png)
 
 Repeat this process if there is already an engagement work ticket for your IR (All engagements of the type `IR` are required to have an Intel `Engagement Work` ticket) and you need to create a ticket for malware analysis, dark web analysis, etc. On the backend in Jira, Intel will be able to correlate those additional requests for their tracking purposes.
 
@@ -109,25 +109,25 @@ In the case where an you need to create a Malware Analysis Intel ticket please u
 
 1. Click the `Create` button at the top of the main Resilient page.
 
-![Create](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
+![Create](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
 
 2. In the `Ticket Type` field select `INTEL Ticket`.
 
-![Type](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel02.png)
+![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel02.png)
 
 3. In the `Region` field select the appropriate region that correlates with the client's region.
 
-![IRREGION](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
+![IRREGION](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
 
 4. In the `Type of Intel Support` field select `Malware Analysis`. In the `Related Resilient Engagement` field enter the Resilient Ticket ID for your IR engagement (`IR19-3818` for example).
 
 Enter a brief but detailed description in the `Description` field.
 
-![Type](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel06.png)
+![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel06.png)
 
 5. In the `Work ID` field input the ILC bill code for your project, select the analysis level in the `(Intel) Level of Malware Analysis` field and provide any additional details you have for the sample (MD5, Sandbox URL, Maximum number of hours to consume, Due Date, and Engagement Box URL)
 
-![Type](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel07.png)
+![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel07.png)
 
 For the `(Intel) Level of Malware Analysis` field please use the detailed descriptions for each level outlined below:
 
@@ -141,10 +141,10 @@ For the `(Intel) Level of Malware Analysis` field please use the detailed descri
 
 If you return to the main Resilient Engagement Ticket that you created the Malware Analysis ticket in support of, you will see the new ticket in the `Related Tickets and Clients` section of the Engagement Ticket. 
 
-![RelatedTickets](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel09.png)
+![RelatedTickets](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel09.png)
 
 7. Select your newly created Intel ticket and add sample(s) on the `Attachements` tab.
 
-![Attachments](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR/Resilient_Intel08.png)
+![Attachments](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel08.png)
 
 If you need to add additional samples at a later time, you can always add additional attachments to this tab and the corresponding Jira ticket will be updated. This also works for the `Notes` tab. If you need to provide additional details surrounding the malware you can create a note in the `Notes` tab and that information will be updated on the Intel Jira ticket.

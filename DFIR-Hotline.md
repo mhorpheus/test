@@ -28,12 +28,12 @@ X-Force IR maintains several hotline numbers in different geographies - they are
 
 Hotline numbers are publicly available in the Internet. Additionally, non-subscription Clients can call the hotline and request assistance in "Ad-hoc" approach. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
 
-The following documentation is a guideline for X-Force IR consultants for X-Force IR Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/Home)).
+The following documentation is a guideline for X-Force IR consultants for X-Force IR Hotline procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/wiki/Home)).
 
 ### Regional Numbers
 X-Force IR operates several hotline numbers in multiple countries. In the past X-Force IR geographies operated independently, working on their own with different local telecommunication providers. With introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), Hotline operation for all regions except Japan, have been integrated and now lead to the same on-call person. 
 
-Please use the following tables to identify individual regional/country hotline numbers. The list is also available in the form of PDF [Leaflet](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) to be shared with a Client.
+Please use the following tables to identify individual regional/country hotline numbers. The list is also available in the form of PDF [Leaflet](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/DFIR/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) to be shared with a Client.
 
 #### World Wide Number
 - (+1) 312 212 8034
@@ -106,7 +106,7 @@ Shift distribution among participating Geographies is presented in the table bel
 | | | MT | 09:00-17:00 | 08:00-16:00 |
 | | | PST | 08:00-16:00 | 07:00-15:00 |
 
-The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty system (https://ibm.pagerduty.com/). Details documentation on how Hotline is operated by PD, how to use PD for handling calls together with usefull usage hints are documented on [PagerDuty](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty) page.
+The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty system (https://ibm.pagerduty.com/). Details documentation on how Hotline is operated by PD, how to use PD for handling calls together with usefull usage hints are documented on [PagerDuty](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-PagerDuty) page.
 
 Shifts are allocated on a weekly basis - each cycle starts on Monday morning. Every new cycle is started by APAC team on Sunday 23:00 UTC. Each Geography is responsible on its own for ensuring that two on-call people are available to cover the assigned shift and are properly scheduled within call routing system. 
 
@@ -115,7 +115,7 @@ Shift assignment is done automatically by PagerDuty based on the Round Robin alg
 ## Hotline Operations
 Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person. If this person is not available or don't pick up a call within 60 seconds, PagerDuty will redirect a call to a Secondary on call person. To provide additional fail-safe, in the event that neither of them is available to pick up a call, there is an option to leave voicemail.
 
-Every member of X-Force IR who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty#newcomer-on-boarding).
+Every member of X-Force IR who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-PagerDuty#newcomer-on-boarding).
 
 A number of X-Force IR Clients maintain a close business relationship with X-Force IR Consultants they already have worked with or who are their Account Managers. They tend to request X-Force IR assistance reaching out to this person, instead of calling Hotline. In such a case, X-Force IR Consultant should kindly push back on such a request and ask Client to follow official process and call X-Force IR Hotline. 
 
@@ -124,7 +124,7 @@ Both Primary and Secondary people on call are responsible for following activiti
 - Picking up all Hotline calls.
 - Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person.
 	- If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
-	- Technical guide on handling voice messages left in Pager Duty is available [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-PagerDuty). 
+	- Technical guide on handling voice messages left in Pager Duty is available [here](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-PagerDuty). 
 - Logging all hotline calls in Resilient.
 - Organizing Triage and Scoping call for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
 - Performing a shift hand over with a following geography according to process described in [Shift Turnover](#Shift-Turnover).
@@ -157,7 +157,7 @@ It is essential to request contact details listed above at the beginning of the 
 | Region | Main address | Additional aliases |
 | -- | -- | -- |
 | APAC | xfiris@au1.ibm.com |
-| EMEA | emea_ers@uk.ibm.com |XFORCE_IRIS_EU@uk.ibm.com, XFORCE_IRIS_MEA@uk.ibm.com |
+| EMEA | emea_ers@uk.ibm.com |XFORCE_XFIR_EU@uk.ibm.com, XFORCE_XFIR_MEA@uk.ibm.com |
 | NA | ?? |
 
 One of the aims of the hotline call is to get basic understanding of the incident client is dealing with. It is hard to define strict list of questions which should be answered by a caller, especially if this person is non technical. On-call person should use common sense and experience to gather necessary data. Some example questions which can be asked are: 
@@ -187,17 +187,17 @@ One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-
 
 The following steps must be performed after the Initial call has completed.
 1.	Log an incident ticket in Resilient. 
-	- Section [Logging Requirements for New IR Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
+	- Section [Logging Requirements for New IR Engagements](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
 	- Every genuine hotline call must be recorded in Resilient, including those where it is ultimately determined that X-Force IR support is not required. In such cases, the ticket can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in the Resilient.
 2.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography.
 	- If incident will be handled by currently on call team, notify everyone using `ir-triage-scoping-ic` Slack channel.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
-3.	Organize Triage/Scoping call following process documented separately [here](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping,md). 
+3.	Organize Triage/Scoping call following process documented separately [here](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Triage-Scoping,md). 
 
 On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, X-Force IR is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to ensure that whoever performs a Triage call, SLA is met.
 
-If needed, a dedicated Slack channel `ir-triage-scoping-ic` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are available on [Triage and Scoping page](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Triage-Scoping,md).
+If needed, a dedicated Slack channel `ir-triage-scoping-ic` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are available on [Triage and Scoping page](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Triage-Scoping,md).
 
 ### Shift Turnover
 The `ir-hotline` Slack channel is used for communicating with the previous and next shift rotation personnel about action items that the next shift needs to be aware of and to facilitate turnover of cross-regional Hotline or Triage calls which require further actions. At the end of every shift, the `Primary` on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `ir-hotline` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `ir-hotline` about every Hotline call, allowing to trace back recent activity. 
@@ -258,7 +258,7 @@ During initial discussion with a Client representative when received a Hotline c
 - present proposed approach
 It should be clearly explained, that if Client decides to engage X-Force IR to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. X-Force IR will not proceed with any work beyond Triage call without signed contract. 
 
-On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by Sales team. Dedicated [process](https://github.ibm.com/IRIS-NA/DFIR-wiki/edit/master/DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
+On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by Sales team. Dedicated [process](https://github.ibm.com/XFIR/DFIR-wiki/edit/master/DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
 
 ## CSIRT
 THIS SECTION CONTAINS CONTENT MOVED FROM OLD DOCUMENT - TO BE REVIEWED

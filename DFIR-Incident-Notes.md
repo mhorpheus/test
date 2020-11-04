@@ -7,7 +7,7 @@ The Incident Notes document is used to keep track of the following types of data
 
  - Relevant information provided to or by the client
  - Meeting notes/minutes
- - IRIS and client requests and the corresponding timestamps
-	 - **Note**: The ETS has the "To-Dos & Action Items" tab to officially track IRIS/Client requests and actions. 
+ - XFIR and client requests and the corresponding timestamps
+	 - **Note**: The ETS has the "To-Dos & Action Items" tab to officially track XFIR/Client requests and actions. 
  - High value events or findings
  - Recording identified recommendations

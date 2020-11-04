@@ -1,6 +1,6 @@
 
 
-# IRIS Global Triage and Scoping Call Procedures
+# XFIR Global Triage and Scoping Call Procedures
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@
  5. [**Ad-hoc Assistance Request**](#Ad-hoc-Assistance-Request)
 
 ## Introduction
-The purpose of this page is to document the IRIS Triage and Scoping Call procedure. The following documentation is a guideline for IRIS consultants for IRIS Triage and Scoping call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/IRIS-NA/DFIR-wiki/blob/master/Home.md)).
+The purpose of this page is to document the XFIR Triage and Scoping Call procedure. The following documentation is a guideline for XFIR consultants for XFIR Triage and Scoping call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/Home.md)).
 
 A dedicated Triage and Scoping Call must be conducted for each assistance request received by X-Force IR. The intention of such a call is:
 - get necessary understanding of the incident Client is facing,
@@ -95,7 +95,7 @@ Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities ar
 - preparing [Triage and Scoping Call Summary Note](#Triage-and-Scoping-Call-Summary-Note)
 	- sending "Triage and Scoping Call Summary Note" to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient. Point to respective guides from Resilient.
 - ensuring that incident details and Triage call outcome is recorded in Resilient:
-	- if there is no ticket, create a new one following guidelines from [Logging Requirements for New IR Engagements](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
+	- if there is no ticket, create a new one following guidelines from [Logging Requirements for New IR Engagements](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
 	- update Resilient ticket with additional details obtained during Triage and Scoping Call,
 	- paste "Triage and Scoping Call Summary Note" which was sent to a Client to a Notes section in Resilient
 
@@ -145,19 +145,19 @@ Adhoc requests that come in from the team or clients.
 ### General Triage and Scoping Guidelines
 To best help the client with their requests, a Team-Lead, Manager, or senior member of the team should be present on the call to help answer questions about our services and how they can be used. Additionally, having a senior member of the team available is important for properly scoping the incident and mapping that to our availability.
 
-In general try to keep the Triage/Scoping call staffed with minimum required IRIS team members needed as to not overwhelm the client or tie up too many resources from the IRIS side. 
+In general try to keep the Triage/Scoping call staffed with minimum required XFIR team members needed as to not overwhelm the client or tie up too many resources from the XFIR side. 
 
  - Required outputs from Triage/Scoping calls:
 	 - Update Resilient Triage Worksheet
 	 - Update Resilient Notes
-	 - Did the client engage IRIS?
-		- **Yes**	>> Begin the [IR Spin-Up Process](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-SpinUp)
-		- **No**	>> Follow the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient) for closing the ticket
+	 - Did the client engage XFIR?
+		- **Yes**	>> Begin the [IR Spin-Up Process](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-SpinUp)
+		- **No**	>> Follow the [Resilient Ticketing Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Resilient) for closing the ticket
 	- Client Follow up
 	
-During the Triage/Scoping call, the IRIS team participating should identify someone to take detailed notes. It is also highly recommended to fill out the Resilient Hotline Triage Worksheet during the call while the details are fresh. If the client is engaging IRIS for incident response services, an IRIS member can begin the [IR Spin-Up Process](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-SpinUp). 
+During the Triage/Scoping call, the XFIR team participating should identify someone to take detailed notes. It is also highly recommended to fill out the Resilient Hotline Triage Worksheet during the call while the details are fresh. If the client is engaging XFIR for incident response services, an XFIR member can begin the [IR Spin-Up Process](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-SpinUp). 
 
-Regardless of the engagement status, at the conclusion of the Triage/Scoping call the Resilient ticket needs to be updated with the relevant engagement information, or the Hotline Triage Ticket should be closed. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient) for more information.
+Regardless of the engagement status, at the conclusion of the Triage/Scoping call the Resilient ticket needs to be updated with the relevant engagement information, or the Hotline Triage Ticket should be closed. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Resilient) for more information.
 
 ### Conducting Triage and Scoping Calls
 While conducting the Triage/Scoping call keep in mind the client's point of view. They could be experiencing their worst day and tensions could be high. It is important to get the facts and as much detail as possible. Identify someone to run the call and someone to take notes. It is also good practice to fill out the Triage Worksheet on the Resilient ticket during the call. 
@@ -173,14 +173,14 @@ Some things to consider:
  - Who will be the client POCs for the engagement?
  - It is recommended to establish a regular cadence for status updates
 
-Take all of the relevant information and provide options for next steps. If the goals of the engagement are well defined and agreed upon, inform the client that IRIS will follow up in an email with a summary of the engagement goals and the agreed upon next steps. This will give the IRIS team involved time to properly estimate the number of hours required and the availability of resources. 
+Take all of the relevant information and provide options for next steps. If the goals of the engagement are well defined and agreed upon, inform the client that XFIR will follow up in an email with a summary of the engagement goals and the agreed upon next steps. This will give the XFIR team involved time to properly estimate the number of hours required and the availability of resources. 
 
 ## Post Triage and Scoping Procedures
-Following the Triage/Scoping call, there are some follow up activities that should be handled as soon as possible. If the client decided not to engage us, the Resilient ticket, Triage worksheet, and Notes should be filled out and the Hotline Triage ticket should be closed. The notes should include as much detail as possible about the client and the incident in the case that they decided to call us back or engage us at a later time. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-Resilient) for more information on closing tickets.
+Following the Triage/Scoping call, there are some follow up activities that should be handled as soon as possible. If the client decided not to engage us, the Resilient ticket, Triage worksheet, and Notes should be filled out and the Hotline Triage ticket should be closed. The notes should include as much detail as possible about the client and the incident in the case that they decided to call us back or engage us at a later time. Please see the [Resilient Ticketing Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Resilient) for more information on closing tickets.
 
-If the client has decided to engage IRIS for incident response services, it is the responsibility of the Team-Lead/Manager who was present on the Triage/Scoping call to work with other Leads/Managers  properly estimate the required number of hours IRIS will need to support the engagement. As well as identifying the available IRIS members who can support the engagement regionally as well as globally if needed.
+If the client has decided to engage XFIR for incident response services, it is the responsibility of the Team-Lead/Manager who was present on the Triage/Scoping call to work with other Leads/Managers  properly estimate the required number of hours XFIR will need to support the engagement. As well as identifying the available XFIR members who can support the engagement regionally as well as globally if needed.
 
-Once the resources have been aligned and the estimated hours are determined, the IRIS team member who ran the Triage/Scoping call will follow up with the client and provide the following:
+Once the resources have been aligned and the estimated hours are determined, the XFIR team member who ran the Triage/Scoping call will follow up with the client and provide the following:
 
  - Summary of the Triage/Scoping call
  - Engagement goals as defined during the Triage/Scoping call
@@ -191,4 +191,4 @@ Once the resources have been aligned and the estimated hours are determined, the
 
 *Note: If the client is AdHoc work with leadership to get the Statement of Work (SOW) process initiated once the client has agreed to the estimated hours.*
 
-Once the client has agreed in writing (usually via email reply), the Engagement Lead or other IRIS stakeholder can begin the [IR Spin-Up Process](https://github.ibm.com/IRIS-NA/DFIR-wiki/wiki/DFIR-SpinUp). Once IRIS has staffed the engagement the `Owner/Manager` and `Engagement Leads/Members` can be edited to reflect the assigned resources.
+Once the client has agreed in writing (usually via email reply), the Engagement Lead or other XFIR stakeholder can begin the [IR Spin-Up Process](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-SpinUp). Once XFIR has staffed the engagement the `Owner/Manager` and `Engagement Leads/Members` can be edited to reflect the assigned resources.
