@@ -7,10 +7,10 @@
  1. [**Introduction**](#Introduction)
  2. [**Organizing a Triage and Scoping Call**](#Organizing-a-Triage-and-Scoping-Call)
 	- [X-Force IR Representatives](#X-Force-IR-Representatives)
-3. [**Phases of a Triage and Scoping Call**](#Phases-of-a-Triage-and-Scoping-Call)
-4. [**Responsibilities of a Triage Call Lead**](#Responsibilities-of-a-Triage-Call-Lead)
-5. [**Triage and Scoping Call Summary Note**](#Triage-and-Scoping-Call-Summary-Note)
-6. [**Claiming**](#Claiming)
+3. [**Responsibilities of a Triage Call Lead**](#Responsibilities-of-a-Triage-Call-Lead)
+4. [**Phases of a Triage and Scoping Call**](#Phases-of-a-Triage-and-Scoping-Call)
+6. [**Triage and Scoping Call Summary Note**](#Triage-and-Scoping-Call-Summary-Note)
+7. [**Claiming**](#Claiming)
  5. [**Ad-hoc Assistance Request**](#Ad-hoc-Assistance-Request)
 
 ## Introduction
@@ -48,7 +48,7 @@ If a Triage and Scoping Call originates from a Hotline Call, then on-call person
 2. set up a call, by sending meeting invite to necessary participants,
 3. initiate a Call:
 	- open teleconference bridge and join the call,
-	- provide a quick summary of a current X-Force IR understanding of a case,
+	- provide a quick summary of a current XFIR understanding of a case,
 	- introduce X-Force IR members present on the call, clearly marking who would be leading the call.
 The intention of this approach, is to ensure continuity of the contact with a Client, however on-call person is not responsible for running a Triage and Scoping Call. This means, that after completing actions listed above, on-call person is not required to participate further in the call and can drop off, unless has been assigned any of the roles described in the Section [Roles of Participants](#Roles-of-Participants).
 
@@ -71,23 +71,6 @@ Identification of individuals to represent necessary roles during Triage and Sco
 2. `ir-triage-scoping` Slack channel can be used to query for volunteers willing to support Triage and Scoping Call as well as SMEs if necessary
 3. In absence of volunteers, anyone from Leads team (Team Leads, Functional Leads or Geography Leads) should be contacted to help to designate people supporting Triage and Scoping Call.
 
-## Phases of a Triage and Scoping Call
-TO BE POPULATED
-DRAFT:
-1. Introduction of participants
-2. Discovery phase
-	- Client provides incident description - identify most important topics, such as: number of systems impacted, etc. Define those things
-	- open floor for questions to ensure proper understanding of an incident and collect more details
-3. Identify customer needs/expectations/objectives. What we need to perform a successful delivery.
-	- what they want from us: IR or only Forencis, on-site or remote, 8x5 or 24/7
-4. Provide our approach/solution to address customer problem.
-	- eg. full blown forensics
-	- deploy EDR
-	- triage some systems, and define steps based on findings to avoid full blown forensics.
-	- review what we have proposed against customer expectations, maybe Client wants to update their expectations/objectives for us.
-	- provide initial/containment recommendation which client can start immediately working on, while we set up our environment
-5. Predefined (can be written as a "script") statement on next steps, what Clients needs to do (eg. Incident Declarer needs to ACK the T&S Summary Note mail, etc.
-
 ## Responsibilities of a Triage Call Lead
 Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities are as follows:
 - leading Triage and Scoping Call,
@@ -101,12 +84,43 @@ Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities ar
 
 It is important to note, that every triage call MUST be fully documented in the Resilient, regardless final decision whether X-Force IR was engaged or not. 
 
+## Phases of a Triage and Scoping Call
+To address Triage and Scoping goals listed in the [Introduction](#Introduction), a call has been dived into several phases. Below points should be treated as a **script** for running a Call:
+1. Introduction:
+	1. if necessary perform hand over from on-call person to a Triage Call Lead if necessary. 
+	2. introduce XFIR participants
+	3. ask Client to introduce his team together with their roles
+	4. if XFIR was engaged over the Hotline, on-call person provides a quick summary of a current XFIR understanding of a case
+2. Discovery:
+	- Client provides incident description - identify most important topics, such as: 
+		- how it was detected,
+		- number, type, role of systems impacted: servers, endpoints, windows, Linux, web servers, domain controllers, etc.
+		- number and type of accounts compromised: workstation user, local admin, domain/enterprise admin, root, etc.
+		- business impact,
+ 		- what kind of artifacts were already found,
+		- containment and remediation steps already performed.
+	- Open floor for a questions from XFIR Consultants so they can get better understanding of the incident.
+3. Identification of Client's objectives and expectations: 
+	- what is needed to perform a successful delivery,
+	- what type of task Client has for XFIR: full IR, dead box Forensic, logs analysis, etc
+	- what is expected in terms of XFIR availability: on-site or remote, 8x5, 8x7 or 24/7, etc.
+4. Presentation of XFIR solution:
+	- what we can offer to address Client goals and expectations,
+	- discuss available solutions, eg. full blown forensics, triage systems, deploying EDR, search for candidates for full forensics
+	- take into account business constraints from Client, as most probably they want to back in operations as soon as possible - try to propose solution addressing this demand as well as providing necessary level of security assurance,
+	- provide initial/containment recommendation which Client can start immediately working on, while XFIR set up working environment,
+	-  if applicable, XFIR Consultants can propose changes to a Client approach and expectations, explaining what would be the benefits
+	- review approach proposed by XFIR against Client expectations, maybe Client wants to update their expectations/objectives for XFIR - agree on next steps.
+5. Closing statements:
+	- Simply read following statement: *Thank you very much for participant in this Triage and Scoping Call. After this call We/I will prepare a "Triage and Scoping Call Note".  It will be shared via mail with you, as well as your Incident Declarers listed in our database. The note will contain, in writing, most important outcomes of this Call, such as: incident summary, goals and expectations for X-Force IR, next steps agreed upon and approximation number of hours needed to deliver agreed tasks. To proceed further an Incident Declarer from your side MUST respond to this mail and state that he/she agrees with a content of the note and authorities our team to start work described as in the mail. Without such approval in writing, NO further investigative actions will be performed by our team.*
+
+
 ## Triage and Scoping Call Summary Note
 (DRAFT)
 Sections to include in the Note (filled in with bullet points):
 - X-Force IR understanding of the case
 - Client expectations and goals for X-Force IR
-- Information exchange points:
+- Information exchange points
 - Next steps proposed by X-Force IR and who is their owner (but this is not detailed as action tracker)
 - Number of hours left from subscription and if in a close timeframe, when a roll over date is. Optionally how to engage or recommendation to engage into commercial discussion if there is not enough hours to cover incident or you predict that there may be not enough hours.
 - Approximation of number of hours needed.

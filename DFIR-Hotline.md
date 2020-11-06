@@ -17,7 +17,6 @@
 	- [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident)
 	- [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography)
 4. **[Ad-hoc IR Requests](#Ad-hoc-IR-Requests)**
-5. **[CSIRT](#CSIRT)**
 
 ## Hotline
 ### Introduction
@@ -259,54 +258,3 @@ During initial discussion with a Client representative when received a Hotline c
 It should be clearly explained, that if Client decides to engage X-Force IR to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. X-Force IR will not proceed with any work beyond Triage call without signed contract. 
 
 On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by Sales team. Dedicated [process](https://github.ibm.com/XFIR/DFIR-wiki/edit/master/DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
-
-## CSIRT
-THIS SECTION CONTAINS CONTENT MOVED FROM OLD DOCUMENT - TO BE REVIEWED
-### IBM CSIRT notification
-When the X-Force IR team is actively working or is notified of an incident involving IBM-owned or managed systems, it is required that notification be given to the IBM CSIRT team. This direction has been given by the IBM CIO’s office and is required when X-Force IR becomes involved in an incident that may cause significant impact to IBM business in either operational, financial, client relationship, or reputation form.
-
-A cybersecurity incident that is within scope of IBM CSIRT response and involvement is:
-
-An incident where an IBM managed asset and/or IBM managed client data and/or an IBM employee/contractor/vendor is involved or at the heart of a cybersecurity allegation or cybersecurity incident. A cybersecurity incident or cybersecurity allegation could involve an IBM Commercial Client (Target, Sony, American Express, BNSF, etc.) or an IBM Internal client (Sametime, w3, Lotus Notes, etc.) 
-
-Other types of incidents where IBM CSIRT should be notified:
-- Loss or compromise of IBM intellectual property
-- Loss or compromise of IBM employee personal information (PI)
-- Loss or compromise of client information
-- Loss or compromise of IBM Confidential information that is technical or scientific in nature
-- Loss or compromise of personal productivity device (laptop, smartphone, etc.) or other media type (hard drive, USB, flash memory, tape) and contains data about IBM business and/or employees or information relating to IBM's clients
-- Suspected or confirmed penetration of an IBM system
-- Compromised IBM system
-- IBM Web application defacement is in progress or has occurred
-- Unauthorized access to an IBM system
-- Suspicious IT activity on an IBM system
-
-Examples of incidents requiring notification to CSIRT include:
-- GTS Strategic Outsourcing (SO) team supporting client Y has a system found to contain unknown malware and the system is owned by the client but managed by IBM.
-- A client calls X-Force IR to report an incident involving an IBM-owned and managed system containing client data which has been found to have unknown account creations and other suspicious activity.
-
-If any of the conditions is true, such incident should be handed over to IBM CSIRT. Handover process is defined in Section “CSIRT Engagement”.
-
-### IBM CSIRT Notification Process
-When it has been determined that an active X-Force IR incident, or notification of an incident, meets the requirements listed in the previous section, X-Force IR will notify the IBM CSIRT team (numbers below). NOTE: If an incident involves an IBM SO account, notify the SO DPE/PE first that you will be making contact with the ICC to eliminate confusion about the role of CSIRT.
-
-X-Force IR will make notification to the Incident Contact Center (ICC).
-- Incident Contact Center: 1-877-842-8642
-- International Toll Number: 1-506-646-4222
-- VRU option to Call Center for North America: 1-888-426-4357
-- Tie-Line: 696-4222
-
-X-Force IR will ensure the appropriate case details are shared with IBM CSIRT, at the time of notification, and discuss whether IBM CSIRT involvement is required. 
-
-NOTE: In the case of an incident involving other IBM entities such as SO, MSS or others, X-Force IR should notify them, in the absence of the client, of the need to involve the IBM CSIRT team and why.
-
-### IBM CSIRT Involvment
-If IBM CSIRT involvement in an incident is required, the X-Force IR Engagement Lead and IBM CSIRT lead should discuss the best way to proceed with the investigation.  For example, in the case of an SO incident, this should involve a call with the account DPE, X-Force IR engagement lead, and IBM CSIRT lead to discuss the best way to work the case with the client and ensure continued progress towards resolution. 
-
-When the IBM CSIRT team is involved, incidents can be worked in one of three ways depending on what is best for the client and IBM’s interests.
-- IBM CSIRT may transition to leading the investigation and continuing the forensics and other tasks with the IBM internal team.  In this case, IBM CSIRT will excuse IBM X-Force IR from the investigation, take over communications and status, and provide necessary resources to complete the investigation. 
-- X-Force IR will continue to lead and work the investigation as normal, however, they will provide regular communication to the IBM CSIRT team on investigation progress and findings to ensure appropriate legal involvement and protection of IBM’s interests as required.
-- X-Force IR and IBM CSIRT will work jointly with resources conducting investigative tasks and regular status flowing through a designated focal point to the IBM team and client.  This focal point will be an engagement lead from X-Force IR or IBM CSIRT as determined appropriate for the security incident.
-
-### Authority
-When CSIRT is involved, X-Force IR still represents the interests of the X-Force IR subscription / ad-hoc client. While X-Force IR and CSIRT will likely collaborate on the response, any and all incident response work should be approved by the X-Force IR client. Should the incident response work not be approved by the client and has been requested by CSIRT, CSIRT will be responsible for absorbing the cost of the analysis (Note: have written approval from CSIRT prior to performing any analysis where CSIRT will incur charges).
