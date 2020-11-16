@@ -1,6 +1,6 @@
 
 
-# X-Force IR Resilient Ticketing Process
+# XFIR Resilient Ticketing Process
 
 ## Table of Contents
 1. **[Introduction](#Introduction)**
@@ -8,20 +8,19 @@
 3. **[Tracking Subscriptions Hours Usage](#Tracking-Subscriptions-Hours-Usage)**
 4. **[Tutorials](#Tutorials)**
 	- [Creating New Engagement Ticket](#Creating-New-Engagement-Ticket)
-	- [Creating New Client Ticket](#Creating-New-Client-Ticket)
-	- [Checking Number of Remaining Subscription Hours](#Checking-Number-of-Remaining-Subscription-Hours)
+	- [Finding Details of Incident Declarers](#Finding-Details-of-Incident-Declarers)
 
 ## Introduction
-The purpose of this page is to document the X-Force IR ticketing process. X-Force IR uses customized Resilient instance to:
+The purpose of this page is to document the XFIR ticketing process. XFIR uses customized Resilient instance to:
 - track Client entries containing different types of contact points,
 - track Client subscription details, including number of remaining subscription hours,
 - track every single engagement.
 
-Once X-Force IR has been engaged for Incident Response services regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created.
+Once XFIR has been engaged for Incident Response services regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created.
 
-The following documentation is a guideline for X-Force IR consultants for the X-Force IR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
+The following documentation is a guideline for XFIR consultants for the XFIR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
 
-X-Force IR Resilient instance is located here: https://xforce-iris.resilientsystems.com. Use w3 IBM Intranet credentials to log in.
+XFIR Resilient instance is located here: https://xforce-iris.resilientsystems.com. Use w3 IBM Intranet credentials to log in.
 
 ## Logging Requirements for New IR Engagements
 Following fields must be populated while logging New IR Engagement (this means that some fields needs editing after Resilient ticket was created):
@@ -51,14 +50,17 @@ Fill in remaining fields depending on availability of information.
 
 ## Tracking Subscriptions Hours Usage
 Subscription hours usage is summarized in the master Client entry ticket. Navigating to the "Subscription Details" tab, one can obtain all necessary details: number of annual subscription hours, subscription roll-over date and number of subscription hours remaining in a current subscription year.
-![Details on subscription hours usage in the client master ticket](Resilient_tracking_subscription_hours_usage.png)
+![Details on subscription hours usage in the client master ticket](DFIR/Resilient_tracking_subscription_hours_usage.png)
 However, details of the hours usage related to particular engagement are tracked in this engagement ticket - at the bottom of the "Engagement Details" tab, there is a section "Hours Utilized" where hours usage should be filled in.
 ![Tracking hours usage of single engagement](DFIR/Resilient_tracking_hours_usage_in_engagement.png)
 Fill in hours usage according to below requirements:
 - always provide full name of the person who billed hours,
 - always used the same format of your name, so avoid variations,
 - pick up "Item" value to describe type of activity,
-- use "Subscription" from "Hours Type" by default,
+- define "Hours Type" value to ensure that value is properly counted, options are:
+	- "Subscription" - for billable hours covering XFIR work consuming subscription hours pool, eg. analysis, Incident Response, report writing, etc.
+	- "PCR" - for billable hours covering XFIR work, but not consuming subscription hours pool due to various reasons - most often because the pool is already empty. In most of the cases represents a pool of additional hours purchased by customer to cover time over what was available in VR.
+	- "Non-subscription" - for other billable hours, which do not consume subscription hours pool, eg. time spent on triage. More details on how to claim triage time are available [here](DFIR-Triage-Scoping.md#Claiming).
 - enter hours in a daily breakdown,
 - hours usage should be consistent with what was entered into Claim systems
 - add "Quick note" if necessary.
@@ -85,35 +87,10 @@ Example:
 
 All other fields needs to be populated after ticket is created.
 
-### Creating New Client Ticket
+### Finding Details of Incident Declarers
+Each Client entry should contain contacts points designated as Incident Declarers during onboarding process. However, in the past there were situations when there were no Incident Declarers or listed ones have already left the organisation. It is not possible to provide a clearly defined guidelines for such a case and you should use a common sense to determine who should be reached from list of contact points. Some recommendations on searching suitable contact points:
+- IR/Security management on a Client side,
+- on IBM Account side: Project Executive (PE), Delivery Project Executive (DPE) or their variations having Security in the name (Security PE, Security DPE) - they should be able to provide necessary contact from a Client side to ensure necessary approvals,
+- Account Manager (term used in EMEA) or Delivery Lead (term in NA) may be able to provide necessary contact points.
 
-### Checking Number of Remaining Subscription Hours
-
-## DRAFT SECTION
-
-
-
-### IR Ticketing in Resilient
-
-
-
-### Updating a Ticket
-
-Most of the time you will be updating an existing Resilient Hotline Triage ticket after the client has engaged us to perform incident response services. 
-
-1. Identify the Resilient Hotline Triage ticket assigned to the current project.
-
-![RESHOT](DFIR/Resilient_Hotline.png)
- 
-2. On the `Engagement Details` tab of the Hotline Triage ticket click the `Edit` button.
-
-3. Add the `IR` tag to the `Engagement Type` field.
-
-![IRTAG](DFIR/Resilient_Hotline02.png)
-
-4. Add additional details to the description regarding the engagement goals.
-5. Add a Note on the `Notes` tab with more details regarding the type of IR and initial response actions required by the client
-
-Be detailed in your descriptions and notes. Are we going to be deploying technology? If so, what type of tech? How many endpoints? Be specific when defining the goals established between X-Force IR and the client on the Triage call.
-
-
+All points of contacts are listed in the main Client entry - scroll down main page of Client entry (Designated by "Client Details" in the horizontal menu) to "Contact" and "Points of contact" section containing table. Person who has Incident Declarer role assigned by a Client will have a "Incident Declarer" tag in the "Type" column. 
