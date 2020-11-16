@@ -15,7 +15,7 @@
 	 - [Checking Who Is Currently On-call](#Checking-Who-Is-Currently-On-call)
 
 ## Introduction
-XFIR Hotline numbers are maintained by three main regions: EMEA, North America and APAC. Japan operates and maintains Hotline infrastructure independently, therefore all topics discussed on this page are not applicable to Japan. PagerDuty (PD), introduced into XFIR operations in 2018, is an application that facilitates the management of on-call rotations for those three main geographies. 
+XFIR Hotline numbers are maintained by three main regions: EMEA, North America and APAC. Japan operates and maintains Hotline infrastructure independently, therefore all topics discussed on this page are not applicable to Japan. PagerDuty (PD), introduced into XFIR operations in 2018, is an application that facilitates the management of on-call rotations for those three main geographies.
 
 PagerDuty administrators for XFIR teams are:
 
@@ -32,6 +32,8 @@ Few additional important information:
 * PagerDuty support inside IBM: pagerduty@us.ibm.com
 * Initial setup was built by Adam Smutnicki (adam.smutnicki@pl.ibm.com) from XFIR EMEA - shall you have any questions reach out to him. 
 * There is an official mobile (both iOS and Android) PD application and is it recommended to install it - helps handle Hotline calls when you're away from your computer.
+
+ The following documentation is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
 
 ## How Does it Work?
 ### Integration of Legacy Hotline Systems
