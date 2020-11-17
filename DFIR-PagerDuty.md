@@ -2,13 +2,13 @@
 
 ## Table of Contents
  1. [**Introduction**](#Introduction)
- 2. [**How Does it Work:**](#How-does-it-work)
+ 2. [**How Does it Work**](#How-does-it-work)
 	- [Integration of Legacy Hotline Systems](#Integration-of-Legacy-Hotline-Systems)
 	- [What Happens When a Call Reaches PagerDuty?](#What-Happens-When-a-Call-Reaches-PagerDuty)
 	- [Tracking Hotline Calls](#Tracking-Hotline-Calls)
 	- [Scheduling](#Scheduling)
  3. [**Newcomer On-boarding**](#Newcomer-on-boarding)
- 4. [**Tutorials:**](#tutorials)
+ 4. [**Tutorials**](#tutorials)
 	 - [Setting-up Your Environment for the First Time](#Setting-up-your-environment-for-the-first-time)
 	 - [Handling Voice Messages](#Handling-Voice-Messages)
 	 - [Using Calendar Feeds to Track On-call Schedule](#Using-Calendar-Feeds-to-Track-On-Call-Schedule)

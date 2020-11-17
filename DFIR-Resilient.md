@@ -6,7 +6,7 @@
 1. **[Introduction](#Introduction)**
 2. **[Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements)**
 3. **[Tracking Subscriptions Hours Usage](#Tracking-Subscriptions-Hours-Usage)**
-4. **[Tutorials:](#Tutorials)**
+4. **[Tutorials](#Tutorials)**
 	- [Creating New Engagement Ticket](#Creating-New-Engagement-Ticket)
 	- [Finding Details of Incident Declarers](#Finding-Details-of-Incident-Declarers)
 

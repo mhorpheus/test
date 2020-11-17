@@ -21,24 +21,24 @@
 ## Hotline
 ### Introduction
 
-The purpose of this page is to explain the XFIR Hotline operations model and document procedures. Content of this page should be presented to every new XFIR team member as a part of onboarding process and preparing him/her to support XFIR Hotline. This page is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to explain the XFIR Hotline operations model and document procedures. Content of this page should be presented to every new XFIR team member as a part of onboarding process, preparing him/her to support XFIR Hotline. This page is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
 
-XFIR maintains several hotline numbers in different geographies - they are used by Clients to declare an IT security incident and request XFIR assistance. Such call, denoted as "initial call" is used to gather basic understanding of an incident as well as client details so a Triage and Scoping call can proceed, resulting in an investigation being launched. XFIR uses a 24/7 available Follow the Sun Emergency Hotline. Using XFIR Hotline, Clients can reach a technical member of the XFIR team day or night if they are experiencing an incident. This is one of the main avenues our Clients use to engage XFIR and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming hotline calls.
+XFIR maintains several hotline numbers in different geographies - they are used by XFIR Clients to declare an IT security incident and request XFIR assistance. Hotline call (denoted sometimes as "initial call") is used to gather basic understanding of an incident as well as Client's details so a Triage and Scoping Call can proceed, resulting in an investigation being launched. Using XFIR Hotline available 24/7, Clients can reach XFIR Consultant during both day and night if they are experiencing an incident. This is one of the main avenues our Clients use to engage XFIR and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming Hotline calls.
 
 Hotline numbers are publicly available in the Internet. Additionally, non-subscription Clients can call the XFIR Hotline and request assistance in "Ad-hoc" approach. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
 
-Hotline Call handling should not me confused with a [Triage and Scoping Call](DFIR-Triage-Scoping.md), as each of them follows different process.
+Hotline Call handling should not me confused with a [Triage and Scoping Call](DFIR-Triage-Scoping.md), as each of them has different goals and follows different process.
 
 ### Regional Numbers
-XFIR operates several hotline numbers in multiple countries. In the past XFIR geographies operated independently, working on their own with different local telecommunication providers. With introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), Hotline operation for all regions except Japan, have been integrated and now lead to the same on-call person. 
+XFIR operates several Hotline numbers in multiple countries. In the past XFIR geographies operated independently, working on their own with different local telecommunication providers. Each geography was covering on their own full 24/7 period locally. With an introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), Hotline operation for all regions except Japan, have been integrated and unified and now lead to the same on-call person. 
 
-Please use the following tables to identify individual regional/country hotline numbers. The list is also available in the form of PDF [Leaflet](DFIR/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) to be shared with a Client.
+Below tables list regional/country Hotline numbers. The list is also available in the form of PDF [Leaflet](DFIR/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) which can shared with a existing or potential Client.
 
 #### World Wide Number
 - (+1) 312 212 8034
 ___
 #### Asia & Pacific (APAC)
-| Country/Region | Hotline Number |
+| Country | Hotline Number |
 |:--|:--|
 | Australia | (+61) 1800 637 539 |
 | India | (+91) 0008 000 401 045 |
@@ -51,7 +51,7 @@ ___
 | Thailand | (+66) 1800 011 806 |
 ___
 #### Europe, Middle East, & Africa (EMEA)
-| Country/Region | Hotline Number |
+| Country | Hotline Number |
 |:--|:--|
 | Denmark | (+45) 4331 4987 |
 | Finland | (+358) 972 522 099 |
@@ -63,13 +63,13 @@ ___
 | Norway | (+47) 23 024 798 |
 | Poland | (+48) 223 062 234 |
 | Portugal | (+351) 213 665 622 |
+| Saudi Arabia (Landline) | (+966) 800 844 3872 |
+| Saudi Arabia (Mobile) | (+966) 800 850 0399 |
 | Spain | (+34) 910 507 799 |
 | Sweden | (+46) 850 252 313 |
 | Switzerland | (+41) 227 614 228 |
 | United Kingdom | (+44) 203 684 4872 |
-| UAE | (+971)80 004 442 417 |
-| Saudi Arabia (Landline) | (+966) 800 844 3872 |
-| Saudi Arabia (Mobile) | (+966) 800 850 0399 |
+| UAE | (+971) 80 004 442 417 |
 ___
 
 #### United States & Canada (North America)
@@ -85,9 +85,9 @@ ___
 ## Follow the Sun for Incident Intake
 
 ### Concept description
-Three main regions maintain almost all Hotline numbers: Asia Pacific, EMEA and North America. To provide a unified, standardized approach and to avoid the need for XFIR team members to work outside business hours, a Follow the Sun model is employed. In this approach, 24 hours are divided into three 8-hour shifts. Each shift is allocated within business hours of the owning geography. All hotline calls from any of the three respective Geographies participating in Follow the Sun, are answered by the Geography currently on shift during those designated hours. This means, that call to any of the EMEA, North America or APAC number will reach out to the same person. 
+Three main regions maintain almost all Hotline numbers: APAC, EMEA and NA. To provide a unified, standardized approach and to avoid the need for XFIR team members to work outside business hours, a Follow the Sun model is employed. In this approach, 24 hours are divided into three 8-hour shifts. Each shift is allocated within business hours of the owning geography. All Hotline calls from any of the three respective Geographies participating in Follow the Sun, are answered by the Geography running a shift during those designated hours. This means, that call to any of the EMEA, North America or APAC number always will reach out to the same person at a given moment in time.
 
-South America do not have dedicated hotline numbers and use World Wide number, while their team do not participate in shifts. Japan operated independently and their hotline number will reach only team in Japan. 
+South America do not have dedicated Hotline numbers and use World Wide number, while their team do not participate in shifts. Japan operated independently and their Hotline number will reach only team in Japan. 
 
 This operations model **should not be mistaken** with **Follow the Sun Incident Response**, as it is only designed to provide 24/7 **Incident Intake**. The aim is to ensure that call is answered, registered and depending on the situation, initial XFIR support is initiated.
 
@@ -100,23 +100,23 @@ Shift distribution among participating Geographies is presented in the table bel
 | EMEA | 07:00-15:00 | UAE | 11:00-19:00 |11:00-19:00 |
 | | | EU – Central | 09:00-17:00 | 08:00-16:00 |
 | | | EU – UK | 08:00-16:00 | 07:00-15:00 |
-| North America | 15:00-23:00 | EA | 11:00-19:00 | 10:00-18:00 |
-| | | CT | 10:00-18:00 | 09:00-17:00 |
-| | | MT | 09:00-17:00 | 08:00-16:00 |
-| | | PST | 08:00-16:00 | 07:00-15:00 |
+| North America | 15:00-23:00 | Eastern | 11:00-19:00 | 10:00-18:00 |
+| | | Central | 10:00-18:00 | 09:00-17:00 |
+| | | Mountain | 09:00-17:00 | 08:00-16:00 |
+| | | Pacific | 08:00-16:00 | 07:00-15:00 |
 
-The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty system (https://ibm.pagerduty.com/). Details documentation on how Hotline is operated by PD, how to use PD for handling calls together with useful usage hints are documented on [PagerDuty](DFIR-PagerDuty.md) page.
+The Hotline rotation and call escalation paths for on call personnel on are maintained by PagerDuty (PD) system (https://ibm.pagerduty.com/). Details documentation on how Hotline is operated by PD, how to use PD for handling calls together with other useful usage hints are documented on a separate [PagerDuty](DFIR-PagerDuty.md) page.
 
-Shifts are allocated on a weekly basis - each cycle starts on Monday morning. Every new cycle is started by APAC team on Sunday 23:00 UTC. Each Geography is responsible on its own for ensuring that two on-call people are available to cover the assigned shift and are properly scheduled within call routing system. 
+Shifts are allocated on a weekly basis - each cycle starts on Monday morning. Every new cycle is started by APAC team on Sunday 23:00 UTC. Each Geography is responsible on its own to ensure that two on-call people are available to cover assigned shift and are properly scheduled within call routing system. 
 
-Shift assignment is done automatically by PagerDuty based on the Round Robin algorithm from a pool of people assigned to a shift. There is no process of building an on-call schedule according to everyone's preferences, as this would be too complex. For this reason, everyone is responsible themselves to check when they have been assigned a shift. If there is any collision with other activities, eg. Client travel, personal plans, holidays, etc. It's person responsibility to find someone to swap or raise a need for a backup to local geography lead. 
+Shift assignment is done automatically by PagerDuty based on the Round Robin algorithm from a pool of people assigned to a shift. There is no process of building an on-call schedule according to everyone's preferences, as this would be too complex. For this reason, everyone is responsible themselves to check when they have been assigned a shift. If there is any collision with other activities, eg. Client travel, personal plans, holidays, etc. it's person responsibility to find someone to swap or raise a need for a backup to manager or geography leads. 
 
 ## Hotline Operations
-Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a Primary on-call person. If this person is not available or don't pick up a call within 60 seconds, PagerDuty will redirect a call to a Secondary on call person. To provide additional fail-safe, in the event that neither of them is available to pick up a call, there is an option to leave voicemail.
+Hotline is supported by a primary and secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a primary on-call person. If this person is not available or don't pick up a call within 60 seconds, PagerDuty will redirect a call to a secondary on call person. To provide additional fail-safe, in the event that neither of them is available to pick up a call, there is an option to leave voicemail.
 
 Every member of XFIR who is tasked with Hotline duty is obliged to set up his mobile phone and PagerDuty profile according to instruction provided [here](DFIR-PagerDuty.md#newcomer-on-boarding).
 
-A number of XFIR Clients maintain a close business relationship with XFIR Consultants they already have worked with or who are their Account Managers. They tend to request XFIR assistance reaching out to this person, instead of calling Hotline. In such a case, XFIR Consultant should kindly push back on such a request and ask Client to follow official process and call XFIR Hotline. 
+A number of XFIR Clients maintain a close business relationship with XFIR Consultants they already have worked with or who are their designated primary contact points. They tend to request XFIR assistance reaching out to this person, instead of calling Hotline. In such a case, XFIR Consultant should kindly push back on such a request and ask Client to follow official process and call XFIR Hotline. 
 
 ### On-Call Person Responsibilities
 Both Primary and Secondary people on call are responsible for following activities during their shift:
