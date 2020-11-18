@@ -17,6 +17,7 @@
 	- [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident)
 	- [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography)
 4. **[Ad-hoc IR Requests](#Ad-hoc-IR-Requests)**
+5. **[IBM CSIRT](#IBM CSIRT)**
 
 ## Hotline
 ### Introduction
@@ -119,19 +120,19 @@ Every member of XFIR who is tasked with Hotline duty is obliged to set up his mo
 A number of XFIR Clients maintain a close business relationship with XFIR Consultants they already have worked with or who are their designated primary contact points. They tend to request XFIR assistance reaching out to this person, instead of calling Hotline. In such a case, XFIR Consultant should kindly push back on such a request and ask Client to follow official process and call XFIR Hotline. 
 
 ### On-Call Person Responsibilities
-Both Primary and Secondary people on call are responsible for following activities during their shift:
+Both Primary and Secondary person on call are responsible for following activities during their shift:
 - Picking up all Hotline calls.
-- Processing all voice messages for hotline calls which were not picked up by both Primary and Secondary on call person.
-	- If applicable, it's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
+- Processing all voice messages for Hotline calls which were not picked up by both Primary and Secondary on call person.
+	- It's on-call person responsibility to attempt to reach out to the caller and perform “Initial call” discussion.
 	- Technical guide on handling voice messages left in Pager Duty is available [here](DFIR-PagerDuty.md). 
-- Logging all hotline calls in Resilient.
-- Organizing Triage and Scoping call for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
+- Logging Hotline calls in Resilient (see details in [Processing Hotline Call](#Processing-Hotline-Call) section)
+- Organizing Triage and Scoping Call for all new incidents if they fall within time-frame of the current shift. If they fall outside current shift, they either need to be handed over to next geography or planned for a next business day if this was agreed with a Client. 
 - Performing a shift hand over with a following geography according to process described in [Shift Turnover](#Shift-Turnover).
 - If applicable, performing an incident hand over to a following geography according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 
-The main aim of the on-call person is be available to pick up and initiate XFIR response to all hotline calls. This means that on-call person:
+The main aim of the on-call person is be available to pick up and initiate XFIR response to all Hotline calls. This means that on-call person:
 - may be already working on other engagements, and even may not have availability to pick up any analysis,
-- is not automatically assigned to all new incoming incidents originating from hotline call,
+- is not automatically assigned to all new incoming incidents originating from Hotline call,
 - is not responsible for allocating people to the incident, as this should be done by Leadership/Management of each Geography,
 - is not responsible for leading the Triage and Scoping call, however is responsible for organising it.
 
@@ -140,16 +141,16 @@ Time spent on supporting Hotline can not be claimed as billable in ILC (or other
 ### Answering Hotline Call
 The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of XFIR and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
 
-Be professional, calm and courteous during all communications with clients in general. Often, the client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the client and it is our duty to help guide them as trusted advisors when they reach out to us.
+Be professional, calm and courteous during all communications with clients in general. Often, the Client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the Client and it is our duty to help guide them as trusted advisors when they reach out to us.
 
-There are no hard and fast rules to greeting the caller on an initial in-bound hotline call. However, it is recommended to start with "IBM XFIR Hotline, This is `<Consultant>` how may I help you". There are many reasons why clients call the hotline. At the very minimum the following information should be captured:
-- caller's contact details such as: name, title, phone, ~~email~~ (**SHALL WE ask for email? THIS IS ERROR PRONE FOR NON ENGLISH NATIONS)**, 
+There are no hard and fast rules to greeting the caller on an initial in-bound hotline call. However, it is recommended to start with "*IBM X-Force Incident Response Hotline, This is `<Consultant>` how may I help you*". There are many reasons why Clients call the hotline. At the very minimum the following information should be captured:
+- caller's contact details such as: name, title, phone; optinally email (spelling over the phone for non-native nations can be error prone), 
 - organization name (company name, if an IBMer is calling then who are they calling for?),
 - reason for call (get as much detail as possible),
-- identify appropriate next steps (Triage/Scoping Call, client needs more info, etc),
-	- if applicable, determine clients availability for a Triage/Scoping Call. 
+- identify appropriate next steps (Triage and Scoping Call, client needs more info, etc),
+	- if applicable, determine clients availability for a Triage and Scoping Call. 
 
-It is essential to request contact details listed above at the beginning of the call, to ensure that caller can be reached in case phone connection gets broken. Spelling personal IBM email addresses to non-native English speakers is error prone and often creates delays related to spelling errors. For this reason, every geography maintains simple group mail addresses, which should be easy to provide to a caller over the phone allowing to engage into written communication. 
+It is essential to request contact details listed above at the beginning of the call, to ensure that caller can be reached in case phone connection gets broken. Spelling personal IBM or Client email addresses to non-native English speakers is error prone and often creates delays related to spelling errors. For this reason, every geography maintains simple group mail addresses, which should be easy to spell and provide to a caller over the phone allowing to engage into written communication. 
 
 | Region | Main address | Additional aliases |
 | -- | -- | -- |
@@ -157,51 +158,53 @@ It is essential to request contact details listed above at the beginning of the 
 | EMEA | emea_ers@uk.ibm.com |XFORCE_XFIR_EU@uk.ibm.com, XFORCE_XFIR_MEA@uk.ibm.com |
 | NA | ?? |
 
-One of the aims of the hotline call is to get basic understanding of the incident client is dealing with. It is hard to define strict list of questions which should be answered by a caller, especially if this person is non technical. On-call person should use common sense and experience to gather necessary data. Some example questions which can be asked are: 
+One of the aims of the Hotline call is to get basic understanding of the incident, Client is dealing with. It is hard to define strict list of questions which should be answered by a caller, especially if this person is non technical. On-call person should use common sense and experience to gather necessary data. Some example questions which can be asked are: 
 - How incident was detected/discovered?
 - What is the scope of incident, eg. number and type of systems affected?
 - What is the business impact of this incident?
 - Who owns and manages system within the scope of incident? 
  
-In most cases, the initial hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the client needs. Often the person calling the hotline is not a technical resource and doesn't have all of the information required to make that decision. In other situations, a person calling Hotline may have extensive technical knowledge and may push to immediately discuss details of the incident, converting discussion into "mini triage". In call those situations, on-call consultant should explain that a dedicated Triage and Scoping Call is necessary to proceed with engagement.  
+In most cases, the initial Hotline call itself is not the appropriate venue for making recommendations about a service offering that aligns with what the Client needs. Often the person calling the Hotline is not a technical resource and doesn't have all of the information required to make that decision. In other situations, a person calling Hotline may have extensive technical knowledge and may push to immediately discuss details of the incident, converting discussion into "mini triage". In all those situations, on-call consultant should explain that a dedicated Triage and Scoping Call is necessary to proceed with engagement.  
 
 No case related information should be divulged to a caller just based upon the name the he/she claims. This is to prevent impersonation of clients by third parties such as journalists. Caller verification can be performed by calling the person back on a number held on record in Resilient or having them email from their corporate email address to confirm identity. 
 
-The aim of the hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is not an emergency, then on-call person should gently push back such request and recommend Client to reach out to his XFIR Account Manager - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
-- create and fill in a Resilient ticket marked with a correct tag representing requested activity,
+The aim of the Hotline and on-call team is to support IBM clients in emergency situation. Consultant speaking with a Client should use own common sense and experience to judge whether discussed case is indeed emergency. Example of non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is non-emergency, then on-call person should gently push back such a request and recommend Client to reach out to his XFIR Account Manager (aka Delivery Lead in NA) - case will be handled within regular business hours. In such a case, on-call person is still obliged to:
+- create and fill in a Resilient ticket marked with a correct tag representing requested activity, ensuring that at least contact details of the caller are documented,
 - notify Account Manager of this client that such request was submitted to the Hotline and pushed back,
 - provide Resilient ticket number to the Account Manager. 
 
 ### Processing Hotline Call  
-It is expected that initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the XFIR team, or should the caller be re-directed. For cases potentially within a scope of IBM CSIRT, see guidelines [below](#csirt). Should the call be a legitimate concern, even if the client is calling from outside of the responder’s responsible Geography, it is critical to ensure the engagement initiation process is commenced . 
+It is expected that initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the XFIR team, or should the caller be re-directed. For cases potentially within a scope of IBM CSIRT, see guidelines [below](#ibm-csirt). Should the call be a legitimate concern, even if the Client is calling from outside of the responder’s responsible Geography, it is critical to ensure the engagement initiation process is commenced. 
 
-One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake) is to ensure healthy work-private life balance. For this reason, if current on-call person determines that the incident must be handed over to another Geography, waking up another team should only happen if this is necessary. Guidelines on determination who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a client, until the Geography which should take over the incident becomes available. The cross geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) Even in GDPR constraint cases, the on-call person can provide significant support to a client without accessing data he may not be allowed to (eg. NA person on-call who received a call from EU client). Such activities can include, but are not limited to:
-- issue recommendations on containment
-- discuss what evidence should be collected
-- provide evidence collection manuals
-- support client’s team in evidence collection
-- prepare for delivery to team who will be taking over the incident. 
+One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake) is to ensure healthy work-private life balance. For this reason, if current on-call person determines that the incident must be handed over to another Geography, waking up another team should only happen if this is necessary. Guidelines on determination who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a Client, until the Geography which should take over the incident becomes available. The cross geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) Even in GDPR constraint cases, the on-call person can provide significant support to a Client without accessing data he may not be allowed to (eg. NA person on-call who received a call from EU Client). Such activities can include, but are not limited to:
+- issue recommendations on containment,
+- discuss what evidence should be collected,
+- provide evidence collection manuals,
+- support Client’s team in evidence collection,
+- prepare for evidence delivery to team who will be taking over the incident.
 
-The following steps must be performed after the Initial call has completed.
-1.	Log an incident ticket in Resilient. 
-	- Section [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be filled in creating incident ticket. Empty or incomplete tickets are not acceptable.
-	- Every genuine hotline call must be recorded in Resilient, including those where it is ultimately determined that XFIR support is not required. In such cases, the ticket can be closed immediately after the appropriate information has been completed. 
+The following steps must be performed after the Hotline call has been completed:
+1.	Log an incident ticket in Resilient:
+	- Section [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be populated while creating incident ticket. Empty or incomplete tickets are not acceptable.
+	- Every genuine Hotline call must be recorded in Resilient, including those where it is ultimately determined that XFIR support is not required. In such cases, the ticket must follow all documentation requirements as well as explanation why we are not engaged. It can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in the Resilient.
-2.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography.
+2.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography:
 	- If incident will be handled by currently on call team, notify everyone using `ir-triage-scoping` Slack channel.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
-3.	Organize Triage/Scoping call following process documented separately [here](DFIR-Triage-Scoping.md). 
+3.	Organize Triage and Scoping Call following process documented separately [here](DFIR-Triage-Scoping.md). 
 
-On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, XFIR is obliged to meet SLA for Triage call. This means, that current on-call person is still responsible to ensure that whoever performs a Triage call, SLA is met.
+On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, XFIR is obliged to meet Contractual SLA's for Triage and Scoping Call. This means, that current on-call person is still responsible to ensure that whoever performs a Triage call, appropriate SLA is met.
 
-If needed, a dedicated Slack channel `ir-triage-scoping` can be used for communicating with the broader team about new IR engagements and should be used for Triage/Scoping call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are available on [Triage and Scoping page](DFIR-Triage-Scoping.md).
+If needed, a dedicated Slack channel `ir-triage-scoping` can be used for communicating with the broader team about new IR engagements and should be used for Triage and Scoping Call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are available on [Triage and Scoping page](DFIR-Triage-Scoping.md).
 
 ### Shift Turnover
-The `ir-hotline` Slack channel is used for communicating with the previous and next shift rotation personnel about action items that the next shift needs to be aware of and to facilitate turnover of cross-regional Hotline or Triage calls which require further actions. At the end of every shift, the `Primary` on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `ir-hotline` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `ir-hotline` about every Hotline call, allowing to trace back recent activity. 
+The `ir-hotline` Slack channel is used to communicate with the previous and next shift rotation personnel, to facilitate turnover of cross-regional Hotline or Triage calls which require further actions or other items next shift should be aware of (eg. early notifications that Client may call hotline and request assistance). At the end of every shift, the Primary on-call member should communicate any items of interest to the on-coming shift for awareness. If no calls are received during a shift, there should still be clear communication provided to that effect. It must be clearly communicated whether the following Geography is needed to take any action(s) in relation to events during the previous shift(s). A person taking over a shift, should also "check in" in `ir-hotline` channel to ensure continuous communications. PagerDuty integration with Slack posts notification to `ir-hotline` about every Hotline call, allowing to trace back recent activity. 
 
-The `ir-hotline` channel used to hand over shift, should not be confused with `ir-triage-scoping` channel where a discussion about new IR cases is taking place. As a rule of thumb, `ir-hotline` channel is focused on hotline calls itself (administrating them) and related tasks hand over, while `ir-triage-scoping` is focused on handling incidents (raised by hotline calls or by other means of communications), and is not concerned about the hotline call itself. The `ir-hotline` channel should not be used to hand over existing cases analysis/monitoring in the Follow the Sun approach. 
+The `ir-hotline` channel used to hand over shift, should not be confused with `ir-triage-scoping` channel where a discussion about new IR cases is taking place. As a rule of thumb, `ir-hotline` channel is focused on hotline calls itself (administrating them) and related tasks hand over, while `ir-triage-scoping` is focused on handling incidents (raised by hotline calls or by other means of communications), and is not concerned about the hotline call itself. 
 
-At the end of an Incident Responder’s shift please ensure:
+The `ir-hotline` channel should not be used to hand over existing cases analysis/monitoring in the Follow the Sun approach, etc. Any ongoing activity, which requires cross geography activity, should be coordinated by Case Lead in the Slack channel dedicated for this case. On call personnel is not responsible for handling any cross geography work unrelated to  incoming IR engagements. 
+
+At the end of each shift ensure that:
  - All voicemails have been responded to, which means that all `Incident` tickets in PagerDuty with voice messages have been acted upon and closed in PD to avoid any "leftovers".
  - Resilient tickets for all hotline calls have been created and populated with necessary data.
  - All created Resilient tickets have an owner (who will lead the investigation) assigned, to avoid tickets "hanging" on on-call person.
@@ -211,23 +214,23 @@ If there is an active cross-regional IR engagement, summarize the status of that
 
 ### Determining Geography Owning the Incident
 It is the responsibility of the on-call staff to determine which region should lead an engagement, with guidance and input from regional management if required. Beyond standard allocation rule based on time zone and team members availability, the following factors should be taken into consideration:
-- Where is the client physically located and is there a potential requirement for XFIR staff presence on client premises?
-- What is incident location (may not be same as main client location).
-- Is there a specific language requirement (i.e. the client only speaks Spanish).
+- Where is the Client physically located in and is there a potential requirement for XFIR staff presence on client premises?
+- What is incident location (may not be same as main Client location).
+- Is there a specific language requirement (i.e. the Client only speaks Spanish).
 - Are there potential data handling considerations such as: GDPR, country laws that would dictate data is only viewable by a specific country citizen?
 - Is the client requesting specific XFIR staff from a designated region due to relationship or account management responsibilities?
 - Are there any client specific requirements documents in the Notes filed in client record in Resilient?
 
 If it was decided that incident should be owned by another Geography (either by on-call person, or Engagement Lead) – a hand over process described below should be followed.
 
-During whole life-cycle of incident, a primary person responsible for incident must be indicated via the “Members” – “Owner/Account manager” field within Resilient. After the initial call this would be on-call person. Later this would be a person dealing with a triage or lead IR Analyst.
+During whole life-cycle of incident, a primary person responsible for incident must be indicated via the “Members” – “Owner/Account manager” field within Resilient. After the initial call this would be on-call person. Later this would be a person dealing with a triage or a case Lead.
 
 ### Incident Hand-Over to Another Geography
-Usage of a single point for Incident Intake, may cause the need to hand over newly created incident to another Geography. Examples where this may be the case include:
-- Initial call arrived at the end of on-call person shift and the time when triage call should be organized falls under shift of following Geography.
+Usage of a single point for Incident Intake, may cause the need to hand over newly created incident to another Geography. Examples where this may be the case include, but are not limited to:
+- A Hotline call arrived at the end of on-call person shift and the time when Triage and Scoping Call should be organized falls under shift of following Geography.
 - It was decided that incident need to be transferred for handling to another Geography.
 
-In the event that it is immediately identified during the initial call that an incident will likely be handed over to another region it is recommended that the on-call person(s) make efforts to engage with the geography which will be assigned the incident in an effort to have them join the initial triage.
+In the event that it is immediately identified during the Hotline call that an incident will likely be handed over to another region it is recommended that the on-call person(s) make efforts to engage with the geography which will be assigned the incident in an effort to have them join the Triage and Scoping Call.
 
 In the event that the incident has to be transferred to another Geography, which is currently not reachable (eg. transfer from EU to APAC), it should be temporarily handed over to next Geography who will hand it over to a destination team (eg. EU hand over to NA and NA hands it over to APAC). It should be clearly explained who an ultimate receiver of an incident should be.
 Hand over process is defined as follows:
@@ -238,21 +241,27 @@ Hand over process is defined as follows:
 	- Case background.
 	- Clients's expectations.
 	- Next steps to be performed by person taking it over.
-	- If applicable, reference to related discussion on `ir-triage-scoping`  Slack channel.
+	- If applicable, reference to related discussion on `ir-triage-scoping`  Slack channel with case details.
 4.	Ensure that person taking over an incident acknowledges it and is comfortable with all information provided.
 5.	Update Resilient “Members” tab -> “Owner/Account manager field” with name of person taking over an incident.
 
-If the receiving person is not responsive over Slack one can attempt to call him directly and bring his attention to a Slack discussion. It is the responsibility of a person handing over an incident to ensure that the receiver acknowledges receipt of an incident. Just leaving a slack message or dropping an email with details of the incident is unacceptable. PagerDuty contains two on-call schedules, so in the event that the primary on-call person is unavailable, the second on-call person should be engaged.
+If the receiving person is not responsive over Slack one can attempt to call him directly and bring his attention to a Slack discussion. It is the responsibility of a person handing over an incident to ensure that the receiver acknowledges receipt of an incident. Just leaving a slack message or dropping an email with details of the incident is unacceptable. PagerDuty contains two on-call schedules, so in the event that the Primary on-call person is unavailable, the Second on-call person should be engaged.
 
-The receiving geography on-call person is responsible for raising this incident to his/her Engagement Lead for team resource allocation.
+The receiving geography on-call person is responsible for raising this incident to his/her Delivery Lead (for EMEA) or Engagement Lead (for NA) for team resource allocation.
 
 
 ## Ad-hoc IR Requests
-XFIR Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call it. The intention is to allow also non-IBM Clients to call and request assistance with so called "Ad-hoc IR request". In this concept, a Triage call is considered "for free" - we want to show XFIR expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
+XFIR Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call. The intention is to allow also non-IBM Clients to call and request assistance with so called "Ad-hoc IR request". In this concept, a Triage and Scoping call is considered "for free" - we want to show XFIR expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
 
-During initial discussion with a Client representative when received a Hotline call, on-call person should explain that XFIR is more that happy to assist and offers immediately a Triage call to:
-- evaluate Client situation
-- present proposed approach
-It should be clearly explained, that if Client decides to engage XFIR to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. XFIR will not proceed with any work beyond Triage call without signed contract. 
+During discussion with a Client representative when received a Hotline call, on-call person should explain that XFIR is more that happy to assist and offers immediately a Triage and Scoping Call to:
+- evaluate Client situation,
+- present proposed approach,
 
-On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by Sales team. Dedicated [process](DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
+It should be clearly explained, that if Client decides to engage XFIR to handle this incident, an Ad-hoc contract need to be signed with Ad-hoc hourly rate. XFIR will not proceed with any work beyond Triage and Scoping Call without signed contract. 
+
+On-call person should not engage into any discussion related to commercials details and hourly rates, as this should be handled by XFIR Operations Managers and Sales team. Dedicated [process](DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to sort out commercial part of the Ad-hoc request. 
+
+## IBM CSIRT
+A clear, written guidelines for handling cases to CSIRT are not yet ready. A current rule of thumb is that any case which involves IBM managed or IBM owned systems fall under IBM CSIRT scope and CSIRT should be involved. Consult your manager or geography Leaders for more guidelines in this topic.
+
+An Incident to IBM CSIRT can be submitted by calling IBM hotline and choosing option to submit Cyber Security Incident. 
