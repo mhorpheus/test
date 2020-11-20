@@ -97,12 +97,20 @@ To address Triage and Scoping goals listed in the [Introduction](#Introduction),
 2. Discovery:
 	1. Client provides incident description. Ensure that during discussion you identify most important topics, such as: 
 		- how it was detected,
-		- number, type, role of systems impacted: servers, endpoints, windows, Linux, web servers, domain controllers, etc.
+		- number, type, role of systems impacted:
+			- physical or VMs,
+			- server or endpoints
+			- Windows or Linux or MAC
+			- server functions and software used: web servers, domain controllers, database, etc.
+			- access/exposure to Internet/LAN: direct Internet exposure, over Firewall/IPS, proxy/reverse proxy, no Internet access, etc.
 		- number and type of accounts compromised: workstation user, local admin, domain/enterprise admin, service account, root, etc.
+		- sensitivity/criticality of data stored on affected systems, backups policy and availability,
+		- are there any security solutions used within affected environment, like AV, EDR, etc.
+		- is there any centralized logs collection or SIEM type solution? if so which logs from affected systems were collected?
 		- business impact,
  		- what kind of artifacts were already found,
- 		- status of digital evidence collection: are there any electronic evidence already collected? do they have necessary equipment/knowledge to perform it on their own or need assistance? etc.
-		- containment and remediation steps already performed,
+ 		- status of digital evidence collection: are there any electronic evidence already collected? if so, what tools were used? do they have necessary equipment/knowledge to perform it on their own or need assistance? etc.
+		- containment and remediation steps already performed, eg. system isolation, shutting down, VM snapshoot taken, 
 		- other relevant actions performed.
 	2. Open floor for a questions from XFIR Consultants so they can get better understanding of the incident.
 3. Identification of Client's objectives and expectations: 
