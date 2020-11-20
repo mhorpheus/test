@@ -143,7 +143,7 @@ The Hotline is one of the main ways our Clients and Non-Clients alike engage us 
 
 Be professional, calm and courteous during all communications with clients in general. Often, the Client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the Client and it is our duty to help guide them as trusted advisors when they reach out to us.
 
-There are no hard and fast rules to greeting the caller on an initial in-bound hotline call. However, it is recommended to start with "*IBM X-Force Incident Response Hotline, This is `<Consultant>` how may I help you*". There are many reasons why Clients call the hotline. At the very minimum the following information should be captured:
+There are no hard and fast rules to greeting the caller on an initial in-bound hotline call. However, it is recommended to start with "*IBM X-Force Incident Response Hotline, This is `<Consultant name>` how may I help you*". There are many reasons why Clients call the hotline. At the very minimum the following information should be captured:
 - caller's contact details such as: name, title, phone; optinally email (spelling over the phone for non-native nations can be error prone), 
 - organization name (company name, if an IBMer is calling then who are they calling for?),
 - reason for call (get as much detail as possible),
