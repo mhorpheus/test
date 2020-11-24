@@ -103,7 +103,7 @@ Every new team member who will be supporting Hotline, must configure his mobile 
 
 **Disabling personal Voice Mail is critical for Hotline operations**, and everyone should double check that they have it really disabled. Not doing it, can cause severe consequences for XFIR. The last thing we want is a customer leaving message on personal IBM Voice Mail, instead of PD Voice Mail, which is not accessible by other team members. PD Voice Mail has advantage, that everyone can access it and react upon as well as PD will chase other on-call person, which will not happen in case Client leaves message on personal IBM VoiceMail. 
 
-A common practice, is to put new on-call person first as Secondary, allowing him/her to get familiar with Hotline support activity. 
+A common practice, is to put new on-call person first as Secondary, giving a chance to get familiar with Hotline support activity. 
 
 ## Tutorials
 

@@ -22,7 +22,7 @@
 ## Hotline
 ### Introduction
 
-The purpose of this page is to explain the XFIR Hotline operations model and document procedures. Content of this page should be presented to every new XFIR team member as a part of onboarding process, preparing him/her to support XFIR Hotline. This page is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to explain the XFIR Hotline operations model and document procedures. Content of this page should be presented to every new XFIR team member as a part of onboarding process and preparation to support XFIR Hotline. This page is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
 
 XFIR maintains several hotline numbers in different geographies - they are used by XFIR Clients to declare an IT security incident and request XFIR assistance. Hotline call (denoted sometimes as "initial call") is used to gather basic understanding of an incident as well as Client's details so a Triage and Scoping Call can proceed, resulting in an investigation being launched. Using XFIR Hotline available 24/7, Clients can reach XFIR Consultant during both day and night if they are experiencing an incident. This is one of the main avenues our Clients use to engage XFIR and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming Hotline calls.
 
@@ -238,7 +238,7 @@ In the event that the incident has to be transferred to another Geography, which
 Hand over process is defined as follows:
 1.	Ensure that Resilient ticket contains all information already collected.
 2.	Identify on-call representative of next Geography who will be picking up the incident to hand over.
-3.	Reach out to identified person to brief him/her that there is a need for an incident hand over. This should be done using `ir-hotline` slack channel or directly contacting the person. Provide necessary information such as:
+3.	Reach out to identified person and notify that there is a need for an incident hand over. This should be done using `ir-hotline` slack channel or directly contacting the person. Provide necessary information such as:
 	- Resilient ticket number.
 	- Case background.
 	- Clients's expectations.
@@ -247,7 +247,7 @@ Hand over process is defined as follows:
 4.	Ensure that person taking over an incident acknowledges it and is comfortable with all information provided.
 5.	Update Resilient “Members” tab -> “Owner/Account manager field” with name of person taking over an incident.
 
-If the receiving person is not responsive over Slack one can attempt to call him directly and bring his attention to a Slack discussion. It is the responsibility of a person handing over an incident to ensure that the receiver acknowledges receipt of an incident. Just leaving a slack message or dropping an email with details of the incident is unacceptable. PagerDuty contains two on-call schedules, so in the event that the Primary on-call person is unavailable, the Second on-call person should be engaged.
+Try calling IBM mobile number of the receiving person if there is no response to the Slack messages. It is the responsibility of a person handing over an incident to ensure that the receiver acknowledges receipt of an incident. Just leaving a slack message or dropping an email with details of the incident is unacceptable. PagerDuty contains two on-call schedules, so in the event that the Primary on-call person is unavailable, the Second on-call person should be engaged.
 
 The receiving geography on-call person is responsible for raising this incident to his/her Delivery Lead (for EMEA) or Engagement Lead (for NA) for team resource allocation.
 
