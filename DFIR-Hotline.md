@@ -35,24 +35,30 @@ XFIR operates several Hotline numbers in multiple countries. In the past XFIR ge
 
 Below tables list regional/country Hotline numbers. The list is also available in the form of PDF [Leaflet](DFIR/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) which can shared with a existing or potential Client.
 
-#### World Wide Number
+#### Worldwide Hotline
 - (+1) 312 212 8034
 ___
 #### Asia & Pacific (APAC)
-| Country | Hotline Number |
+| Country/Region | Hotline Number |
 |:--|:--|
 | Australia | (+61) 1800 637 539 |
+| Hong Kong | (+852) 800 900 704 |
 | India | (+91) 0008 000 401 045 |
 | Indonesia | (+62) 00 180 361 859 |
-| Hong Kong | (+852) 800 900 704 |
 | Malaysia | (+60) 1800 818 276 |
 | New Zealand | (+64) 0800 426 111 |
 | Philippines | (+63) 1800 1611 0322 |
 | Singapore | (+65) 800 616 7095 |
 | Thailand | (+66) 1800 011 806 |
+| Vietnam (Mobifone) | 121010013 |
+| Vietnam (Viettel) | 12280435 |
+| Vietnam (VNPT-I) | 120852208 |
+___
+#### Japan (staffed locally)
+- (+81) 356 952 751 
 ___
 #### Europe, Middle East, & Africa (EMEA)
-| Country | Hotline Number |
+| Country/Region | Hotline Number |
 |:--|:--|
 | Denmark | (+45) 4331 4987 |
 | Finland | (+358) 972 522 099 |
@@ -69,18 +75,14 @@ ___
 | Spain | (+34) 910 507 799 |
 | Sweden | (+46) 850 252 313 |
 | Switzerland | (+41) 227 614 228 |
+| United Arab Emirates | (+971)80 004 442 417 |
 | United Kingdom | (+44) 203 684 4872 |
-| UAE | (+971) 80 004 442 417 |
 ___
-
 #### United States & Canada (North America)
 - (+1) 888 241 9812
 ___
 #### Latin America (LATAM)
 - No dedicated number available. Please use [World Wide Number](#World-Wide-Number)
-___
-#### Japan
-- (+81) 356 952 751 
 ___
 
 ## Follow the Sun for Incident Intake
