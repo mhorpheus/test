@@ -17,7 +17,7 @@
 	- [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident)
 	- [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography)
 4. **[Ad-hoc IR Requests](#Ad-hoc-IR-Requests)**
-5. **[IBM CSIRT](#IBM CSIRT)**
+5. **[IBM CSIRT](#IBM-CSIRT)**
 
 ## Hotline
 ### Introduction
