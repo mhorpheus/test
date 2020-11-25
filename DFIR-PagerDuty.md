@@ -57,7 +57,7 @@ All incoming calls will always be routed initially to the first person on-call, 
 
 ### Tracking Hotline Calls
 Every call is recorded as an Incident in PD, which is marked as Acknowledged when on-call person answers it and marked as resolved when call ends. If Hotline call is not picked up, but Voice Message is left, PD will start chasing on-call people from both schedules using mobile app, phone calls and text messages to notify about new Incident in PD (representing a Hotline call) which requires attention. Every PD incident contains a source phone number of a caller, which can be checked in the incident (if you picked up a call, then look within resolved incidents):
-![Identifying caller number](DFIR/PagerDuty-identify-caller.png)
+![Identifying caller number](DFIR/screenshots/PagerDuty-identify-caller.png)
 For Hotline numbers managed by NA team (NA and worldwide numbers), source phone number will not represent the caller number (most probably will be +18475722285). This is related to the fact how RACC is configured. For this reason, one should not relay entirely on the source phone numbers recorded in PD.
 
 There is one specific case in which PagerDuty will not create an Incident ticket for incoming call: when both on-call assigned people do not answer the call, and the caller does not leave a VoiceMail message. In such a case there is no option to use Incident information to track a hotline call. In such a case, the only source of information is missed call log on a mobile phone of on call person, under a condition that it was not a call to a NA or worldwide hotline number (due to reason stated above).
@@ -67,7 +67,7 @@ PD has many functions supporting handling and escalating incidents however due t
 ### Scheduling
 On call person is determined using PD Schedules - separate for Primary and Secondary person. Each Schedule consists of three layers, while each layer represents separate geography thus shift. See below picture for reference.
 
-![PagerDuty Schedule view](DFIR/PagerDuty_schedule_view.PNG)
+![PagerDuty Schedule view](DFIR/screenshots/PagerDuty_schedule_view.png)
 
 People allocation within each layers is constrained to shift timeframe of this geography (do not confuse layers within a schedule with terms L1/L2 used to name main and backup schedule):
 * Layer 1 represents APAC and is limited to timeframe 23:00-07:00 UTC
@@ -110,7 +110,7 @@ A common practice, is to put new on-call person first as Secondary, giving a cha
 ### Setting-up Your Environment for the First Time
 1. Navigate to [https://ibm.pagerduty.com/](https://ibm.pagerduty.com/) and sign in with IBM credentials.
 2. On the right part of the screen there is a Team selection option, visible as "All Teams". Unfold it and change your team to X-Force IR. Please keep in mind that there is no separation of IBM teams within PD, which means that everyone sees everything. Change your team, to ensure that all your views contain only items related to our team.
-![Initial configuration of PagerDuty](DFIR/PagerDuty-initial-config1.png)
+![Initial configuration of PagerDuty](DFIR/screenshots/PagerDuty-initial-config1.png)
 
 ### Handling Voice Messages
 Voice Messages can be left by a person calling Hotline, who did not managed to connect to both L1 and L2 person. From a PagerDuty perspective, such ticket is not assigned to anyone and it will be chasing people from Escalation Path to ensure that someone picks it up. This means, that you can received phone calls, text messages and mails from PD, until someone acknowledges this incident (representing a hotline call) and got it assigned to himself. 
@@ -121,17 +121,17 @@ Using Web GUI:
 1. Navigate to Incidents.
 2. Under "Open Incidents" section find a relevant hotline connection.
 3. Unfold "SHOW DETAILS" without entering into this ticket.
-![Finding VoiceMail messages in PagerDuty](DFIR/PagerDuty-voicemail1.png)
+![Finding VoiceMail messages in PagerDuty](DFIR/screenshots/PagerDuty-voicemail1.png)
 4. Click on "Listen to Recording".
-![Listening to VoiceMail messages in PagerDuty](DFIR/PagerDuty-voicemail2.png)
+![Listening to VoiceMail messages in PagerDuty](DFIR/screenshots/PagerDuty-voicemail2.png)
 
 It is very IMPORTANT to resolve PD Incidents having Voice Messages as resolved, as they are not automatically marked as resolved (which happens in case of a hotline call which is picked up by on-call person). This prevents having a left-over incidents in PD.
 
 ### Using Calendar Feeds to Track On-call Schedule
 Entering "My Profile" settings, it it possible to get WebCal feed or iCalendar file with up-to-date schedule of a personal on-call schedule.
-![Exporting on-call calendar feed in PagerDuty](DFIR/PagerDuty-calendar-feed.png)
+![Exporting on-call calendar feed in PagerDuty](DFIR/screenshots/PagerDuty-calendar-feed.png)
 All schedules (L1 and L2) are combined in this feed, so all necessary information are provided in a single place.
 
 ### Checking Who Is Currently On-call
 Click PagerDuty in the top left corner or navigate to "Incidents". Pane on a right side will contain information who is currently on call.
-![Identifying current on-call person](DFIR/PagerDuty-who-is-on-call.png)
+![Identifying current on-call person](DFIR/screenshots/PagerDuty-who-is-on-call.png)
