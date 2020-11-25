@@ -190,10 +190,13 @@ The following steps must be performed after the Hotline call has been completed:
 	- Section [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be populated while creating incident ticket. Empty or incomplete tickets are not acceptable.
 	- Every genuine Hotline call must be recorded in Resilient, including those where it is ultimately determined that XFIR support is not required. In such cases, the ticket must follow all documentation requirements as well as explanation why we are not engaged. It can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in the Resilient.
-2.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography:
+2. Document every call logged by PagerDuty integration within `ir-hotline` Slack channel, by creating a thread and replying with following information:
+	- for genuine Hotline call - provide Client name, Resilient case ID and Resilient ticket URL,
+	- for non-genuine call - provide details on what happened and why this is not a genuine call.
+3.	Evaluate whether incident can be handled by team being currently on call or needs to be handed over to another Geography:
 	- If incident will be handled by currently on call team, notify everyone using `ir-triage-scoping` Slack channel.
 	- If incident needs to be handed over to another Geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
-3.	Organize Triage and Scoping Call following process documented separately [here](DFIR-Triage-Scoping.md). 
+4.	Organize Triage and Scoping Call following process documented separately [here](DFIR-Triage-Scoping.md). 
 
 On-call person should also keep in mind, that even if incident was classified to be handed over to other geography, XFIR is obliged to meet Contractual SLA's for Triage and Scoping Call. This means, that current on-call person is still responsible to ensure that whoever performs a Triage call, appropriate SLA is met.
 
