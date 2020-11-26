@@ -74,16 +74,17 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force X
 
 Once the channel is created, it is possible to add members. To create a new Slack channel:
 1.  Click `+` on the right hand side of `Channels` section or if it is not visible, hover `Channels` section header which should cause `+` to appear and click it.
+
 ![Slack channels menu](screenshots/Slack_01.png)
 2. Pick up an option "Create a channel".
 3. Fill in details of a new channel:
 	- name channel using a case number: irXX-YYYY,
 	- Select `Make Private`
 	- Fill in description providing customer name and brief description of the case, eg. "BEC case of 2 accounts for MyCompany"
-[!Details of the new Slack channel](screenshots/Slack_03.png)
+[!Details of the new Slack channel](screenshots/Slack_02.png)
 
 ### IBM Box Folder for Case Data
-1. https://ibm.ent.box.com/folder/63956024543
+1. Navigate to a folder containing case folder template "IR_Engagement_Folder_Template_DONOTMODIFY" https://ibm.ent.box.com/folder/63956024543
 2. Pick "Move or Copy" from 3 dots menu for template folder
 ![Move or Copy Engagement folder template](screenshots/Box_engagement_folder1.png)
 3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".
