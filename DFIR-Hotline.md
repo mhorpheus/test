@@ -1,6 +1,6 @@
 
 
-# XFIR Global Hotline Rotation and Procedures
+# XFIR Global Hotline
 
 ## Table of Contents
  1. **[Hotline](#hotline)**

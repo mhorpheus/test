@@ -1,37 +1,34 @@
 
 # DFIR
-- [XFIR-master-wiki](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki)
-- [DFIR-wiki Home](https://github.ibm.com/XFIR/DFIR-wiki/wiki)
+
+### Homepages
+- [XFIR master wiki](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki)
+- [DFIR wiki](https://github.ibm.com/XFIR/DFIR-wiki/wiki)
 
 ### Delivery Overview
-- [DFIR Service Overview](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Service-Overview)
-- [Global Hotline Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Hotline)
-
-### Scoping & Kickoff
-- [Scoping & Kickoff Guidelines]
-- [Scoping Call Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Triage-Scoping)
-- [Engagement Spin-Up Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-SpinUp)
-- [Technology Deployment](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-TechDeploy)
-
+	- DFIR Service Overview
+	- [Global Hotline](DFIR-Hotline.md)
+### DFIR Engagement initiation
+	- [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
+	- [Triage and Scoping Call](DFIR-Triage-Scoping.md)
+	- [Incident Response Spin-Up Process](DFIR-SpinUp.md)
+	- [Digital Evidence](DFIR-Digital-Evidence.md)
+	- Technology Deployment
 ### Technical Analysis
-- [XFIR Incident Response Methodology]
-	- [XFIR IR Procedures]
-	- [XFIR IR Tools & Technologies]
-- [XFIR Digital Forensics Methodology]
-	- [XFIR Digital Forensics Procedures]
-	- [XFIR Digital Forensics Tools & Technologies]
-
+	- Incident Response Methodology
+	- IR Procedures
+	- IR Tools & Technologies
+	- Digital Forensics Methodology
+	- Digital Forensics Procedures
+	- Digital Forensics Tools & Technologies
 ### Project Management
-- [DFIR Project Management Overview]
-- [Resilient Ticketing Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Resilient)
-- [Intel Ticketing Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-IntelTicketing)
-- [Engagement Management Documents]
-- [Client Facing One-Pagers]
-
+	- DFIR Project Management Overview
+	- [Resilient Ticketing](DFIR-Resilient.md)
+	- Intel Ticketing Procedures
+	- Engagement Management Documents
 ### Reporting
-- [XFIR Reporting Guidance](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Reporting-Style-Guide)
-- [XFIR Reporting Templates]
-- [Example DFIR Reports]
-
+	- XFIR Reporting Guidance
+	- XFIR Reporting Templates
+	- Example DFIR Reports
 ### Project Closeout
-- [Project Closeout Procedures]
+	- Project Closeout Procedures

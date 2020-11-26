@@ -1,6 +1,6 @@
 
 
-# XFIR Global Triage and Scoping Call Procedures
+# XFIR Triage and Scoping Call
 
 ## Table of Contents
 

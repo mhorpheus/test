@@ -1,10 +1,11 @@
-# Digital Evidence Collection
+# Digital Evidence
 
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**Remote Evidence Collection Manuals**](#Remote-Evidence-Collection-Manuals)
 Evidence naming policy
 Delivery discussion
+Retention and Privacy
 
 ## Introduction
 The purpose of this page is to document the XFIR Incident Response Service Spin-Up process and procedures. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home.md)).

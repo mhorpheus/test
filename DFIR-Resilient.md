@@ -1,6 +1,6 @@
 
 
-# XFIR Resilient Ticketing Process
+# XFIR Resilient Ticketing
 
 ## Table of Contents
 1. **[Introduction](#Introduction)**
