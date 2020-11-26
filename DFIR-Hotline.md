@@ -33,7 +33,7 @@ Hotline Call handling should not me confused with a [Triage and Scoping Call](DF
 ### Regional Numbers
 XFIR operates several Hotline numbers in multiple countries. In the past XFIR geographies operated independently, working on their own with different local telecommunication providers. Each geography was covering on their own full 24/7 period locally. With an introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), Hotline operation for all regions except Japan, have been integrated and unified and now lead to the same on-call person. 
 
-Below tables list regional/country Hotline numbers. The list is also available in the form of PDF [Leaflet](DFIR/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) which can shared with a existing or potential Client.
+Below tables list regional/country Hotline numbers. The list is also available in the form of PDF [Leaflet](documents/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) which can shared with a existing or potential Client.
 
 #### Worldwide Hotline
 - (+1) 312 212 8034

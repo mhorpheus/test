@@ -5,10 +5,12 @@
 2. [**Setting up Collaboration Environment**](#Setting-up-Collaboration-Environment)
 	- [Internal XFIR Working Environment](#Internal-XFIR-Working-Environment)
 	- [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client)
-3. [**Digital Evidence Collection and Delivery**](#Digital-Evidence-Collection-and-Delivery)
-4. [**Tutorials**](#Tutorials)
+3.  [**Threat Intel Team Support**](#Threat-Intel-Team-Support)
+4. [**Endpoint Detection and Response Deployment**](#Endpoint-Detection-and-Response-Deployment)
+5. [**Tutorials**](#Tutorials)
 	- [Slack](#Slack)
-	- [IBM Box](#IBM-Box)
+	- [IBM Box Folder for Case Data](#IBM-Box-Folder-for-Case-Data)
+	- [IBM Box Folder for Digital Evidence](#IBM-Box-Folder-for-Digital-Evidence)
 	- [Aspera](#Aspera)
 
 ## Introduction
@@ -20,50 +22,36 @@ Once XFIR has been engaged for Incident Response services regardless of the scop
 ## Setting up Collaboration Environment
 All technical details how to perform steps required in this section and best practices on using them, are described in the [Tutorials](#Tutorials) section below.
 ### Internal XFIR Working Environment
-Proceed with following steps to set up working environment for collaboration within XFIR:
-1. Create a dedicated channel for this engagement within X-Force IRIS Slack workspace for regular communication about the case:
+Proceed with following steps to set up working environment for collaboration within XFIR (all steps are obligatory, unless stated otherwise):
+1. Create a central repository of all data regarding IR engagement, by creating a dedicated IBM Box folder:
+	- IMPORTANT: do not use this folder for digital evidence storage, share data with Client or any third party! This topic is addressed separately in section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client).
+	- use a "IR_Engagement_Folder_Template_DONOTMODIFY" (simply using copy option in Box) for the case folder structure from [here](https://ibm.ent.box.com/folder/63956024543),
+	- create a case folder in a location specific for each geography: [EMEA](https://ibm.ent.box.com/folder/41834082550), [NA](), [APAC](). (2DO: populate links)
+	- rename template of the case folder to a case number: 'IRXX-YYYY (uppercase!; do not append anything in the folder name after a case number),
+2. Download Evidence Tracking Sheet (ETS) Template from [here](DFIR/IBM%20X-Force%20IR%20Engagement%20Tracking%20Sheet.xlsx) and place is the IBM Box case folder created in the previous step (root of the case folder).
+3. Create a dedicated channel for this engagement within X-Force IRIS Slack workspace for regular communication about the case:
 	- channel name must be equal to a case number - "irXX-YYYY" (Slack channels are always named with lowercase letters)
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel.
-2. Create a IBM Box folder to store case related files:
-	- do not use this folder for digital evidence storage - this topic is addressed separately,
-	- copy-paste a template of the case folder structure from [here](https://ibm.ent.box.com/folder/114065719990),
-	- rename template of the case folder to a case number: 'IRXX-YYYY (uppercase!; do not append anything in the folder name after a case number),
-	- each geography stores case folders separately: [EMEA](https://ibm.ent.box.com/folder/41834082550), [NA](), [APAC](). (2DO: populate links)
-3. Download Evidence Tracking Sheet (ETS) Template from [here](DFIR/IBM%20X-Force%20IR%20Engagement%20Tracking%20Sheet.xlsx) and place is the IBM Box case folder created in the previous step (root of the case folder).
 4. Grant access to consultants assigned to this page:
 	1. Populate an "Owner" field in Resilient with Case Lead name.
 	2. Populate "Members" field in Resilient with consultant assigned to this case.
 	3. Add people to Slack channel from X-Force IR or TI or RE teams.
 
 ### Environment for Data Sharing with a Client
-Proceed with following steps to set up environment for data sharing with Client and other third parties working on this case:
-1. Box folder (which is different than box folder created in the above steps).
-	- XXX
-	- need to know approach for evidence collection?
-	- To be discussed
-2. Aspera folder for evidence upload
-	- XXX
-3. EMEA only: Martins' SFTP
-	- XXX
-4. NA only: Forensics LAB
-	- XXX
+Evidence Delivery in most of the cases is performed over the Internet, using one or more of below methods:
+1. dedicated IBM Box folder for evidence upload (this is not the case IBM Box folder created above),
+	- 2DO: SOME REQUIREMENTS
+2. IBM Aspera folder or package,
+	- 2DO: SOME REQUIREMENTS
+4. EMEA only: SFTP,
+5. NA only: Forensics Lab,
 
-
-## Digital Evidence Collection and Delivery
-Ale to nie jest proces... przemyśleć
-1. Link Chain of Custody DFIR-Chain-of-Custody.md
-2. Data Acquisition one-pagers DFIR-Digital-Evidence-Collection.md
-3. 	* box upload for evidence
-	* aspera folder
-	* EMEA SFTP
-	* NA LAB
-
-### Threat Intel Team Support
+## Threat Intel Team Support
 Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. To get their support, proceed with following steps:
 1. Use instructions provided on a [Intel Ticketing](DFIR-IntelTicketing.md) page to request TI and/or RE assistance.
 2. Add TI/RE team members assigned to this case yo the case Slack channel.
 
-### Endpoint Detection and Response
+## Endpoint Detection and Response Deployment
 TODO:
 - How to request EDR.
 - to be unified with ATA wiki, to avoid duplication
@@ -86,20 +74,26 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force X
 
 Once the channel is created, it is possible to add members. To create a new Slack channel:
 1.  Click `+` on the right hand side of `Channels` section or if it is not visible, hover `Channels` section header which should cause `+` to appear and click it.
-![Slack channels menu](DFIR/screenshots/Slack_01.jpg)
+![Slack channels menu](DFIR/screenshots/Slack_01.png)
 2. Pick up an option "Create a channel".
 3. Fill in details of a new channel:
 	- name channel using a case number: irXX-YYYY,
 	- Select `Make Private`
 	- Fill in description providing customer name and brief description of the case, eg. "BEC case of 2 accounts for MyCompany"
-[!Details of the new Slack channel](DFIR/screenshots/Slack_03.jpg)
+[!Details of the new Slack channel](DFIR/screenshots/Slack_03.png)
 
+### IBM Box Folder for Case Data
+1. https://ibm.ent.box.com/folder/63956024543
+2. Pick "Move or Copy" from 3 dots menu for template folder
+![Move or Copy Engagement folder template](DFIR/screenshots/Box_engagement_folder1.png)
+3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".
+![Select destination for the copied engagement folder template](DFIR/screenshots/Box_engagement_folder2.png)
+4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
+![Navigate to newly created folder](DFIR/screenshots/Box_engagement_folder3.png)
+5. Rename created folder according to requirements provided in the section [Setting up Collaboration Environment](#Setting-up-Collaboration-Environment). 
+![Rename folder](DFIR/screenshots/Box_engagement_folder4.png)
 
-
-
-
-
-### IBM Box
+### IBM Box Folder for Digital Evidence
 
 ### Aspera
 https://ibm.ibmaspera.com/
@@ -111,70 +105,19 @@ https://www.ibm.com/support/pages/node/746389 for firewall information.
 ############################################################
 
 
+# General IR Spin-Up Procedures
 
 
 
-# [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#general-ir-spin-up-procedures)General IR Spin-Up Procedures
 
-When a client or potential customer engages XFIR for incident response services there are steps required on the back end to ensure that process is accurate and efficient. Certain aspects of the IR Spin-Up process are variables depending on the type of engagement. However, there are some items that need to be completed regardless of those variables.
 
-1.  Set up the  [Engagement Box Folder](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#engagement-management); this is important to establish DFIR engagement management and proper documentation. The Engagement Box Folder will be the central repository for all DFIR data regarding the IR engagement.
-
-The Engagement Box folder is NOT for client data transfers. For more information on establishing data transfer between XFIR and clients see the  _**Client Data Transfer**_  section.
-
-2.  The  [Engagement Slack Channel](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#engagement-slack-channel)  is required for communication with other XFIR members, engagement management, and general analysis information and tasking.
 3.  Update the  [Resilient Engagement Ticket](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#resilient-engagement-ticket)  early and often. Resilient is the primary client and engagement management tool we use at XFIR.
 
 We log and track hours, reporting and QA tasks, communications between XFIR and the client, engage Intel and much more using Resilient. Visit the  [Resilient Overview](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-Resilient)  for more information.
 
 4.  Every IR engagement requires an  [Intel Engagement Ticket](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#intel-engagement-ticket). When we engage Intel for malware analysis, dark-web analysis, or any other Intel specific task related to an IR engagement, that work needs to be tracked and associated with an  `Engagement Work`  Intel ticket.
 
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#engagement-box-folder)Engagement Box Folder
-
-The Engagement Box Folder is a requirement for every engagement regardless of the size and scope of that IR engagement. The intent and purpose of this Box folder is to provide a repository for various data points and engagement tracking documents that are integral for proper documentation and engagement management function.
-
-The Engagement Box Folder should only be used DFIRly and should only include data that is relevant to the current IR engagement. If your IR engagement requires a Box folder for data transfer between XFIR and the client, a separate Box folder should be established to facilitate that data transfer, and proper access controls should be implemented to ensure access is granted only to people who have a legitimate need to access that data. For more on Box as a client data transfer mechanism see the  _**Client Data Transfer**_  section below.
-
-The steps for creating an Engagement Box Folder are outlined below:
-
-1.  Browse to the URL  [https://ibm.ent.box.com/folder/0](https://ibm.ent.box.com/folder/0)
-
-_Note: You will need to be on IBM VPN to access your Box account._
-
-Once you've authenticated you should see something similar to the following:
-
-[![](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box.png)
-
-2.  Navigate to the  `0-Active Engagements`  Folder
-
-All Engagement Box Folders should be created within the  `0-Active Engagements`  Box folder. The purpose of this is to logically separate Box folders that are shared with clients or other non-engagement related data.
-
-3.  Select the additional options for the  `0-Engagement Template Folder`  at the top if sorted by "Name"
-
-[![](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Template-02.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Template-02.png)
-
-4.  Select  `Move or Copy`  from the options menu
-
-[![](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Template-03.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Template-03.png)
-
-5.  You will be presented with options to Move or Copy the  `0-Engagement Template Folder`. Select  `Copy`  and a folder named  `0-Engagement Template Folder (1)`  will be created with all of the template folders and  _**Engagement Tracking Sheet**_  included.
-
-[![](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Move-Copy.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Move-Copy.png)
-
-6.  Rename the newly copied folder  `0-Engagement Template Folder (1)`  to the relevant name for your engagement (example:  `IR19-1337`). Click the "Rename" icon next to the folder name.
-
-_Pro-Tip: You can get the ticket number for your engagement from the Resilient Ticket that was created during the Hotline or Triage process_
-
-[![Rename](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Rename.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Rename.png)
-
-[![](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Rename-02.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Rename-02.png)
-
-6.  Once you have renamed the template folder you will see the Box Folder named with your IR ticket number which has predefined sub-folders for engagement management purposes as well as a blank XFIR engagement tracking sheet.
-
-[![Engagement Box Folder](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Template-04.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box-Template-04.png)
-
-
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#resilient-engagement-ticket)Resilient Engagement Ticket
+## Resilient Engagement Ticket
 
 Updating the  `Resilient Engagement Ticket`  is the primary engagement management function required from end-to-end on any IR engagement. If the client is engaging us after they called the Hotline there should already be  `Hotline Triage`  ticket at this point. If this is the case, simply add the  `IR`  tag and make sure the  `Triage Worksheet`,  `Notes`, and  `Engagement Members`  are updated.
 
@@ -255,13 +198,3 @@ Other Box considerations and tips:
 -   Turn on upload/download notifications for your data transfer folder to receive email alerts when someone uploads or downloads a file.
 -   If a specific file is relevant to other XFIR members on your engagement, consider copying that file to the  `Data Provided by Client`  folder within the  `Engagement Box Folder`  for your engagement instead of adding and managing permissions on the data transfer folder.
 -   The client data transfer folder is simply a mechanism for clients to provide data to XFIR remotely and securely and should not be used as a "working" folder. One exception to this could be a shared Box note or document between XFIR and the client for syncing tasks and efforts.
-
-### [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer-via-aspera)Client Data Transfer via Aspera
-
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#technology-deployment)Technology Deployment
-
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#data-acquisition)Data Acquisition
-
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#onsite-support)OnSite Support
-
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#forensic-lab-support)Forensic LAB Support

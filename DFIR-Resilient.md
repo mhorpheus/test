@@ -49,9 +49,9 @@ Fill in remaining fields depending on availability of information.
 
 ## Tracking Subscriptions Hours Usage
 Subscription hours usage is summarized in the master Client entry ticket. Navigating to the "Subscription Details" tab, one can obtain all necessary details: number of annual subscription hours, subscription roll-over date and number of subscription hours remaining in a current subscription year.
-![Details on subscription hours usage in the client master ticket](DFIR/screenshots/Resilient_tracking_subscription_hours_usage.png)
+![Details on subscription hours usage in the client master ticket](screenshotsResilient_tracking_subscription_hours_usage.png)
 However, details of the hours usage related to particular engagement are tracked in respective engagement ticket - at the bottom of the "Engagement Details" tab, there is a section "Hours Utilized" where hours usage should be filled in.
-![Tracking hours usage of single engagement](DFIR/screenshots/Resilient_tracking_hours_usage_in_engagement.png)
+![Tracking hours usage of single engagement](screenshotsResilient_tracking_hours_usage_in_engagement.png)
 
 Follow below requirement while populating hours usage:
 - always provide full name of the person who billed hours,
@@ -83,7 +83,7 @@ This process describes how to create an IR Engagement ticket, which then should 
  7. "Name" under "Notes" is automatically populated to just enter some random value.
 
 Example:
-![Creating new IR Engagement in Resilient](DFIR/screenshots/Resilient_New_IR_Engagement.png)
+![Creating new IR Engagement in Resilient](screenshotsResilient_New_IR_Engagement.png)
 
 All other required fields needs to be populated after ticket is created.
 
