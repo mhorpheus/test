@@ -74,24 +74,24 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force X
 
 Once the channel is created, it is possible to add members. To create a new Slack channel:
 1.  Click `+` on the right hand side of `Channels` section or if it is not visible, hover `Channels` section header which should cause `+` to appear and click it.
-![Slack channels menu](DFIR/screenshots/Slack_01.png)
+![Slack channels menu](screenshots/Slack_01.png)
 2. Pick up an option "Create a channel".
 3. Fill in details of a new channel:
 	- name channel using a case number: irXX-YYYY,
 	- Select `Make Private`
 	- Fill in description providing customer name and brief description of the case, eg. "BEC case of 2 accounts for MyCompany"
-[!Details of the new Slack channel](DFIR/screenshots/Slack_03.png)
+[!Details of the new Slack channel](screenshots/Slack_03.png)
 
 ### IBM Box Folder for Case Data
 1. https://ibm.ent.box.com/folder/63956024543
 2. Pick "Move or Copy" from 3 dots menu for template folder
-![Move or Copy Engagement folder template](DFIR/screenshots/Box_engagement_folder1.png)
+![Move or Copy Engagement folder template](screenshots/Box_engagement_folder1.png)
 3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".
-![Select destination for the copied engagement folder template](DFIR/screenshots/Box_engagement_folder2.png)
+![Select destination for the copied engagement folder template](screenshots/Box_engagement_folder2.png)
 4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
-![Navigate to newly created folder](DFIR/screenshots/Box_engagement_folder3.png)
+![Navigate to newly created folder](screenshots/Box_engagement_folder3.png)
 5. Rename created folder according to requirements provided in the section [Setting up Collaboration Environment](#Setting-up-Collaboration-Environment). 
-![Rename folder](DFIR/screenshots/Box_engagement_folder4.png)
+![Rename folder](screenshots/Box_engagement_folder4.png)
 
 ### IBM Box Folder for Digital Evidence
 

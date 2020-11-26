@@ -6,29 +6,29 @@
 - [DFIR wiki](https://github.ibm.com/XFIR/DFIR-wiki/wiki)
 
 ### Delivery Overview
-	- DFIR Service Overview
-	- [Global Hotline](DFIR-Hotline.md)
+ - DFIR Service Overview
+ - [Global Hotline](DFIR-Hotline.md)
 ### DFIR Engagement initiation
-	- [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
-	- [Triage and Scoping Call](DFIR-Triage-Scoping.md)
-	- [Incident Response Spin-Up Process](DFIR-SpinUp.md)
-	- [Digital Evidence](DFIR-Digital-Evidence.md)
-	- Technology Deployment
+ - [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
+ - [Triage and Scoping Call](DFIR-Triage-Scoping.md)
+ - [Incident Response Spin-Up Process](DFIR-SpinUp.md)
+ - [Digital Evidence](DFIR-Digital-Evidence.md)
+ - Technology Deployment
 ### Technical Analysis
-	- Incident Response Methodology
-	- IR Procedures
-	- IR Tools & Technologies
-	- Digital Forensics Methodology
-	- Digital Forensics Procedures
-	- Digital Forensics Tools & Technologies
+ - Incident Response Methodology
+ - IR Procedures
+ - IR Tools & Technologies
+ - Digital Forensics Methodology
+ - Digital Forensics Procedures
+ - Digital Forensics Tools & Technologies
 ### Project Management
-	- DFIR Project Management Overview
-	- [Resilient Ticketing](DFIR-Resilient.md)
-	- Intel Ticketing Procedures
-	- Engagement Management Documents
+ - DFIR Project Management Overview
+ - [Resilient Ticketing](DFIR-Resilient.md)
+ - Intel Ticketing Procedures
+ - Engagement Management Documents
 ### Reporting
-	- XFIR Reporting Guidance
-	- XFIR Reporting Templates
-	- Example DFIR Reports
+ - XFIR Reporting Guidance
+ - XFIR Reporting Templates
+ - Example DFIR Reports
 ### Project Closeout
-	- Project Closeout Procedures
+ - Project Closeout Procedures
