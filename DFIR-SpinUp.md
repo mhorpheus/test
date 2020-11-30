@@ -41,7 +41,7 @@ Proceed with following steps to set up working environment for collaboration wit
 
 ### Environment for Data Sharing with a Client
 Remote Evidence Collection, together with all supporting materials, is documented on the [Digital Evidence](DFIR-Digital-Evidence.md) page.
-Evidence Delivery in most of the cases is performed over the Internet, using one or more of below methods:
+Evidence Delivery in most of the cases is performed over the Internet. The best option is when Client shares evidence using their own infrastructure. However, often they do not have sufficient capabilities. For this reason XFIR can offer to use one or more of below methods.
 1. dedicated IBM Box folder for evidence upload (this is not same as the case IBM Box folder created above):
 	- is an ultimate target for evidence - all evidence should be finally put into this folder,
 	- maximum file size: 32 GB,
@@ -72,7 +72,7 @@ Evidence Delivery in most of the cases is performed over the Internet, using one
  	- see [tutorial](#Aspera) below.
 3. NA only: Forensics Lab,
 
-Currently, none of the tools is GDPR compliant. 
+Currently, none of the tools is GDPR compliant. Alternatively, digital evidence can be physically shipped to XFIR consultant or NA Forensics Lab. If Client do not agree to share digital evidence outside it's location, the only available solution would be on-site support.
 
 ## Threat Intel Team Support
 Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. To get their support, proceed with following steps:
@@ -102,28 +102,42 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force X
 
 Once the channel is created, it is possible to add members. To create a new Slack channel:
 1.  Click `+` on the right hand side of `Channels` section or if it is not visible, hover `Channels` section header which should cause `+` to appear and click it.
-![Slack channels menu](screenshots/Slack_01.png)
+<p align="center" width="100%"><img src="screenshots/Slack_01.png"></p>
 2. Pick up an option "Create a channel".
 3. Fill in details of a new channel:
 	- name channel using a case number: irXX-YYYY,
 	- Select `Make Private`
 	- Fill in description providing customer name and brief description of the case, eg. "BEC case of 2 accounts for MyCompany"
-[!Details of the new Slack channel](screenshots/Slack_02.png)
+<p align="center" width="100%"><img src="screenshots/Slack_02.png"></p>
 
 ### IBM Box Folder for Case Data
 1. Navigate to a folder containing case folder template "IR_Engagement_Folder_Template_DONOTMODIFY" https://ibm.ent.box.com/folder/63956024543
 2. Pick "Move or Copy" from 3 dots menu for template folder
-![Move or Copy Engagement folder template](screenshots/Box_engagement_folder1.png)
+<p align="center" width="100%"><img src="screenshots/Box_engagement_folder1.png"></p>
 3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".
-![Select destination for the copied engagement folder template](screenshots/Box_engagement_folder2.png)
+<p align="center" width="100%"><img src="screenshots/Box_engagement_folder2.png"></p>
 4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
-![Navigate to newly created folder](screenshots/Box_engagement_folder3.png)
+<p align="center" width="100%"><img src="screenshots/Box_engagement_folder3.png"></p>
 5. Rename created folder according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client). 
-![Rename folder](screenshots/Box_engagement_folder4.png)
+<p align="center" width="100%"><img src="screenshots/Box_engagement_folder4.png"></p>
+
 
 ### IBM Box Folder for Digital Evidence
+1.  Browse to the root of your IBM Box account:  [https://ibm.ent.box.com/folder/0](https://ibm.ent.box.com/folder/0)
+2. On the right side chose "New" and then "Folder"
+<p align="center" width="100%"><img src="screenshots/Box_upload_folder1.png"></p>
+3. Enter folder name according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client) and click "Create". Add XFIR team members working on this case with "Co-worker" permissions.
+<p align="center" width="100%"><img src="screenshots/Box_upload_folder2.png"></p>
+4. Navigate to newly created folder. 
+5. Click "Share" on the right side to invite Client representatives
+<p align="center" width="100%"><img src="screenshots/Box_upload_folder3.png"></p>
+6. Enter Client email addresses so they receive invites (and need to create Box accounts). Make sure to assign "Previewer uploader" rights, to ensure tight control of uploaded data.
+<p align="center" width="100%"><img src="screenshots/Box_upload_folder4.png"></p>
 
+If your client has questions about data privacy and security as it relates to Box you can refer them to the official  [Box Security Whitepaper](https://cloud.app.box.com/s/igvy6orjgbhg8oxjn967s54x4py23st9). 
 
+Make sure to do not send invites to free email provider accounts, such as Gmail, Hotmail, etc as they are banned from accessing IBM Box. It violates IBM ITCS300 Security Policy and you will receive tersely worded email.
+<p align="center" width="100%"><img src="screenshots/Box_upload_folder5.png"></p>
 
 ### Aspera
 Location: https://ibm.ibmaspera.com/
@@ -136,14 +150,14 @@ Location: https://ibm.ibmaspera.com/
 4. Click "Create folder"
 <p align="center" width="100%"><img src="screenshots/Aspera3.png"></p>
 5. Enter folder name according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client) and click "Create".
-![Enter folder name](screenshots/Aspera4.png)
+<p align="center" width="100%"><img src="screenshots/Aspera4.png"></p>
 6. Navigate to newly created folder. 
 7. Enter sharing options on the right side: click "Share this folder" and then "Invite collaborators"
-![Entering sharing options](screenshots/Aspera5.png)
+<p align="center" width="100%"><img src="screenshots/Aspera5.png"></p>
 8. Invite XFIR team members working on this case with "Edit" rights.
-![Inviting XFIR members](screenshots/Aspera6.png)
+<p align="center" width="100%"><img src="screenshots/Aspera6.png"></p>
 9. Invite Client representatives with "Custom" rights, assigning only following rights: "Browse", "Upload files" and "Create folders"
-![Inviting Client representatives](screenshots/Aspera7.png)
+<p align="center" width="100%"><img src="screenshots/Aspera7.png"></p>
 
 ![Choose "File" application](screenshots/Aspera1.png)
 
@@ -172,49 +186,3 @@ All XFIR engagements of the type  `IR`  require an initial  `Engagement Work`  I
 
 This makes the task of tracking those tickets easier for Intel and facilitates better workflow between IR consultants and Intel analysts working on an engagement together. XFIR uses functionality within Resilient to create and associate these tickets with our client engagements. For more information see the  [Intel Analysis Ticketing](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-IR-IntelTicketing)  section.
 
-# [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#situational-ir-spin-up-procedures)Situational IR Spin-Up Procedures
-
-No two IR engagements are the same, some will require additional infrastructure and considerations to support the effort. For example, the client might prefer to use their own data transfer solution instead of ours (_Box/Aspera_). The engagement could require deployment of Endpoint Detection and Response (EDR) technology or in some cases, just analysis of logs or forensic images.
-
-You may need to perform one or more of these additional spin-up processes and not necessarily in any particular oder or timeframe depending the dynamic nature of incident response.
-
-## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer)Client Data Transfer
-
-In most cases, you will need to establish some method of secure data transfer with the client. If the client does not wish to use their own data transfer method we can use Box or Aspera to facilitate the transfer. If the client does not wish to share data remotely for security or privacy concerns, we can suggest other methods such as shipping data to the  [Forensic LAB](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#forensic-lab-support)  on encrypted medium, or  [OnSite Support](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#onsite-support). In either case, it is our duty to handle client data in a secure manner and adhere to local
-
-It should be noted that Box and Aspera have different file size and bandwidth limitations. Your choice of solution could be driven by those factors.
-
-
-### [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer-via-box)Client Data Transfer via Box
-
-Setting up Box for data transfer is simple and secure. If your client has questions about data privacy and security as it relates to Box you can refer them to the official  [Box Security Whitepaper](https://cloud.app.box.com/s/igvy6orjgbhg8oxjn967s54x4py23st9). If the client needs additional information about IBM or XFIR specific data security and privacy procedures check the  _**Data Privacy and Retention**_  page for more resources.
-
-To create a new Client Data Transfer folder use the following instructions:
-
-1.  Browse to the URL  [https://ibm.ent.box.com/folder/0](https://ibm.ent.box.com/folder/0)
-
-_Note: You will need to be on IBM VPN to access your Box account._
-
-Once you've authenticated you should see something similar to the following:
-
-[![](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/XFIR-Box.png)
-
-2.  Create a folder within the root of your Box access  `https://ibm.ent.box.com/folder/0`  and name it accordingly. You can do this by selecting  `New`  from the options in the upper right hand of the page and select  `Folder`
-
-[![New](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Box_Client_01.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Box_Client_01.png)
-
-3.  Name the folder accordingly and then add the relevant contacts from your client and hit  `create`. Make sure to set the permissions to  `Viewer Uploader`  unless you specifically need the client to have editing functionality.
-
-[![New](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Box_Client_02.png)](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Box_Client_02.png)
-
-Once you've created the folder, whoever you shared the folder with will receive an email informing them of your collaboration folder and a link to Box. They will then need to either create a free Box account using the same email or authenticate to an existing Box account under that email.
-
-You can always add or remove additional collaborators and change permissions for users within a Box folder. It is best practice to limit the collaborators to individuals who have a need to know and handle the subject data.
-
-Once the engagement is complete and unless data retention is requested by the client or client's counsel. The data transfer folder should be deleted. For specific information regarding XFIR data retention policy see the  _**Data Privacy and Retention**_  page.
-
-Other Box considerations and tips:
-
--   Turn on upload/download notifications for your data transfer folder to receive email alerts when someone uploads or downloads a file.
--   If a specific file is relevant to other XFIR members on your engagement, consider copying that file to the  `Data Provided by Client`  folder within the  `Engagement Box Folder`  for your engagement instead of adding and managing permissions on the data transfer folder.
--   The client data transfer folder is simply a mechanism for clients to provide data to XFIR remotely and securely and should not be used as a "working" folder. One exception to this could be a shared Box note or document between XFIR and the client for syncing tasks and efforts.
