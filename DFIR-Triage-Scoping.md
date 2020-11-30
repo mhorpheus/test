@@ -81,7 +81,7 @@ Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities ar
 	- sending "Triage and Scoping Call Summary Mail" to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient (who can be found following [this tutorial](DFIR-Resilient.md#Finding-Details-of-Incident-Declarers)),
 - ensuring that incident details and Triage and Scoping Call outcome is recorded in Resilient:
 	- if there is no ticket, create a new one following guidelines from [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
-	- update existing Resilient ticket with additional details obtained during Triage and Scoping Call,
+	- update existing Resilient ticket with additional details obtained during Triage and Scoping Call, especially "Triage Worksheet" tab,
 	- paste "Triage and Scoping Call Summary Note" which was sent to a Client to a Notes section in Resilient.
 
 It is important to note, that every triage call MUST be fully documented in the Resilient, regardless final decision whether XFIR was engaged or not. 

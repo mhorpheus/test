@@ -12,6 +12,8 @@
 	- [IBM Box Folder for Case Data](#IBM-Box-Folder-for-Case-Data)
 	- [IBM Box Folder for Digital Evidence](#IBM-Box-Folder-for-Digital-Evidence)
 	- [Aspera](#Aspera)
+		- [Creating a Folder for an Aspera Upload](#Creating-a-Folder-for-an-Aspera-Upload)
+		- [Troubleshooting Aspera](#Troubleshooting-Aspera)
 
 ## Introduction
 The purpose of this page is to document the XFIR Incident Response Service Spin-Up process and procedures. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home.md)).
@@ -38,13 +40,39 @@ Proceed with following steps to set up working environment for collaboration wit
 	3. Add people to Slack channel from X-Force IR or TI or RE teams.
 
 ### Environment for Data Sharing with a Client
+Remote Evidence Collection, together with all supporting materials, is documented on the [Digital Evidence](DFIR-Digital-Evidence.md) page.
 Evidence Delivery in most of the cases is performed over the Internet, using one or more of below methods:
-1. dedicated IBM Box folder for evidence upload (this is not the case IBM Box folder created above),
-	- 2DO: SOME REQUIREMENTS
-2. IBM Aspera folder or package,
-	- 2DO: SOME REQUIREMENTS
-4. EMEA only: SFTP,
-5. NA only: Forensics Lab,
+1. dedicated IBM Box folder for evidence upload (this is not same as the case IBM Box folder created above):
+	- is an ultimate target for evidence - all evidence should be finally put into this folder,
+	- maximum file size: 32 GB,
+	- "need to know" privilege implemented by adding only XFIR consultants working for this case,
+	- folder must be named "IRXX-YYYY-Evidence" in the root folder of a consultant's IBM Box:
+		- invite only XFIR people working on this case with "Co-owner" rights,
+		- do not create it within a team shared part of IBM Box,
+	- create a "IRXX-YYYY-Evidence/Client Upload" folder:
+		- allows to move uploaded files to a root folder of "IRXX-YYYY-Evidence", so that files are not widely shared,
+		- invite people for an upload with "Previewer Uploader" rights, so they confirm that files have been uploaded,
+	- do not send Box invites to Free email providers (eg. Gmail, Hotmail) as they are banned from accessing IBM's Box and will violate IBM ITCS300 Security Policy.
+	- see [tutorial](#IBM-Box-Folder-for-Digital-Evidence) below.
+2. IBM Aspera folder (optional):
+	- folder must be named “IRXX-YYYY-Evidence”
+	- should be considered ONLY for transition as data are deleted after 7 days:
+		- make sure smaller files (under Box size limit) are uploaded directly to Box,
+		- for larger files (above Box limit), download them from Aspera, split into chunks (eg. with 7zip) and upload to IBM Box,
+	- invite only XFIR people working on this case with assigning them "Edit" rights in the Aspera menu,
+	- invite Client representatives:
+		- always attempt to invite people by mail, assigning them only following rights: "Browse", "Upload files" and "Create folders",
+		- whenever possible, avoid using "Shared links" as once a shared link is created the permissions cannot be downgraded,
+	 	- as a last resort if there are no other options upload can be anonymous via shared links.
+	- other considerations:
+		- no file size limit,
+	 	- requires Web Browser plugin and software installation,
+	 	- may require some firewall changes on a Client side (see [Troubleshooting Aspera](#Troubleshooting-Aspera) below),
+		- do not use Aspera "Package" option, as it is deleted immediately after successful download, making it impossible to forward to another XFIR consultant. Always use "Files".
+ 	- see [tutorial](#Aspera) below.
+3. NA only: Forensics Lab,
+
+Currently, none of the tools is GDPR compliant. 
 
 ## Threat Intel Team Support
 Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. To get their support, proceed with following steps:
@@ -74,7 +102,6 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force X
 
 Once the channel is created, it is possible to add members. To create a new Slack channel:
 1.  Click `+` on the right hand side of `Channels` section or if it is not visible, hover `Channels` section header which should cause `+` to appear and click it.
-
 ![Slack channels menu](screenshots/Slack_01.png)
 2. Pick up an option "Create a channel".
 3. Fill in details of a new channel:
@@ -91,46 +118,51 @@ Once the channel is created, it is possible to add members. To create a new Slac
 ![Select destination for the copied engagement folder template](screenshots/Box_engagement_folder2.png)
 4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
 ![Navigate to newly created folder](screenshots/Box_engagement_folder3.png)
-5. Rename created folder according to requirements provided in the section [Setting up Collaboration Environment](#Setting-up-Collaboration-Environment). 
+5. Rename created folder according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client). 
 ![Rename folder](screenshots/Box_engagement_folder4.png)
 
 ### IBM Box Folder for Digital Evidence
 
-### Aspera
-https://ibm.ibmaspera.com/
 
-Troubleshooting Aspera
-Visit https://test-connect.asperasoft.com/ to test connections or 
-https://www.ibm.com/support/pages/node/746389 for firewall information.
+
+### Aspera
+Location: https://ibm.ibmaspera.com/
+#### Creating a Folder for an Aspera Upload
+1. Launch Aspera in the browser and login with your IBM credentials.
+2. Choose  "Files" application
+![Choose "File" application](screenshots/Aspera1.png)
+3. Ensure that you have "All IBM" chosen on left vertical menu.
+![Use "All IBM" scope](screenshots/Aspera2.png)
+4. Click "Create folder"
+![Create folder](screenshots/Aspera3.png)
+5. Enter folder name according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client) and click "Create".
+![Enter folder name](screenshots/Aspera4.png)
+6. Navigate to newly created folder. 
+7. Enter sharing options on the right side: click "Share this folder" and then "Invite collaborators"
+![Entering sharing options](screenshots/Aspera5.png)
+8. Invite XFIR team members working on this case with "Edit" rights.
+![Inviting XFIR members](screenshots/Aspera6.png)
+9. Invite Client representatives with "Custom" rights, assigning only following rights: "Browse", "Upload files" and "Create folders"
+![Inviting Client representatives](screenshots/Aspera7.png)
+
+#### Troubleshooting Aspera
+- Test Aspera connectivity: https://test-connect.asperasoft.com/. 
+- Firewall configuration requirements documentation: https://www.ibm.com/support/pages/node/746389
+- Aspera is able to use whole available bandwidth of the Internet connection so may disturb other traffic.
+
+
 
 ############################################################
 
 
 # General IR Spin-Up Procedures
 
-
-
-
-
-3.  Update the  [Resilient Engagement Ticket](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#resilient-engagement-ticket)  early and often. Resilient is the primary client and engagement management tool we use at XFIR.
-
-We log and track hours, reporting and QA tasks, communications between XFIR and the client, engage Intel and much more using Resilient. Visit the  [Resilient Overview](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-Resilient)  for more information.
-
 4.  Every IR engagement requires an  [Intel Engagement Ticket](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#intel-engagement-ticket). When we engage Intel for malware analysis, dark-web analysis, or any other Intel specific task related to an IR engagement, that work needs to be tracked and associated with an  `Engagement Work`  Intel ticket.
 
 ## Resilient Engagement Ticket
 
-Updating the  `Resilient Engagement Ticket`  is the primary engagement management function required from end-to-end on any IR engagement. If the client is engaging us after they called the Hotline there should already be  `Hotline Triage`  ticket at this point. If this is the case, simply add the  `IR`  tag and make sure the  `Triage Worksheet`,  `Notes`, and  `Engagement Members`  are updated.
 
-If the client has engaged us through other means you will need to create an engagement ticket. For more information on the  `IR Ticketing Process`  go  [here](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-IR-Resilient).
 
-For more information on Resilient in general visit the  [Resilient Overview](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-Resilient)
-
-Some general rules and best practices for engagement management in Resilient:
-
--   Update hours associated with an engagement project everyday. It is difficult for the  `Engagement Lead`  to properly manage resources and tasking when the consumption of hours are not accurately recorded in a timely fashion.
--   Use the  `Notes`  tab to record significant developments within the engagement project. It is recommended to log significant client communications and engagement tasking within the  `Notes`  tab.
--   Use the attachments tab to upload status updates, draft and final reports, as well as the engagement tracking sheet periodically or upon completion of the IR engagement.
 
 ## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#intel-engagement-ticket)Intel Engagement Ticket
 
@@ -144,27 +176,12 @@ No two IR engagements are the same, some will require additional infrastructure 
 
 You may need to perform one or more of these additional spin-up processes and not necessarily in any particular oder or timeframe depending the dynamic nature of incident response.
 
-1.  [Client Data Transfer](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer)
-2.  [Technology Deployment](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#technology-deployment)
-3.  [Data Acquisition](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#data-acquisition)
-4.  [On-Site Support](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#on-site-support)
-5.  [Forensic LAB Support](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#forensic-lab--support)
-
 ## [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer)Client Data Transfer
 
 In most cases, you will need to establish some method of secure data transfer with the client. If the client does not wish to use their own data transfer method we can use Box or Aspera to facilitate the transfer. If the client does not wish to share data remotely for security or privacy concerns, we can suggest other methods such as shipping data to the  [Forensic LAB](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#forensic-lab-support)  on encrypted medium, or  [OnSite Support](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#onsite-support). In either case, it is our duty to handle client data in a secure manner and adhere to local
 
 It should be noted that Box and Aspera have different file size and bandwidth limitations. Your choice of solution could be driven by those factors.
 
--   Box
-    -   Maximum File Size:
-    -   Bandwidth Limitations:
--   Asper
-
-The following is a guide for setting up and sharing a data transfer folder with your client:
-
--   [Client Data Transfer via Box](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer-via-box)
--   [Client Data Transfer via Aspera](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer-via-aspera)
 
 ### [](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#client-data-transfer-via-box)Client Data Transfer via Box
 
