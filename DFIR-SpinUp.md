@@ -130,11 +130,11 @@ Location: https://ibm.ibmaspera.com/
 #### Creating a Folder for an Aspera Upload
 1. Launch Aspera in the browser and login with your IBM credentials.
 2. Choose  "Files" application
-<p align="center" width="100%"><img width="33%" src="screenshots/Aspera1.png"></p>
+<p align="center" width="100%"><img src="screenshots/Aspera1.png"></p>
 3. Ensure that you have "All IBM" chosen on left vertical menu.
-![Use "All IBM" scope](screenshots/Aspera2.png)
+<p align="center" width="100%"><img src="screenshots/Aspera2.png"></p>
 4. Click "Create folder"
-![Create folder](screenshots/Aspera3.png)
+<p align="center" width="100%"><img src="screenshots/Aspera3.png"></p>
 5. Enter folder name according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client) and click "Create".
 ![Enter folder name](screenshots/Aspera4.png)
 6. Navigate to newly created folder. 
