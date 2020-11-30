@@ -118,7 +118,7 @@ Once the channel is created, it is possible to add members. To create a new Slac
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder2.png"></p>
 4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder3.png"></p>
-5. Rename created folder according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client). 
+5. Rename created folder according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a>. 
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder4.png"></p>
 
 
@@ -126,7 +126,7 @@ Once the channel is created, it is possible to add members. To create a new Slac
 1.  Browse to the root of your IBM Box account:  [https://ibm.ent.box.com/folder/0](https://ibm.ent.box.com/folder/0)
 2. On the right side chose "New" and then "Folder"
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder1.png"></p>
-3. Enter folder name according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client) and click "Create". Add XFIR team members working on this case with "Co-worker" permissions.
+3. Enter folder name according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a> and click "Create". Add XFIR team members working on this case with "Co-worker" permissions.
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder2.png"></p>
 4. Navigate to newly created folder. 
 5. Click "Share" on the right side to invite Client representatives
@@ -134,7 +134,7 @@ Once the channel is created, it is possible to add members. To create a new Slac
 6. Enter Client email addresses so they receive invites (and need to create Box accounts). Make sure to assign "Previewer uploader" rights, to ensure tight control of uploaded data.
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder4.png"></p>
 
-If your client has questions about data privacy and security as it relates to Box you can refer them to the official  [Box Security Whitepaper](https://cloud.app.box.com/s/igvy6orjgbhg8oxjn967s54x4py23st9). 
+If your client has questions about data privacy and security as it relates to Box you can refer them to the official  <a href="https://cloud.app.box.com/s/igvy6orjgbhg8oxjn967s54x4py23st9">Box Security Whitepaper</a>. 
 
 Make sure to do not send invites to free email provider accounts, such as Gmail, Hotmail, etc as they are banned from accessing IBM Box. It violates IBM ITCS300 Security Policy and you will receive tersely worded email.
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder5.png"></p>
@@ -149,7 +149,7 @@ Location: https://ibm.ibmaspera.com/
 <p align="center" width="100%"><img src="screenshots/Aspera2.png"></p>
 4. Click "Create folder"
 <p align="center" width="100%"><img src="screenshots/Aspera3.png"></p>
-5. Enter folder name according to requirements provided in the section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client) and click "Create".
+5. Enter folder name according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a> and click "Create".
 <p align="center" width="100%"><img src="screenshots/Aspera4.png"></p>
 6. Navigate to newly created folder. 
 7. Enter sharing options on the right side: click "Share this folder" and then "Invite collaborators"
