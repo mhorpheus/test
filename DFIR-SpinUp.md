@@ -130,7 +130,7 @@ Location: https://ibm.ibmaspera.com/
 #### Creating a Folder for an Aspera Upload
 1. Launch Aspera in the browser and login with your IBM credentials.
 2. Choose  "Files" application
-![Choose "File" application](screenshots/Aspera1.png)
+<p align="center" width="100%"><img width="33%" src="screenshots/Aspera1.png"></p>
 3. Ensure that you have "All IBM" chosen on left vertical menu.
 ![Use "All IBM" scope](screenshots/Aspera2.png)
 4. Click "Create folder"
@@ -144,6 +144,8 @@ Location: https://ibm.ibmaspera.com/
 ![Inviting XFIR members](screenshots/Aspera6.png)
 9. Invite Client representatives with "Custom" rights, assigning only following rights: "Browse", "Upload files" and "Create folders"
 ![Inviting Client representatives](screenshots/Aspera7.png)
+
+![Choose "File" application](screenshots/Aspera1.png)
 
 #### Troubleshooting Aspera
 - Test Aspera connectivity: https://test-connect.asperasoft.com/. 
