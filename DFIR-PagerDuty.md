@@ -42,9 +42,9 @@ Practically all hotline numbers are provided by different providers:
 - APAC - Telstra
 - EMEA - British Telecom (BT)
 
-Note: Country-specific hotline numbers are maintained on the [Wiki page covering hotline operations](DFIR-Hotline.md)
+Note: Country-specific hotline numbers are managed by each region and listed on the [Wiki page covering hotline operations](DFIR-Hotline.md)
 
-It was not possible to transfer Hotline numbers between operators, so to integrate them under one of the providers, we would need to change several hotline numbers. XFIR decided it this is not acceptable scenario and decided to use PD as a central point for integration. All hotline numbers from RACC, Telstra and BT are pointing to a single phone number offered by PD. This way every incoming Hotline call is redirected to PD, which forwards it to mobile phone of a person who is currently on-call. 
+It was not possible to transfer Hotline numbers between operators, so to integrate them under one of the providers, we would need to change several hotline numbers. XFIR decided that this was not an acceptable solution and decided to use PD as a central point for integration. All hotline numbers from RACC, Telstra and BT are pointing to a single phone number offered by PD. This way every incoming Hotline call is redirected to PD, which forwards it to mobile phone of a person who is currently on-call. 
 
 XFIR PD hotline number is +44 808 178 1527. One can simply call this number and reach out directly PD system. XFIR has not advertised this number as official XFIR Hotline number and uses it only for integration.
 
