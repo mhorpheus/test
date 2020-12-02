@@ -16,86 +16,95 @@
 ## Introduction
 The purpose of this page is to document the XFIR Triage and Scoping Call procedure. The following documentation is a guideline for XFIR Triage and Scoping Call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home.md)).
 
-A dedicated Triage and Scoping Call must be conducted for each assistance request received by XFIR. The intention of such a call is:
-- obtain necessary understanding of the incident Client is facing,
-- evaluate scope of he incident,
-- determine type of assistance requested by a Client, eg.:
-	- full IR support or maybe just forensics analysis, etc.
-	- on-site or remote assistance or mixed approach, etc.
+A dedicated Triage and Scoping Call must be conducted for each assistance request received by XFIR. The intention of such a call is to:
+- gain an understanding of the incident the Client is facing,
+- evaluate the scope of the incident, e.g.:
+	- all Windows endpoints on a global network
+	- certain web servers in a specific data centre
+- determine type of assistance requested by the Client, e.g.:
+	- full IR support or limited forensic analysis
+	- on site, remote assistance, or a mixed approach
 - determine necessary effort from XFIR.
 
-A Triage and Scoping Call most often (but is not limited to) originates from:
-- a call to XFIR Hotline,
-- a direct contact from a Client to XFIR Consultant he/she has relationship with,
-- a direct contact from IBM employees aware that Client is facing a security incident.
+A Triage and Scoping Call usually originates from:
+- a call to the XFIR Hotline,
+- direct contact from a Client to an XFIR Consultant they have a relationship with,
+- direct contact from IBM employees aware that the Client is facing a security incident.
 
 ## Organizing a Triage and Scoping Call
-XFIR is contractually obliged to organize a Triage and Scoping Call and meet defined SLA. The value of SLA depends on the type of the subscription Client has. Default values for different subscriptions are presented below:
+XFIR is contractually obligated to organize a Triage and Scoping Call within a certain time period in order to meet a Service Level Agreement (SLA). The length of time varies based on the contact with each Client. Usually this is dictated by the type of retainer the Client has, but custom SLAs may have been agreed on a case by case basis. The default lengths of time for the different retainer products are:
 - Legacy Emergency Response Service (ERS) subscriptions – 1 hour
 - Vision Retainer Tier 2 and Tier 3 – 1 hour
-- Vision Retainer Tier 1 – 4 hours.
+- Vision Retainer Tier 1 – 4 hours
 
-However, there may be some exceptions, so it is always recommended to check data from Client entry in Resilient if organizing a Triage and Scoping Call takes more time than one hour. When scheduling a Triage and Scoping Call, it is recommended to provide at least 30 minutes between the Hotline call and the Triage and Scoping Call to give time for preparation to all participants.
+Resilient should be consulted to ensure that the proposed time for a Triage and Scoping Call is not outside of that client's SLA. Equally, it is recommended to provide at least 30 minutes between the Hotline call and the Triage and Scoping Call to give time for preparation to all participants.
 
-A Triage and Scoping Call should be explicitly set up by XFIR Consultants, to ensure that XFIR owns and holds full control of the Triage. This related to both participants and discussion flow. For this reason:
-- do not join already ongoing calls and always set up dedicated Triage and Scoping Call,
-- if possible avoid using Client's or 3rd party teleconferencing bridges, due inability to control who participates,
-- do not use personal Webex links, but create a one-time Webex meeting,
+A Triage and Scoping Call should be explicitly set up by XFIR Consultants, to ensure that XFIR owns and holds full control of the Triage. This related to both participants and discussion flow. For this reason, wherever possible:
+- avoid joining already ongoing Client conference bridges
+- avoid using the Client's (or a third party's) teleconferencing bridges due to the inability to control who participates
+- do not use personal Webex links, and instead create an instantiated one-off Webex meeting
 
-Joining ongoing calls pose a significant risk, that XFIR would not be driving the call, but will just be one of many parties involved. For this important topics related to security incident may be lost in discussions among big group of participants. 
+Joining ongoing calls poses a significant risk that XFIR would not be driving the call, and will just be one of many parties involved. For this important topics related to security incident may be lost in discussions among big group of participants. Instead offer to set up dedicated a Triage and Scoping Call between XFIR, the Client, and any other key stakeholders that they wish to invite.
 
-The person responsible to organize a Triage and Scoping Call (if it originated from a Hotline Call, then it is on-call person who picked up a call)  is responsible to:
-1. ensure that XFIR is represented by required people (see Section [XFIR Representatives](#XFIR-Representatives)),
-2. set up a call, by sending meeting invite to designated participants,
-3. initiate a Call:
-	- open teleconference bridge and join the call,
-	- provide a quick summary of a current XFIR understanding of a case,
-	- introduce XFIR members present on the call, clearly marking who is the Triage and Scoping Call Lead.
+The person organizing a Triage and Scoping Call is responsible for:
+1. ensuring that XFIR is represented by required people (see Section [XFIR Representatives](#XFIR-Representatives)),
+2. setting up a call by sending Webex invites to designated participants,
+3. initiating the Call:
+	- open the Webex meeting,
+	- provide a quick summary of a current XFIR understanding of the case,
+	- introduce XFIR members present on the call, clearly mentioning who is the Triage and Scoping Call Lead.
 
-The intention of this approach, is to ensure continuity of the contact with a Client, however on-call person is not responsible for running a Triage and Scoping Call. This means, that after completing actions listed above, on-call person is not required to participate further in the call and can drop off, unless has been assigned any of the roles described in the Section [XFIR Representatives](#XFIR-Representatives).
+The intention of this approach is to ensure continuity of the contact with a Client. If the contact originated from a Hotline Call, then it is on-call person's responsibility to organize the Triage and Scoping Call although they may not be responsible for running the Triage and Scoping Call. 
 
-Use `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Call organization and discuss any topics related to that case. Please keep in mind, that `ir-hotline` Slack channel, should not be used to discuss case related topics. More details on differences between those channels and how they should be used can be found [here](DFIR-Hotline.md#Shift-Turnover).
+After completing actions listed above, the on-call person is not required to participate further in the call and can drop off, unless has been assigned any of the roles described in the Section [XFIR Representatives](#XFIR-Representatives). This leaves the on-call person free to handle new Hotline calls.
+
+Use the `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Calls and discuss any topics related to that case. Please keep in mind that the `ir-hotline` Slack channel should not be used to discuss case related topics, and is intentionally 'low traffic' to allow XFIR team members to quickly see how many calls have come in since the last time they checked. More details on differences between those channels and how they should be used can be found [here](DFIR-Hotline.md#Shift-Turnover).
 
 ### XFIR Representatives
 Roles of XFIR participants during Triage and Scoping Call are defined as following:
 - **Senior Consultant** (required) - responsible for maintaining necessary quality of whole Triage and Scoping process. Can be Functional Lead, Manager, Geography Lead or other person considered by Leadership as Senior Consultant with sufficient experience.
-- **Triage Call Lead** (required) - responsible tun run a call and Triage an Incident.
-- **Special Matter Expert (SME)** (optional) - Consultant required to provide assistance on specific topic based on his knowledge and experience. 
-- **Assigned Consultants** (optional) - ones who will be working on this engagement.
-- **Junior** or **Newcommer** (optional) - To build expertise of Junior Consultants or to share our approach for running Triage Calls with new team members.
+- **Triage Call Lead** (required) - responsible for running the call, and will likely ask the majority of the questions.
+- **Special Matter Expert (SME)** (optional) - Consultant required to provide assistance on specific topic based on their knowledge and experience. 
+- **Assigned Consultants** (optional) - Consultants who may be working on this engagement, for example due to geographical location, languasge skills or availability.
+- **Junior** or **Newcomer** (optional) - Consultants observing the Triage and Scoping Call process for their own experience so that they can build expertise or learn the XFIR approach to Triage and Scoping Calls.
 
-It is not required to represent all above roles, as it should be decided on the case by case basis. *Senior Consultant* may lead the call holding *Triage Call Lead* role. Alternatively, *Senior Consultant* may be present on the call just to support or shadow other Consultant who would perform a role of a *Triage Call Lead*. Additionally, *Triage Call Lead* should not be mistaken with a Incident Response Lead for this particular case, as it is possible that such person was not yet designated before Triage and Scoping Call.
+It is not required to cover all roles, and which are appropriate should be decided on a case-by-case basis. For example:
+- the *Senior Consultant* and *Triage Call Lead* may be the same person. 
+- the *Senior Consultant* may be present on the call solely to support or shadow other Consultant who would perform a role of a *Triage Call Lead*. 
+
+*Triage Call Lead* should not be mistaken with a Incident Response Lead for this particular case, as it is possible that who would lead this investigation from XFIR was not decided prior to the Triage and Scoping Call.
 
 Only necessary people should be invited to a Triage and Scoping Call, to avoid over-representation of XFIR team, which could overwhelm Client. 
 
-Identification of individuals to represent necessary roles during Triage and Scoping Call can be performed according to one of the following  scenarios:
-1. The person who received a trigger for a Triage and Scoping Call is capable of running a call on his/her own being a *Senior Consultant* as well as having necessary availability. A trigger can be a Hotline call or any other contact requesting XFIR assistance.
-2. `ir-triage-scoping` Slack channel can be used to query for volunteers willing to support Triage and Scoping Call as well as SME's if necessary
-3. In absence of volunteers, anyone from Leads Team (Team Leads, Functional Leads or Geography Leads) should be contacted to help designate people supporting Triage and Scoping Call.
+Individuals to represent necessary roles during Triage and Scoping Calls can be identified in a number of ways:
+1. The person who was contacted for a Triage and Scoping Call is capable of running a call on their own being a *Senior Consultant* as well as having the necessary availability.
+2. `ir-triage-scoping` Slack channel can be used to request volunteers and/or SMEs if necessary. Consider using the `@here` Slack command tyo notify online members of the channel.
+3. If not volunteers are forthcoming, the Leads Team (Team Leads, Functional Leads or Geography Leads) should be contacted to help designate people or attend themselves.
 
 ## Responsibilities of a Triage Call Lead
 Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities are defined as following:
 - leading Triage and Scoping Call,
-- taking notes or designating note taking person,
+- taking notes or designating notetaking to another attendee,
 - producing [Triage and Scoping Call Summary Note and Mail](#Triage-and-Scoping-Call-Summary-Note-and-Mail),
 	- sending "Triage and Scoping Call Summary Mail" to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient (who can be found following [this tutorial](DFIR-Resilient.md#Finding-Details-of-Incident-Declarers)),
 - ensuring that incident details and Triage and Scoping Call outcome is recorded in Resilient:
-	- if there is no ticket, create a new one following guidelines from [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
-	- update existing Resilient ticket with additional details obtained during Triage and Scoping Call, especially "Triage Worksheet" tab,
+	- by now there should already be a Resilient entry, but if not create one following guidelines from [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
+	- update existing Resilient entry with additional details obtained during Triage and Scoping Call, especially "Triage Worksheet" tab,
 	- paste "Triage and Scoping Call Summary Note" which was sent to a Client to a Notes section in Resilient.
+	- when approval is received, upload a .eml format copy of this email to Resilient via the 'Attachments' tab.
 
-It is important to note, that every triage call MUST be fully documented in the Resilient, regardless final decision whether XFIR was engaged or not. 
+It is important to fully document **every** Triage and Scoping Call in the Resilient, regardless of the final decision made by the client on whether or not to engage XFIR. 
 
 ## Phases of a Triage and Scoping Call
-To address Triage and Scoping goals listed in the [Introduction](#Introduction), a call has been dived into several phases listed below. Below points should be treated as a **script** for running a Call:
+To address Triage and Scoping goals listed in the [Introduction](#Introduction), a call has been divided into several phases listed below. Below points should be treated as a **script** for running a Call:
 1. Introduction:
-	1. introduce XFIR participants,
-	2. Ask Client to introduce his team together with their roles,
-	3. If XFIR was engaged over the Hotline, on-call person provides a quick summary of a current XFIR understanding of a case.
+	1. Introduce XFIR participants,
+	2. Ask the Client to introduce their team together with their roles,
+	3. If XFIR was engaged over the Hotline, the on-call person provides a quick summary of the current XFIR understanding of the incident.
 	4. If applicable, perform hand over from on-call person to a designated Triage Call Lead.
-	5. Determine/clarify whether it is an existing Vision Retainer subscription Client or Ad-hoc.
+	5. If not done so already, clarify whether the Client is an existing retainer customer or if this will be an 'ad-hoc' engagement.
 2. Discovery:
-	1. Client provides incident description. Ensure that during discussion you identify most important topics, such as: 
+	1. Ask the Client to provide further information. Ensure that during discussion you cover important topics, such as: 
 		- how it was detected,
 		- number, type, role of systems impacted:
 			- physical or VMs,
@@ -103,50 +112,66 @@ To address Triage and Scoping goals listed in the [Introduction](#Introduction),
 			- Windows or Linux or MAC
 			- server functions and software used: web servers, domain controllers, database, etc.
 			- access/exposure to Internet/LAN: direct Internet exposure, over Firewall/IPS, proxy/reverse proxy, no Internet access, etc.
-		- number and type of accounts compromised: workstation user, local admin, domain/enterprise admin, service account, root, etc.
+		- number and type of accounts compromised (local user / admin, domain user / admin, service account, etc.),
 		- sensitivity/criticality of data stored on affected systems, backups policy and availability,
-		- are there any security solutions used within affected environment, like AV, EDR, etc.
-		- is there any centralized logs collection or SIEM type solution? if so which logs from affected systems were collected?
+		- security solutions used within affected environment (AV, EDR, etc.),
+		- any centralized logging or SIEM solution, and if so which logs from affected systems were collected,
 		- business impact,
- 		- what kind of artifacts were already found,
- 		- status of digital evidence collection: are there any electronic evidence already collected? if so, what tools were used? do they have necessary equipment/knowledge to perform it on their own or need assistance? etc.
-		- containment and remediation steps already performed, eg. system isolation, shutting down, VM snapshoot taken, 
+ 		- what kind of artifacts or IoCs were already found,
+ 		- status of digital evidence collection: 
+			- is any electronic evidence already collected?
+			- if so, what tools were used?
+			- do they have necessary equipment/knowledge to collect evidence on their own or do they need assistance?
+		- containment and remediation steps already performed (e.g. system isolation, shutting down, VM snapshoot taken), 
 		- other relevant actions performed.
-	2. Open floor for a questions from XFIR Consultants so they can get better understanding of the incident.
+	2. Open the floor for questions from XFIR Consultants so they can get better understanding of the incident.
 3. Identification of Client's objectives and expectations: 
 	- what is needed to perform a successful delivery,
-	- what type of task Client has for XFIR: full IR, dead box Forensic, EDR deployment, logs analysis, etc.
-	- what is expected in terms of XFIR availability: on-site or remote, 8x5, 8x7 or 24/7, etc.
+	- what type of tasks has the Client asked XFIR for help with: 
+		- full IR?
+		- dead box forensics?
+		- EDR deployment?
+		- log analysis?
+		- live response data colleciton and analysis?
+		- malware revese engineering?
+		- threat intel?
+	- what is expected in terms of XFIR availability: 
+		- on-site or remote?
+		- 8x5, 8x7 or 24x7?
 4. Presentation of XFIR approach and solution:
-	- what we can offer to address Client goals and expectations,
-	- discuss available solutions, eg. full blown forensics, triage systems, deploying EDR, search for candidates for full forensics, etc.
-	- take into account business constraints from Client, as most probably they want to be back in operations as soon as possible - try to propose solution addressing this demand as well as providing necessary level of security assurance,
-	- provide initial/containment recommendation so Client can start immediately working on them, while XFIR set up working environment,
+	- what we can offer to address the Client's goals and expectations,
+	- discuss available solutions (as above),
+	- take into account business constraints from Client, as they most probably want to be back in operation as soon as possible: try to propose a proportional solution addressing this demand as well as providing necessary level of security assurance,
+	- provide initial/containment recommendation so Client can start immediately working on these tasks while XFIR set up working environment,
 	-  if applicable, XFIR Consultants can propose changes to a Client approach and expectations, explaining what would be the benefits from a change,
 	- review approach proposed by XFIR against Client expectations, maybe Client wants to update their expectations/objectives for XFIR - agree on next steps.
 5. Closing:
 	- Establish regular cadence or at lest next meeting point for status updates.
-	- Read following statement: *Thank you very much for participant in this Triage and Scoping Call. After this Call \<We/I\> will prepare a "Triage and Scoping Call Note".  It will be shared via mail with you, as well as your Incident Declarers listed in our database. The note will contain, in writing, most important outcomes of this Call, such as: incident summary, goals and expectations for XFIR, next steps agreed upon and approximation number of hours needed to deliver agreed tasks. To proceed further an Incident Declarer from your side MUST respond to this mail and state that he/she agrees with a content of the note and authorities our team to start work as described in the mail. Without such an approval in writing, NO further investigative actions will be performed by our team.*
+	- Agree actions for the Client, e.g. provide initial tranche of log data via Box, reply to Triage and Scoping Call Summary Note and Mail promptly to trigger the retainer.
+	- explain that XFIR cannot start work (and that the retainer is not formally triggered) until an email approving the Triage and Scoping Call Summary Note and Mail is recieved by XFIR.
+	~~- Read following statement: *Thank you very much for participating in this Triage and Scoping Call. After this Call \<We/I\> will prepare a "Triage and Scoping Call Note".  It will be shared via mail with you, as well as your Incident Declarers listed in our database. The note will contain, in writing, most important outcomes of this Call, such as: incident summary, goals and expectations for XFIR, next steps agreed upon and an estimate of the number of hours needed to deliver the agreed tasks. To proceed further an Incident Declarer from your side MUST respond to this mail and state that they agree with the content of the note and authorises our team to start work as described in the email. Without such an approval in writing, NO further investigative actions will be performed by our team.* ~~
 
 
 ## Triage and Scoping Call Summary Note and Mail
-Triage and Scoping Call Summary Note and Mail is a hard evidence on what was discussed during a call. It is a crucial outcome from the beginning of our engagement and should be prepared with necessary care. The role of the Note is to:
+Triage and Scoping Call Summary Note and Mail is a record of what was discussed during a call. It is a crucial document for managing client expectations from the beginning of our engagement, and should be prepared with care. Its role is to:
  - **capture Triage and Scoping Call content** - ensure that discussed topics are documented in writing and not lost,
  - **populate Resilient ticket** - simply include this note to Resilient ticket, as it contains most of necessary information (just add remaining ones - detailed requirements of logging Resilient tickets are [here](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements).
- - **allow for a smooth transition** - proper documentation is necessary to allow case/geography handover of the incident or Follow the Sun for IR,
- - **ensure common understanding with Client** - protect against "we agreed/understood this differently" problem with Clients, as we explicitly require customer to acknowledge the content of the note containing what was discussed and agreed as well as predicted scope expressed in hours.
+ - **allow for a smooth transition** - proper documentation is necessary when handing over cases or briefing other to work on them, either as a result of another geographic region taking a case or  multiple regions working on a case in a Follow the Sun model.
+ - **ensure a common understanding with the Client** - protect XFIR against "we agreed/understood this differently" situations with Clients, as we explicitly require the Client to approve the content of the note, which states what actions were agreed for both sides as well as an estimate of the billable hours required for XFIR to complete their tasks.
 
-Every Triage and Scoping Call Summary Note and Mail must contains sections defined below. Each section should contain several **key** points. It is not necessary to document every single sentence, as it is not a transcript of the Call. A common sense is necessary from author of the Note (we do not want Client to wait 12h for a note to be prepared). While preparing a Note, prepare it in a way that a person receiving it would be able to pick up incident either totally without out or with very limited need to communicate with people present on Triage and Scoping Call. The sections are as following:
+Every Triage and Scoping Call Summary Note and Mail must contains sections defined below. Each section should contain several **key** points. It is not necessary to document every single sentence, as it is not a transcript of the Call. Common sense is necessary from author of the Note as we do not want to the Client to wait 12 hours for a note to be prepared. A well-written Triage and Scoping Call Summary Note and Mail will allow any member of the XFIR team (including those that did not attend the Triage and Scoping Call) to read it and understand the agreed approach as well as what the client has agreed to provide and how many hours we have available to complete the initial tranche of work.
+
+The sections are as following:
 1. XFIR understanding of the incident
 2. Expectations and goals for XFIR
 	- what client wants us to do and what we agreed upon.
+	- what client has agreed to do in order for XFIR to be able to start work (e.g. provision access to their EDR for three consultants)
 3. Next steps proposed by XFIR
 	- the intention of this point is to document what we have recommended as IR steps, to avoid address future conflicts, such as "you recommended this and that" or "you have not recommended" this action, and who is their owner (not actions tracker, but rather high level view of what to expect next from whom)
 	- agreed cadence - when is next meeting,
 4. Subscription hours status (not applicable to Ad-hoc engagements):
 	- number of hours left from subscription and their expiry date,
-	- if applicable, notify Client that number of hours may not be sufficient and contractual discussions needs to be started,
-	- guidance how to check number of hours left can be found [here](DFIR-Resilient.md#Tracking-Subscriptions-Hours-Usage).
+	- if applicable, notify the Client that the number of hours may not be sufficient and contractual discussions needs to be started (guidance how to check number of hours left can be found [here](DFIR-Resilient.md#Tracking-Subscriptions-Hours-Usage),
 5. Estimated cost (in hours) of planned XFIR work. 
 
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason, please use below Triage and Scoping Call Summary Mail template and do not compose a note yourself. Template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
@@ -189,22 +214,22 @@ IMPORTANT: To proceed further and engage XFIR for this incident, one of your rep
 
 Important points:
 - do not use XX.YY.ZZZZ date format, as it can be confusing due to differences between American and European notation with day and month values swapped in places,
-- even if Client decides to do not engage our team, it is still necessary to prepare the note (without predefined statements for a client) and pasting it to a Resilient as a trace from a Triage and Scoping Call.
+- even if Client decides not to engage our team, it is still necessary to prepare the note (without predefined statements for a client) and pasting it to a Resilient as a trace from a Triage and Scoping Call.
 - if number of estimated hours necessary for this engagement exceeds or is close to number of subscription hours left, then consider initiating commercial discussion, following same approach as for [Ad-hoc requests](#Ad-hoc-Assistance-Request).
 
 Depending on the Client answer, potential next steps are:
 1. XFIR gets engaged:
 	- start [IR Spin-Up Process](DFIR-SpinUp.md),
 	- populate "Owner/Engagement Lead" and "Members" fields accordingly in Resilient.
-2. XFIR is not engage:
+2. XFIR is not engaged:
 	- upload Triage and Scoping Call Summary Note to Resilient,
 	- upload evidence with Client decision to do not engage to Notes section in Resilient ticket,
 	- close ticket with "Not Engaged" resolution. 
 
 If there is no response for 24 hours, then send a follow up mail or make a call.
 
-## Claiming
-XFIR service is build in such a way, that anyone can request assistance, mainly by calling Hotline. Triage and Scoping Call is offered free of charge irrespective of having subscription or not. It is not possible to provide claiming for all Triage participants. Only Triage Call Lead should:
+## Claiming time
+XFIR service is built in such a way that anyone can request assistance, mainly by calling the Hotline. Triage and Scoping Calls are offered free of charge irrespective of having a retainer or not. It is not possible to provide claiming for all Triage participants. Only Triage Call Lead should:
 - book 1 hour as "Telephone Triage", "not against subscription" in this Engagement ticket in Resilient,
 - claim 1 hour as "general billable" against the workID
 
