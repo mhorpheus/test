@@ -62,7 +62,7 @@ Who is on call at any given moment in time is defined in PD by a "Schedule". The
 2) **Secondary on-call person** determined by "[XFIR - Follow the sun (L2 - overflow)](https://ibm.pagerduty.com/schedules#PB084QZ)" schedule (often referenced by team members as L2). If this person is not available or does not pick up a call for 60 seconds, the call is escalated to:
 3) **Voicemail message service**, which then triggers widespread notifications in the event that the caller leaves a message. Please see section [Handling Voice Messages](#Handling-Voice-Messages) for details on what happens when a Voice Message is left by a person calling the Hotline.
 
-If the Primary on-call person's line is busy, may PD keep attmepting to call this number for the 60 second period they have to acknowledge the call, and in some locations the on call person may be notified that a hotline call is pending if their mobile phone provider offers the 'call waiting' feature.
+If the Primary on-call person's line is busy, may PD keep attempting to call this number for the 60 second period they have to acknowledge the call, and in some locations the on call person may be notified that a hotline call is pending if their mobile phone provider offers the 'call waiting' feature.
 
 In the past XFIR team performed a stress test of the PD, generating significant volume of calls, and exceeding several times the highest rate of calls ever observed. It was confirmed that PD can redirect all of them and that in such situation it is an on-call people and their mobile phones who become a "bottleneck" rather than the PD service.
 

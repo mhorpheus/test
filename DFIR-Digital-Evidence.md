@@ -27,7 +27,7 @@ XFIR one-pagers deal with most common topics related to evidence collection, suc
 - VMs imagining/exporting,
 - triage data collection
 	- Live Response Collection by BriMor Labs,
-	- Velociraptop (custom build),
+	- Velociraptor (custom build),
 - data disposition,
 - HDD encryption detection.
 
