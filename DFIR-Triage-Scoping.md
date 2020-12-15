@@ -172,6 +172,7 @@ The sections are as following:
 5. Estimated cost (in hours) of planned XFIR work. 
 
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason, please use below "Engagement Initiation Mail" template and do not compose a it yourself. Template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
+
 `------------ BEGINNING OF A TEMPLATE ------------ `  
 **Mail subcject:** `<Client Name>` Engagement Initiation Mail for XFIR case IR`<YY-NNNN>`  
 **Mail body:**  
@@ -184,29 +185,29 @@ This case has been assigned a unique identifier: IR`<YY-NNNN>`.
 `<If it is not you, please provide primary point of contact name, otherwise delete below sentence.`
 Your primary point of contact for this engagement will be: `<Name Surname>`
  
-**Our XFIR understanding of the incident:**
-	 - `<first bullet point>`
+**Our XFIR understanding of the incident:**  
+	 - `<first bullet point>`  
  	 - `<second bullet point>`
 
-**Expectation and goals for XFIR:**
-	 - `<first bullet point>`
+**Expectation and goals for XFIR:**  
+	 - `<first bullet point>`  
  	 - `<second bullet point>`
  
-**Next steps proposed by XFIR:**
-	 - `<first bullet point>`
+**Next steps proposed by XFIR:**  
+	 - `<first bullet point>`  
  	 - `<second bullet point>`
 
-**Status of your subscription hours:**
+**Status of your subscription hours:**  
 You currently have `<XYZ>` subscription hours left, valid till `<DD Month YYYY>`.
 
-`<In case of a non-severe incident, when you can estimate effort, please use following statement. Do not use it for big incidents, with an "open bucket" for hours usage.>`
+`<In case of a non-severe incident, when you can estimate effort, please use following statement. Do not use it for big incidents, with an "open bucket" for hours usage.>`  
 Based on information document above, XFIR initial estimation of number of hours necessary to deliver tasks listed above is `<XYZ>`. This number may change with any change in the scope of XFIR work or based on investigation findings. Any change in number of estimated hours will be consulted to obtain your approval.
 
-`<In case of significant incident, when it is impossible to estimate hours used, please use following statement.>`
+`<In case of significant incident, when it is impossible to estimate hours used, please use following statement.>`  
 At this stage, due to complexity, size and scope of incident you are facing, it is not possible to provide even an approximate value of hours necessary to deliver tasks defined for our team. For this reason, we can offer a weekly (or based on other frequency you prefer) reports containing details about current hours usage so you can manage the cost of this investigation. 
 
-`<This is a final statement, make sure it is included. For Ad-hocs replace requirements to acknowledge by Incident Declarer to acknowledge by anyone from recipients.>`
-IMPORTANT: To proceed further and engage XFIR for this incident, one of your representatives designated as "Incident Declarer" in our database, MUST reply to this mail acknowledging content of the "Engagement Initiation Mail" as well as approving subscription hours usage. If you disagree with any of the points in the mail or it anything was misunderstood, please let us know, so we can work on clarification.
+`<This is a final statement, make sure it is included. For Ad-hocs replace requirements to acknowledge by Incident Declarer to acknowledge by anyone from recipients.>`  
+IMPORTANT: To proceed further and engage XFIR for this incident, one of your representatives designated as "Incident Declarer" in our database, MUST reply to this mail acknowledging content of the "Engagement Initiation Mail" as well as approving subscription hours usage. If you disagree with any of the points in the mail or it anything was misunderstood, please let us know, so we can work on clarification.  
 `------------ END OF A TEMPLATE ------------ `
 
 Important points:
