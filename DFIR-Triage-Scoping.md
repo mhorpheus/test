@@ -172,10 +172,10 @@ The sections are as following:
 5. Estimated cost (in hours) of planned XFIR work. 
 
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason, please use below "Engagement Initiation Mail" template and do not compose a it yourself. Template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
-`------------ BEGINNING OF A TEMPLATE ------------ `
-**Mail subcject:** `<Client Name>` Engagement Initiation Mail for XFIR case IR`<YY-NNNN>`
-**Mail body:**
-Dear `<Client Name>`,
+`------------ BEGINNING OF A TEMPLATE ------------ `  
+**Mail subcject:** `<Client Name>` Engagement Initiation Mail for XFIR case IR`<YY-NNNN>`  
+**Mail body:**  
+Dear `<Client Name>`,  
 
 Thank you very much for participation in the Triage and Scoping Call. We would like to summarize our discussion with a note presented below. Then intention of this note is to ensure that all crucial information are captured and documented and we have a common understanding of this incident.
 
