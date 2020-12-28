@@ -42,4 +42,4 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 	- XFIR Reporting Templates
 	- Example DFIR Reports
 6. Project Closeout
-	- Project Closeout Procedures
+	- [Project Closeout](DFIR-Engagement-Closeout.md)

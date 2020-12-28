@@ -7,7 +7,7 @@
 | Intel Team | Manager | Backup|
 |:--|:--|:--|
 | Threat Hunt & Discovery | Chris Sperry | ?? |
-| Malware RE & Development | Anne Jobmann | ?? |
+| Malware RE & Development | Anne Jobmann | Kevin Henson |
 
 ## Requesting TI Support for IR Engagements
 Upon decision to engage TI or RE team, proceed with below steps:
