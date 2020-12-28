@@ -35,7 +35,7 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 4. Project Management
 	- DFIR Project Management Overview
 	- [Resilient Ticketing](DFIR-Resilient.md)
-	- Intel Ticketing Procedures
+	- [Threat Intel](DFIR-Threat-Intel.md)
 	- Engagement Management Documents
 5. Reporting
 	- XFIR Reporting Guidance

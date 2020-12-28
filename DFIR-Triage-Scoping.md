@@ -211,7 +211,7 @@ IMPORTANT: To proceed further and engage XFIR for this incident, one of your rep
 `------------ END OF A TEMPLATE ------------ `
 
 Important points:
-- do not use XX.YY.ZZZZ date format, as it can be confusing due to differences between American and European notation with day and month values swapped in places - recommended date format is: 02 December 2020.
+- do not use XX.YY.ZZZZ or XX/YY/ZZZZ date formats, as it can be confusing due to differences between American and European notation with day and month values swapped in places - recommended date format is: 02 December 2020.
 - even if Client decides not to engage our team, it is still necessary to prepare the "Engagement Initiation Email" (without predefined statements for a client) and pasting it to a Resilient as a trace from a Triage and Scoping Call.
 - if number of estimated hours necessary for this engagement exceeds or is close to number of subscription hours left, then consider initiating commercial discussion, following same approach as for [Ad-hoc requests](#Ad-hoc-Assistance-Request). Keep commercial discussion separate from the "Engagement Initiation Mail", as also recipient may differ. 
 

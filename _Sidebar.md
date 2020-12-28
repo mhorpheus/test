@@ -24,7 +24,7 @@
 ### Project Management
  - DFIR Project Management Overview
  - [Resilient Ticketing](DFIR-Resilient.md)
- - Intel Ticketing Procedures
+ - [Threat Intel](DFIR-Threat-Intel.md)
  - Engagement Management Documents
 ### Reporting
  - XFIR Reporting Guidance

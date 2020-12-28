@@ -11,10 +11,12 @@
 	- [Finding Details of Incident Declarers](#Finding-Details-of-Incident-Declarers)
 
 ## Introduction
-The purpose of this page is to document the XFIR ticketing process. XFIR uses customized Resilient instance to:
+XFIR uses customized Resilient instance to:
 - track Client entries containing different types of contact points,
 - track Client subscription details, including number of remaining subscription hours,
-- track every single engagement.
+- track every single engagement, both reactive and proactive.
+
+The purpose of this page is to document the XFIR ticketing process only for the DFIR engagements. Details on using Resilient for proactive engagements should be check on respective wikis.
 
 Once XFIR has been engaged for Incident Response services, regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created. This also applies to a cases when it is yet unknown whether XFIR will be engaged, but some actions have already been taken, such as Triage and Scoping Call was already held.
 
@@ -59,7 +61,7 @@ Follow below requirement while populating hours usage:
 - Pick an "Item" value to describe type of activity,
 - Define "Hours Type" value to ensure that value is properly counted, options are:
 	- "Subscription" - for billable hours covering XFIR work consuming subscription hours pool, eg. analysis, Incident Response, report writing, etc.
-	- "PCR" - for billable hours covering XFIR work, but not consuming subscription hours from the pool due to various reasons - most often because the pool is already empty. In most of the cases this represents a pool of additional hours purchased by customer to cover additional time over what was available in their retainer.
+	- "PCR" (Project Change Request) - for billable hours covering XFIR work, but not consuming subscription hours from the pool due to various reasons - most often because the pool is already empty. In most of the cases this represents a pool of additional hours purchased by customer to cover additional time over what was available in their retainer.
 	- "Non-subscription" - for other billable hours, which do not consume subscription hours from the pool, eg. time spent on triage. More details on how to claim triage time are available [here](DFIR-Triage-Scoping.md#Claiming).
 - Enter hours in a daily breakdown,
 - Hours usage should be consistent with what was entered into Claim systems,
@@ -73,19 +75,21 @@ When counting hours against subscription usage, Resilient is not using a date wh
 ## Tutorials
 
 ### Creating New Engagement Ticket
-This process describes how to create an IR Engagement ticket, which then should be populated further with available information. To create a new ticket follow below steps (screenshot with example provided below):
+This section provide a technical guide on how to create an IR Engagement ticket in Resilient. Ticket creation form contains only several most important fields and additional values can be added after ticket was created. Section  [Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements) describes in details which fields must be populated for every IR ticket.
+
+To create a new ticket follow below steps (screenshot with example provided below):
  1. Click "Create" from top horizontal menu in Resilient.
  2. Choose "Ticket Type": "Engagement Project".
  3. Fill in correct "Region".
  4. Find Client name from base of existing entries (start typing for suggestions, this is not "type value" field, so Client entry must exist). For Ad-hoc entries can be left blank until Client entry gets created and populated by Ops-Manager. 
  5. Pick up "IR" tag from "Engagement type" field.
- 6. Fill in "Description" field - a brief, high level statement of what kind of incident it is. Follow guidelines from [Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements) section.
+ 6. Fill in "Description" field - a brief, high level statement of what kind of incident it is. 
  7. "Name" under "Notes" is automatically populated, so just enter any characters to proceed.
 
 Example:
 ![Creating new IR Engagement in Resilient](screenshots/Resilient_New_IR_Engagement.png)
 
-All other required fields needs to be populated after the ticket is created.
+
 
 ### Finding Details of Incident Declarers
 Each Client entry should contain contact points designated as Incident Declarers during onboarding process. However, in the past there were situations when there were no Incident Declarers or listed ones have already left the organisation. It is not possible to provide clearly defined guidelines for such a case and one should use a common sense to determine who should be reached from list of contact points. Some recommendations on who should be contacted to somehow replace Incident Declarer if such a person is not defined:
