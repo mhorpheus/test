@@ -25,15 +25,27 @@ The following documentation is a guideline for the XFIR Resilient ticketing proc
 XFIR Resilient instance address: https://xforce-iris.resilientsystems.com. Resilient is not integrated with IBM's w3 Single Sign On, and accounts must be provisioned separately.
 
 ## Logging Requirements for New IR Engagements
-Following fields must be populated while logging new IR Engagement (some fields may only be populated after a ticket is created). While populating a ticket,:
+This section documents fields which must be populated while logging new IR Engagement. 
+
+#### Mandatory fields to be populated during IR ticket creation process:
+- "Ticket Type": "Engagement Project"
+- "Region": Fill in with correct value.
+- "Client": Which client this incident is assigned to. For Ad-hoc incidents, when there is no Client entry, leave it blank (to be populated later).
+- "Engagement type": "IR".
+- "Description":
+	- a **brief** description of incident, eg. "A BEC in UK" or "Ransomware outbreak in the factory in Austria".
+	- do **not** use multi-sentence/multi-line descriptions. There are separate fields in Resilient where you can add more text.
+	- do **not** include a client name, as there is a separate field dedicated for it (unless this is a ticket temporarily without a Client name)
+- "Request Intel Support": Yes (for every single case, even when TI support is not needed - it's for TI visibility into IR engagements)
+- "(Intel) Description":
+		- make sure it's meaningful (do **not** leave it empty!) - you can change it in the future,
+		- if you do not need TI support please enter: "No TI support needed, just for Intel awareness."
+		- if you are unsure, treat it as if you do not need TI support and enter same text as for no support,
+		- if you need TI support, enter a brief description, remember this is not a notes field, eg. "Intel assistance for Ryuk Ransomware case"
+- "Name": enter random value, will be automatically re-populated by Resilient.
+
+#### Mandatory fields to be populated after IR ticket was created:
 - "Engagement Details" tab:
-	- "Description":
-		- a **brief** description of incident, eg. "A BEC in UK" or "Ransomware outbreak in the factory in Austria".
-		- Do **not** use multi-sentence/multi-line descriptions. There are separate fields in Resilient where you can add more text.
-		- there is no need to add client name, as there is a separate field dedicated for it.
-	- Engagement type: "IR".
-	- Region: Fill in with correct value.
-	- Client: Which client this incident is assigned to. For Ad-hoc incidents, when there is no Client entry, leave it blank (to be populated later).
 	- Points of contact: fill in contact point details such as name, phone number and mail to most important people from Client side involved into this Engagement (not the same as the person calling the hotline - see next point).
 - "Triage worksheet" tab:
 	- Contact information: if ticket is created as a result of a Hotline call, details of a person calling Hotline should be filled in here.
@@ -75,21 +87,15 @@ When counting hours against subscription usage, Resilient is not using a date wh
 ## Tutorials
 
 ### Creating New Engagement Ticket
-This section provide a technical guide on how to create an IR Engagement ticket in Resilient. Ticket creation form contains only several most important fields and additional values can be added after ticket was created. Section  [Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements) describes in details which fields must be populated for every IR ticket.
+This section provides a technical guide on how to create an IR Engagement ticket in Resilient. Ticket creation form contains only several most important fields and additional values can be added after ticket was created. Section  [Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements) describes how to populate necessary fields and which are mandatory.
 
-To create a new ticket follow below steps (screenshot with example provided below):
+To create a new ticket follow below steps:
  1. Click "Create" from top horizontal menu in Resilient.
  2. Choose "Ticket Type": "Engagement Project".
- 3. Fill in correct "Region".
- 4. Find Client name from base of existing entries (start typing for suggestions, this is not "type value" field, so Client entry must exist). For Ad-hoc entries can be left blank until Client entry gets created and populated by Ops-Manager. 
- 5. Pick up "IR" tag from "Engagement type" field.
- 6. Fill in "Description" field - a brief, high level statement of what kind of incident it is. 
- 7. "Name" under "Notes" is automatically populated, so just enter any characters to proceed.
+ 3. Populate all fields marked in yellow on the below screenshoot following guidelines described in section [Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements).
 
 Example:
 ![Creating new IR Engagement in Resilient](screenshots/Resilient_New_IR_Engagement.png)
-
-
 
 ### Finding Details of Incident Declarers
 Each Client entry should contain contact points designated as Incident Declarers during onboarding process. However, in the past there were situations when there were no Incident Declarers or listed ones have already left the organisation. It is not possible to provide clearly defined guidelines for such a case and one should use a common sense to determine who should be reached from list of contact points. Some recommendations on who should be contacted to somehow replace Incident Declarer if such a person is not defined:

@@ -1,6 +1,37 @@
 
 # XFIR Incident Response Intel Analysis Ticketing Process
 
+
+
+## Contact Points
+| Intel Team | Manager | Backup|
+|:--|:--|:--|
+| Threat Hunt & Discovery | Chris Sperry | ?? |
+| Malware RE & Development | Anne Jobmann | ?? |
+
+## Requesting TI Support for IR Engagements
+Upon decision to engage TI or RE team, proceed with below steps:
+1. Add necessary Intel Managers (list with names is [here](DFIR-Threat-Intel.md#Contact-Points)), who will assign resources from their teams:
+	- add *Intel Threat Hunt & Discovery* team Manager to a case Slack channel.
+	- if RE support is needed, add *Malware RE & Development* team Manager to a case Slack channel.
+	
+2. Provide basic information and define the scope of TI support for Intel Threat Hunt & Discovery team, following process documented 
+
+For Intel Threat Hunt & Discovery
+- slack message pinned
+- how to populate Intel ticket
+- provide Resilieint Intel ticket
+
+
+## Requesting TI Suport for Standalone Intel Engagements
+requests from the scope of the IR, but without XFIR being engaged, so we are just a proxy. 
+
+## Tutorials
+### Creating Intel Engagement Ticket
+
+
+###################################
+
 The purpose of this page is to document the XFIR Incident Response ticketing process for Intel support.
 
 During an Incident Response engagement as the need for various Intel services or support arises, you will need to create a ticket for those support services including Malware Analysis, DarkWeb Analysis, Engagement Support, etc.
@@ -12,6 +43,14 @@ The following documentation is a guideline for XFIR consultants for the XFIR Inc
  - [**Creating an IR Ticket with Intel Support**](#creating-an-ir-ticket-with-intel-support)
  - [**Creating an Intel Ticket for an Existing Resilient Engagement Ticket**](#creating-an-intel-ticket-for-an-existing-resilient-engagement-ticket)
  - [**Creating a Malware Analysis Ticket**](#creating-a-malware-analysis-ticket)
+
+## from Spin Up
+All XFIR engagements of the type  `IR`  require an initial  `Engagement Work`  Intel ticket. Intel uses Jira for ticketing and associates additional tickets created in support of an engagement with this initial  `Engagement Work`  ticket. For example, if you submit three malware analysis tickets for your engagement, Intel will track the relationship between those tickets through the initial Intel ticket.
+
+This makes the task of tracking those tickets easier for Intel and facilitates better workflow between IR consultants and Intel analysts working on an engagement together. XFIR uses functionality within Resilient to create and associate these tickets with our client engagements. For more information see the  [Intel Analysis Ticketing](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-IR-IntelTicketing)  section.
+
+
+
 
 ## Intel Support
 Intel supports XFIR during our engagements through various services XFIR consultants can leverage including dedicated intel analyst support for IR engagements, malware reverse engineering, dark web analysis, and more. 
@@ -27,7 +66,7 @@ If there is already a `Hotline Triage` ticket and the client has engaged XFIR fo
 
 Both of these scenarios are documented in the following sections.
 
-## Creating an IR Ticket with Intel Support
+## Creating Intel Engagement Ticket
 
 In the case where you want to create an IR ticket and an Intel ticket at the same time use the following instructions:
 

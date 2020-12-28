@@ -5,7 +5,7 @@
 2. [**Setting up Collaboration Environment**](#Setting-up-Collaboration-Environment)
 	- [Internal XFIR Working Environment](#Internal-XFIR-Working-Environment)
 	- [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client)
-3.  [**Threat Intel Team Support**](#Threat-Intel-Team-Support)
+3.  [**Threat Intel Support**](#Threat-Intel-Support)
 4. [**Endpoint Detection and Response Deployment**](#Endpoint-Detection-and-Response-Deployment)
 5. [**Tutorials**](#Tutorials)
 	- [Slack](#Slack)
@@ -34,7 +34,7 @@ Proceed with following steps to set up working environment for collaboration wit
 3. Create a dedicated channel for this engagement within X-Force IRIS Slack workspace for regular communication about the case:
 	- channel name must be equal to a case number - "irXX-YYYY" (Slack channels are always named with lowercase letters)
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel.
-4. Grant access to consultants assigned to this page:
+4. Grant access to consultants assigned to this case:
 	1. Populate an "Owner" field in Resilient with Case Lead name.
 	2. Populate "Members" field in Resilient with consultant assigned to this case.
 	3. Add people to Slack channel from X-Force IR or TI or RE teams.
@@ -74,15 +74,13 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
 
 Currently, none of the tools is GDPR compliant. Alternatively, digital evidence can be physically shipped to XFIR consultant or NA Forensics Lab. If Client do not agree to share digital evidence outside it's location, the only available solution would be on-site support.
 
-## Threat Intel Team Support
-Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. To get their support, proceed with following steps:
-1. Use instructions provided on a [Intel Ticketing](DFIR-IntelTicketing.md) page to request TI and/or RE assistance.
-2. Add TI/RE team members assigned to this case yo the case Slack channel.
+### Threat Intel Support
+Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure TI team has necessary visibility into IR engagements, thus is able to process outcomes of IR work. "Intel Engagement" ticket should have already been created during creation of the new IR ticket (shall this not be a case, it can be created following [this](DFIR-IntelTicketing.md#Creating-Intel-Engagement-Ticket) tutorial).
+
+ It is a Case Lead responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Dedicated [Threat Intel](DFIR-Threat-Intel.md) page contains several section on how to interact and get support from TI team. 
 
 ## Endpoint Detection and Response Deployment
-TODO:
-- How to request EDR.
-- to be unified with ATA wiki, to avoid duplication
+This section is currently unavailable - please use EDR [Deployment](https://github.ibm.com/XFIR/ATA-wiki/wiki/ATA-Engagement-Process#deployment) section from ATA wiki, until this section is ready.
 
 ## Tutorials
 
@@ -167,18 +165,4 @@ Location: https://ibm.ibmaspera.com/
 - Aspera is able to use whole available bandwidth of the Internet connection so may disturb other traffic.
 
 
-
-############################################################
-
-
-## OLD
-
-4.  Every IR engagement requires an  [Intel Engagement Ticket](https://github.ibm.com/XFIR/DFIR-wiki/blob/development/DFIR-SpinUp.md#intel-engagement-ticket). When we engage Intel for malware analysis, dark-web analysis, or any other Intel specific task related to an IR engagement, that work needs to be tracked and associated with an  `Engagement Work`  Intel ticket.
-
-
-## Intel Engagement Ticket
-
-All XFIR engagements of the type  `IR`  require an initial  `Engagement Work`  Intel ticket. Intel uses Jira for ticketing and associates additional tickets created in support of an engagement with this initial  `Engagement Work`  ticket. For example, if you submit three malware analysis tickets for your engagement, Intel will track the relationship between those tickets through the initial Intel ticket.
-
-This makes the task of tracking those tickets easier for Intel and facilitates better workflow between IR consultants and Intel analysts working on an engagement together. XFIR uses functionality within Resilient to create and associate these tickets with our client engagements. For more information see the  [Intel Analysis Ticketing](https://github.ibm.com/XFIR/DFIR-wiki/wiki/XFIR-IR-IntelTicketing)  section.
 

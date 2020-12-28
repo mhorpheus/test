@@ -85,7 +85,7 @@ Individuals to represent necessary roles during Triage and Scoping Calls can be 
 Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities are defined as following:
 - leading Triage and Scoping Call,
 - taking notes or designating notetaking to another attendee,
-- preparing and sending[Engagement Initiation Mail](#Engagement-Initiation-Mail), to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient (who can be found following [this tutorial](DFIR-Resilient.md#Finding-Details-of-Incident-Declarers)),
+- preparing and sending [Engagement Initiation Mail](#Engagement-Initiation-Mail), to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient (who can be found following [this tutorial](DFIR-Resilient.md#Finding-Details-of-Incident-Declarers)),
 - ensuring that incident details and Triage and Scoping Call outcome is recorded in Resilient:
 	- by now there should already be a Resilient entry, but if not create one following guidelines from [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
 	- update existing Resilient entry with additional details obtained during Triage and Scoping Call, especially "Triage Worksheet" tab,
