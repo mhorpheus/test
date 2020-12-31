@@ -39,7 +39,7 @@ This section documents fields which must be populated while logging new IR Engag
 - "Request Intel Support": Yes (for every single case, even when TI support is not needed - it's for TI visibility into IR engagements)
 - "(Intel) Description":
 		- make sure it's meaningful (do **not** leave it empty!) - you can change it in the future,
-		- if you do not need TI support please enter: "No TI support needed, just for Intel awareness."
+		- if you do not need TI support please enter: "No Intel support needed, just for Intel awareness."
 		- if you are unsure, treat it as if you do not need TI support and enter same text as for no support,
 		- if you need TI support, enter a brief description, remember this is not a notes field, eg. "Intel assistance for Ryuk Ransomware case"
 - "Name": enter random value, will be automatically re-populated by Resilient.

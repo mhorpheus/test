@@ -34,6 +34,10 @@ Proceed with following steps to set up working environment for collaboration wit
 2. Download Evidence Tracking Sheet (ETS) Template from [here](DFIR/IBM%20X-Force%20IR%20Engagement%20Tracking%20Sheet.xlsx) and place is the IBM Box case folder created in the previous step (root of the case folder).
 3. Create a dedicated channel for this engagement within X-Force IRIS Slack workspace for regular communication about the case:
 	- channel name must be equal to a case number - "irXX-YYYY" (Slack channels are always named with lowercase letters),
+	- Post a message called "Administrative notes" on the Slack channel and pin it. Include following information into a note:
+		- who is a case lead,
+		- if there are any, current hours usage constraints,
+		- frequency of hours reporting in Resilient.
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel,
 	- follow usage recommendation listed in the [tutorial](#Slack) below.
 4. Grant access to consultants assigned to this case:
@@ -78,7 +82,7 @@ Currently, none of the tools is GDPR compliant. Alternatively, digital evidence 
 ### Threat Intel Support
 Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure TI team has necessary visibility into IR engagements, thus is able to process outcome from IR work. "Intel Engagement" ticket should have already been created during creation of the new IR ticket (shall this not be a case, it can be created following [this](DFIR-IntelTicketing.md#Creating-Intel-Engagement-Ticket) tutorial).
 
- It is a Case Lead responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Dedicated [Threat Intel](DFIR-Threat-Intel.md) page contains several section on how to interact and get support from TI team. 
+ It is a Case Lead responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](DFIR-Threat-Intel.md#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally,[Threat Intel](DFIR-Threat-Intel.md) page documents several other aspects of XFIR engaging TI. 
 
 ## Endpoint Detection and Response Deployment
 This section is currently unavailable - please use EDR [Deployment](https://github.ibm.com/XFIR/ATA-wiki/wiki/ATA-Engagement-Process#deployment) section from ATA wiki, until this section is ready.

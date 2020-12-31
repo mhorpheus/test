@@ -1,29 +1,71 @@
 
-# XFIR Incident Response Intel Analysis Ticketing Process
+# XFIR Threat Intel for IR
+
+## Table of Contents
+1. [**Introduction**](#Introduction)
+2. [**XFTI Contact Points**](#XFTI-Contact-Points)
+3. [**Requesting TI Support for IR Engagements**](#Requesting-TI-Support-for-IR-Engagements)
+4. [**Requesting TI Support for Standalone Intel Engagements**](#Requesting-TI-Support-for-Standalone-Intel-Engagements)
+5. [**Tutorials**](#Tutorials)
+	- [Creating Intel Engagement Ticket](#Creating-Intel-Engagement-Ticket)
 
 
+## Introduction
+The purpose of this page is to document how X-Force Threat Intelligence (XFTI) team supports XFIR engagements. There is number of services offered by XFTI supporting IR engagements directly or providing deliverable upon a Client request. In all those cases, XFIR represents IBM in front of the Client and is responsible for delivery. This page documents all aspects of interaction between XFTI and XFIR, as they differ depending on type of IR engagement. 
 
-## Contact Points
+This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home.md)).
+
+XFTI tracks their engagements using Jira ticketing system. It was integrated with XFIR Resilient instance, and provides two way synchronisation between them. XFIR team can request XFTI support and interact with XFTI team only using Resilient, without a need to access Jira.
+
+## XFTI Contact Points
+This section list named contact points which may be necessary during process of engaging XFTI.
 | Intel Team | Manager | Backup|
 |:--|:--|:--|
-| Threat Hunt & Discovery | Chris Sperry | ?? |
+| Threat Hunt & Discovery | Chris Sperry | Robert Gates or Willie Gonzalez |
 | Malware RE & Development | Anne Jobmann | Kevin Henson |
 
+*Intel Threat Hunt & Discovery* team provides Intel about attribution and historical case/IoC/TTP corelation. 
+
 ## Requesting TI Support for IR Engagements
-Upon decision to engage TI or RE team, proceed with below steps:
-1. Add necessary Intel Managers (list with names is [here](DFIR-Threat-Intel.md#Contact-Points)), who will assign resources from their teams:
-	- add *Intel Threat Hunt & Discovery* team Manager to a case Slack channel.
+It is assume that "Intel Engagement" ticket was already created during creation of IR ticket. Shall this not be a case, make sure to create one following [this](#Creating-Intel-Engagement-Ticket) guide, continuing next steps from this section.
+
+Proceed with below steps to engage XFTI for Incident Response case:
+1. Engage XFTI Managers (list with names is [here](#Contact-Points)), who will assign necessary resources from their teams:
+	- add *Intel Threat Hunt & Discovery* team Manager to an IR case Slack channel,
 	- if RE support is needed, add *Malware RE & Development* team Manager to a case Slack channel.
-	
-2. Provide basic information and define the scope of TI support for Intel Threat Hunt & Discovery team, following process documented 
+2. Case Lead decides on information exchange models between IR and and *Intel Threat Hunt & Discovery* (so Intel analyst, but not RE team). Available approaches (default one should be proactive):
+	- reactive
+		- TI team responds to specific questions asked by IR team
+		- IR team should define effort constraints (upper bound of how many hours can be charged)
+		- most common use case: smaller cases or strict constraints on how hours are used
+	- proactive
+		- IR team dumps findings to a Slack channel
+		- TI picks up those information in a proactive way (without being asked for it) and attempts to enrich them and add value 
+		- most common use case: big complicated cases with a lot of findings; IR team being super busy and not able to administrate TI team work; cases with an "open bucket" for hours usage.
+3. Post and pin a message in the Slack channel to define IR - TI workflow (or use a current "Administrative notes" pinned message in the channel, discussed in [guidelines](DFIR-SpinUp.md##Internal-XFIR-Working-Environment) for Internal working environment):
+	- include statement: "IR - TI workflow: [reactive|proactive] (not applicable to RE requests)"
+	- include Resilient Intel ticket number - Intel ticket number which was automatically created with IR ticket creation,
+	- if there are any constraints on how many hours can be used for TI, including it in the message.
+	- make sure it is define and posted upfront, not in the middle of the case when TI was already engaged.
+4. If RE support is needed and it is already know, how it will look like, include into above Slack note information whether full RE reports would be necessary or just ticket/Slack updates would be sufficient.
 
-For Intel Threat Hunt & Discovery
-- slack message pinned
-- how to populate Intel ticket
-- provide Resilieint Intel ticket
+Below is the list of guidelines applicable to TI/RE requests and processing the results received from them. This is not a strict procedure, but following them should improve communication between IR and TI/RE, as well as provide better overall results:
+- if working in reactive approach, make sure you clearly define the question and notify assigned TI/RE analyst on Slack channel about the question
+- be clear on what do you expect as the outcome,
+- be clear what is an expected response timeframe,
+	- in case of a tight time limitations, be clear on what information, when and where you expect at the moment when time limitation is reached: eg. you have a call with a client at 15:00 UTC and you need any updated TI can provide on the current state, but you can not be left without no update from TI/RE team,
+- provide feedback to TI/RE team so they know whether what was provided was indeed what you need:
+	- always acknowledge receiving/reading/seeing findings,
+	- if result is sufficient, make sure to inform TI/RE analyst about it so they are not working further on this topic,
+	- if result does not meet your expectation make sure to clarify what do you need (eg. more details or you wanted something totally different),
 
+Other important points:
+- when TI is joined to a Slack channel they perform a quick Triage:
+	- intention is to perform a quick attribution based on what IR team provides and thus help with remediation,
+	- automatically done by assigned TI Analyst,
+	- is not billed to a Client
 
-## Requesting TI Suport for Standalone Intel Engagements
+## Requesting TI Support for Standalone Intel Engagements
 requests from the scope of the IR, but without XFIR being engaged, so we are just a proxy. 
 
 ## Tutorials
@@ -32,11 +74,8 @@ requests from the scope of the IR, but without XFIR being engaged, so we are jus
 
 ###################################
 
-The purpose of this page is to document the XFIR Incident Response ticketing process for Intel support.
 
-During an Incident Response engagement as the need for various Intel services or support arises, you will need to create a ticket for those support services including Malware Analysis, DarkWeb Analysis, Engagement Support, etc.
 
-The following documentation is a guideline for XFIR consultants for the XFIR Incident Response Intel ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/Home.md)).
 
  - [**Intel Support**](#intel-support)  
  - [**Intel Ticketing in Resilient**](#intel-ticketing-in-resilient) 
