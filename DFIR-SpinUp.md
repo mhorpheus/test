@@ -55,8 +55,8 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
 	- folder must be named "IRXX-YYYY-Evidence" in the root folder of a consultant's IBM Box:
 		- invite only XFIR people working on this case with "Co-owner" rights,
 		- do **not** create it within a team shared part of IBM Box,
-	- create a "IRXX-YYYY-Evidence/Client Upload" folder for Client originating upload:
-		- allows to move uploaded files to a root folder of "IRXX-YYYY-Evidence", so that files are not widely shared,
+	- create an "IRXX-YYYY-Evidence/Client Upload" folder for Client originating upload:
+		- file uploaded by Client to "IRXX-YYYY-Evidence/Client Upload" can be moved to "IRXX-YYYY-Evidence" folder to limit extensive access,
 		- invite people for an upload with "Previewer Uploader" rights, so they confirm that files have been uploaded, but can not do much beyond that,
 	- do not send Box invites to free email providers (eg. Gmail, Hotmail) as they are banned from accessing IBM's Box and will violate IBM ITCS300 Security Policy.
 	- see [tutorial](#IBM-Box-Folder-for-Digital-Evidence) below.
@@ -68,9 +68,9 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
 	- invite only XFIR people working on this case, assigning them "Edit" rights in the Aspera menu,
 	- invite Client representatives:
 		- always attempt to invite people by mail, assigning them only following rights: "Browse", "Upload files" and "Create folders",
-		- whenever possible, try to avoid using "Shared links" as once a shared link is created the permissions cannot be downgraded and upload is anonymous.
+		- whenever possible, try to avoid using "Shared links" as once a shared link is created the permissions cannot be downgraded and upload is anonymous (try to use send invites as mentioned in the above point).
 	- other considerations:
-		- no file size limit,
+		- practical file size limit is 5TB,
 	 	- requires Web Browser plugin and software installation,
 	 	- may require some firewall changes on a Client side (see [Troubleshooting Aspera](#Troubleshooting-Aspera) below),
 		- do not use Aspera "Package" option, as it is deleted immediately after successful download, making it impossible to forward to another XFIR consultant. Always use "Files" option.
@@ -80,9 +80,9 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
 Currently, none of the tools is GDPR compliant. Alternatively, digital evidence can be physically shipped to XFIR consultant or NA Forensics Lab. If Client do not agree to share digital evidence outside it's location, the only available solution would be on-site support.
 
 ### Threat Intel Support
-Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure TI team has necessary visibility into IR engagements, thus is able to process outcome from IR work. "Intel Engagement" ticket should have already been created during creation of the new IR ticket (shall this not be a case, it can be created following [this](DFIR-IntelTicketing.md#Creating-Intel-Engagement-Ticket) tutorial).
+Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure TI team has necessary visibility into IR engagements, thus is able to process outcome from IR work. "Intel Engagement" ticket should have already been created during creation of the new IR ticket (should this not be a case, it can be created following [this](DFIR-Threat-Intel.md#Creating-Intel-Engagement-Ticket) tutorial).
 
- It is a Case Lead responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](DFIR-Threat-Intel.md#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally,[Threat Intel](DFIR-Threat-Intel.md) page documents several other aspects of XFIR engaging TI. 
+ It is a Case Lead's responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](DFIR-Threat-Intel.md#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally, [Threat Intel](DFIR-Threat-Intel.md) page documents several other aspects of XFIR engaging TI. 
 
 ## Endpoint Detection and Response Deployment
 This section is currently unavailable - please use EDR [Deployment](https://github.ibm.com/XFIR/ATA-wiki/wiki/ATA-Engagement-Process#deployment) section from ATA wiki, until this section is ready.

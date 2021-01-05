@@ -17,18 +17,18 @@ The purpose of this page is to document how XFIR handles Digital Evidence. This 
 Digital Evidence collection can be performed on-site and remotely. Especially for remote IR engagements, digital evidence collection is not performed by XFIR consultants, but by personnel who may have very little, if not zero, knowledge in this area. For this reason, a set of so called "Evidence collection one-pager instructions" has been prepared. Such instruction can be shared with anyone performing collection and guides such person in simple steps through whole process. Instructions address all necessary topics such as data confidentiality, remote delivery challenges, etc. 
 
 XFIR one-pagers deal with most common topics related to evidence collection, such as:
-- dead box imaging,
+- Dead box imaging,
 - Windows:
 	- RAM capture,
-	- live imaging,
+	- Live imaging,
 - Linux:
 	- RAM capture,
-	- live imaging,
+	- Live imaging,
 - VMs imagining/exporting,
-- triage data collection
+- Triage data collection
 	- Live Response Collection by BriMor Labs,
 	- Velociraptor (custom build),
-- data disposition,
+- Data disposition,
 - HDD encryption detection.
 
 Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [here](documents/evidence%20collection%20one%20pagers).
