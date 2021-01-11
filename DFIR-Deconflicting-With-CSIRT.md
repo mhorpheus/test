@@ -34,7 +34,7 @@ If the GTS account team notifies CSIRT of an incident involving an IBM-managed s
 
 This model is similar to the "shared responsibility model" used by many cloud service providers like IBM, AWS, Azure or Google Cloud. The scope of the customer's services (e.g. IaaS, PaaS, SaaS) determines who is responsible for security: the client or the provider (see image below). For instance, if the scope of the GTS contract dictates that IBM is *NOT* responsible for the applications on the systems managed by IBM, then an incident at the application level would likely not require a CSIRT investigation. If the incident is at the operating system level and IBM only manages the hardware, again, CSIRT would likely not be engaged.
 
-[[https://github.ibm.com/XFIR/XFIR-master-wiki/blob/master/CSP-SharedResponsibilityModel.png]]
+[[https://github.ibm.com/XFIR/DFIR-wiki/blob/master/DFIR/CSP-SharedResponsibilityModel.png]]
 
 If it is not immediately clear which layer of the stack the incident is related to, CSIRT would likely initiate an investigation in order to determine if IBM is at risk or not.
 
