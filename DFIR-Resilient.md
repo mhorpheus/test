@@ -22,7 +22,7 @@ Once X-Force IR has been engaged for Incident Response services, regardless of t
 
 The following documentation is a guideline for the X-Force IR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
 
-X-Force IR Resilient instance URL: https://xforce-iris.resilientsystems.com. Resilient is not integrated with IBM's w3 Single Sign On, and accounts must be provisioned separately.
+X-Force IR Resilient instance URL: https://xforce-iris.resilientsystems.com/saml2/w3id. Resilient is not integrated with IBM's w3 Single Sign On, and accounts must be provisioned separately.
 
 ## Logging Requirements for New IR Engagements
 This section documents fields which must be populated while logging a new IR Engagement. 
