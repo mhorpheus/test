@@ -138,22 +138,22 @@ Proceed with following steps to submit a ticket to RE Team:
 2. In the `Ticket Type` field select `INTEL Ticket`.
 3. In the `Region` field select the appropriate region that correlates with the client's region.
 4. In the `Type of Intel Support` field select `Malware Analysis`. In the `Related Resilient Engagement` field enter the Resilient Ticket ID for your IR engagement (`IR19-3818` for example).
-5. Enter a brief but detailed description in the `Description` field.
+5. Enter a brief but detailed description in the `Description` field. This field is not synced to Jira, thus not visible to RE team.
 6. In the `Work ID` field input the ILC bill code for your project
 7. Select the analysis level in the `(Intel) Level of Malware Analysis` field and provide any additional details you have for the sample (MD5, Sandbox URL, Maximum number of hours to consume, Due Date, and Engagement Box URL). Levels of Malware Analysis are explained in separate [section](#Definition-of-RE-Analysis-Levels).
-8. Enter random text into "Name" field, it is required however, will be discarded and automatically populated by Resilient.
-9. Click `Next` and your Intel Malware Analysis ticket will be created. At this point you have created the ticket for analysis however, you will still need to attach the malware sample(s) to the ticket.
+8. Make sure you populate `(Intel) Description` - this is the only description field synced to Intel Jira. Make sure to add any additional context of the sample, specific requirements, eg. reporting, update timeframe, etc.
+9. Enter random text into "Name" field, it is required however, will be discarded and automatically populated by Resilient.
+10. Click `Next` and your Intel Malware Analysis ticket will be created. At this point you have created the ticket for analysis however, you will still need to attach the malware sample(s) to the ticket.
 
-Example screenshoot of filled in ticket:
-![RE ticket creation in Resilient](screenshoots/Resilient_New_RE_ticket_request.png)
+Example screenshot of filled in ticket:
+![RE ticket creation in Resilient](screenshots/Resilient_RE_New_ticket_request.png)
 
 If you return to the main Resilient Engagement Ticket that you created the Malware Analysis ticket in support of, you will see the new ticket in the `Related Tickets and Clients` section of the Engagement Ticket. 
 
-![RE ticket creation in Resilient](DFIR/Resilient_Intel01.png)
+![Resilient related tickets](screenshots/Resilient_related_tickets.png)
 
 Select your newly created Intel ticket and add sample(s) on the `Attachements` tab.
-
-![Attachments](DFIR/Resilient_Intel08.png)
+![Resilient RE ticket attachments](screenshots/Resilient_RE_attachments.png)
 
 If you need to add additional samples at a later time, you can always add additional attachments to this tab and the corresponding Jira ticket will be updated. This also works for the `Notes` tab. If you need to provide additional details surrounding the malware you can create a note in the `Notes` tab and that information will be updated on the Intel Jira ticket.
 
