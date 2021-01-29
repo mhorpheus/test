@@ -90,6 +90,8 @@ Guidelines for engaging RE team:
 	- do you need formal report or just ticket updates are sufficient,
 	- do you need updates during a process, if so clearly define a timeframe, eg. everyday at 12 UTC there is a call with a client and you need an note with update on finding and progress left on Slack channel before that call.
 - For malware critical situations - add EU or AU resource for immediate work start and Anne for visibility into Slack channel.
+	- APAC RE Contacts – Reginald Wong, Christopher (Topet) Del Fierro
+	- EMEA RE Contact – Charlotte Hammond
 - technical tutorial on how to submit RE analysis Ticket in Resilient is available [below](#Creating-Malware-Analysis-Ticket).
 
 ### Definition of RE Analysis Levels
@@ -118,7 +120,18 @@ XFTI team offers several tools which can be used by XFIR to self service and obt
 2DO
 
 ### Sandbox
-2DO
+Currently - the sandbox for self serve is Lastline and SecondWrite
+Lastline
+To request LastLine accounts 
+Managers or leads should create a JIRA Ticket Request for “Access Request” for Lastline access 
+if JIRA is not accessible - email anne.jobmann@ibm.com or sarah.gomez-uscategui@ibm.com to request access
+SecondWrite
+Request SecondWrite accounts at https://webportal.secondwrite.com
+Register as a new User (Sign up Now) with your IBM email account and enter the company as "IBM X-Force" 
+Coming soon:
+Access to IMPE for the IR team - we will be rolling this out in the next few months for beta users. This will provide access to all sandboxes and other malware tools/triage results for self service.  Access to IMPE will be granted with a JIRA Ticket Request for "Access Request" for IMPE access when it is rolled out.
+
+The sandboxes accept password protected zips (and IMPE will as well).
 
 ### Sherlock API
 2DO
