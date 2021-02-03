@@ -8,11 +8,12 @@
 4. [**Requesting RE Support for Malware Analysis**](#Requesting-RE-Support-for-Malware-Analysis)
 	- [Definition of RE Analysis Levels](#Definition-of-RE-Analysis-Levels)
 5. [**Self Service TI Tools for XFIR**](#Self-Service-TI-Tools-for-XFIR)
-	- [Sherlock Slack channel](#Sherlock-Slack-Channel)
-	- [Intl Bot App for Slack](#Intl-Bot-App-for-Slack)
+	- [Intel Bot Slack Channel](#Intel-Bot-Slack-Channel)
+	- [Intel Bot App for Slack](#Intel-Bot-App-for-Slack)
+	- [Direct Sherlock Access](#Direct-Sherlock-Access)
 	- [Sandbox](#Sandbox)
-	- [Sherlock API](#Sherlock-API)
-7. [**Requesting TI Support for Standalone Intel Engagements**](#Requesting-TI-Support-for-Standalone-Intel-Engagements)
+6. [**Requesting TI Support for Standalone Intel Engagements**](#Requesting-TI-Support-for-Standalone-Intel-Engagements)
+7. [Additional XFTI Resources](#Additional-XFTI-Resources)
 8. [**Tutorials**](#Tutorials)
 	- [Submitting Malware Sample to Sandbox](#Submitting-Malware-Sample-to-Sandbox)
 	- [Creating Malware Analysis Ticket](#Creating-Malware-Analysis-Ticket)
@@ -77,7 +78,6 @@ Other important points:
 	- is not billed to a Client
 
 ## Requesting RE Support for Malware Analysis
-
 **Before** creating any RE Resilient ticket and submitting a malware sample to RE team, **make sure** that:
 - TI team is already engaged, proceeding with steps described in section [Requesting TI Support for IR Engagements](#Requesting-TI-Support-for-IR-Engagements) - it's obligatory to engage TI for any RE work.
 - Sample has been already submitted for automated analysis to a Sandbox (also called L0 analysis), following guide described [below](#Submitting-Malware-Sample-to-Sandbox).
@@ -96,73 +96,106 @@ Guidelines for engaging RE team:
 
 ### Definition of RE Analysis Levels
  **Level 0** - Automated sandbox run
- For people who don't have access to the sandbox or just want runs with no context. Output is a link to sandbox run or other output from tools in the JIRA ticket.
+ For people who don't have access to the sandbox or just want runs with no context. Output is a link to sandbox run or other output from tools in the JIRA ticket. In all other cases, do not submit a L0 ticket, but proceed with [Sandbox self service](#Sandbox) approach below.
 
 **Level 1** - Quick Triage Report
-Leverage automation and dynamic analysis to pull out tactical information to support an investigation or extract indicators without an in-depth explanation. Tactical indicators returned in the JIRA ticket or in a report only if requested.  This should be a first step output for any IR engagement request.
+Leverage automation and dynamic analysis to pull out tactical information to support an investigation or extract indicators without an in-depth explanation. Tactical indicators returned in the ticket or in a report only if requested.  This should be a first step output for any IR engagement request.
 
 **Level 2** - Full Malware Report
-Identify and explain the relevance of indicators, characteristics, commands and behaviors of the malware in the requested time-frame. Provide as much context as possible in the JIRA ticket to direct or guide the analysis.  Examples of relevant context includes where the file was found or it's interactions with other potential files on the compromised system, other samples or tickets that might be related, suspected identification and any relevant open source reporting or information.  If a specific malware feature such as C2 commands, encryption details or network communications should be the primary focus, that should be indicated in the request as well. Resource intensive, primarily utilized to support a paying customer.
+Identify and explain the relevance of indicators, characteristics, commands and behaviors of the malware in the requested time-frame. Provide as much context as possible in the ticket to direct or guide the analysis.  Examples of relevant context includes where the file was found or it's interactions with other potential files on the compromised system, other samples or tickets that might be related, suspected identification and any relevant open source reporting or information.  If a specific malware feature such as C2 commands, encryption details or network communications should be the primary focus, that should be indicated in the request as well. Resource intensive, primarily utilized to support a paying customer.
 
 **Level 3** - Targeted Capability Creation and Full Malware Report
-Create signatures, parser, decoders as requested or as relevant to support automation efforts around processing the malware. Provide as much context as possible in the JIRA ticket to direct or guide the analysis.  Suspected identification and any relevant open source reporting or information should be provided.  If a specific malware feature such as C2 commands, encryption details or network communications should be the primary focus, that should be indicated in the request as well. This can be very resource intensive.
+Create signatures, parser, decoders as requested or as relevant to support automation efforts around processing the malware. Provide as much context as possible in the ticket to direct or guide the analysis.  Suspected identification and any relevant open source reporting or information should be provided.  If a specific malware feature such as C2 commands, encryption details or network communications should be the primary focus, that should be indicated in the request as well. This can be very resource intensive.
 
 **Level 4** - Focused Effort
-Answer a specific question or set of questions about a particular piece of malware or provided sample.  This report type should is best used to create/fix/update a targeted script or capability or as a follow-on to a previous effort to answer a discrete set of questions.  A full analysis report may or may not be necessary depending on the circumstances.  This ticket type can be used for a follow on request to previous analysis. This request can be used to support an external investigation, automation efforts, or hunting and research. Provide as much context as possible in the JIRA ticket for the specific request.  If a grouping of samples is submitted for targeted capability development provide any relevant open source reporting or possible categorizations (dropper, loader, trojan etc...) along with the requested capability (YARA signature, configuration parser etc...).  Additional examples of requests might be to: update a script to decrypt additional variants, provide details of a specific malware feature such as C2 commands, encryption details or network communications, or confirm it is the same as this open-source malware and if not conduct full L2 analysis. Resource level varies.
+Answer a specific question or set of questions about a particular piece of malware or provided sample.  This report type should is best used to create/fix/update a targeted script or capability or as a follow-on to a previous effort to answer a discrete set of questions.  A full analysis report may or may not be necessary depending on the circumstances.  This ticket type can be used for a follow on request to previous analysis. This request can be used to support an external investigation, automation efforts, or hunting and research. Provide as much context as possible in the ticket for the specific request.  If a grouping of samples is submitted for targeted capability development provide any relevant open source reporting or possible categorizations (dropper, loader, trojan etc...) along with the requested capability (YARA signature, configuration parser etc...).  Additional examples of requests might be to: update a script to decrypt additional variants, provide details of a specific malware feature such as C2 commands, encryption details or network communications, or confirm it is the same as this open-source malware and if not conduct full L2 analysis. Resource level varies.
 
 ## Self Service TI Tools for XFIR
-XFTI team offers several tools which can be used by XFIR to self service and obtain Intel and RE related information without waiting for peoples' availability or timezone difference. 
+XFTI team offers several tools which can be used by XFIR to self service and obtain Intel and RE related information without waiting for peoples' availability or timezone difference. Threat Intel information are modelled in Sherlock Database. This section contains reference on different methods on how to access data from Sherlock. Additional section deals with Sandbox usage for malware samples analysis. 
 
-### Sherlock Slack Channel
-2DO
+### Intel Bot Slack Channel
+Intel team created a dedicated channel, where one can query Sherlock database using dedicated Intel Bot. Join channel `iris-intel_bot` located in `ibm-security.slack.com` workspace. 
 
-### Intl Bot App for Slack
-2DO
+Enter command `/intel-help` to display usage information
+
+### Intel Bot App for Slack
+Having TI source outside a Slack channel dedicated for IR engagement is inconvenient. For this reason, it is recommended to add Intel Bot App to a case Slack channel, receiving ability to ask Intel Bot the same commands as in the `iris-intel_bot` channel. Add `sherlock2-for-iris` app in the same way as any other person is added to a channel using `@`.
+
+### Direct Sherlock Access
+There are several options:
+1. Access Sherlock UI - https://www.intsum.ibm.com/myintel/login
+	- Reach out to Chris Sperry to be added to a group of people with access.
+2. Bulk search python script with read-only access
+	- script is currently in the development phase
+	- if you need to use it, reach out to Megan Roddie for guidance
 
 ### Sandbox
-Currently - the sandbox for self serve is Lastline and SecondWrite
-Lastline
-To request LastLine accounts 
-Managers or leads should create a JIRA Ticket Request for “Access Request” for Lastline access 
-if JIRA is not accessible - email anne.jobmann@ibm.com or sarah.gomez-uscategui@ibm.com to request access
-SecondWrite
-Request SecondWrite accounts at https://webportal.secondwrite.com
-Register as a new User (Sign up Now) with your IBM email account and enter the company as "IBM X-Force" 
-Coming soon:
-Access to IMPE for the IR team - we will be rolling this out in the next few months for beta users. This will provide access to all sandboxes and other malware tools/triage results for self service.  Access to IMPE will be granted with a JIRA Ticket Request for "Access Request" for IMPE access when it is rolled out.
+Currently, as temporary solution we have 2 Sandboxes available for self service are:
+1. Lastline
+	- To request accounts managers or leads should create a JIRA Ticket Request for “Access Request” for Lastline
+	- if JIRA is not accessible - email anne.jobmann@ibm.com or sarah.gomez-uscategui@ibm.com to request access
+2. SecondWrite
+	- Request SecondWrite accounts at https://webportal.secondwrite.com
+	- Register as a new User (Sign up Now) with your IBM email account and enter the company as "IBM X-Force" 
+	- If upon login you don't see a license clearly indicating IBM or X-Force reach out to "Anne Jobmann", so she can request adding you to a correct group.
 
-The sandboxes accept password protected zips (and IMPE will as well).
+The final solution will relay on the IMPE, as a centralised platform handling multiple Sandboxes. Also, any change in the list of available Sandboxes, would not require actions from users. Currently, IMPE is not yet available, but beta tests should potentially start in 2021Q2. 
 
-### Sherlock API
-2DO
+IMPE Coming soon (not yet available):
+- provides access to all sandboxes and other malware tools/triage results for self service. 
+- Access to IMPE is granted with a JIRA Ticket Request for "Access Request" for IMPE access.
+- Accepts password protected samples
+
+IMPE would provide also access to sandboxes which can not be shared widely among IR members, eg. VMRay
+
+Tutorial on submitting samples to Sandbox is available [below](#Submitting-Malware-Sample-to-Sandbox).
+
 
 ## Requesting TI Support for Standalone Intel Engagements
-2DO: requests from the scope of the IR, but without XFIR being engaged, so we are just a proxy. 
-A separate threat for a discussion with Chris S is driven by Davide from EU. To be discussed whether we need this section.
+2DO
+This section should address requests for Intel Engagements which fall outside scope of supporting IR engagement. In such a cases XFIR becomes a proxy for Intel based deliverable. 
+Currently a separate discussion is ongoing and led by Chris Sperry and Davide Paltrinieri from EU. 
+
+## Additional XFTI Resources
+ - Main IRIS Publisher Page - https://w3.ibm.com/w3publisher/x-force-iris 
+ - Intel Offerings - https://w3.ibm.com/w3publisher/x-force-iris/offerings Intel
+ - Enablement Material - https://w3.ibm.com/w3publisher/x-force-iris/enablement Intel
+ - Sherlock/IMPE Information - https://w3.ibm.com/w3publisher/x-force-iris/enablement/find-evil
+ - Sherlock UI - https://www.intsum.ibm.com/myintel/login
+ - Trustar -https://station.trustar.co/ 
+ - IRIS Intel Tools - https://github.ibm.com/X-Force-IRIS-Intel/
+ - IRIS Threat Groups - https://ibm.biz/threatgroups
+ - IRIS Research Hub - https://www.ibm.com/security/xforce/research-hu
 
 ## Tutorials
 
 ### Submitting Malware Sample to Sandbox
 2DO
+#### Lastline:
+- [https://user.lastline.com/portal#/analyst/file](https://user.lastline.com/portal#/analyst/file)
+-  Script to submit a file to Lastline, retrieve a report and delete the file from Lastline’s cloud: https://github.ibm.com/X-Force-IRIS-Intel/OSINT-Tools-Scripts/tree/master/lastline
+
+#### SecondWrite:
+- [https://webportal.secondwrite.com](https://webportal.secondwrite.com/)
 
 ### Creating Malware Analysis Ticket
 Proceed with following steps to submit a ticket to RE Team:
 1. Click the `Create` button at the top of the main Resilient page.
 2. In the `Ticket Type` field select `INTEL Ticket`.
 3. In the `Region` field select the appropriate region that correlates with the client's region.
-4. In the `Type of Intel Support` field select `Malware Analysis`. In the `Related Resilient Engagement` field enter the Resilient Ticket ID for your IR engagement (`IR19-3818` for example).
-5. Enter a brief but detailed description in the `Description` field. This field is not synced to Jira, thus not visible to RE team.
-6. In the `Work ID` field input the ILC bill code for your project
-7. Select the analysis level in the `(Intel) Level of Malware Analysis` field and provide any additional details you have for the sample (MD5, Sandbox URL, Maximum number of hours to consume, Due Date, and Engagement Box URL). Levels of Malware Analysis are explained in separate [section](#Definition-of-RE-Analysis-Levels).
-8. Make sure you populate `(Intel) Description` - this is the only description field synced to Intel Jira. Make sure to add any additional context of the sample, specific requirements, eg. reporting, update timeframe, etc.
-9. Enter random text into "Name" field, it is required however, will be discarded and automatically populated by Resilient.
-10. Click `Next` and your Intel Malware Analysis ticket will be created. At this point you have created the ticket for analysis however, you will still need to attach the malware sample(s) to the ticket.
+4. In the `Type of Intel Support` field select `Malware Analysis`. 
+5. In the `Related Resilient Engagement` field enter the Resilient Ticket ID for your IR engagement (`IR21-1234` for example).
+6. Enter a brief but detailed description in the `Description` field. This field is not synced to Jira, thus not visible to RE team.
+7. In the `Work ID` field input the ILC bill code for your project
+8. Select the analysis level in the `(Intel) Level of Malware Analysis` field and provide any additional details you have for the sample (MD5, Sandbox URL, Maximum number of hours to consume, Due Date, and Engagement Box URL). Levels of Malware Analysis are explained in separate [section](#Definition-of-RE-Analysis-Levels).
+9. Make sure you populate `(Intel) Description` - this is the only description field synced to Intel Jira. Make sure to add any additional context of the sample, specific requirements, eg. reporting, update timeframe, etc.
+10. Enter random text into "Name" field, it is required however, will be discarded and automatically populated by Resilient.
+11. Click `Next` and your Intel Malware Analysis ticket will be created. At this point you have created the ticket for analysis however, you will still need to attach the malware sample(s) to the ticket.
 
-Example screenshot of filled in ticket:
+Example screenshot populated ticket:
 ![RE ticket creation in Resilient](screenshots/Resilient_RE_New_ticket_request.png)
 
 If you return to the main Resilient Engagement Ticket that you created the Malware Analysis ticket in support of, you will see the new ticket in the `Related Tickets and Clients` section of the Engagement Ticket. 
-
 ![Resilient related tickets](screenshots/Resilient_related_tickets.png)
 
 Select your newly created Intel ticket and add sample(s) on the `Attachements` tab.
@@ -171,44 +204,21 @@ Select your newly created Intel ticket and add sample(s) on the `Attachements` t
 If you need to add additional samples at a later time, you can always add additional attachments to this tab and the corresponding Jira ticket will be updated. This also works for the `Notes` tab. If you need to provide additional details surrounding the malware you can create a note in the `Notes` tab and that information will be updated on the Intel Jira ticket.
 
 ### Creating Intel Engagement Ticket
-**IMPORTANT**: This section only applies to the situation when IR ticket was created without associated Intel ticket. If you followed guides from this wiki, you should not need to proceed with below steps as Intel ticket should have been already created.
-
-In the case where an IR engagement ticket has already been created or you need to update an existing Hotline Triage ticket to include the `IR` tag when a client engages us, use the following instructions for creating an associated Intel ticket.
+**IMPORTANT**: This section only applies to the situation when IR ticket was created without associated Intel ticket. If you have followed guides from this wiki, you there should not be a need to proceed with below steps as Intel ticket should have been already created.
 
 1. Click the `Create` button at the top of the main Resilient page.
-
-![Create](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline03.png)
-
 2. In the `Ticket Type` field select `INTEL Ticket`.
-
-![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel02.png)
-
 3. In the `Region` field select the appropriate region that correlates with the client's region.
+4. In the `Type of Intel Support` field select `Engagement Work`
+5. In the `Related Resilient Engagement` field enter the Resilient Ticket ID for your IR engagement (`IR21-1234` for example).
+6. Enter a brief but detailed description in the `Description` field. This field is not synced to Jira, thus not visible to TI team.
+7. In the `(Intel) Type of Engagement` field select `IR - Incident Response
+8. Populate `Client` field with correct value
+9. In the `Work ID` field input the ILC bill code for your project
+10. Make sure you populate `(Intel) Description` - this is the only description field synced to Intel Jira. Make sure to add any additional context of the sample, specific requirements, eg. reporting, update timeframe, etc.
+11. Enter random text into "Name" field, it is required however, will be discarded and automatically populated by Resilient.
+12. Click `Next` and your Intel Malware Analysis ticket will be created. At this point you have created the ticket for analysis however, you will still need to attach the malware sample(s) to the ticket.
 
-![IRREGION](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Hotline05.png)
+Example screenshot populated ticket:
+![Intel for IR standalone ticket creation in Resilient](screenshots/Resilient_TI_standalone_ticket_request.png)
 
-4. In the `Type of Intel Support` field select the appropriate Intel ticket type.
-
-![Type](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel03.png)
-
-Currently the options are:
-
- - Engagement Work - Request an INTEL resource for IRs, FORs, ATAs, Dark Web Analysis, etc.
-- Malware Analysis - Submit a malware analysis request.
-- Production Work - Request for a STA
-
-If this is the first Intel ticket that will be associated with your IR engagement choose the `Engagement Work` Intel ticket type. This is highly recommended to help Intel keep track of associated tickets. Even in the case where all you need is malware analysis, or dark web analysis, it helps Intel keep track of tickets on their end if there is a "Master" ticket for each engagement that they can then associate additional tickets with.
-
-5. In the `Related Resilient Engagement` field type the Resilient ticket ID for your IR engagement. (`IR19-3818` for example). And provide a brief but detailed description in the `Description` field.
-
-![Description](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel04.png)
-
-6. In the `(Intel) Type of Engagement` field select `IR - Incident Response` as this documentation is for the IR Intel ticketing process and you are creating an initial `Engagement Work` ticket for your IR engagement.
-
-Fill out the `Client` detail field and provide a more detailed description in the `(Intel) Description` field. This description needs to include the specific ask(s) from Intel. Why are we requesting support and what are the details of the IR so that Intel can assign the appropriate resource.
-
-Finally, fill out the `(Intel) Engagement Data URL` with the URL for the Engagement Box folder.
-
-![TypeClientDetails](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR/Resilient_Intel05.png)
-
-Repeat this process if there is already an engagement work ticket for your IR (All engagements of the type `IR` are required to have an Intel `Engagement Work` ticket) and you need to create a ticket for malware analysis, dark web analysis, etc. On the backend in Jira, Intel will be able to correlate those additional requests for their tracking purposes.
