@@ -10,7 +10,7 @@
 5. Upload a final version of ETS to a Resilient Ticket.
 6. Close IR ticket in Resilient.
 	* you do not need to populate Intel fields (and you should not be doing it)
-7. Re-assign "Engagement Intel" ticket for this case to Michelle Alvarez
+7. Re-assign "Engagement Intel" sub-ticket for this case to Michelle Alvarez
 	* this ticket in most of the cases has a next id after IR ticket
 	* this ticket also should have Description as "INTEL Ticket for ABCD" where ABCD is the id of IR Ticket in Resilient.
 
@@ -19,4 +19,4 @@
 ## Tutorials
 
 ### Create Password Protected Final Report
-2DO
+Use "Options" button during "Export" function converting to PDF in Word. There is a checkbox "Encrypt the document with a password"
