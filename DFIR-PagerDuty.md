@@ -51,29 +51,32 @@ X-Force IR PD hotline number is +44 808 178 1527. One can simply call this numbe
 ### What Happens When a Call Reaches PagerDuty?
 At first PD plays a configurable welcome message to the caller. The intention of this welcome message is to inform callers that they have reached IBM X-Force in the hope that wrong numbers will hang up before reaching hotline staff. In the past we used to receive a lot of wrong number calls, but the welcome message has reduced these. 
 
-The currently configured welcome message is: "*Welcome. This is the IBM X-Force Incident Response Hotline where you can declare an emergency security incident and ask for our assistance.*". Afterwards, PD automatically adds: "*Attempting to connect you to an on-call responder*".
+The currently configured welcome message is: "*Welcome. This is the IBM X-Force Incident Response Hotline where you can declare an emergency security incident and request assistance. If your call cannot be connected to an on-call consultant within 3 minutes you will be presented with the option to leave a voice message. Please leave a message detailing your name, a contact number and the organisation from which you are calling and you will be called back urgently.*". Afterwards, PD automatically adds: "*Attempting to connect you to an on-call responder*".
 
 The on-call person will then receive a call marked with a Hotline caller number (with an exception explained in the [Tracking Hotline Calls](#Tracking-Hotline-Calls)). Upon picking up the call, a computerized voice states "*Incoming PagerDuty call. Press 1 to connect.*".
 
-Pressing "1" on your phone's keypad establishes a connection with the person calling the Hotline and will mark this connection as "Acknowledged". If a call is not acknowledged, then it will go along the escalation path to second person on-call according to the L2 schedule. 
+Pressing "1" on your phone's keypad establishes a connection with the person calling the Hotline and will mark this connection as "Acknowledged". If a call is not acknowledged, then it will go along the escalation path to second person on-call according to the L2 schedule and so on.
 
 Who is on-call at any given moment in time is defined in PD by a "Schedule". The flow of notifications and actions when a call reaches the hotline is known as an "Escalation Path". The current escalation path for the X-Force IR hotline (as described in the [Hotline Operations](DFIR-Hotline.md#Hotline-Operations)) is:
-1) **Primary on-call person** determined by "[X-Force IR - Follow the sun (L1 - main)](https://ibm.pagerduty.com/schedules#PAL8VJX)" schedule (often referenced by team members as L1). If the designated person is not available or does not pick up a call within 60 seconds, the call is escalated to: 
-2) **Secondary on-call person** determined by "[X-Force IR - Follow the sun (L2 - overflow)](https://ibm.pagerduty.com/schedules#PB084QZ)" schedule (often referenced by team members as L2). If this person is not available or does not pick up a call for 60 seconds, the call is escalated to:
-3) **Voicemail message service**, which then triggers widespread notifications in the event that the caller leaves a message. Please see section [Handling Voice Messages](#Handling-Voice-Messages) for details on what happens when a Voice Message is left by a person calling the Hotline.
+1) **Primary on-call person** determined by "[X-Force IR - Follow the sun (L1 - main)](https://ibm.pagerduty.com/schedules#PAL8VJX)" schedule (often referenced by team members as L1). If the designated person is not available or does not pick up a call within 30 seconds, the call is escalated to: 
+2) **Secondary on-call person** determined by "[X-Force IR - Follow the sun (L2 - overflow)](https://ibm.pagerduty.com/schedules#PB084QZ)" schedule (often referenced by team members as L2). If this person is not available or does not pick up a call for 30 seconds, the call is escalated to:
+3) **Geography Lead** determine by "X-Force IR - Follow the sun (L3 - Leads)" schedule. If this person is not available or does not pick up a call for 30 seconds, the call is escalated to:
+4) **Voicemail message service**, which then triggers widespread notifications in the event that the caller leaves a message. Please see section [Handling Voice Messages](#Handling-Voice-Messages) for details on what happens when a Voice Message is left by a person calling the Hotline.
 
-If the Primary on-call person's line is busy, PD may keep attempting to call this number for the 60 second period they have to acknowledge the call, and in some locations the on-call person may be notified that a hotline call is pending if their mobile phone provider offers the 'call waiting' feature.
+When voicemail is left, PD will use escalation path, attempting to notify current on-call team about unhandled call, by calling their mobile number, sending mobile app notifications, emails and text messages. This operations will be performed in a loop, with 3 minutes timeout period between moving to next person from escalation path. Together, this should cause PD to chase three on-call people for a period of up to 86 minutes. 
+
+If the Primary on-call person's line is busy, PD may keep attempting to call this number for the 30 second period they have to acknowledge the call, and in some locations the on-call person may be notified that a hotline call is pending if their mobile phone provider offers the 'call waiting' feature.
 
 In the past the X-Force IR team performed a stress test of the PD, generating a significant volume of calls, and exceeding several times the highest rate of calls ever observed. It was confirmed that PD can redirect all of them and that in such situation it is the on-call people and their mobile phones who become a "bottleneck" rather than the PD service.
 
-The option to leave a voicemail within Pager Duty is the best solution to address peak call volumes, allowing the on-call team to work through them within PD.
+The option to leave a voicemail within Pager Duty is the best solution to address peak call volumes, allowing the on-call team to work through them within PD. 
 
 ### Tracking Hotline Calls
-Every call is recorded as an "Incident" in PD, which is marked as Acknowledged when the on-call person answers it and marked as resolved when the call ends. If a Hotline call is not picked up but a voicemail is left, PD will start chasing on-call people from both schedules using the mobile app, phone calls and text messages to notify them of the new Incident in PD (Hotline call) which requires attention. Every PD incident contains a source phone number of a caller, which can be checked in the incident (if you picked up a call, then look within resolved incidents):
+Every call is recorded as an "Incident" in PD, which is marked as Acknowledged when the on-call person answers it and marked as resolved when the call ends. Incident is also created in case a voicemail is left, with an exception that status is marked as "Triggered", until it has been acknowledged by anyone. Every PD incident contains a source phone number of a caller, which can be checked in the incident (if you picked up a call, then look within resolved incidents):
 ![Identifying caller number](screenshots/PagerDuty-identify-caller.png)
 For Hotline numbers managed by the NA team (NA and worldwide numbers), source phone number will not represent the caller number (most probably will be +18475722285). This is due to the configuration of RACC. For this reason, one should not rely entirely on the source phone numbers recorded in PD.
 
-There is one specific case in which PagerDuty will not create an Incident ticket for an incoming call: when both on-call assigned people do not answer the call, and the caller does not leave a Voicemail. In such a case there is no option to use Incident information to track a hotline call, and the only source of information is a missed call on the mobile phone of the on-call person (unless it was not a call to a NA or worldwide hotline number as explained above).
+There is one specific case in which PagerDuty will not create an Incident ticket for an incoming call: when on-call assigned people do not answer the call, and the caller does not leave a Voicemail. In such a case there is no option to use Incident information to track a Hotline call, and the only source of information is a missed call on the mobile phone of the on-call person (unless it was not a call to a NA or worldwide hotline number as explained above).
 
 PD has many functions supporting handling and escalating incidents, however due to the sensitivity of data processed by X-Force IR, as well as dedicated Resilient instance, PD is used only to handle Hotline calls. 
 
@@ -129,7 +132,7 @@ Every new team member who will be supporting the Hotline must configure their mo
 ![Initial configuration of PagerDuty](screenshots/PagerDuty-initial-config1.png)
 
 ### Handling PD Voicemail
-Voicemails can be left by a person calling the Hotline who failed to reach both the L1 and L2 persons. From a PagerDuty perspective, this incident is not assigned to anyone and it will begin alerting people from the Escalation Path to ensure that someone picks it up. This means that you can receive phone calls, text messages and emails from PD, until someone acknowledges the incident (representing a hotline call) and assigns it to themselves.
+Voicemails can be left by a person calling the Hotline who failed to reach both the L1, L2 and L3 persons. From a PagerDuty perspective, this incident is not assigned to anyone and it will begin alerting people from the Escalation Path to ensure that someone picks it up. This means that you can receive phone calls, text messages and emails from PD, until someone acknowledges the incident (representing a hotline call) and assigns it to themselves.
 
 The voicemail message can be listened from a PagerDuty mobile application (both for Android and iOS) or PagerDuty web page.
 
