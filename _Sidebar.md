@@ -11,7 +11,7 @@
 - [Scoping & Kickoff Guidelines]
 - [Scoping Call Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-Triage-Scoping)
 - [Engagement Spin-Up Procedures](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-SpinUp)
-- [Technology Deployment](https://github.ibm.com/XFIR/DFIR-wiki/wiki/DFIR-TechDeploy)
+- [Requesting EDR Technology](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki/Requesting-Tech)
 
 ### Technical Analysis
 - [XFIR Incident Response Methodology]
