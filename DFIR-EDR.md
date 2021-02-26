@@ -1,8 +1,17 @@
 
-# XFIR Incident Response Technology Deployment Guide
-The purpose of this page is to document the XFIR Incident Response ticketing process for Technology Deployment.
+# EDR for DFIR 
 
-Depending on the situation you may need to leverage Endpoint Detection and Response (EDR) and/or Network Sensor technology in support of your Incident Response engagement. This guide serves as a reference point for that process.
+## Table of Contents
+1. [**Introduction**](#Introduction)
+
+## Introduction
+The purpose of this page is to document usage of Endpoint Detection and Response technologies for IR engagements delivered by XFIR. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the  [Homepage](Home.md)).
+
+
+## Requesting EDR Technology
+https://github.ibm.com/XFIR/XFIR-master-wiki/wiki/Requesting-Tech
+
+# Old content, to be reviewed
 
 The following documentation is a guideline for XFIR consultants for the XFIR Incident Response Technology Deployment process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/Home.md)).
 

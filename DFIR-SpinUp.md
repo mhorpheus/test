@@ -1,72 +1,78 @@
-# X-Force IR Incident Response Spin-Up Process
+# DFIR Spin-Up Process
 
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**Setting up Collaboration Environment**](#Setting-up-Collaboration-Environment)
-	- [Internal X-Force IR Working Environment](#Internal-X-Force-IR-Working-Environment)
+	- [Internal XFIR Working Environment](#Internal-XFIR-Working-Environment)
 	- [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client)
-3.  [**Threat Intel Support**](#Threat-Intel-Support)
+3. [**Threat Intel Support**](#Threat-Intel-Support)
 4. [**Endpoint Detection and Response Deployment**](#Endpoint-Detection-and-Response-Deployment)
 5. [**Tutorials**](#Tutorials)
 	- [Slack](#Slack)
-	- [IBM Box Folder for Case Data](#IBM-Box-Folder-for-Case-Data)
-	- [IBM Box Folder for Digital Evidence](#IBM-Box-Folder-for-Digital-Evidence)
+	- [Case Folder at Box](#Case-Folder-at-Box)
+	- [Evidence Folder at Box](#Evidence-Folder-at-Box)
 	- [Aspera](#Aspera)
 		- [Creating a Folder for an Aspera Upload](#Creating-a-Folder-for-an-Aspera-Upload)
 		- [Troubleshooting Aspera](#Troubleshooting-Aspera)
 
 ## Introduction
-The purpose of this page is to document the X-Force IR Incident Response Service Spin-Up process and procedures. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the  [Homepage](Home.md)).
+The purpose of this page is to document the XFIR Spin-Up process and procedures. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the  [Homepage](Home.md)).
 
-Once X-Force IR has been engaged for Incident Response services regardless of the scope and size of that effort there are some fundamental procedures that are required for every IR engagement. In addition to the basic IR engagement spin-up, and depending on several factors, there are a number of procedures that could also apply to your engagement that will be documented here.
-
+Once XFIR has been engaged for Incident Response services regardless of the scope and size of that effort there are some fundamental procedures that are required for every IR engagement. In addition to the basic IR engagement spin-up, and depending on several factors, there are a number of procedures that could also apply to your engagement that will be documented here.
 
 ## Setting up Collaboration Environment
 All technical details describing how to perform the steps required in this section and best practices on using them, are described in the [Tutorials](#Tutorials) section at the bottom of this page.
 
-### Internal X-Force IR Working Environment
-Proceed with the following steps to set up a working environment for collaboration within X-Force IR (all steps are obligatory, unless stated otherwise):
-1. Create a central repository for all data related to this IR engagement, by creating a dedicated IBM Box folder:
-	- do **not** use this folder for digital evidence storage, to share data with the Client or any third party! This topic is addressed separately in section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client).
+### Internal XFIR Working Environment
+Adherer to [rules for Digital Evidence, Client Data and Case Data](DFIR-Project-Managenent.md#Handling-Digital-Evidence-Client-Data-and-Case-Data) defining which parts of collaboration environment should be used to store different types of data.
+
+Proceed with the following steps to set up a working environment for collaboration within XFIR (all steps are obligatory, unless stated otherwise):
+1. Create a "**Case Folder**" on IBM Box:
+	- acts as a central repository for this IR engagement
 	- use a template: "IR_Engagement_Folder_Template_DONOTMODIFY" (simply using copy option in Box) for the case folder structure from [here](https://ibm.ent.box.com/folder/63956024543),
 	- create a case folder in a location specific for each geography: [EMEA](https://ibm.ent.box.com/folder/41834082550), [NA](http://TO_BE_POPULATED), [APAC](http://TO_BE_POPULATED).
-	- rename template of the case folder to a case number: 'IRXX-YYYY (uppercase!; do not append anything in the folder name after a case number),
-	- see [tutorial](#IBM-Box-Folder-for-Case-Data) below.
-2. Download Evidence Tracking Sheet (ETS) Template from [here](DFIR/IBM%20X-Force%20IR%20Engagement%20Tracking%20Sheet.xlsx) and place is the IBM Box case folder created in the previous step (root of the case folder).
+	- rename template of the case folder to a case number: eg IRYY-NNNN (uppercase!; do not append anything in the folder name after a case number),
+	- do **not** use this folder for digital evidence storage, or to share data with the Client or any third party as is addressed separately in section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client).
+	- see [tutorial](#Case-Folder-at-Box) below.
+2. Create an "**Evidence Folder**" on IBM Box:
+	- to store all digital evidence and other data owned by a Client,
+	- is an ultimate target for evidence - all evidence independently on delivery method, should be finally put into this folder (eg. uploaded with Aspera),
+	- use "need to know" principle by adding only XFIR consultants working for this case,
+	- folder must be named "IRYY-NNNN-Evidence" in the root folder of a consultant's IBM Box:
+		- invite only XFIR people working on this case with "Co-owner" rights,
+		- do **not** create it within a team shared part of IBM Box,
+	- maximum file size: 32 GB (cut bigger files into chunks),
+	- see [tutorial](#Evidence-Folder-at-Box) below.
 3. Create a dedicated channel for this engagement within X-Force IRIS Slack workspace for regular communication about the case:
-	- channel name must be equal to a case number - "irXX-YYYY" (Slack channels are always named with lowercase letters),
+	- channel name must be equal to a case number - eg. "irYY-NNNN" (Slack channels are always named with lowercase letters),
 	- Post a message called "Administrative notes" on the Slack channel and pin it. Include following information into a note:
 		- who is a case lead,
 		- if there are any, current hours usage constraints,
 		- frequency of hours reporting in Resilient.
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel,
 	- follow usage recommendation listed in the [tutorial](#Slack) below.
-4. Grant access to consultants assigned to this case:
+4. Download Evidence Tracking Sheet (ETS) Template from [here](DFIR/IBM%20X-Force%20IR%20Engagement%20Tracking%20Sheet.xlsx) and place is the "Case Folder" (root of the case folder).
+5. Grant access to consultants assigned to this case:
 	1. Populate an "Owner" field in Resilient with Case Lead name.
 	2. Populate "Members" field in Resilient with consultants assigned to this case.
-	3. Add people to Slack channel from X-Force IR or TI or RE teams.
+	3. Add people to Slack channel from XFIR or TI or RE teams.
 
 ### Environment for Data Sharing with a Client
 Remote Evidence Collection, together with all supporting materials, is documented on the [Digital Evidence](DFIR-Digital-Evidence.md) page.
-Evidence Delivery in most of the cases is performed over the Internet. The best option is when Client shares evidence using their own infrastructure taking over the responsibility for data sharing process and data security. However, often they do not have sufficient capabilities. For this reason X-Force IR offers one or more of below methods:
-1. dedicated IBM Box folder for evidence upload (this is not same as the case IBM Box folder created above):
-	- is an ultimate target for evidence - all evidence should be finally put into this folder (eg. uploaded with Aspera),
-	- maximum file size: 32 GB,
-	- "need to know" privilege implemented by adding only X-Force IR consultants working for this case,
-	- folder must be named "IRXX-YYYY-Evidence" in the root folder of a consultant's IBM Box:
-		- invite only X-Force IR people working on this case with "Co-owner" rights,
-		- do **not** create it within a team shared part of IBM Box,
-	- create an "IRXX-YYYY-Evidence/Client Upload" folder for Client originating upload:
-		- files uploaded by Clients to "IRXX-YYYY-Evidence/Client Upload" can be moved to "IRXX-YYYY-Evidence" folder to limit extensive access,
+
+Evidence Delivery in most of the cases is performed over the Internet. The best option is when Client shares evidence using their own infrastructure taking over the responsibility for data sharing process and data security. However, often they do not have sufficient capabilities. For this reason XFIR offers one or more of below methods:
+1. Dedicated folder for evidence upload within the scope of "Evidence Folder" at IBM Box:
+	- create an "IRYY-NNNN-Evidence/Client Upload" folder for Client originating upload:
+		- files successfully uploaded by Client to "IRYY-NNNN-Evidence/Client Upload" must be moved to "IRYY-NNNN-Evidence" folder to limit extensive access,
 		- invite people for an upload with "Previewer Uploader" rights, so they confirm that files have been uploaded, but can not do much beyond that,
 	- do not send Box invites to free email providers (eg. Gmail, Hotmail) as they are banned from accessing IBM's Box and will violate IBM ITCS300 Security Policy.
-	- see [tutorial](#IBM-Box-Folder-for-Digital-Evidence) below.
 2. IBM Aspera folder (optional):
-	- folder must be named “IRXX-YYYY-Evidence”,
-	- should be considered ONLY for transition as data will be deleted after 7 days:
-		- make sure smaller files (under Box size limit) are uploaded directly to Box,
-		- for larger files (above Box limit), download them from Aspera, split into chunks (eg. with 7zip) and upload to IBM Box,
-	- invite only X-Force IR people working on this case, assigning them "Edit" rights in the Aspera menu,
+	- folder must be named “IRYY-NNNN-Evidence”,
+	- should be considered ONLY for transition as by Aspera policy data will be deleted after 7 days:
+		- make sure smaller files (under Box size limit) are uploaded directly to "Evidence Folder" on Box,
+		- for larger files (above Box limit), download them from Aspera, split into chunks (eg. with 7zip) and upload to "Evidence Folder" on IBM Box,
+		- when files are migrated to Box, they should be deleted from Aspera.
+	- use "need to know" principle by adding only XFIR consultants working for this case,, assigning them "Edit" rights in the Aspera menu,
 	- invite Client representatives:
 		- always attempt to invite people by email, assigning them only the following rights: "Browse", "Upload files" and "Create folders",
 		- whenever possible, try to avoid using "Shared links" as once a shared link is created the permissions cannot be downgraded and upload is anonymous (try to use send invites as mentioned in the above point).
@@ -74,19 +80,21 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
 		- practical file size limit is 5TB,
 	 	- requires Web Browser plugin and software installation,
 	 	- may require some firewall changes on a Client side (see [Troubleshooting Aspera](#Troubleshooting-Aspera) below),
-		- do not use Aspera "Package" option, as it is deleted immediately after successful download, making it impossible to forward to another X-Force IR consultant. Always use "Files" option.
+		- do not use Aspera "Package" option, as it is deleted immediately after successful download, making it impossible to forward to another XFIR consultant. Always use "Files" option.
  	- see [tutorial](#Aspera) below.
-3. NA only: Forensics Lab.
+3. Forensics Lab.
 
-Currently, none of the available tools are GDPR compliant. Alternatively, digital evidence can be physically shipped to a X-Force IR consultant or NA Forensics Lab. If Clients do not agree to share digital evidence outside it's location, the only available solution would be on-site support.
+Currently, none of the available tools are GDPR compliant. For more details on how to address GDPR related constraints for XFIR engagements, please see separate [page](DFIR-GDPR.md).
 
 ### Threat Intel Support
 Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure the TI team has necessary visibility into IR engagements, thus is able to process the outcome from IR work. "Intel Engagement" tickets should have already been created during creation of the new IR tickets (should this not be a case, it can be created following [this](DFIR-Threat-Intel.md#Creating-Intel-Engagement-Ticket) tutorial).
 
- It is a Case Lead's responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](DFIR-Threat-Intel.md#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally, the [Threat Intel](DFIR-Threat-Intel.md) page documents several other aspects for X-Force IR engaging TI. 
+ It is a Case Lead's responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](DFIR-Threat-Intel.md#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally, the [Threat Intel](DFIR-Threat-Intel.md) page documents several other aspects for XFIR engaging TI. 
 
 ## Endpoint Detection and Response Deployment
-This section is currently unavailable - please use EDR [Deployment](https://github.ibm.com/XFIR/ATA-wiki/wiki/ATA-Engagement-Process#deployment) section from ATA wiki, until this section is ready.
+IBM has a partnership with several external EDR providers. For this reason, XFIR can offer a short term license together with a cloud environment of a chosen tool at no cost for a client, to support IR engagement. The decision on whether to use EDR technology and which particular one depends on the IR case lead. 
+
+Shall you need to deploy EDR for IR engagement, please refer to a separate [page](DFIR-EDR.md) discussing this topic.
 
 ## Tutorials
 
@@ -110,12 +118,12 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force I
 <p align="center" width="100%"><img src="screenshots/Slack_01.png"></p>
 2. Pick up an option "Create a channel". <br />
 3. Fill in details of a new channel:
-	- name channel using a case number: irXX-YYYY,
+	- name channel using a case number: irYY-NNNN,
 	- Select `Make Private`
 	- Fill in description providing customer name and brief description of the case, eg. "BEC case of 2 accounts for MyCompany"
 <p align="center" width="100%"><img src="screenshots/Slack_02.png"></p>
 
-### IBM Box Folder for Case Data
+### Case Folder at Box
 1. Navigate to a folder containing case folder template "IR_Engagement_Folder_Template_DONOTMODIFY" https://ibm.ent.box.com/folder/63956024543
 2. Pick "Move or Copy" from 3 dots menu for template folder
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder1.png"></p>
@@ -127,11 +135,11 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force I
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder4.png"></p>
 
 
-### IBM Box Folder for Digital Evidence
+### Evidence Folder at Box
 1.  Browse to the root of your IBM Box account:  [https://ibm.ent.box.com/folder/0](https://ibm.ent.box.com/folder/0)
 2. On the right side chose "New" and then "Folder"
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder1.png"></p>
-3. Enter folder name according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a> and click "Create". Add X-Force IR team members working on this case with "Co-worker" permissions.
+3. Enter folder name according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a> and click "Create". Add XFIR team members working on this case with "Co-worker" permissions.
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder2.png"></p>
 4. Navigate to newly created folder. <br />
 5. Click "Share" on the right side to invite Client representatives.
@@ -160,7 +168,7 @@ Location: https://ibm.ibmaspera.com/
 6. Navigate to newly created folder. <br />
 7. Enter sharing options on the right side: click "Share this folder" and then "Invite collaborators"
 <p align="center" width="100%"><img src="screenshots/Aspera5.png"></p>
-8. Invite X-Force IR team members working on this case with "Edit" rights.
+8. Invite XFIR team members working on this case with "Edit" rights.
 <p align="center" width="100%"><img src="screenshots/Aspera6.png"></p>
 9. Invite Client representatives with "Custom" rights, assigning only following rights: "Browse", "Upload files" and "Create folders"
 <p align="center" width="100%"><img src="screenshots/Aspera7.png"></p>

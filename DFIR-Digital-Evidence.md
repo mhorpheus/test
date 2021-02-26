@@ -1,22 +1,22 @@
-# Digital Evidence
+# XFIR Digital Evidence
 
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**Remote Evidence Collection Manuals**](#Remote-Evidence-Collection-Manuals)
 3. [**Chain of Custody**](#Chain-of-Custody)
-	- [X-Force IR CoC Templates](#X-Force IR-CoC-Templates)
+	- [XFIR CoC Templates](#XFIR-CoC-Templates)
 	- [CoC Usage Example](#CoC-Usage-Example)
 	- [Regional CoC Information](#Regional-CoC-Information)
 4. [**Evidence Naming Policy**](#Evidence-Naming-Policy)
 5. [**Data Retention Policy**](#Data-Retention-Policy)
 
 ## Introduction
-The purpose of this page is to document how X-Force IR handles Digital Evidence. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to document how XFIR handles Digital Evidence. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
 
 ## Remote Evidence Collection Manuals
-Digital Evidence collection can be performed on-site and remotely. Especially for remote IR engagements, digital evidence collection is not performed by X-Force IR consultants, but by personnel who may have very little, if not zero, experience in this area. For this reason, a set of so called "Evidence collection one-pager instructions" have been prepared. These instructions can be shared with anyone performing forensic collections and guides such person in simple steps through the whole process. The instructions address all necessary topics such as data confidentiality, remote delivery challenges, etc. 
+Digital Evidence collection can be performed on-site and remotely. Especially for remote IR engagements, digital evidence collection is not performed by XFIR consultants, but by personnel who may have very little, if not zero, experience in this area. For this reason, a set of so called "Evidence collection one-pager instructions" have been prepared. These instructions can be shared with anyone performing forensic collections and guides such person in simple steps through the whole process. The instructions address all necessary topics such as data confidentiality, remote delivery challenges, etc. 
 
-X-Force IR one-pagers deal with most common topics related to evidence collection, such as:
+XFIR one-pagers deal with most common topics related to evidence collection, such as:
 - Dead box imaging,
 - Windows:
 	- RAM capture,
@@ -33,21 +33,21 @@ X-Force IR one-pagers deal with most common topics related to evidence collectio
 
 Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [here](documents/evidence%20collection%20one%20pagers).
 
-There are several options to deliver digital evidence over the Internet to X-Force IR consultants. They are discussed on a [SpinUp](DFIR-SpinUp.md#Environment-for-Data-Sharing-with-a-Client) process page.
+There are several options to deliver digital evidence over the Internet to XFIR consultants. They are discussed on a [SpinUp](DFIR-SpinUp.md#Environment-for-Data-Sharing-with-a-Client) process page.
 
 ## Chain of Custody
-Chain of custody (CoC), in legal contexts, is the chronological documentation or [paper trail](https://en.wiktionary.org/wiki/paper_trail "wiktionary:paper trail") that records the sequence of custody, control, transfer, analysis, and disposition of physical or electronic [evidence](https://en.wikipedia.org/wiki/Evidence "Evidence"). The CoC requires that from the moment the exhibit is collected, every transfer of an exhibit from person to person be documented **and** that it be defensible that nobody else could have accessed that evidence. It is best to keep the number of transfers as low and minimal as possible. In the courtroom, if the defendant questions the CoC, the documentation completed to date will prove that whatever evidence is being used, was the evidence collected during the incident. It is utterly vital that *any* chain of custody paperwork be completed diligently, and then checked by a second X-Force IR Analyst. If the chain of custody is broken, the Accused and their Legal Counsel will ask the court to exclude the exhibit as there is plausible deniability and the evidence may have been tampered with.
+Chain of custody (CoC), in legal contexts, is the chronological documentation or [paper trail](https://en.wiktionary.org/wiki/paper_trail "wiktionary:paper trail") that records the sequence of custody, control, transfer, analysis, and disposition of physical or electronic [evidence](https://en.wikipedia.org/wiki/Evidence "Evidence"). The CoC requires that from the moment the exhibit is collected, every transfer of an exhibit from person to person be documented **and** that it be defensible that nobody else could have accessed that evidence. It is best to keep the number of transfers as low and minimal as possible. In the courtroom, if the defendant questions the CoC, the documentation completed to date will prove that whatever evidence is being used, was the evidence collected during the incident. It is utterly vital that *any* chain of custody paperwork be completed diligently, and then checked by a second XFIR Analyst. If the chain of custody is broken, the Accused and their Legal Counsel will ask the court to exclude the exhibit as there is plausible deniability and the evidence may have been tampered with.
 
-### X-Force IR CoC Templates
-X-Force IR maintains Chain of Custody document templates for:
+### XFIR CoC Templates
+XFIR maintains Chain of Custody document templates for:
 * [Single Item](documents/IBM%20X-Force%20IR%20Chain%20of%20Custody%20-%20Single%20Item.docx)
 * [Multiple Items](documents/IBM%20X-Force%20IR%20Chain%20of%20Custody%20-%20Mulitple%20Items.docx)
 
 
 ### CoC Usage Example
-An example of  Chain of Custody  would be the recovery of an exhibit during the course of X-Force IR responding to an incident:
-1.  An X-Force IR Analyst would collect the exhibit, or capture information during an incident. The exhibit would then be either catalogued, transferred to another Analyst, or both.
-2.  The analyst would then log the exhibit into the evidence management system, and store the exhibit securely. The X-Force IR Analyst would then render the exhibit to an Exhibit Clerk.
+An example of  Chain of Custody  would be the recovery of an exhibit during the course of XFIR responding to an incident:
+1.  An XFIR Analyst would collect the exhibit, or capture information during an incident. The exhibit would then be either catalogued, transferred to another Analyst, or both.
+2.  The analyst would then log the exhibit into the evidence management system, and store the exhibit securely. The XFIR Analyst would then render the exhibit to an Exhibit Clerk.
 3.  The Exhibit Clerk would store the exhibit until it is needed, documenting everyone who has accessed the original copy and/or exhibit. 
 
 ### Regional CoC Information
@@ -114,6 +114,6 @@ This section deals with naming of the images and contains part identifying sourc
 	- e.g. `IR19-1234_W6N84_RAM_20190830`
 
 ## Data Retention Policy
-To be defined.
+Current XFIR Data Retention Policy for digital evidence obtained from Clients is defined as **60 days**.
 
-In the past used to be 90 days from case closure.
+Unless there is a specific request from a Client, all digital evidence for a case should be securely deleted after this time. 

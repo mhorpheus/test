@@ -1,6 +1,4 @@
-
-
-# X-Force IR Resilient Ticketing
+# XFIR Resilient Ticketing
 
 ## Table of Contents
 1. **[Introduction](#Introduction)**
@@ -11,18 +9,18 @@
 	- [Finding Details of Incident Declarers](#Finding-Details-of-Incident-Declarers)
 
 ## Introduction
-X-Force IR uses a customized Resilient instance to:
+The purpose of this page is to document the XFIR ticketing process only for the DFIR engagements. Details on using Resilient for proactive engagements should be checked on the respective proactive service wiki.
+
+The following documentation is a guideline for the XFIR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+
+XFIR uses a customized Resilient instance to:
 - track Client entries containing different types of contact points,
 - track Client subscription details, including number of remaining subscription hours,
 - track every single engagement, both reactive and proactive.
 
-The purpose of this page is to document the X-Force IR ticketing process only for the DFIR engagements. Details on using Resilient for proactive engagements should be checked on the respective wiki.
+Once XFIR has been engaged for Incident Response services, regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created. This also applies to cases when it is yet unknown whether XFIR will be engaged, but some actions have already been taken, such as Triage and Scoping Call was already held.
 
-Once X-Force IR has been engaged for Incident Response services, regardless of the method we are engaged, a Resilient IR engagement ticket needs to be created. This also applies to cases when it is yet unknown whether X-Force IR will be engaged, but some actions have already been taken, such as Triage and Scoping Call was already held.
-
-The following documentation is a guideline for the X-Force IR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
-
-X-Force IR Resilient instance URL: https://xforce-iris.resilientsystems.com/saml2/w3id. Resilient is not integrated with IBM's w3 Single Sign On, and accounts must be provisioned separately.
+XFIR Resilient instance URL: https://xforce-iris.resilientsystems.com/saml2/w3id. Resilient is not integrated with IBM's w3 Single Sign On, and accounts must be provisioned separately.
 
 ## Logging Requirements for New IR Engagements
 This section documents fields which must be populated while logging a new IR Engagement. 
@@ -72,8 +70,8 @@ Follow below requirements while populating hours usage:
 - Always use the same format of your name and avoid variations (to avoid problems during reporting hours usage),
 - Pick an "Item" value to describe type of activity,
 - Define "Hours Type" value to ensure that value is properly counted, options are:
-	- "Subscription" - for billable hours covering X-Force IR work consuming subscription hours pool, eg. analysis, Incident Response, report writing, etc.
-	- "PCR" (Project Change Request) - for billable hours covering X-Force IR work, but not consuming subscription hours from the pool due to various reasons - most often because the pool is already empty. In most of the cases this represents a pool of additional hours purchased by customer to cover additional time over what was available in their retainer.
+	- "Subscription" - for billable hours covering XFIR work consuming subscription hours pool, eg. analysis, Incident Response, report writing, etc.
+	- "PCR" (Project Change Request) - for billable hours covering XFIR work, but not consuming subscription hours from the pool due to various reasons - most often because the pool is already empty. In most of the cases this represents a pool of additional hours purchased by customer to cover additional time over what was available in their retainer.
 	- "Non-subscription" - for other billable hours, which do not consume subscription hours from the pool, eg. time spent on triage. More details on how to claim triage time are available [here](DFIR-Triage-Scoping.md#Claiming).
 - Enter hours in a daily breakdown,
 - Hours usage should be consistent with what was entered into Claim systems (ILS/Time@IBM),
@@ -101,6 +99,6 @@ Example:
 Each Client entry should contain contact points designated as Incident Declarers during their onboarding process. However, in the past there were situations when there were no Incident Declarers or listed ones have already left the organisation. It is not possible to provide clearly defined guidelines for such a case and one should use a common sense to determine who should be reached from list of contact points. Some recommendations on who should be contacted to somehow replace Incident Declarer if such a person is not defined:
 - from Client: IR/Security management,
 - on IBM Account side: Project Executive (PE), Delivery Project Executive (DPE) or their variations having Security in the name (Security PE, Security DPE) - they should be able to provide necessary contact informtion from a Client side to ensure necessary approvals,
-- Account Manager (term used in EMEA) or Delivery Lead (term in NA) may be able to provide necessary contact points, or even look at who signed contracts or provided SOWs.
+- Account Manager may be able to provide necessary contact points, or even look at who signed contracts or provided SOWs.
 
 In Resilient all points of contact are listed in the main Client entry - scroll down the main page of Client entry (designated by "Client Details" in the horizontal menu) to "Contact" and "Points of contact" section containing table. Person who has Incident Declarer role assigned by a Client should have a "Incident Declarer" tag in the "Type" column. 

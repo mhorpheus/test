@@ -1,6 +1,6 @@
 
 
-# X-Force IR Global Hotline
+# XFIR Global Hotline
 
 ## Table of Contents
  1. **[Hotline](#hotline)**
@@ -22,16 +22,16 @@
 ## Hotline
 ### Introduction
 
-The purpose of this page is to explain the X-Force IR Hotline operating model and document its procedures. This page should be presented to every new X-Force IR team member as a part of the onboarding process to prepare them to support the X-Force IR Hotline. This page is a living document. If there is something you want to see documented here or explained in further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to explain the XFIR Hotline operating model and document its procedures. This page should be presented to every new XFIR team member as a part of the onboarding process to prepare them to support the XFIR Hotline. This page is a living document. If there is something you want to see documented here or explained in further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
 
-X-Force IR maintains several hotline numbers in different geographies - they are used by X-Force IR Clients to declare an IT security incident and request X-Force IR assistance. A Hotline call (denoted sometimes as "initial call") is used to gather a basic understanding of an incident as well as the Client's details so that a Triage and Scoping Call can proceed, resulting in an investigation being launched. Using the 24/7/365 X-Force IR Hotline, Clients can reach an X-Force IR Consultant if they are experiencing an incident day or night. This is one of the main avenues our Clients use to engage X-Force IR, and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming Hotline calls.
+XFIR maintains several hotline numbers in different geographies - they are used by XFIR Clients to declare an IT security incident and request XFIR assistance. A Hotline call (denoted sometimes as "initial call") is used to gather a basic understanding of an incident as well as the Client's details so that a Triage and Scoping Call can proceed, resulting in an investigation being launched. Using the 24/7/365 XFIR Hotline, Clients can reach an XFIR Consultant if they are experiencing an incident day or night. This is one of the main avenues our Clients use to engage XFIR, and in some cases this is the Client's first impression of our organization. It is important for us to remain professional and have tested procedures for handling incoming Hotline calls.
 
-Hotline numbers are publicly available on the Internet. Additionally, non-subscription Clients can call the X-Force IR Hotline and request assistance in "Ad-hoc" engagements. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
+Hotline numbers are publicly available on the Internet. Additionally, non-subscription Clients can call the XFIR Hotline and request assistance in "Ad-hoc" engagements. Requesting assistance through a Hotline call is the only correct and reliable way to receive emergency assistance. 
 
 Hotline Call handling should not be confused with a [Triage and Scoping Call](DFIR-Triage-Scoping.md), as each has different goals and follows different processes.
 
 ### Regional Numbers
-X-Force IR operates several Hotline numbers in multiple countries. In the past X-Force IR geographies operated independently, working on their own with different local telecommunication providers. Each geography was covering on their own full 24/7 period locally. With the introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), Hotline operation (for every region except Japan) has been unified and will now lead to the same on-call person. 
+XFIR operates several Hotline numbers in multiple countries. In the past XFIR geographies operated independently, working on their own with different local telecommunication providers. Each geography was covering on their own full 24/7 period locally. With the introduction of [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake), Hotline operation (for every region except Japan) has been unified and will now lead to the same on-call person. 
 
 The below tables list regional/country Hotline numbers. The list is also available in the form of PDF [Leaflet](documents/IBM%20X-Force%20IR%20Hotline%20Numbers.pdf) which can shared with existing or potential Clients.
 
@@ -42,6 +42,7 @@ ___
 | Country/Region | Hotline Number |
 |:--|:--|
 | Australia | (+61) 1800 637 539 |
+| China | (+86) 4008 424 397 |
 | Hong Kong | (+852) 800 900 704 |
 | India | (+91) 0008 000 401 045 |
 | Indonesia | (+62) 00 180 361 859 |
@@ -49,6 +50,7 @@ ___
 | New Zealand | (+64) 0800 426 111 |
 | Philippines | (+63) 1800 1611 0322 |
 | Singapore | (+65) 800 616 7095 |
+| Taiwan | (+886) 00801 852 057 |
 | Thailand | (+66) 1800 011 806 |
 | Vietnam (Mobifone) | 121010013 |
 | Vietnam (Viettel) | 12280435 |
@@ -88,11 +90,11 @@ ___
 ## Follow the Sun for Incident Intake
 
 ### Concept Description
-Three main regions maintain almost all Hotline numbers: APAC, EMEA and NA. To provide a unified, standardized approach and to avoid the need for X-Force IR team members to work outside business hours, a Follow the Sun model is employed. In this approach, 24 hours are divided into three 8-hour shifts. Each shift is allocated within business hours of the owning region. All Hotline calls from any of the three respective region participating in Follow the Sun, are answered by the region running a shift during those designated hours. This means that calls to any of the local numbers (except Japan)  will always reach out to the same person at a given moment in time.
+Three main regions maintain almost all Hotline numbers: APAC, EMEA and NA. To provide a unified, standardized approach and to avoid the need for XFIR team members to work outside business hours, a Follow the Sun model is employed. In this approach, 24 hours are divided into three 8-hour shifts. Each shift is allocated within business hours of the owning region. All Hotline calls from any of the three respective region participating in Follow the Sun, are answered by the region running a shift during those designated hours. This means that calls to any of the local numbers (except Japan)  will always reach out to the same person at a given moment in time.
 
 South America do not have dedicated Hotline numbers and use the Worldwide Hotline number, while their team do not participate in shifts. Japan operated independently and their Hotline number will reach only a team in Japan. 
 
-This operational model **should not be confused** with **Follow the Sun Incident Response**, as it is only designed to provide 24/7 **Incident Intake**. The aim is to ensure that call is answered, registered and, depending on the situation, initial X-Force IR support is initiated.
+This operational model **should not be confused** with **Follow the Sun Incident Response**, as it is only designed to provide 24/7 **Incident Intake**. The aim is to ensure that call is answered, registered and, depending on the situation, initial XFIR support is initiated.
 
 ### On-call Shifts Schedule
 Shift distribution among participating regions is presented in the table below:
@@ -117,9 +119,9 @@ Shift assignment is done automatically by PagerDuty based on the Round Robin alg
 ## Hotline Operations
 The Hotline is supported by a primary, secondary on-call person. This means, that PagerDuty will attempt to connect a caller with a primary on-call person. If this person is not available or do not pick up a call within 30 seconds, PagerDuty will redirect the call to a secondary on call person. To provide an necessary reliability, in the event that neither are available to pick up a call, there are two additional layers: geography lead and an option to leave a voicemail.
 
-Every member of X-Force IR who is tasked with Hotline duty is obliged to set up their mobile phone and PagerDuty profile according to instruction provided [here](DFIR-PagerDuty.md#newcomer-on-boarding).
+Every member of XFIR who is tasked with Hotline duty is obliged to set up their mobile phone and PagerDuty profile according to instruction provided [here](DFIR-PagerDuty.md#newcomer-on-boarding).
 
-A number of X-Force IR Clients maintain a close business relationship with individual X-Force IR Consultants that they have already worked with or who are their designated primary contact points. They tend to request X-Force IR assistance by reaching out to this person, instead of calling the Hotline. In such a case, the X-Force IR Consultant should politely remind the Client that the official process, to call the X-Force IR Hotline, is likely to provide the quickest response and provides 24/7/365 coverage.
+A number of XFIR Clients maintain a close business relationship with individual XFIR Consultants that they have already worked with or who are their designated primary contact points. They tend to request XFIR assistance by reaching out to this person, instead of calling the Hotline. In such a case, the XFIR Consultant should politely remind the Client that the official process, to call the XFIR Hotline, is likely to provide the quickest response and provides 24/7/365 coverage.
 
 ### On-Call Person Responsibilities
 Both the Primary and Secondary persons on call are responsible for following activities during their shift:
@@ -132,7 +134,7 @@ Both the Primary and Secondary persons on call are responsible for following act
 - Performing a shift hand over with the following on-call region, according to the process described in [Shift Turnover](#Shift-Turnover).
 - If applicable, performing an incident hand over to the following region according to a process described in [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 
-The main aim of the on-call person is be available to pick up and initiate X-Force IR response to all Hotline calls. This means that the on-call person:
+The main aim of the on-call person is be available to pick up and initiate XFIR response to all Hotline calls. This means that the on-call person:
 - may be already working on other engagements, and may not have availability to pick up any analysis,
 - is not automatically assigned to all new incoming incidents originating from Hotline call,
 - is not responsible for allocating people to the incident, as this should be done by Leadership/Management of each geography,
@@ -141,7 +143,7 @@ The main aim of the on-call person is be available to pick up and initiate X-For
 Time spent on supporting the Hotline cannot be claimed as billable in ILC (or other systems, such as Time@IBM) as we do not have any dedicated code. 
 
 ### Answering Hotline Calls
-The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of X-Force IR and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
+The Hotline is one of the main ways our Clients and Non-Clients alike engage us during an incident. In some cases this is the Client or potential Client's first impression of XFIR and it is important that we represent a unified professional atmosphere when conducting an initial Hotline call. 
 
 Be professional, calm and courteous during all communications with clients in general. Often, the Client is in a frantic state as they either just found out about a security issue they are experiencing, or they are having trouble containing an incident. This can be a very stressful time for the Client and it is our duty to help guide them as trusted advisors when they reach out to us.
 
@@ -158,7 +160,7 @@ It is essential to request the contact details listed above at the beginning of 
 | -- | -- | -- |
 | APAC | xfiris@au1.ibm.com |
 | EMEA | emea_ers@uk.ibm.com |XFORCE_XFIR_EU@uk.ibm.com, XFORCE_XFIR_MEA@uk.ibm.com |
-| NA | ?? |
+| NA | does not exist |
 
 One of the aims of the Hotline call is to get a basic understanding of the incident the Client is dealing with. It is hard to define a strict list of questions that should be answered by a caller, especially if this person is non technical. The on-call person should use common sense and experience to gather necessary data. Some example questions which can be asked are: 
 - How incident was detected/discovered?
@@ -170,15 +172,15 @@ In most cases, the initial Hotline call itself is not the appropriate venue for 
 
 No case related information should be divulged to a caller just based upon the name the he/she claims. This is to prevent pretexting: impersonation of clients by third parties such as journalists. Caller verification can be performed by calling the person back on a number held on record in Resilient or having them email from their corporate email address to confirm identity. You may also wish to provide your Slack username to IBMers and ask them to send you a message.
 
-The aim of the Hotline and on-call team is to support IBM clients in emergency situations. A consultant speaking with a Client should use their own common sense and experience to judge whether the discussed case is indeed an emergency. An example of a non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is non-emergency, then on-call person should gently push back such a request and recommend that the Client reaches out to his X-Force IR Account Manager (aka Delivery Lead in NA) so that the case may be handled within regular business hours. In such a case, on-call person is still obliged to:
+The aim of the Hotline and on-call team is to support IBM clients in emergency situations. A consultant speaking with a Client should use their own common sense and experience to judge whether the discussed case is indeed an emergency. An example of a non-emergency case is: malware analysis request for an incident which was already contained and remediated by a client. If it is non-emergency, then on-call person should gently push back such a request and recommend that the Client reaches out to his XFIR Account Manager so that the case may be handled within regular business hours. In such a case, on-call person is still obliged to:
 - create and fill in a Resilient ticket marked with a correct tag representing requested activity, ensuring that at least contact details of the caller are documented,
 - notify the Account Manager that the request was submitted to the Hotline and pushed back,
 - provide Resilient ticket number to the Account Manager. 
 
 ### Processing Hotline Calls 
-It is expected that an initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the X-Force IR team, or should the caller be redirected. For example, cases potentially within the scope of IBM CSIRT, see guidelines [below](#ibm-csirt). Should the call be a legitimate concern, even if the Client is calling from outside of the responder’s responsible geography, it is critical to ensure the engagement initiation process is commenced. 
+It is expected that an initial determination will be made as to the nature of the call and whether the request is a legitimate concern that can be addressed by the XFIR team, or should the caller be redirected. For example, cases potentially within the scope of IBM CSIRT, see guidelines [below](#ibm-csirt). Should the call be a legitimate concern, even if the Client is calling from outside of the responder’s responsible geography, it is critical to ensure the engagement initiation process is commenced. 
 
-One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake) is to encourage a healthy work/life balance. For this reason, if the current on-call person determines that the incident must be handed over to another geography, waking up another team member should only happen if this is absolutely necessary. Guidelines on determinating who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a Client, until the geography which should take over the incident becomes available. The inter-geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) Even in GDPR constrained cases, the on-call person can provide significant support to a Client without accessing data he may not be allowed to (e.g. NA person on-call who received a call from EU Client). Such activities can include, but are not limited to:
+One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-Sun-for-Incident-Intake) is to encourage a healthy work/life balance. For this reason, if the current on-call person determines that the incident must be handed over to another geography, waking up another team member should only happen if this is absolutely necessary. Guidelines on determinating who should own an incident are addressed in section [Determining Geography Owning the Incident](#Determining-Geography-Owning-the-Incident). Currently the on-call person is obliged to provide any kind of IR support to a Client, until the geography which should take over the incident becomes available. The inter-geography incident hand over is described in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography). Even in GDPR constrained cases (for more on GDPR for XFIR read [here](DFIR-GDPR.md), the on-call person can provide significant support to a Client without accessing data he may not be allowed to (e.g. NA person on-call who received a call from EU Client). Such activities can include, but are not limited to:
 - issue recommendations on containment,
 - discuss what evidence should be collected,
 - provide evidence collection manuals,
@@ -188,7 +190,7 @@ One of the main reasons behind [Follow the Sun for Incident Intake](#Follow-the-
 The following steps must be performed after the Hotline call has been completed:
 1.	Log an incident ticket in Resilient:
 	- Section [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) on a Resilient page defines which fields must be populated when creating an incident ticket. Empty or incomplete tickets are not acceptable.
-	- Every genuine Hotline call must be recorded in Resilient, including those where it is ultimately determined that X-Force IR support is not required. In such cases, the ticket must follow all documentation requirements as well as explanation why we are not engaged. It can be closed immediately after the appropriate information has been completed. 
+	- Every genuine Hotline call must be recorded in Resilient, including those where it is ultimately determined that XFIR support is not required. In such cases, the ticket must follow all documentation requirements as well as explanation why we are not engaged. It can be closed immediately after the appropriate information has been completed. 
 	- Wrong/silent and other unrelated calls are not logged in Resilient.
 2. Document every call logged by PagerDuty integration within the `ir-hotline` Slack channel, by creating a thread and replying with following information:
 	- for genuine Hotline calls - provide Client name, Resilient case ID and Resilient ticket URL,
@@ -198,7 +200,7 @@ The following steps must be performed after the Hotline call has been completed:
 	- If the incident needs to be handed over to another geography, proceed with steps discussed in the section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography).
 4.	Organize Triage and Scoping Call following the process documented separately [here](DFIR-Triage-Scoping.md). 
 
-The on call person should also keep in mind, that even if an incident was identified to be handed over to other geography, X-Force IR is obliged to meet contractual SLAs for Triage and Scoping Calls. This means, that the current on call person is still responsible to ensure that, whoever performs a Triage call, the appropriate SLA is met.
+The on call person should also keep in mind, that even if an incident was identified to be handed over to other geography, XFIR is obliged to meet contractual SLAs for Triage and Scoping Calls. This means, that the current on call person is still responsible to ensure that, whoever performs a Triage call, the appropriate SLA is met.
 
 A dedicated Slack channel `ir-triage-scoping` can be used for communicating with the broader team about new IR engagements and should be used for Triage and Scoping Call preparations. Further details on how to use this Slack channel and other topics related to Triage/Scoping call are available on [Triage and Scoping page](DFIR-Triage-Scoping.md).
 
@@ -219,11 +221,11 @@ If there is an active cross-regional IR engagement, summarize the status of that
 
 ### Determining Geography Owning the Incident
 It is the responsibility of the on-call staff to determine which region should lead an engagement, with guidance and input from regional management, if required. Beyond standard allocation rules based on time zone and team members' availability, the following factors should be taken into consideration:
-- Where is the Client physically located and is there a potential requirement for X-Force IR staff presence on client premises?
+- Where is the Client physically located and is there a potential requirement for XFIR staff presence on client premises?
 - Where is the incident location? This may not be same as main Client location.
 - Is there a specific language requirement (e.g. the Client only speaks Spanish)?
-- Are there potential data handling considerations such as: GDPR, country laws that would dictate data is only viewable by a citizen of a specific country or group of countries?
-- Is the client requesting specific X-Force IR staff from a designated region due to a pre-existing relationship or account management responsibilities?
+- Are there potential data handling considerations such as: [GDPR](DFIR-GDPR.md), country laws that would dictate data is only viewable by a citizen of a specific country or group of countries?
+- Is the client requesting specific XFIR staff from a designated region due to a pre-existing relationship or account management responsibilities?
 - Are there any client-specific requirement documents in the Notes filed in the client record in Resilient?
 
 If it was decided that the incident should be owned by another geography (either by on-call person, or Engagement Lead) – the hand over process described in section [Incident Hand-Over to Another Geography](#Incident-Hand-Over-to-Another-Geography) should be followed.
@@ -252,21 +254,21 @@ The hand over process is defined as follows:
 
 Try calling the IBM mobile number of the receiving person if there is no response to the Slack messages. It is the responsibility of a person handing over an incident to ensure that the receiver acknowledges receipt of an incident. Just leaving a Slack message or dropping an email with details of the incident is unacceptable, unless you have received a reply to acknowledge. PagerDuty contains two on-call schedules, so in the event that the Primary on-call person is unavailable, the Secondary on-call person should be engaged.
 
-The receiving geography on-call person is responsible for raising this incident to his/her Delivery Lead (for EMEA) or Engagement Lead (for NA) for team resource allocation.
+The receiving geography on-call person is responsible for raising this incident to his/her Delivery Lead for team resource allocation.
 
 
 ## Ad-hoc IR Requests
-X-Force IR Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call. The intention is to allow non-IBM Clients to call and request assistance with so called "Ad-hoc IR requests". In this concept, a Triage and Scoping call is considered "for free" - we want to showcase X-Force IR expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
+XFIR Hotline numbers are publicly available and anyone, not only Clients having active subscription, can call. The intention is to allow non-IBM Clients to call and request assistance with so called "Ad-hoc IR requests". In this concept, a Triage and Scoping call is considered "for free" - we want to showcase XFIR expertise and what kind support a potential Client may receive, hoping that they will be satisfied and decide to proceed with IBM. 
 
-During discussions with a Client representative on a Hotline call, the on-call person should explain that X-Force IR is more that happy to assist and offers an immediate Triage and Scoping Call to:
+During discussions with a Client representative on a Hotline call, the on-call person should explain that XFIR is more that happy to assist and offers an immediate Triage and Scoping Call to:
 - evaluate the Client's situation,
 - present a proposed approach.
 
-It should be clearly explained that, if Client decides to engage X-Force IR, an Ad-hoc contract will need to be signed at the Ad-hoc hourly rate. X-Force IR will not proceed with any work beyond Triage and Scoping Call without a signed contract. 
+It should be clearly explained that, if Client decides to engage XFIR, an Ad-hoc contract will need to be signed at the Ad-hoc hourly rate. XFIR will not proceed with any work beyond Triage and Scoping Call without a signed contract. 
 
-The on-call person should not engage into any discussion related to commercial details and hourly rates, as this should be handled by X-Force IR Operations Managers and Sales team. A dedicated [process](DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to handle the commercial part of the Ad-hoc request. 
+The on-call person should not engage into any discussion related to commercial details and hourly rates, as this should be handled by XFIR Operations Managers and Sales team. A dedicated [process](DFIR-Triage-Scoping.md#Ad-hoc-Assistance-Request) should be initiated to handle the commercial part of the Ad-hoc request. 
 
 ## IBM CSIRT
 Clear, written guidelines for handling cases from/for CSIRT are not yet ready. A current rule of thumb is that any case which involves IBM managed or IBM owned systems falls under IBM CSIRT scope and CSIRT should be involved. Consult your manager or geographic Leaders for more guidelines on this topic.
 
-An Incident to IBM CSIRT can be submitted using one of the methods described on IBM's [Report a Cybersecurity Issue](https://w3.ibm.com/cybersecurity/report.html) page. IBMers should be asked to do this themselves and then provide the CSIRT reference number they receive from CSIRT back to X-Force IR for our records.
+An Incident to IBM CSIRT can be submitted using one of the methods described on IBM's [Report a Cybersecurity Issue](https://w3.ibm.com/cybersecurity/report.html) page. IBMers should be asked to do this themselves and then provide the CSIRT reference number they receive from CSIRT back to XFIR for our records.

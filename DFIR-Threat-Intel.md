@@ -1,5 +1,5 @@
 
-# XFIR Threat Intel for IR
+# Threat Intel for DFIR engagements
 
 ## Table of Contents
 1. [**Introduction**](#Introduction)
@@ -12,6 +12,7 @@
 	- [Intel Bot App for Slack](#Intel-Bot-App-for-Slack)
 	- [Direct Sherlock Access](#Direct-Sherlock-Access)
 	- [Sandbox](#Sandbox)
+	- [Intel Yara Rules](#IntelYara-Rules)
 6. [**Requesting TI Support for Standalone Intel Engagements**](#Requesting-TI-Support-for-Standalone-Intel-Engagements)
 7. [**Additional XFTI Resources**](#Additional-XFTI-Resources)
 8. [**Tutorials**](#Tutorials)
@@ -20,11 +21,11 @@
 
 
 ## Introduction
-The purpose of this page is to document how X-Force Threat Intelligence (XFTI) team supports XFIR engagements. There is number of services offered by XFTI supporting IR engagements directly or providing deliverable upon a Client request. In all those cases, XFIR represents IBM in front of the Client and is responsible for delivery. This page documents all aspects of interaction between XFTI and XFIR during IR engagement, as they differ depending on type of IR engagement. 
+The purpose of this page is to document how X-Force Threat Intelligence (XFTI) team supports DFIR engagements run by XFIR. Process and rules for interaction, described on this page are only applicable to services performed by XFTI as a part of IR engagements (eg. Malware analysis, attribution, IoC/TTP enrichment). Any other type of service or deliverables offered by XFTI to XFIR Clients (eg. STA, Dark Web Search) should follow a [separate process](NOT_YET_AVAILABLE).
 
 This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home.md)).
 
-All XFIR engagements of the type  `IR`  require an associated `INTEL Ticket` with `Engagement Work`  type. It is used to makes the task of tracking IR engagements easier for Intel Team as well as facilitates better workflow between IR consultants and Intel analysts working on an engagement together. This ticket is managed by XFTI team and XFIR team is only responsible to create it. During `IR` ticket creation in Resilient, there is an option to create necessary "INTEL Ticket". IR ticket creation [guide](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) for Resilient includes through this step as well. 
+All XFIR engagements of the type  `IR`  require an associated `INTEL Ticket` with `Engagement Work`  type. It is used to make the task of tracking IR engagements easier for Intel Team as well as facilitates better workflow between IR consultants and Intel analysts working on an engagement together. This ticket is managed by XFTI team and XFIR team is only responsible to create it. During `IR` ticket creation in Resilient, there is an option to create necessary "INTEL Ticket". IR ticket creation [guide](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) for Resilient includes through this step as well. 
 
 XFTI tracks their engagements using Jira ticketing system. It was integrated with XFIR Resilient instance and provides two way synchronisation between them. XFIR team can request XFTI support and interact with XFTI team only using Resilient, without a need to access Jira.
 
@@ -41,7 +42,7 @@ This section list named contact points which may be necessary during process of 
 It is assumed that `Intel Engagement` ticket was already created during creation of `IR` ticket. Shall this not be a case, make sure to create one following separate [guide](#Creating-Intel-Engagement-Ticket), **before** proceeding with steps documented in this section.
 
 Proceed with below steps to engage XFTI for Incident Response case:
-1. Engage XFTI Managers (list with names is [here](#Contact-Points)), who will assign necessary resources from their teams:
+1. Engage XFTI Managers (list with names is [here](#XFTI-Contact-Points)), who will assign necessary resources from their teams:
 	- add *Intel Threat Hunt & Discovery* team Manager to an IR case Slack channel,
 	- if RE support is needed, add *Malware RE & Development* team Manager to a case Slack channel.
 2. Case Lead decides on information exchange models between IR and TI analyst from *Intel Threat Hunt & Discovery* team. Available approaches are:
@@ -68,16 +69,16 @@ Please follow below guidelines while engaging TI/RE teams. This is not a strict 
 - be crystal clear on what do you expect as the outcome,
 - be clear what is an expected response timeframe,
 	- in case of a tight time limitations, clearly express expectations: what kind of information, when and where should be provided by TI/RE analyst: eg. you have a call with a client at 15:00 UTC and you need any updated TI can provide on the current state, but under no circumstances you can not be left without any status update from TI/RE team,
-- provide feedback to TI/RE team so they know whether what was provided was indeed what you need:
+- provide feedback to TI/RE team so they know whether the information or deliverable provided was indeed what you need:
 	- always acknowledge receiving/reading/seeing findings,
-	- if result is sufficient, make sure to inform TI/RE analyst about it so they are not working further on this topic,
-	- if result does not meet your expectation make sure to clarify what do you need (eg. more details or you wanted something totally different).
+	- if the result is sufficient, make sure to inform TI/RE analyst about it so they are not working further on this topic,
+	- if the result does not meet your expectation make sure to clarify what do you need (eg. more details or you wanted something totally different).
 
 Other important points:
 - when TI is joined to a Slack channel they perform a quick Triage:
-	- intention is to perform a quick attribution based on what IR team provides and thus help with remediation,
-	- automatically done by assigned TI Analyst,
-	- is not billed to a Client.
+	- the goal of the XFTI triage is to perform a quick attribution based on what IR team provides and thus help with remediation,
+	- XFTI triage is automatically performed by assigned TI Analyst and XFIR do not need to request for it,
+	- XFTI triage time is not billed to a Client.
 - If you believe that cooperation between XFIR and XFTI teams is not working in your case, reach out to XFTI managers to address any problems (contacts listed [above](#XFTI-Contact-Points)).
 
 ## Requesting RE Support for Malware Analysis
@@ -89,8 +90,8 @@ Other important points:
 Please follow below guidelines while engaging RE team:
 - accommodate timezone difference to ensure efficient communications between IR and RE teams,
 - make sure to clearly express your expectation in the RE ticket apart from only picking up analysis type - explain in details what you need, eg.:
-	- whether result would be consumed only by XFIR or by Client as well,
-	- do you need formal report or just ticket updates are sufficient,
+	- whether the result would be consumed only by XFIR or by Client as well,
+	- do you require a formal report or whether updating the ticket notes is sufficient,
 	- do you need updates during a process, if so clearly define a timeframe, eg. everyday at 12 UTC there is a call with a client and you need an note with update on finding and progress left on Slack channel before that call.
 - for malware critical situations - add EU or AU resource for immediate work start and Anne for visibility into Slack channel.
 	- APAC RE Contacts – Reginald Wong, Christopher (Topet) Del Fierro,
@@ -99,7 +100,7 @@ Please follow below guidelines while engaging RE team:
 
 ### Definition of RE Analysis Levels
  **Level 0** - Automated sandbox run
- For people who don't have access to the sandbox or just want runs with no context. Output is a link to sandbox run or other output from tools in the JIRA ticket. In all other cases, do not submit a L0 ticket, but proceed with [Sandbox self service](#Sandbox) approach described below.
+Normally, you should proceed with [Sandbox self service](#Sandbox) approach described below. This is a legacy option, left for people who don't have access to the sandbox or just want runs with no context. Output is a link to sandbox run or other output from tools in the JIRA ticket. 
 
 **Level 1** - Quick Triage Report
 Leverage automation and dynamic analysis to pull out tactical information to support an investigation or extract indicators without an in-depth explanation. Tactical indicators returned in the ticket or in a report only if requested.  This should be a first step output for any IR engagement request.
@@ -131,6 +132,8 @@ There are several options:
 1. Access Sherlock UI:
 	- https://www.intsum.ibm.com/myintel/login
 	- Reach out to Chris Sperry to be added to a group of people with access.
+2. Sherlock Bulk Search Webpage:
+	- http://sherlock-search.mybluemix.net/bulk-search
 3. Bulk search python script with read-only access:
 	- script is currently in the development phase,
 	- if you need to use it, reach out to Megan Roddie for guidance
@@ -150,6 +153,10 @@ Currently, as temporary solution we have 2 Sandboxes available for self service:
 
 #### IMPE (not yet available)
 This is a destination platform, with potential beta testing starting in 2021Q2. IMPE is a central platform providing access to multiple Sandboxes. Introduction of IMPE should remove a need to obtain access to every Sandbox separately. Access to IMPE is granted with a JIRA Ticket Request for "Access Request" for IMPE access. It accepts password protected samples
+
+### Intel Yara Rules
+TI and RE teams maintain a repository containing all of their YARA rules:
+https://github.ibm.com/X-Force-IRIS-Intel/YARA-Signatures/
 
 ## Requesting TI Support for Standalone Intel Engagements
 

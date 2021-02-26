@@ -16,30 +16,31 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 
 
 # Table of Contents
-1. Delivery Overview
-	- DFIR Service Overview
+1. Introduction:
+	- Service Overview
 	- [Global Hotline](DFIR-Hotline.md)
-2. DFIR Engagement initiation
+2. Engagement initiation:
 	- [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
 	- [Triage and Scoping Call](DFIR-Triage-Scoping.md)
 	- [Incident Response Spin-Up Process](DFIR-SpinUp.md)
 	- [Digital Evidence](DFIR-Digital-Evidence.md)
-	- Technology Deployment
-3. Technical Analysis
+	- [EDR](DFIR-EDR.md)
+	- [GDPR](DFIR-GDPR.md)
+4. Engagement Delivery:
+	- [Project Management](DFIR-Project-Management.md)
+	- [Resilient Ticketing](DFIR-Resilient.md)
+	- [Threat Intel](DFIR-Threat-Intel.md)
+	- Engagement Management Documents
+3. Technical Analysis:
 	- Incident Response Methodology
 	- IR Procedures
 	- IR Tools & Technologies
 	- Digital Forensics Methodology
 	- Digital Forensics Procedures
 	- Digital Forensics Tools & Technologies
-4. Project Management
-	- DFIR Project Management Overview
-	- [Resilient Ticketing](DFIR-Resilient.md)
-	- [Threat Intel](DFIR-Threat-Intel.md)
-	- Engagement Management Documents
-5. Reporting
-	- XFIR Reporting Guidance
-	- XFIR Reporting Templates
+5. Reporting:
+	- Reporting Guidance
+	- Reporting Templates
 	- Example DFIR Reports
-6. Project Closeout
+6. Closeout:
 	- [Project Closeout](DFIR-Engagement-Closeout.md)
