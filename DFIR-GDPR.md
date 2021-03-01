@@ -14,24 +14,24 @@
 	- [EDR](#EDR)
 
 ## Introduction
-The purpose of this page is to document address topics related to GDPR for DFIR engagements. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to document and address topics related to General Data Protection Regulation (GDPR) for DFIR engagements. This is a living document. If there is something you want to see documented here or explained with additional detail be included, please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
 
-The intention of this page is to provide sufficient coverage for most of the GDPR concerns which XFIR face during IR engagements. Below information and set of guidelines are presented in a form which can be understood by XFIR consultant and should not be considered a legal document under any circumstances. 
+The intention of this page is to provide sufficient coverage for most of the GDPR concerns that XFIR face during IR engagements. Below information and set of guidelines are presented in a form which can be understood by XFIR consultants and should not be considered a legal document under any circumstances. 
 
-This page describes the GDPR topic with an assumption that XFIR as IBM is a data processor for a Client owned data. Situation where IBM is data owner is beyond the scope of this page.
+This page describes the GDPR topic with an assumption that XFIR as IBM is a data processor for a Client's owned data (Data Controller). Situation where IBM is Data Controller is beyond the scope of this page.
 
-If Client is asking questions or requesting information beyond what's document on this page, you should involve IBM Legal. To proceed in such a case engage your local IR Functional Lead or Geo Lead.
+If Client is asking questions or requesting information beyond what's document on this page, you should involve IBM Legal. To proceed in such a case, engage your local IR Functional Lead or Geo Lead.
 
 ## TL;DR
 The intention of this section is to provide simple and immediate answers to the most common questions and concerns. Any of the topics addressed in the section is explained in more details below on this page.
 
 **Q:** Is it really required to store data physically in EU?
-**A:** No, it is not necessary. Implementing additional security controls and additional processes, one can meet minimum GDPR requirements, even when data are stored outside EU. See section [Meeting the Minimum GDPR Requirements](#Meeting-the-Minimum-GDPR-Requirements).
+**A:** No, it is not an absolute requirement. Implementing additional security and data privacy controls and additional processes, one can meet minimum GDPR requirements, even when data is stored outside EU. See section [Meeting the Minimum GDPR Requirements](#Meeting-the-Minimum-GDPR-Requirements).
 
 **Q:** Can we use IBM BOX to store data from GDPR constraint Client?
 **A:** Yes. XFIR can officially use BOX to store Client's data, even though data is not physically present in EU. See section [How IBM Deals with GDPR Compliance](#How-IBM-Deals-with-GDPR-Compliance).
 
-**Q:** Can XFIR transfer digital evidence and get them processed outside EU?
+**Q:** Can XFIR transfer digital evidence and get that processed outside EU?
 **A:**  Only if Client express explicit consent for it. See section [Exception for Data Processing Outside EU](#Exception-for-Data-Processing-Outside-EU).
 
 **Q:** Can we use EDR solutions, as they are US based companies?
@@ -47,7 +47,7 @@ This section contains the most important definitions related to XFIR operations 
 4. **data processing** means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.
 
 ### Territorial Rules Defining Whether GDPR is Applicable
-This section discuss territorial rules defining cases to which GDPR is applicable. 
+This section discusses territorial rules defining cases to which GDPR is applicable. 
 1.  GDPR applies to the processing of personal data in the context of the activities of an establishment of a controller or a processor in the EU, regardless of whether the processing takes place in the EU or not.
 2.  GDPR applies to the processing of personal data of data subjects who are in the EU by a controller or processor not established in the EU, where the processing activities are related to:
 	- the offering of goods or services, irrespective of whether a payment of the data subject is required, to such data subjects in the EU; or
@@ -55,19 +55,21 @@ This section discuss territorial rules defining cases to which GDPR is applicabl
 3. GDPR applies to the processing of personal data by a controller not established in the EU, but in a place where Member State law applies by virtue of public international law.
 
 Following conclusions can be drawn based on the above:
-- If Client (as data owner) is bound by GDPR, then XFIR (as data processor) is also bound by GDPR.
-- Client can be a company from outside EU, but if stores or processes data of EU citizens, then Client is bound by GDPR.
-- Practically, every company becomes easily bound by GDPR, cause it is highly possible that it is processing EU citizen data, eg. maintaining email address book with even single record of EU citizen.
+- If Client (as data controller) is bound by GDPR, then XFIR (as data processor) is also bound by GDPR.
+- Client can be a company from outside EU, but if they process (store) data of EU citizens, then Client is bound by GDPR.
+- Practically, every company becomes easily bound by GDPR, because it is highly possible that it is processing EU citizen data, eg. maintaining email address book with even single record of EU citizen, commerce website selling to EU citizens, etc.
 
 ### Meeting the Minimum GDPR Requirements
-Most of the people simplify and assume that to meet minimum GDPR requirements, data must reside within the EU. However, this is incorrect. There are two ways data processor can meet the minimum GDPR requirements:
-1. Data are stored physically in EU **and** data processor/subprocessor fulfils minimum security and data protection requirements.
-2. Determine whether data processor provides the same or adequate security and data protection measures, recognised by GDPR and country specific data protection laws. This is performed using DPIA (Data Protection Impact Assessment).
+Most of the people simplify and assume that to meet minimum GDPR requirements, data must reside within the EU. However, this is incorrect. There are two ways data processor can comply with the minimum GDPR requirements:
+1. Data is stored physically in EU **and** data processor/subprocessor fulfils minimum security and data protection requirements.
+2. Determine whether data processor/subprocessor provides the same or adequate security and data protection measures, recognised by GDPR and country specific data protection laws. This is performed using DPIA (Data Protection Impact Assessment).
 
-In the second scenario, data processor performs DPIA which must be approved by its DPO or Legal. Afterwards data owner can review result of DPIA and accept it. This process, when completed successfully, allows data processor to meet the minimum GDPR requirements, even though data are not stored physically in EU. The outcome of DPIA is documented in a document called DPA (Data Processing Agreement or Data Processing Addendum).
+In the second scenario, data processor performs DPIA which must be approved by its DPO or Legal. Afterwards data controller can review result of DPIA and accept it. This process, when completed successfully, allows data processor/subprocessor to meet the minimum GDPR requirements, even though data is not stored physically in EU. 
+
+In both scenarios, the data controller and data processor/sub-processor will agree the general terms around the personal data to be processed, by which parties, for what purpose and for how long the personal data will be kept. The outcome of DPIA This is documented in a document called DPA (Data Processing Agreement or Data Processing Addendum).
 
 ## How IBM Deals with GDPR Compliance
-IBM, as a global company, was not able to fulfil the GDPR requirement to store all data physically in EU. However, IBM was able to meet the minimum GDPR requirements by performing the DPIA (as discussed in section [Meeting the Minimum GDPR Requirements](#Meeting-the-Minimum-GDPR-Requirements)). The outcome of this process was documented in DPA and subprocessors listing, together with the fact that IBM rely on EU Model Clauses to contractually cover the cross border transfers of EU data.
+IBM, as a global company, was not able to fulfil the GDPR requirement to store all data physically in EU. However, IBM was able to meet the minimum GDPR (as discussed in section [Meeting the Minimum GDPR Requirements](#Meeting-the-Minimum-GDPR-Requirements)). The outcome of this process was documented in the DPA and subprocessors listing, together with the fact that IBM rely on EU Model Clauses to contractually cover the cross border transfers of EU data.
 
 Client may ask, how we as IBM deal with GDPR Compliance for IBM Clients. In such a case, **always download the latest versions of below documents** and send them to a Client:
 1. DPA (Data Processing Agreement or Data Processing Addendum):
@@ -79,9 +81,9 @@ Client may ask, how we as IBM deal with GDPR Compliance for IBM Clients. In such
 	- Search for document with a title containing "subprocessors".
 	- In case of a trouble, DPA document contains "Sub-processors" section with a link to a list.
 
-In theory, each GDPR bound contract should have those 2 documents as attachments. 
+In theory, each GDPR bound contract should have those two documents as attachments. 
 
-All IBM external tools (eg. Box) XFIR is using, as well as all IBM Partners (such as Carbon Black, Crowd Strike, etc)  are listed in the Subprocessors list. The fact, that particular subprocessor is on that list, means that it has applied adequate security and data protection measures recognised by GDPR and country specific data protection laws. For this reason, we as IBM employees can use it to handle GDPR bound cases. 
+All IBM external tools (eg. Box) that XFIR is using, as well as all IBM Partners (such as Carbon Black, Crowd Strike, etc)  are listed in the Subprocessors list. The fact, that particular subprocessor is on that list, means that it has applied adequate security and data protection measures recognised by GDPR and country specific data protection laws. For this reason, we as IBM employees can use it to handle GDPR bound cases. 
 
 ## XFIR Operations for GDPR Constraint Cases
 
@@ -91,7 +93,7 @@ This section is NOT applicable to data processed (eg. transferred) within EU.
 Client can express an **explicit consent** to **process data** outside EU (this includes transfer, storage, etc). Such exception:
 - is not given to an individual, but to a **Data Processor** which in our case is a global **IBM X-Force IR**,
 - must say for what purpose, where and for what period data will be processed,
-- must by approved by **Client's DPO** (Data Processing Officer) or **Client's Legal** representative,
+- must by approved by **Client's DPO** (Data Processing Officer) or **Client's Legal** representative or **Client’s authorized point of contact**,
 - must be expressed in a written form, but email is sufficient.
 
 To obtain such exception:
@@ -115,7 +117,7 @@ When requesting new instance, make sure to mention that it needs to be located i
 Official CB documents addressing GDPR requirements are available in the box folder: https://ibm.ent.box.com/folder/130554256709
 
 **Crowdstrike**
-**IMPORTANT**: Even though CS can spin up EU based instance, the FFC (Falcon Forensics Collector) is executed from USA based instance. If there is a need to use FFC, a separate explicit consent is necessary from a client, worded similarly to the template presented in the above section discussing [exception](#Exception-for-Data-Processing-Outside-EU).
+**IMPORTANT**: Even though CS can spin up EU based instance, the FFC (Falcon Forensics Collector) is executed from USA based instance, unless CS has since managed to deploy this from an EU instance, however this still needs to be confirmed. If there is a need to use FFC, a separate explicit consent is necessary from a client, worded similarly to the template presented in the above section discussing [exception](#Exception-for-Data-Processing-Outside-EU).
 
 
 

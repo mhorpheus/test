@@ -21,7 +21,7 @@
 
 
 ## Introduction
-The purpose of this page is to document how X-Force Threat Intelligence (XFTI) team supports DFIR engagements run by XFIR. Process and rules for interaction, described on this page are only applicable to services performed by XFTI as a part of IR engagements (eg. Malware analysis, attribution, IoC/TTP enrichment). Any other type of service or deliverables offered by XFTI to XFIR Clients (eg. STA, Dark Web Search) should follow a [separate process](NOT_YET_AVAILABLE).
+The purpose of this page is to document how X-Force Threat Intelligence (XFTI) team supports DFIR engagements run by XFIR. Process and rules for interaction, described on this page are only applicable to services performed by XFTI as a part of IR engagements (eg. Malware analysis, attribution, IoC/TTP enrichment). Any other type of service or deliverables offered by XFTI to XFIR Clients (eg. STA, Dark Web Search) should follow a [separate process](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki/Process-for-Intel-related-proactive-services).
 
 This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home.md)).
 
