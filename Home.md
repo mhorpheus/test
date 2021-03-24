@@ -12,7 +12,7 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 | **Chris Tappin** Asia Pacific (APAC) | chris.tappin@ibm.com |
 | **Adam Smutnicki** Europe, the Middle East and Africa (EMEA) | adam.smutnicki@pl.ibm.com |
 
-
+This wiki is a living documentation. When using documents or templates published here, make sure to always download the latest version from a wiki. All future changes and updates will be published as releases and documented in the [Release Notes](DFIR-Release-Notes.md) page.
 
 
 # Table of Contents
@@ -43,4 +43,6 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 	- Reporting Templates
 	- Example DFIR Reports
 6. Closeout:
-	- [Project Closeout](DFIR-Engagement-Closeout.md)
+	- [Engagement Closeout](DFIR-Engagement-Closeout.md)
+7. Other:
+	- [Release Notes](DFIR-Release-Notes.md)

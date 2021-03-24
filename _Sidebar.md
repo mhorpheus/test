@@ -33,4 +33,6 @@
 - Reporting Templates
 - Example DFIR Reports
 ### Closeout:
-- [Project Closeout](DFIR-Engagement-Closeout.md)
+- [Engagement Closeout](DFIR-Engagement-Closeout.md)
+### Other
+- [Release Notes](DFIR-Release-Notes.md)

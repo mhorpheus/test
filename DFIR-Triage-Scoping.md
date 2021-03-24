@@ -174,7 +174,7 @@ The sections are as following:
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason and to present a consistance approach to our clients, please use the below "Engagement Initiation Email" template and do not compose a it yourself. The template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
 
 `------------ BEGINNING OF A TEMPLATE ------------ ` 
-**Mail subject:** `<Client Name>` Engagement Initiation Email for XFIR case IR`<YY-NNNN>`  
+**Mail subject:** `<Client Name>` engagement Initiation Email for XFIR case IR`<YY-NNNN>`  
 **Mail body:**  
 Dear `<Client Name>`,  
 
@@ -220,9 +220,9 @@ Any decision on whether or not engage XFIR should be documented in the Resilient
 	- start [XFIR Spin-Up Process](DFIR-SpinUp.md),
 	- populate "Owner/Engagement Lead" and "Members" fields accordingly in Resilient.
 2. XFIR is not engaged:
-	- close ticket with "Not Engaged" resolution. 
+	- proceed with steps described on this [page](DFIR-Engagement-Closeout.md#Not-Engaged-Closeout-Procedure).
 
-If there is no response for 24 hours, then send a follow up email or make a call.  --Should this be documented in Resilient?
+If there is no response for 24 hours, then send a follow up email or make a call.
 
 ## Claiming Time
 The XFIR service is built in such a way that anyone can request assistance, mainly by calling the Hotline. Triage and Scoping Calls are offered free of charge irrespective of having a retainer or not. It is not possible to provide claiming for all Triage participants. Only Triage Call Lead should:

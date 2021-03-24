@@ -30,7 +30,7 @@ Proceed with the following steps to set up a working environment for collaborati
 1. Create a "**Case Folder**" on IBM Box:
 	- acts as a central repository for this IR engagement
 	- use a template: "IR_Engagement_Folder_Template_DONOTMODIFY" (simply using copy option in Box) for the case folder structure from [here](https://ibm.ent.box.com/folder/63956024543),
-	- create a case folder in a location specific for each geography: [EMEA](https://ibm.ent.box.com/folder/41834082550), [NA](http://TO_BE_POPULATED), [APAC](http://TO_BE_POPULATED).
+	- create a case folder in a location specific for each geography: [EMEA](https://ibm.ent.box.com/folder/41834082550), [NA](https://ibm.ent.box.com/folder/27712184811), [APAC](http://TO_BE_POPULATED).
 	- rename template of the case folder to a case number: eg IRYY-NNNN (uppercase!; do not append anything in the folder name after a case number),
 	- do **not** use this folder for digital evidence storage, or to share data with the Client or any third party as is addressed separately in section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client).
 	- see [tutorial](#Case-Folder-at-Box) below.
