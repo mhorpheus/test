@@ -5,7 +5,6 @@
 - [XFIR master wiki](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki)
 - [DFIR wiki](https://github.ibm.com/XFIR/DFIR-wiki/wiki)
 
-
 ### Introduction:
 - Service Overview
 - [Global Hotline](DFIR-Hotline.md)
