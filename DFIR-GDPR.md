@@ -2,7 +2,7 @@
 ​
 ## Table of Contents
 1. [**Introduction**](#Introduction)
-2. [**TL;DR**](#TL;DR)
+2. [**TL,DR**](#TL,DR)
 3. [**GDPR Regulations Explained**](#GDPR-Regulations-Explained)
 	- [Definitions](#Definitions)
 	- [Territorial Rules Defining Whether GDPR is Applicable](#Territorial-Rules-Defining-Whether-GDPR-is-Applicable)
@@ -23,7 +23,7 @@ If the client is asking questions or requesting information beyond what is docum
 
 This page has been reviewed and approved by IBM Legal, however it is only for **internal** XFIR usage.
 ​
-## TL;DR
+## TL,DR
 The intention of this section is to provide simple and immediate answers to the most common questions and concerns. Any of the topics addressed in this section are explained in more detail further down this page.
 ​
 **Q:** Is it really required under GDPR to store data physically in EU?<br />

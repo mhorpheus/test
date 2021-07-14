@@ -29,13 +29,14 @@ Adherer to [rules for Digital Evidence, Client Data and Case Data](DFIR-Project-
 Proceed with the following steps to set up a working environment for collaboration within XFIR (all steps are obligatory, unless stated otherwise):
 1. Create a "**Case Folder**" on IBM Box:
 	- acts as a central repository for this IR engagement
-	- use a template: "IR_Engagement_Folder_Template_DONOTMODIFY" (simply using copy option in Box) for the case folder structure from [here](https://ibm.ent.box.com/folder/63956024543),
+	- use a template: "IR_Case_Folder_Template_DONOTMODIFY" (simply using copy option in Box) for the case folder structure from [here](https://ibm.ent.box.com/folder/63956024543),
 	- create a case folder in a location specific for each geography: [EMEA](https://ibm.ent.box.com/folder/41834082550), [NA](https://ibm.ent.box.com/folder/27712184811), [APAC](http://TO_BE_POPULATED).
 	- rename template of the case folder to a case number: eg IRYY-NNNN (uppercase!; do not append anything in the folder name after a case number),
 	- do **not** use this folder for digital evidence storage, or to share data with the Client or any third party as is addressed separately in section [Environment for Data Sharing with a Client](#Environment-for-Data-Sharing-with-a-Client).
 	- see [tutorial](#Case-Folder-at-Box) below.
 2. Create an "**Evidence Folder**" on IBM Box:
 	- to store all digital evidence and other data owned by a Client,
+	- use a template: "IR_Evidence_Folder_Template_DONOTMODIFY" (simply using copy option in Box) for the case folder structure from [here](https://ibm.ent.box.com/folder/63956024543),
 	- is an ultimate target for evidence - all evidence independently on delivery method, should be finally put into this folder (eg. uploaded with Aspera),
 	- use "need to know" principle by adding only XFIR consultants working for this case,
 	- folder must be named "IRYY-NNNN-Evidence" in the root folder of a consultant's IBM Box:

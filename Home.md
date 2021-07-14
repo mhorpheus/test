@@ -8,18 +8,18 @@ Digital Forensics & Incident Response as a service is at the core of what we do 
 The documentation outlined here is intended to be a set of guidelines for XFIR consultants delivering DFIR services and is a living document. If there is something you want to see documented here or explained with further detail please contact one of the regional Wiki managers:
 |Regional IR Lead| Contact  |
 |--|--|
-| **Matthew DeFir** North America (NA), Global IR Lead | matthew.defir@ibm.com |
+| **Adam Smutnicki** Europe, the Middle East and Africa (EMEA), Global IR Lead | adam.smutnicki@pl.ibm.com |
+| **Matthew DeFir** North America (NA) | matthew.defir@ibm.com |
 | **Chris Tappin** Asia Pacific (APAC) | chris.tappin@ibm.com |
-| **Adam Smutnicki** Europe, the Middle East and Africa (EMEA) | adam.smutnicki@pl.ibm.com |
+
 
 This wiki is a living documentation. When using documents or templates published here, make sure to always download the latest version from a wiki. All future changes and updates will be published as releases and documented in the [Release Notes](DFIR-Release-Notes.md) page.
 
 
 # Table of Contents
-1. Introduction:
-	- Service Overview
+
+1. Engagement initiation:
 	- [Global Hotline](DFIR-Hotline.md)
-2. Engagement initiation:
 	- [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
 	- [Triage and Scoping Call](DFIR-Triage-Scoping.md)
 	- [Incident Response Spin-Up Process](DFIR-SpinUp.md)
@@ -31,6 +31,7 @@ This wiki is a living documentation. When using documents or templates published
 	- [Resilient Ticketing](DFIR-Resilient.md)
 	- [Threat Intel](DFIR-Threat-Intel.md)
 	- Engagement Management Documents
+	- [Engagement Tracking Sheet (ETS)](DFIR-ETS.md)
 3. Technical Analysis:
 	- Incident Response Methodology
 	- IR Procedures
@@ -40,7 +41,7 @@ This wiki is a living documentation. When using documents or templates published
 	- Digital Forensics Tools & Technologies
 5. Reporting:
 	- Reporting Guidance
-	- Reporting Templates
+	- [Reporting Templates](DFIR-Reporting-Templates.md)
 	- Example DFIR Reports
 6. Closeout:
 	- [Engagement Closeout](DFIR-Engagement-Closeout.md)

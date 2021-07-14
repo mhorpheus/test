@@ -1,9 +1,14 @@
 # Engagement Tracking Sheet
+
+# IMPORTANT - this page has not been yet reworked as part of Global Standarisation. It contains unverified content, previously related only to NA.
+
+
 The XFIR Engagement Tracking Sheet is a document used to centralize and organize data relevant to an incident. The ETS is meant to be updated primarily by the Engagement Lead, but others members of the incident are allowed to update the ETS as requested or needed. 
 
 **Note**: It is important to ensure the ETS isn't being edited by multiple people at the same time. It is best practice to lock the ETS in Box while it is being edited to ensure data entered into the ETS isn't lost in the event multiple people are working on the ETS concurrently. Box's Excel Online option can be used to allow for multiple people to contribute to the ETS concurrently, but the Excel Online feature is not as robust as the actual MS Excel application and is best used for small entries or edits. 
 
 The current XFIR Engagement Tracking Sheet (ETS) is available in the Incident Response [Templates](https://ibm.ent.box.com/folder/53676630277) Box instance. 
+DFIR-ETS.md
 
 The current tabs in the XFIR ETS are:
 

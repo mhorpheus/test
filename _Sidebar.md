@@ -5,10 +5,8 @@
 - [XFIR master wiki](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki)
 - [DFIR wiki](https://github.ibm.com/XFIR/DFIR-wiki/wiki)
 
-### Introduction:
-- Service Overview
-- [Global Hotline](DFIR-Hotline.md)
 ### Engagement initiation:
+- [Global Hotline](DFIR-Hotline.md)
 - [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
 - [Triage and Scoping Call](DFIR-Triage-Scoping.md)
 - [Incident Response Spin-Up Process](DFIR-SpinUp.md)
@@ -20,6 +18,7 @@
 - [Resilient Ticketing](DFIR-Resilient.md)
 - [Threat Intel](DFIR-Threat-Intel.md)
 - Engagement Management Documents
+- [Engagement Tracking Sheet (ETS)](DFIR-ETS.md)
 ### Technical Analysis:
 - Incident Response Methodology
 - IR Procedures
@@ -29,7 +28,7 @@
 - Digital Forensics Tools & Technologies
 ### Reporting:
 - Reporting Guidance
-- Reporting Templates
+- [Reporting Templates](DFIR-Reporting-Templates.md)
 - Example DFIR Reports
 ### Closeout:
 - [Engagement Closeout](DFIR-Engagement-Closeout.md)

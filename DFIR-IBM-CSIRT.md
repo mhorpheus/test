@@ -33,7 +33,8 @@ Thank you all.
 CSIRT to engage Intel - like IR -> call hotline, triage with Intel, etc.
 
 #################################
-Kurt
+
+From Kurt
 
 # Who/what is CSIRT?
 
