@@ -33,7 +33,7 @@ XFTI tracks their engagements using a Jira ticketing system. It was integrated w
 This section lists named contact points which may be necessary during process of engaging XFTI.
 | Intel Team | Manager | Backup|
 |:--|:--|:--|
-| Threat Hunt & Discovery | Chris Sperry | Robert Gates or Willie Gonzalez |
+| Threat Hunt & Discovery | Richard Emerson | Willie Gonzalez |
 | Malware RE & Development | Anne Jobmann | Kevin Henson |
 
 *Intel Threat Hunt & Discovery* team provides information related to attribution, historical cases, IoC/TTP and correlates all details provided by IR and RE teams. 

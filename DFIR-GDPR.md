@@ -25,18 +25,14 @@ This page has been reviewed and approved by IBM Legal, however it is only for **
 ​
 ## TL,DR
 The intention of this section is to provide simple and immediate answers to the most common questions and concerns. Any of the topics addressed in this section are explained in more detail further down this page.
-​
-**Q:** Is it really required under GDPR to store data physically in EU?<br />
-**A:** No, it is not an absolute requirement. Implementing additional security and data privacy controls, contractual clauses and additional processes, one can meet minimum GDPR requirements, even when data is stored outside EU. See section [Meeting the Minimum GDPR Requirements](#Meeting-the-Minimum-GDPR-Requirements).
-​
-**Q:** Can we use IBM BOX to store client's personal data that is subject to GDPR?<br />
-**A:** Yes. XFIR can officially use BOX to store client data, even though data is not physically present in EU. See section [How IBM Deals with GDPR Compliance](#How-IBM-Deals-with-GDPR-Compliance).
-​
-**Q:** Can XFIR transfer digital evidence and get that processed outside EU?<br />
-**A:**  Yes, it's contractually covered within DPA and subprocessors list, which should be part of each contract.  However processing by XFIR NA requires explicit consent from the client. See section [Exception for Data Processing Outside EU](#Exception-for-Data-Processing-Outside-EU).
-​
-**Q:** Can we use EDR solutions, as they are US based companies?<br />
-**A:** Yes, if an instance was launched in a Cloud platform physically located in EU, with some exceptions for Crowdstrike. See section [EDR](#EDR).
+​1. **Q:** Is it really required under GDPR to store data physically in EU?
+	- **A:** No, it is not an absolute requirement. Implementing additional security and data privacy controls, contractual clauses and additional processes, one can meet minimum GDPR requirements, even when data is stored outside EU. See section [Meeting the Minimum GDPR Requirements](#Meeting-the-Minimum-GDPR-Requirements).
+2. **Q:** Can we use IBM BOX to store client's personal data that is subject to GDPR?
+	- **A:** Yes. XFIR can officially use BOX to store client data, even though data is not physically present in EU. See section [How IBM Deals with GDPR Compliance](#How-IBM-Deals-with-GDPR-Compliance).
+3. **Q:** Can XFIR transfer digital evidence and get that processed outside EU?<br />
+	- **A:**  Yes, it's contractually covered within DPA and subprocessors list, which should be part of each contract.  However processing by XFIR NA requires explicit consent from the client. See section [Exception for Data Processing Outside EU](#Exception-for-Data-Processing-Outside-EU).
+4. **Q:** Can we use EDR solutions, as they are US based companies?<br />
+	- **A:** Yes, if an instance was launched in a Cloud platform physically located in EU, with some exceptions for Crowdstrike. See section [EDR](#EDR).
 ​
 ## GDPR Regulations Explained
 This section contains the most important definitions related to XFIR operations and should not be considered a complete list of GDPR related terms or definitions.

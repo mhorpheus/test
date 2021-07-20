@@ -174,6 +174,7 @@ The sections are as following:
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason and to present a consistance approach to our clients, please use the below "Engagement Initiation Email" template and do not compose a it yourself. The template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
 
 `------------ BEGINNING OF A TEMPLATE ------------ ` 
+
 **Mail subject:** `<Client Name>` engagement Initiation Email for XFIR case IR`<YY-NNNN>`  
 **Mail body:**  
 Dear `<Client Name>`,  
@@ -197,8 +198,16 @@ Your primary point of contact for this engagement will be: `<Name Surname>`
 	 - `<first bullet point>`  
  	 - `<second bullet point>`
 
+**Agreed next actions for XFIR:**  
+	 - `<first bullet point>`  
+ 	 - `<second bullet point>`
+
+**Agreed next actions for `<Client Name>`:**  
+	 - `<first bullet point>`  
+ 	 - `<second bullet point>`
+
 **Status of your subscription hours:**  
-You currently have `<XYZ>` subscription hours left, valid till `<DD Month YYYY>`.
+You currently have `<XYZ>` subscription hours left, valid till `<YYYY-MM-DD>`.
 
 `<In case of a non-severe incident, when you can estimate effort, please use following statement. Do not use it for big incidents, with an "open bucket" for hours usage.>`  
 Based on information documented above, the XFIR initial estimation of hours necessary to deliver tasks listed above is `<XYZ>`. This number may change with any change in the scope of XFIR work or based on investigation findings. Any change in number of estimated hours will be communicated to obtain your approval.
@@ -211,7 +220,7 @@ IMPORTANT: To proceed further and engage XFIR for this incident, one of your rep
 `------------ END OF A TEMPLATE ------------ `
 
 Important points:
-- do not use XX.YY.ZZZZ or XX/YY/ZZZZ date formats, as it can be confusing/ambiguous due to differences between American and European/Asian notation with day and month values swapped in places - the required date format is: 02 December 2020.
+- do not use XX.YY.ZZZZ or XX/YY/ZZZZ date formats, as it can be confusing/ambiguous due to differences between American and European/Asian notation with day and month values swapped in places - the required date format ISO 8601: YYYY-MM-DD.
 - even if Client decides not to engage our team, it is still necessary to prepare the "Engagement Initiation Email" (without predefined statements for a client) and pasting it to a Resilient as a trace from a Triage and Scoping Call.
 - if number of estimated hours necessary for this engagement exceeds or is close to number of subscription hours left, then consider initiating commercial discussion, following same approach as for [Ad-hoc requests](#Ad-hoc-Assistance-Request). Keep commercial discussion separate from the "Engagement Initiation Email", as recipient may differ. 
 
@@ -231,6 +240,6 @@ The XFIR service is built in such a way that anyone can request assistance, main
 
 ## Ad-Hoc Assistance Request
 To process commercials for an ad-hoc IR request, as a temporary solution, reach out to the designated ops manager from your geography:
-* APAC: Amanda Nelson (anelson@au1.ibm.com), backup: Stephen Burmester (sburmester@au1.ibm.com)
-* EMEA: Neil Jones (NEILJONE@uk.ibm.com), backup: Adam Harrison (Adam.MJ.Harrison@ibm.com)
+* APAC: Amanda Nelson (anelson@au1.ibm.com), backup: Chris Tappin (chris.tappin@ibm.com)
+* EMEA: Neil Jones (NEILJONE@uk.ibm.com), backup: Colin Sheppard (colin.sheppard@ibm.com)
 * NA: Phil Harrold (rpharrol@us.ibm.com), backup: Kurt Rohrbacher (Kurt.Rohrbacher@ibm.com)

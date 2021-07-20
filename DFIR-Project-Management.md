@@ -39,14 +39,14 @@ It should contain (in most of the cases it is a Box folder or can be lab storage
 - triage outputs,
 - any client generated exports, such as logs, filtered logs, etc.
 - raw files pulled via EDR, eg. evtx.
-
+- raw and their processing results from company wide hunting.
 
 ### Examples of what to store where:
 1. EDR agent/sensor installers - `Case Folder/Shared with a Client`
 2. Status reports, daily reports and other documents produced by XFIR - `Case Folder/Shared with a Client/`
 3. Evidence (disk or memory images, logs, etc). upload - `Evidence Folder/Shared with a Client/`
 4. Documentation about client environment - `Evidence Folder/Documents from Client/`
-5. 
-6. Individual system timelines - `Case Folder/ETS/`
-7. Additional files pulled from Client's environment as a part of hunting over EDR - `Evidence Folder/Hunting/`
-8. Admin stuff, eg. summary of subscription hours used - `Case Folder/Project Management`
+5. Individual system timelines - `Case Folder/ETS/`
+6. Additional files pulled from Client's environment as a part of hunting over EDR - `Evidence Folder/Hunting/`
+7. Admin stuff, eg. summary of subscription hours used - `Case Folder/Project Management`
+
