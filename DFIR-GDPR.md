@@ -103,7 +103,9 @@ To obtain such exception:
 4. Eligible approver from the client side (mentioned above in this section) must send you an email message containing this statement.
 
 `------------ BEGINNING OF TEMPLATE ------------ `
+
 Please take this email message as express consent for IBM X-Force IR to transfer forensic data acquired from the `<client>` environment to a forensic lab hosted in the `<IBM location, eg. U.S.>` to support a security incident investigation. We understand that the forensic data may contain data subjected to the GDPR and authorize IBM X-Force IR to process the data on our behalf to support the ongoing incident investigation. We consider the processing as occasional and occurring on a small scale to answer specific investigative questions.
+
 `------------ END OF TEMPLATE ------------ `
 
 IMPORTANT: If you have obtained such exception, it must be immediately attached to the Resilient IR ticket.
