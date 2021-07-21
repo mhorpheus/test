@@ -21,7 +21,7 @@ PagerDuty administrators for XFIR teams are:
 
 | Region | PagerDuty Admin | Alternate |
 |--|--|--|
-| Asia-Pacific (APAC) | Amanda Nelson (anelson@au1.ibm.com) | Stephen Burmester (sburmester@au1.ibm.com) |
+| Asia-Pacific (APAC) | Amanda Nelson (anelson@au1.ibm.com) | Chris Tappin (chris.tappin@ibm.com) |
 | Europe, Middle East, & Africa (EMEA) | Adam Smutnicki (adam.smutnicki@pl.ibm.com) | Eben Louw (eben.louw@ibm.com)|
 | North America (NA)| Fred Chidsey (fachidse@us.ibm.com) | Phil Harrold (rpharrol@us.ibm.com) |
 
