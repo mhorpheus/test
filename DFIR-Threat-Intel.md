@@ -146,10 +146,10 @@ There are several options:
 
 ### Sandbox
 Currently, as a temporary solution we have Lastline Sandbox available for self service:
-	- [https://user.lastline.com/portal#/analyst/file](https://user.lastline.com/portal#/analyst/file)
-	- To request an account, managers or leads should create a JIRA Ticket Request for “Access Request” for Lastline.
-	- if JIRA is not accessible, email anne.jobmann@ibm.com or sarah.gomez-uscategui@ibm.com to request access
-	- Script to submit a file to Lastline, retrieve a report and delete the file from Lastline’s cloud: https://github.ibm.com/X-Force-IRIS-Intel/OSINT-Tools-Scripts/tree/master/lastline
+- [https://user.lastline.com/portal#/analyst/file](https://user.lastline.com/portal#/analyst/file)
+- To request an account, managers or leads should create a JIRA Ticket Request for “Access Request” for Lastline.
+- if JIRA is not accessible, email anne.jobmann@ibm.com or sarah.gomez-uscategui@ibm.com to request access
+- Script to submit a file to Lastline, retrieve a report and delete the file from Lastline’s cloud: https://github.ibm.com/X-Force-IRIS-Intel/OSINT-Tools-Scripts/tree/master/lastline
 
 
 #### IMPE (not yet available)
