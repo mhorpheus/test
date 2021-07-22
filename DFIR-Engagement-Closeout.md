@@ -44,6 +44,7 @@ The purpose of this page is to document the closeout procedure for DFIR engageme
 **Mail body:**  
 Dear `<Client Name>`,
 IBM X-Force IR would like to notify you that per our Data Retention Policy, all digital evidence related to a case IR`<YY-NNNN>` will be deleted within `<N>` days from `<DD>` `<Month name>` `<YYYY>` when we have closed this case. 
+
 `------------ END OF TEMPLATE ------------`
 
 5. Close IR ticket in Resilient:
