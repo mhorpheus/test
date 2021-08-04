@@ -13,7 +13,7 @@
 	- [EDR](#EDR)
 
 ## Introduction
-The purpose of this page is to document and address topics related to General Data Protection Regulation (GDPR) for DFIR engagements. This is a living document. If there is something you want to see documented here or explained with additional detail to be included, please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to document and address topics related to General Data Protection Regulation (GDPR) for DFIR engagements. This is a living document. If there is something you want to see documented here or explained with additional detail to be included, please contact your geographic Functional IR Lead (listed on the [Homepage](wiki/Home)).
 
 The intention of this page is to provide sufficient coverage for most of the GDPR concerns that XFIR face during IR engagements. The information and guidelines below are presented in a form which can be understood by XFIR consultants and should not be considered legal advice under any circumstances (please reach out to IBM Legal for support as further describe below). 
 

@@ -14,7 +14,7 @@
 7. [**Ad-Hoc Assistance Request**](#Ad-Hoc-Assistance-Request)
 
 ## Introduction
-The purpose of this page is to document the DFIR Triage and Scoping Call procedure. The following documentation is a guideline for XFIR Triage and Scoping Call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to document the DFIR Triage and Scoping Call procedure. The following documentation is a guideline for XFIR Triage and Scoping Call procedures and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](wiki/Home)).
 
 A dedicated Triage and Scoping Call must be conducted for each assistance request received by XFIR. The intention of such a call is to:
 - gain an understanding of the incident the Client is facing,
@@ -58,7 +58,7 @@ The intention of this approach is to ensure continuity of the contact with a Cli
 
 After completing actions listed above, the on-call person is not required to participate further in the call and can drop off, unless they have been assigned any of the roles described in the Section [XFIR Representatives](#XFIR-Representatives). This leaves the on-call person free to handle new Hotline calls.
 
-Use the `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Calls and discuss any topics related to that case. Please keep in mind that the `ir-hotline` Slack channel should not be used to discuss case related topics, and is intentionally 'low traffic' to allow XFIR team members to quickly see how many calls have come in since the last time they checked. More details on differences between those channels and how they should be used can be found [here](DFIR-Hotline.md#Shift-Turnover).
+Use the `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Calls and discuss any topics related to that case. Please keep in mind that the `ir-hotline` Slack channel should not be used to discuss case related topics, and is intentionally 'low traffic' to allow XFIR team members to quickly see how many calls have come in since the last time they checked. More details on differences between those channels and how they should be used can be found [here](wiki/DFIR-Hotline#Shift-Turnover).
 
 ### XFIR Representatives
 Roles of XFIR participants during Triage and Scoping Call are defined as following:
@@ -85,9 +85,9 @@ Individuals to represent necessary roles during Triage and Scoping Calls can be 
 Triage Call Lead (as defined [here](#Roles-of-Participants)) responsibilities are defined as following:
 - leading Triage and Scoping Call,
 - taking notes or designating notetaking to another attendee,
-- preparing and sending [Engagement Initiation Email](#Engagement-Initiation-Email), to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient (who can be found following [this tutorial](DFIR-Resilient.md#Finding-Details-of-Incident-Declarers)),
+- preparing and sending [Engagement Initiation Email](#Engagement-Initiation-Email), to Client representatives present on a Triage and Scoping Call as well as all Incident Declarers listed in Resilient (who can be found following [this tutorial](wiki/DFIR-Resilient#Finding-Details-of-Incident-Declarers)),
 - ensuring that incident details and Triage and Scoping Call outcome is recorded in Resilient:
-	- by now there should already be a Resilient entry, but if not create one following guidelines from [Logging Requirements for New IR Engagements](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
+	- by now there should already be a Resilient entry, but if not create one following guidelines from [Logging Requirements for New IR Engagements](wiki/DFIR-Resilient#Logging-Requirements-for-New-IR-Engagements) section from Resilient page,
 	- update existing Resilient entry with additional details obtained during Triage and Scoping Call, especially "Triage Worksheet" tab,
 	- paste "Engagement Initiation Email" to a Notes section in Resilient (with evidence when it was sent and all recipients)
 - documenting Client's decision (approval of "Engagement Initiation Email" or decision not to engage) in Resilient. Upload an .eml format copy of Client's response to Resilient via the 'Attachments' tab.
@@ -153,7 +153,7 @@ To address Triage and Scoping goals listed in the [Introduction](#Introduction),
 ## Engagement Initiation Email
 The "Engagement Initiation Email" is a record of what was discussed during the Triage and Scoping call. It is a crucial document for managing client expectations from the beginning of our engagement, and should be prepared with care. Its role is to:
  - **capture Triage and Scoping Call content** - ensure that discussed topics are documented in writing and not lost,
- - **populate Resilient ticket** - simply include content of the "Engagement Initiation Email" in the Resilient ticket, as it contains most of necessary information (just add remaining ones - detailed requirements of logging Resilient tickets are [here](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements).
+ - **populate Resilient ticket** - simply include content of the "Engagement Initiation Email" in the Resilient ticket, as it contains most of necessary information (just add remaining ones - detailed requirements of logging Resilient tickets are [here](wiki/DFIR-Resilient#Logging-Requirements-for-New-IR-Engagements).
  - **allow for a smooth transition** - proper documentation is necessary when handing over cases or briefing others to work on them, either as a result of another geographic region taking a case or  multiple regions working on a case in a Follow the Sun model.
  - **ensure a common understanding with the Client** - protect XFIR against "we agreed/understood this differently" situations with Clients, as we explicitly require the Client to approve the content of the "Engagement Initiation Email", which states what actions were agreed for both sides as well as an estimate of the billable hours required for XFIR to complete their tasks.
 
@@ -168,7 +168,7 @@ The sections are as following:
 	- the intention of this point is to document what we have recommended as IR steps, to avoid future conflicts, such as "you recommended this and that" or "you have not recommended" this action, and who is their owner (not actions tracker, but rather high level view of what to expect next from whom)
 	- agreed cadence - when is next meeting,
 4. Subscription hours status (not applicable to Ad-hoc engagements):
-	- number of hours left from subscription and their expiry date (guidance how to check number of hours left can be found [here](DFIR-Resilient.md#Tracking-Subscriptions-Hours-Usage),
+	- number of hours left from subscription and their expiry date (guidance how to check number of hours left can be found [here](wiki/DFIR-Resilient#Tracking-Subscriptions-Hours-Usage),
 5. Estimated cost (in hours) of planned XFIR work.
 
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason and to present a consistance approach to our clients, please use the below "Engagement Initiation Email" template and do not compose a it yourself. The template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
@@ -226,10 +226,10 @@ Important points:
 
 Any decision on whether or not engage XFIR should be documented in the Resilient. Depending on the Client answer, potential next steps are:
 1. XFIR gets engaged:
-	- start [XFIR Spin-Up Process](DFIR-SpinUp.md),
+	- start [XFIR Spin-Up Process](wiki/DFIR-SpinUp),
 	- populate "Owner/Engagement Lead" and "Members" fields accordingly in Resilient.
 2. XFIR is not engaged:
-	- proceed with steps described on this [page](DFIR-Engagement-Closeout.md#Not-Engaged-Closeout-Procedure).
+	- proceed with steps described on this [page](wiki/DFIR-Engagement-Closeout#Not-Engaged-Closeout-Procedure).
 
 If there is no response for 24 hours, then send a follow up email or make a call.
 

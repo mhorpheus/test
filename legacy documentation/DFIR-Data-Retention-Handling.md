@@ -2,7 +2,7 @@
 In most cases, some client data transfer, storage and analysis are required during an incident response engagement. Securing our client's data during and after an engagement is vital to everyone involved. The following section includes high-level guiding principles for handling data in the various phases of an incident response engagement. 
 
 ### Engagement Spin-Up
-When an IR engagement is created, a client data transfer folder should be created in Box or Aspera. For Box, the folder should be created outside of the **0-Active-Engagements** Box folder. The **0-Active-Engagements** Box folder is forthe internal engagement Box folder working documents and data only, and should never host sub-folders that are shared with clients. 
+When an IR engagement is created, a client data transfer folder should be created in Box or Aspera. For Box, the folder should be created outside of the **0-Active-Engagements** Box folder. The **0-Active-Engagements** Box folder is for the internal engagement Box folder working documents and data only, and should never host sub-folders that are shared with clients. 
 
 Only the individuals who have a need to access client data for the engagement should be invited to share this client data transfer Box/Aspera folder. This could include the appropriate client contacts, the engagement lead, and individual engagement members depending on the situation. Name the client facing Box and/or Aspera transfer folder(s) with the following naming convention for tracking:
 

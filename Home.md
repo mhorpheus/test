@@ -13,25 +13,25 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 | **Chris Tappin** Asia Pacific (APAC) | chris.tappin@ibm.com |
 
 
-This wiki is a living documentation. When using documents or templates published here, make sure to always download the latest version from a wiki. All future changes and updates will be published as releases and documented in the [Release Notes](DFIR-Release-Notes.md) page.
+This wiki is a living documentation. When using documents or templates published here, make sure to always download the latest version from a wiki. All future changes and updates will be published as releases and documented in the [Release Notes](wiki/DFIR-Release-Notes) page.
 
 
 # Table of Contents
 
 1. Engagement initiation:
-	- [Global Hotline](DFIR-Hotline.md)
-	- [Pager Duty for Global Hotline](DFIR-PagerDuty.md)
-	- [Triage and Scoping Call](DFIR-Triage-Scoping.md)
-	- [Incident Response Spin-Up Process](DFIR-SpinUp.md)
-	- [Digital Evidence](DFIR-Digital-Evidence.md)
-	- [EDR](DFIR-EDR.md)
-	- [GDPR](DFIR-GDPR.md)
+	- [Global Hotline](wiki/DFIR-Hotline)
+	- [Pager Duty for Global Hotline](wiki/DFIR-PagerDuty)
+	- [Triage and Scoping Call](wiki/DFIR-Triage-Scoping)
+	- [Incident Response Spin-Up Process](wiki/DFIR-SpinUp)
+	- [Digital Evidence](wiki/DFIR-Digital-Evidence)
+	- [EDR](wiki/DFIR-EDR)
+	- [GDPR](wiki/DFIR-GDPR)
 4. Engagement Delivery:
-	- [Project Management](DFIR-Project-Management.md)
-	- [Resilient Ticketing](DFIR-Resilient.md)
-	- [Threat Intel](DFIR-Threat-Intel.md)
+	- [Project Management](wiki/DFIR-Project-Management)
+	- [Resilient Ticketing](wiki/DFIR-Resilient)
+	- [Threat Intel](wiki/DFIR-Threat-Intel)
 	- Engagement Management Documents
-	- [Engagement Tracking Sheet (ETS)](DFIR-ETS.md)
+	- [Engagement Tracking Sheet (ETS)](wiki/DFIR-ETS)
 3. Technical Analysis:
 	- Incident Response Methodology
 	- IR Procedures
@@ -40,10 +40,10 @@ This wiki is a living documentation. When using documents or templates published
 	- Digital Forensics Procedures
 	- Digital Forensics Tools & Technologies
 5. Reporting:
-	- Reporting Guidance
-	- [Reporting Templates](DFIR-Reporting-Templates.md)
+	- [Reporting Guidance](wiki/DFIR-Reporting-Style-Guide)
+	- [Reporting Templates](wiki/DFIR-Reporting-Templates)
 	- Example DFIR Reports
 6. Closeout:
-	- [Engagement Closeout](DFIR-Engagement-Closeout.md)
+	- [Engagement Closeout](wiki/DFIR-Engagement-Closeout)
 7. Other:
-	- [Release Notes](DFIR-Release-Notes.md)
+	- [Release Notes](wiki/DFIR-Release-Notes)

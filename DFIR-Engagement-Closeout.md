@@ -10,7 +10,7 @@
 	- [Creating a Password Protected Final Report](#Creating-a-Password-Protected-Final-Report)
 
 ## Introduction
-The purpose of this page is to document the closeout procedure for DFIR engagements handled by XFIR. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home.md)).
+The purpose of this page is to document the closeout procedure for DFIR engagements handled by XFIR. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](wiki/Home)).
 
 ## Closeout Procedure
 ### Immediate Actions
@@ -35,8 +35,13 @@ The purpose of this page is to document the closeout procedure for DFIR engageme
 		- evidence of client consent to close a case; or
 		- in case of lack of response, evidence of all follow up email messages sent to the client, including the last one notifying them that the case will be closed.
 4. Notify the client when all digital evidence related to the case would be deleted:
-	- Obtain current retention time from XFIR [Data Retention Policy](DFIR-Digital-Evidence.md#Data-Retention-Policy),
+	- Obtain current retention time from XFIR [Data Retention Policy](wiki/DFIR-Digital-Evidence#Data-Retention-Policy),
 	- Send an email message to the client's representatives using the below template, and attach this email message to the Resilient IR ticket.
+
+Current exception for an APAC:
+- APAC team archives final reports in a dedicated Box folder
+- passwords for a final reports are saved within 1Password APAC vault
+There is an ongoing discussion about unification of an APAC approach with other geos. This section will be updated accordingly when such agreement is reached. 
 
 `------------ BEGINNING OF TEMPLATE ------------`
 
@@ -52,12 +57,12 @@ IBM X-Force IR would like to notify you that per our Data Retention Policy, all 
 6. Re-assign "Engagement Intel" sub-ticket for this case to Michelle Alvarez:
 	- this ticket, in most cases, has a sequential ID incrementing the IR ticket,
 	- this ticket also should have Description as "INTEL Ticket for ABCD" where ABCD is the ID of IR Ticket in Resilient.
-7. Set up reminder to perform [Delayed Actions](#Delayed-Actions) after `N` days from "IR engagement clouseout date", where `N` is a value from a [Data Retention Policy](DFIR-Digital-Evidence.md#Data-Retention-Policy).
+7. Set up reminder to perform [Delayed Actions](#Delayed-Actions) after `N` days from "IR engagement clouseout date", where `N` is a value from a [Data Retention Policy](wiki/DFIR-Digital-Evidence#Data-Retention-Policy).
 
 ### Delayed Actions
 **IMPORTANT**: Do not proceed with the steps listed in this section for IR cases with a **legal hold** on their data.
 
-Below steps need to be performed after `N` days from "IR engagement clouseout date", which is defined in the [Data Retention Policy](DFIR-Digital-Evidence.md#Data-Retention-Policy). An IR Case Lead is responsible to ensure that the below actions are performed after necessary time has passed by:
+Below steps need to be performed after `N` days from "IR engagement clouseout date", which is defined in the [Data Retention Policy](wiki/DFIR-Digital-Evidence#Data-Retention-Policy). An IR Case Lead is responsible to ensure that the below actions are performed after necessary time has passed by:
 1. Delete "Evidence Folder" stored on IBM Box named "IRYY-NNNN-Evidence".
 2. Remove from Aspera folder containing evidence named “IRYY-NNNN-Evidence”:
 	- If evidence handling rules described in the Spin-Up have been followed correctly, all data from Aspera folder should have been already moved to Box and deleted from Aspera.

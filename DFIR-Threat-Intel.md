@@ -23,9 +23,9 @@
 ## Introduction
 The purpose of this page is to document how X-Force Threat Intelligence (XFTI) team supports DFIR engagements run by XFIR. Process and rules for interaction, described on this page are only applicable to services performed by XFTI as a part of IR engagements (eg. Malware analysis, attribution, IoC/TTP enrichment). Any other type of service or deliverables offered by XFTI to XFIR Clients (eg. STA, Dark Web Search) should follow a [separate process](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki/Process-for-Intel-related-proactive-services).
 
-This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home.md)).
+This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](wiki/Home)).
 
-All XFIR engagements of the type  `IR`  require an associated `INTEL Ticket` with `Engagement Work`  type. It is used to make the task of tracking IR engagements easier for the Intel Team as well as facilitating better workflows between IR consultants and Intel analysts working on an engagement together. This ticket is managed by the XFTI team and the XFIR team is only responsible for creating it. During `IR` ticket creation in Resilient, there is an option to create the necessary "INTEL Ticket". IR ticket creation [guide](DFIR-Resilient.md#Logging-Requirements-for-New-IR-Engagements) for Resilient describes this step as well. 
+All XFIR engagements of the type  `IR`  require an associated `INTEL Ticket` with `Engagement Work`  type. It is used to make the task of tracking IR engagements easier for the Intel Team as well as facilitating better workflows between IR consultants and Intel analysts working on an engagement together. This ticket is managed by the XFTI team and the XFIR team is only responsible for creating it. During `IR` ticket creation in Resilient, there is an option to create the necessary "INTEL Ticket". IR ticket creation [guide](wiki/DFIR-Resilient#Logging-Requirements-for-New-IR-Engagements) for Resilient describes this step as well. 
 
 XFTI tracks their engagements using a Jira ticketing system. It was integrated with the XFIR Resilient instance and provides two way synchronisation between them. The XFIR team can request XFTI support and interact with the XFTI team only using Resilient, without a need to access Jira.
 
@@ -57,7 +57,7 @@ Proceed with the below steps to engage XFTI for an Incident Response case:
 		- TI team responds to specific questions asked by IR team,
 		- IR team should define effort constraints (upper bound of how many hours can be charged),
 		- most common use case: smaller cases or strict constraints on how hours are used.
-3. Post and pin a message in the Slack channel to define IR - TI workflow (or use a current "Administrative notes" pinned message in the channel, discussed in [guidelines](DFIR-SpinUp.md##Internal-XFIR-Working-Environment) for Internal working environment):
+3. Post and pin a message in the Slack channel to define IR - TI workflow (or use a current "Administrative notes" pinned message in the channel, discussed in [guidelines](wiki/DFIR-SpinUp#Internal-XFIR-Working-Environment) for Internal working environment):
 	- include statement: "IR - TI workflow: [reactive|proactive] (not applicable to RE requests)"
 	- include Resilient Intel ticket number - Intel ticket number which was automatically created with IR ticket creation,
 	- if there are any constraints on how many hours can be used for TI, including this number in the message,
@@ -160,9 +160,7 @@ The TI and RE teams maintain a repository containing all of their YARA rules:
 https://github.ibm.com/X-Force-IRIS-Intel/YARA-Signatures/
 
 ## Requesting TI Support for Standalone Intel Engagements
-
-This section should address requests for Intel Engagements which fall outside scope of supporting IR engagement. In such cases XFIR becomes a proxy for Intel based deliverables. 
-Currently a separate discussion is ongoing and led by Chris Sperry and Davide Paltrinieri from XFIR EU. 
+All other requests for Intel Engagements, which are not supporting an ongoing IR engagement should be handled according to a separate process documented [here](https://github.ibm.com/XFIR/XFIR-master-wiki/wiki/Process-for-Intel-related-proactive-services).
 
 ## Additional XFTI Resources
  - Main IRIS Publisher Page - https://w3.ibm.com/w3publisher/x-force-iris 
@@ -185,7 +183,7 @@ Proceed with the following steps to submit a ticket to the RE Team:
 4. In the `Type of Intel Support` field select `Malware Analysis`. 
 5. In the `Related Resilient Engagement` field enter the Resilient Ticket ID for your IR engagement (`IR21-1234` for example).
 6. Enter a brief but detailed description in the `Description` field. This field is not synced to Jira, thus not visible to the RE team.
-7. In the `Work ID` field input the ILC bill code for your project.
+7. In the `Work ID` field input the claiming code for your project.
 8. Select the analysis level in the `(Intel) Level of Malware Analysis` field and provide any additional details you have for the sample (MD5, Sandbox URL, Maximum number of hours to consume, Due Date, and Engagement Box URL). Levels of Malware Analysis are explained in a separate [section](#Definition-of-RE-Analysis-Levels).
 9. Make sure you populate `(Intel) Description` - this is the only description field synced to Intel Jira. Make sure to add any additional context of the sample, specific requirements, eg. reporting, update timeframe, etc.
 10. Enter random text into `Name` field, it is required however, will be discarded and automatically populated by Resilient.
@@ -213,7 +211,7 @@ If you need to add additional samples at a later time, you can always add additi
 6. Enter a brief but detailed description in the `Description` field. This field is not synced to Jira, thus not visible to the TI team.
 7. In the `(Intel) Type of Engagement` field select `IR - Incident Response`.
 8. Populate `Client` field with correct value.
-9. In the `Work ID` field input the ILC bill code for your project.
+9. In the `Work ID` field input the claiming code for your project.
 10. Make sure you populate `(Intel) Description` - this is the only description field synced to Intel Jira. Make sure to add any additional context of the sample, specific requirements, eg. reporting, update timeframe, etc.
 11. Enter random text into `Name` field, it is required however, will be discarded and automatically populated by Resilient.
 12. Click `Next` and your Intel Engagement ticket will be created.
