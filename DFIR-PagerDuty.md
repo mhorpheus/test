@@ -156,3 +156,4 @@ All schedules (L1 and L2) are combined in this feed, so all necessary informatio
 ### Checking Who Is Currently On-call
 Click PagerDuty in the top left corner or navigate to "Incidents". The pane on the right side will contain information showing who is currently on-call.
 ![Identifying current on-call person](screenshots/PagerDuty-who-is-on-call.png)
+
