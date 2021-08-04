@@ -6,19 +6,19 @@
 - [DFIR wiki](https://github.ibm.com/XFIR/DFIR-wiki/wiki)
 
 ### Engagement initiation:
-- [Global Hotline](wiki/DFIR-Hotline)
-- [Pager Duty for Global Hotline](wiki/DFIR-PagerDuty)
-- [Triage and Scoping Call](wiki/DFIR-Triage-Scoping)
-- [Incident Response Spin-Up Process](wiki/DFIR-SpinUp)
-- [Digital Evidence](wiki/DFIR-Digital-Evidence)
-- [EDR](wiki/DFIR-EDR)
-- [GDPR](wiki/DFIR-GDPR)
+- [Global Hotline](DFIR-Hotline)
+- [Pager Duty for Global Hotline](DFIR-PagerDuty)
+- [Triage and Scoping Call](DFIR-Triage-Scoping)
+- [Incident Response Spin-Up Process](DFIR-SpinUp)
+- [Digital Evidence](DFIR-Digital-Evidence)
+- [EDR](DFIR-EDR)
+- [GDPR](DFIR-GDPR)
 ### Engagement Delivery:
-- [Project Management](wiki/DFIR-Project-Management)
-- [Resilient Ticketing](wiki/DFIR-Resilient)
-- [Threat Intel](wiki/DFIR-Threat-Intel)
+- [Project Management](DFIR-Project-Management)
+- [Resilient Ticketing](DFIR-Resilient)
+- [Threat Intel](DFIR-Threat-Intel)
 - Engagement Management Documents
-- [Engagement Tracking Sheet (ETS)](wiki/DFIR-ETS)
+- [Engagement Tracking Sheet (ETS)](DFIR-ETS)
 ### Technical Analysis:
 - Incident Response Methodology
 - IR Procedures
@@ -27,10 +27,10 @@
 - Digital Forensics Procedures
 - Digital Forensics Tools & Technologies
 ### Reporting:
-- [Reporting Guidance](wiki/DFIR-Reporting-Style-Guide)
-- [Reporting Templates](wiki/DFIR-Reporting-Templates)
+- [Reporting Guidance](DFIR-Reporting-Style-Guide)
+- [Reporting Templates](DFIR-Reporting-Templates)
 - Example DFIR Reports
 ### Closeout:
-- [Engagement Closeout](wiki/DFIR-Engagement-Closeout)
+- [Engagement Closeout](DFIR-Engagement-Closeout)
 ### Other
-- [Release Notes](wiki/DFIR-Release-Notes)
+- [Release Notes](DFIR-Release-Notes)
