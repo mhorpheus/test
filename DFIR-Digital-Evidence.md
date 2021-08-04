@@ -31,7 +31,7 @@ XFIR one-pagers deal with most common topics related to evidence collection, suc
 - Data disposition,
 - HDD encryption detection.
 
-Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [here](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/documents/evidence%20collection%20one%20pagers).
+Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [*here*](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/documents/evidence%20collection%20one%20pagers).
 
 There are several options to deliver digital evidence over the Internet to XFIR consultants. They are discussed on a [SpinUp](DFIR-SpinUp#Environment-for-Data-Sharing-with-a-Client) process page.
 
