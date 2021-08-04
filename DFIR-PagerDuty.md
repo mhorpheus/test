@@ -35,7 +35,7 @@ Additional important information:
 * Initial setup was built by Adam Smutnicki (adam.smutnicki@pl.ibm.com) from XFIR EMEA - if you have any questions reach out to him. 
 * There is an official PD mobile app (available for iOS and Android). It is recommended to install the app to help with handling Hotline calls when you're away from your computer.
 
- The following documentation is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](wiki/Home)).
+ The following documentation is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the [Homepage](Home)).
 
 ## How Does it Work?
 ### Integration of Legacy Hotline Systems
@@ -44,7 +44,7 @@ Practically all hotline numbers are provided by different providers:
 - EMEA - British Telecom (BT)
 - NA and world wide number - RACC
 
-Note: Country-specific hotline numbers are managed by each region and listed on the [Wiki page covering hotline operations](wiki/DFIR-Hotline)
+Note: Country-specific hotline numbers are managed by each region and listed on the [Wiki page covering hotline operations](DFIR-Hotline)
 
 It was not possible to transfer Hotline numbers between operators, so to integrate them under one of the providers, we would need to change several hotline numbers. XFIR decided that this was not an acceptable solution and decided to use PD as a central point for integration. All hotline numbers from RACC, Telstra and BT are pointing to a single phone number offered by PD. This way every incoming Hotline call is redirected to PD, which forwards it to the mobile/cell phone of the person who is currently on-call. 
 
@@ -59,7 +59,7 @@ The on-call person will then receive a call marked with a Hotline caller number 
 
 Pressing "1" on your phone's keypad establishes a connection with the person calling the Hotline and will mark this connection as "Acknowledged". If a call is not acknowledged, then it will go along the escalation path to second person on-call according to the L2 schedule and so on.
 
-Who is on-call at any given moment in time is defined in PD by a "Schedule". The flow of notifications and actions when a call reaches the hotline is known as an "Escalation Path". The current escalation path for the XFIR hotline (as described in the [Hotline Operations](wiki/DFIR-Hotline#Hotline-Operations)) is:
+Who is on-call at any given moment in time is defined in PD by a "Schedule". The flow of notifications and actions when a call reaches the hotline is known as an "Escalation Path". The current escalation path for the XFIR hotline (as described in the [Hotline Operations](DFIR-Hotline#Hotline-Operations)) is:
 1) **Primary on-call person** determined by "[X-Force IR - Follow the sun (L1 - main)](https://ibm.pagerduty.com/schedules#PAL8VJX)" schedule (often referenced by team members as L1). If the designated person is not available or does not pick up a call within 30 seconds, the call is escalated to: 
 2) **Secondary on-call person** determined by "[X-Force IR - Follow the sun (L2 - overflow)](https://ibm.pagerduty.com/schedules#PB084QZ)" schedule (often referenced by team members as L2). If this person is not available or does not pick up a call for 30 seconds, the call is escalated to:
 3) **Geography Lead** determine by "X-Force IR - Follow the sun (L3 - Leads)" schedule. If this person is not available or does not pick up a call for 30 seconds, the call is escalated to:

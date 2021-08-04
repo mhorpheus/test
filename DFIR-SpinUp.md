@@ -16,7 +16,7 @@
 		- [Troubleshooting Aspera](#Troubleshooting-Aspera)
 
 ## Introduction
-The purpose of this page is to document the XFIR Spin-Up process and procedures. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the  [Homepage](wiki/Home)).
+The purpose of this page is to document the XFIR Spin-Up process and procedures. This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the  [Homepage](Home)).
 
 Once XFIR has been engaged for Incident Response services regardless of the scope and size of that effort there are some fundamental procedures that are required for every IR engagement. In addition to the basic IR engagement spin-up, and depending on several factors, there are a number of procedures that could also apply to your engagement that will be documented here.
 
@@ -24,7 +24,7 @@ Once XFIR has been engaged for Incident Response services regardless of the scop
 All technical details describing how to perform the steps required in this section and best practices on using them, are described in the [Tutorials](#Tutorials) section at the bottom of this page.
 
 ### Internal XFIR Working Environment
-Adherer to [rules for Digital Evidence, Client Data and Case Data](wiki/DFIR-Project-Managenent#Handling-Digital-Evidence-Client-Data-and-Case-Data) defining which parts of collaboration environment should be used to store different types of data.
+Adherer to [rules for Digital Evidence, Client Data and Case Data](DFIR-Project-Managenent#Handling-Digital-Evidence-Client-Data-and-Case-Data) defining which parts of collaboration environment should be used to store different types of data.
 
 Proceed with the following steps to set up a working environment for collaboration within XFIR (all steps are obligatory, unless stated otherwise):
 1. Create a "**Case Folder**" on IBM Box:
@@ -56,7 +56,7 @@ Proceed with the following steps to set up a working environment for collaborati
 		- frequency of hours reporting in Resilient.
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel,
 	- follow usage recommendation listed in the [tutorial](#Slack) below.
-4. Download Evidence Tracking Sheet (ETS) Template from [here](wiki/DFIR-ETS)
+4. Download Evidence Tracking Sheet (ETS) Template from [here](DFIR-ETS)
 	- place is the "ETS" folder within "Case Folder",
 	- update ETS filename to contains proper case number
 5. Grant access to consultants assigned to this case:
@@ -73,7 +73,7 @@ Proceed with the following steps to set up a working environment for collaborati
    - to simplify management of multiple Slack channels for a single case, spread among 2 workspaces, channels can be configured to be shared between workspaces. A shared channel is indicated by 2 crossed circles on the right side of the channel name.
 
 ### Environment for Data Sharing with a Client
-Remote Evidence Collection, together with all supporting materials, is documented on the [Digital Evidence](wiki/DFIR-Digital-Evidence) page.
+Remote Evidence Collection, together with all supporting materials, is documented on the [Digital Evidence](DFIR-Digital-Evidence) page.
 
 Evidence Delivery in most of the cases is performed over the Internet. The best option is when Client shares evidence using their own infrastructure taking over the responsibility for data sharing process and data security. However, often they do not have sufficient capabilities. For this reason XFIR offers one or more of below methods:
 1. Dedicated folder for evidence upload within the scope of "Evidence Folder" at IBM Box:
@@ -99,17 +99,17 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
  	- see [tutorial](#Aspera) below.
 3. Forensics Lab.
 
-Currently, none of the available tools are GDPR compliant. For more details on how to address GDPR related constraints for XFIR engagements, please see separate [page](wiki/DFIR-GDPR).
+Currently, none of the available tools are GDPR compliant. For more details on how to address GDPR related constraints for XFIR engagements, please see separate [page](DFIR-GDPR).
 
 ### Threat Intel Support
-Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure the TI team has necessary visibility into IR engagements, thus is able to process the outcome from IR work. "Intel Engagement" tickets should have already been created during creation of the new IR tickets (should this not be a case, it can be created following [this](wiki/DFIR-Threat-Intel#Creating-Intel-Engagement-Ticket) tutorial).
+Threat Intel (TI) and Reverse Engineering (RE) teams provide support for IR engagements. "Intel Engagement" ticket must be created for every IR ticket in Resilient irrespectively of decision whether TI/RE support is needed or not. It is done to ensure the TI team has necessary visibility into IR engagements, thus is able to process the outcome from IR work. "Intel Engagement" tickets should have already been created during creation of the new IR tickets (should this not be a case, it can be created following [this](DFIR-Threat-Intel#Creating-Intel-Engagement-Ticket) tutorial).
 
- It is a Case Lead's responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](wiki/DFIR-Threat-Intel#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally, the [Threat Intel](wiki/DFIR-Threat-Intel) page documents several other aspects for XFIR engaging TI. 
+ It is a Case Lead's responsibility to determine whether TI or RE assistance is required. Requesting RE assistance automatically means that TI need to be engaged. Please follow detailed guidelines documented in [this](DFIR-Threat-Intel#Requesting-TI-Support-for-IR-Engagements) section to engage TI for IR case. Additionally, the [Threat Intel](DFIR-Threat-Intel) page documents several other aspects for XFIR engaging TI. 
 
 ## Endpoint Detection and Response Deployment
 IBM has a partnership with several external EDR providers. For this reason, XFIR can offer a short term license together with a cloud environment of a chosen tool at no cost for a client, to support IR engagement. The decision on whether to use EDR technology and which particular one depends on the IR case lead. 
 
-Shall you need to deploy EDR for IR engagement, please refer to a separate [page](wiki/DFIR-EDR) discussing this topic.
+Shall you need to deploy EDR for IR engagement, please refer to a separate [page](DFIR-EDR) discussing this topic.
 
 ## Tutorials
 

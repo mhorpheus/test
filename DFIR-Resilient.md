@@ -11,7 +11,7 @@
 ## Introduction
 The purpose of this page is to document the XFIR ticketing process only for the DFIR engagements. Details on using Resilient for proactive engagements should be checked on the respective proactive service wiki.
 
-The following documentation is a guideline for the XFIR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](wiki/Home)).
+The following documentation is a guideline for the XFIR Resilient ticketing process and is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home)).
 
 XFIR uses a customized Resilient instance to:
 - track Client entries containing different types of contact points,
@@ -72,7 +72,7 @@ Follow below requirements while populating hours usage:
 - Define "Hours Type" value to ensure that value is properly counted, options are:
 	- "Subscription" - for billable hours covering XFIR work consuming subscription hours pool, eg. analysis, Incident Response, report writing, etc.
 	- "PCR" (Project Change Request) - for billable hours covering XFIR work, but not consuming subscription hours from the pool due to various reasons - most often because the pool is already empty. In most of the cases this represents a pool of additional hours purchased by customer to cover additional time over what was available in their retainer.
-	- "Non-subscription" - for other billable hours, which do not consume subscription hours from the pool, eg. time spent on triage. More details on how to claim triage time are available [here](wiki/DFIR-Triage-Scoping#Claiming).
+	- "Non-subscription" - for other billable hours, which do not consume subscription hours from the pool, eg. time spent on triage. More details on how to claim triage time are available [here](DFIR-Triage-Scoping#Claiming).
 - Enter hours in a daily breakdown,
 - Hours usage should be consistent with what was entered into Claim systems (ILS/Time@IBM),
 - Add a "Quick note" to describe the activity or work performed.

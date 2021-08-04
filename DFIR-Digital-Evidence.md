@@ -11,7 +11,7 @@
 5. [**Data Retention Policy**](#Data-Retention-Policy)
 
 ## Introduction
-The purpose of this page is to document how XFIR handles Digital Evidence. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](wiki/Home)).
+The purpose of this page is to document how XFIR handles Digital Evidence. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home)).
 
 ## Remote Evidence Collection Manuals
 Digital Evidence collection can be performed on-site and remotely. Especially for remote IR engagements, digital evidence collection is not performed by XFIR consultants, but by personnel who may have very little, if not zero, experience in this area. For this reason, a set of so called "Evidence collection one-pager instructions" have been prepared. These instructions can be shared with anyone performing forensic collections and guides such person in simple steps through the whole process. The instructions address all necessary topics such as data confidentiality, remote delivery challenges, etc. 
@@ -31,9 +31,9 @@ XFIR one-pagers deal with most common topics related to evidence collection, suc
 - Data disposition,
 - HDD encryption detection.
 
-Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [here](documents/evidence%20collection%20one%20pagers).
+Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [here](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/documents/evidence%20collection%20one%20pagers).
 
-There are several options to deliver digital evidence over the Internet to XFIR consultants. They are discussed on a [SpinUp](wiki/DFIR-SpinUp#Environment-for-Data-Sharing-with-a-Client) process page.
+There are several options to deliver digital evidence over the Internet to XFIR consultants. They are discussed on a [SpinUp](DFIR-SpinUp#Environment-for-Data-Sharing-with-a-Client) process page.
 
 ## Chain of Custody
 Chain of custody (CoC), in legal contexts, is the chronological documentation or [paper trail](https://en.wiktionary.org/wiki/paper_trail "wiktionary:paper trail") that records the sequence of custody, control, transfer, analysis, and disposition of physical or electronic [evidence](https://en.wikipedia.org/wiki/Evidence "Evidence"). The CoC requires that from the moment the exhibit is collected, every transfer of an exhibit from person to person be documented **and** that it be defensible that nobody else could have accessed that evidence. It is best to keep the number of transfers as low and minimal as possible. In the courtroom, if the defendant questions the CoC, the documentation completed to date will prove that whatever evidence is being used, was the evidence collected during the incident. It is utterly vital that *any* chain of custody paperwork be completed diligently, and then checked by a second XFIR Analyst. If the chain of custody is broken, the Accused and their Legal Counsel will ask the court to exclude the exhibit as there is plausible deniability and the evidence may have been tampered with.
