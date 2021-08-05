@@ -25,7 +25,7 @@ This wiki is a living documentation. When using documents or templates published
 	- [Incident Response Spin-Up Process](DFIR-SpinUp)
 	- [Digital Evidence](DFIR-Digital-Evidence)
 	- [EDR](DFIR-EDR)
-	- [GDPR](DFIR-GDPR)
+	- [GDPR](GDPR-for-DFIR-Engagements)
 4. Engagement Delivery:
 	- [Project Management](DFIR-Project-Management)
 	- [Resilient Ticketing](DFIR-Resilient)

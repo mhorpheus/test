@@ -12,7 +12,7 @@
 - [Incident Response Spin-Up Process](DFIR-SpinUp)
 - [Digital Evidence](DFIR-Digital-Evidence)
 - [EDR](DFIR-EDR)
-- [GDPR](DFIR-GDPR)
+- [GDPR](GDPR-for-DFIR-Engagements)
 ### Engagement Delivery:
 - [Project Management](DFIR-Project-Management)
 - [Resilient Ticketing](DFIR-Resilient)
