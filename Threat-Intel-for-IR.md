@@ -1,6 +1,3 @@
-
-# Threat Intel for DFIR engagements
-
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**XFTI Contact Points**](#XFTI-Contact-Points)
@@ -25,7 +22,7 @@ The purpose of this page is to document how X-Force Threat Intelligence (XFTI) t
 
 This is is a living document. If there is something you want to see documented here or explained with further detail please contact your geography Functional IR Lead (listed on the  [Homepage](Home)).
 
-All XFIR engagements of the type  `IR`  require an associated `INTEL Ticket` with `Engagement Work`  type. It is used to make the task of tracking IR engagements easier for the Intel Team as well as facilitating better workflows between IR consultants and Intel analysts working on an engagement together. This ticket is managed by the XFTI team and the XFIR team is only responsible for creating it. During `IR` ticket creation in Resilient, there is an option to create the necessary "INTEL Ticket". IR ticket creation [guide](DFIR-Resilient#Logging-Requirements-for-New-IR-Engagements) for Resilient describes this step as well. 
+All XFIR engagements of the type  `IR`  require an associated `INTEL Ticket` with `Engagement Work`  type. It is used to make the task of tracking IR engagements easier for the Intel Team as well as facilitating better workflows between IR consultants and Intel analysts working on an engagement together. This ticket is managed by the XFTI team and the XFIR team is only responsible for creating it. During `IR` ticket creation in Resilient, there is an option to create the necessary "INTEL Ticket". IR ticket creation [guide](Resilient#Logging-Requirements-for-New-IR-Engagements) for Resilient describes this step as well. 
 
 XFTI tracks their engagements using a Jira ticketing system. It was integrated with the XFIR Resilient instance and provides two way synchronisation between them. The XFIR team can request XFTI support and interact with the XFTI team only using Resilient, without a need to access Jira.
 
@@ -57,7 +54,7 @@ Proceed with the below steps to engage XFTI for an Incident Response case:
 		- TI team responds to specific questions asked by IR team,
 		- IR team should define effort constraints (upper bound of how many hours can be charged),
 		- most common use case: smaller cases or strict constraints on how hours are used.
-3. Post and pin a message in the Slack channel to define IR - TI workflow (or use a current "Administrative notes" pinned message in the channel, discussed in [guidelines](DFIR-SpinUp#Internal-XFIR-Working-Environment) for Internal working environment):
+3. Post and pin a message in the Slack channel to define IR - TI workflow (or use a current "Administrative notes" pinned message in the channel, discussed in [guidelines](SpinUp#Internal-XFIR-Working-Environment) for Internal working environment):
 	- include statement: "IR - TI workflow: [reactive|proactive] (not applicable to RE requests)"
 	- include Resilient Intel ticket number - Intel ticket number which was automatically created with IR ticket creation,
 	- if there are any constraints on how many hours can be used for TI, including this number in the message,

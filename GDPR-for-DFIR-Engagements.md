@@ -1,5 +1,3 @@
-# GDPR for DFIR Engagements
-
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**TL,DR**](#TL,DR)

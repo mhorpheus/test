@@ -1,5 +1,3 @@
-# XFIR Resilient Ticketing
-
 ## Table of Contents
 1. **[Introduction](#Introduction)**
 2. **[Logging Requirements for New IR Engagements](#Logging-Requirements-for-New-IR-Engagements)**
@@ -72,7 +70,7 @@ Follow below requirements while populating hours usage:
 - Define "Hours Type" value to ensure that value is properly counted, options are:
 	- "Subscription" - for billable hours covering XFIR work consuming subscription hours pool, eg. analysis, Incident Response, report writing, etc.
 	- "PCR" (Project Change Request) - for billable hours covering XFIR work, but not consuming subscription hours from the pool due to various reasons - most often because the pool is already empty. In most of the cases this represents a pool of additional hours purchased by customer to cover additional time over what was available in their retainer.
-	- "Non-subscription" - for other billable hours, which do not consume subscription hours from the pool, eg. time spent on triage. More details on how to claim triage time are available [here](DFIR-Triage-Scoping#Claiming).
+	- "Non-subscription" - for other billable hours, which do not consume subscription hours from the pool, eg. time spent on triage. More details on how to claim triage time are available [here](Triage-and-Scoping#Claiming).
 - Enter hours in a daily breakdown,
 - Hours usage should be consistent with what was entered into Claim systems (ILS/Time@IBM),
 - Add a "Quick note" to describe the activity or work performed.

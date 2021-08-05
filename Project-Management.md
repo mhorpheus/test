@@ -1,5 +1,3 @@
-# Project Management for DFIR Engagements
-
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**Handling Digital Evidence, Client Data and Case Data**](#Handling-Digital-Evidence-Client-Data-and-Case-Data)
@@ -9,7 +7,7 @@
 ## Introduction
 The purpose of this page is to document Project Management approach for DFIR Engagements by XFIR. This is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home)).
 
-This page provides guidelines on how to manage DFIR engagements after initial [Triage](DFIR-Triage-Scoping) and [Spin-Up](DFIR-SpinUp) have been completed and an investigation has been initiated. 
+This page provides guidelines on how to manage DFIR engagements after initial [Triage](Triage-and-Scoping) and [Spin-Up](SpinUp) have been completed and an investigation has been initiated. 
 
 ## Handling Digital Evidence, Client Data and Case Data
 This section outlines storage of Digital Evidence, other data obtained from the client and case data. The approach here is to provide a **clear separation between data owned by the client** (provided for investigation) **and data produced by XFIR** during our investigation. Data owned by a Client should be kept separately for following reasons:
@@ -18,11 +16,11 @@ This section outlines storage of Digital Evidence, other data obtained from the 
 - build the environment, which is ready to be used with Labs, which is not possible with all information stored within single folder:
 	- Case folder is easily accessible from workstations and allows for a collaborative work, eg. editing ETS in Excel Online by multiple people in parallel.  
 	- Evidence folder can be synced or placed directly in the Lab, allowing direct access to evidence for processing.
-- after investigation is finished, client data must be deleted in a secure way per XFIR [Data Retention Policy](DFIR-Digital-Evidence#Data-Retention-Policy),
+- after investigation is finished, client data must be deleted in a secure way per XFIR [Data Retention Policy](Digital-Evidence#Data-Retention-Policy),
   - separation allows to identify what data needs to be destroyed in an easy and reliable way - no need to spend time searching for client owned data as simply whole folder is destroyed; also lowers the chance of 'something' being forgotten,
   - content of Case folder can easily be archived without the risk that some of the Client's data are there. 
 
-Details on how and where to create these folders are outlines below and on a [SpinUp](DFIR-SpinUp#Setting-up-Collaboration-Environment) page, together with links to folder structure templates to reuse them.
+Details on how and where to create these folders are outlines below and on a [SpinUp](SpinUp#Setting-up-Collaboration-Environment) page, together with links to folder structure templates to reuse them.
 
 ### Case Folder
 It should contain:

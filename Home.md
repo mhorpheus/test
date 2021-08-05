@@ -13,25 +13,25 @@ The documentation outlined here is intended to be a set of guidelines for XFIR c
 | **Chris Tappin** Asia Pacific (APAC) | chris.tappin@ibm.com |
 
 
-This wiki is a living documentation. When using documents or templates published here, make sure to always download the latest version from a wiki. All future changes and updates will be published as releases and documented in the [Release Notes](DFIR-Release-Notes) page.
+This wiki is a living documentation. When using documents or templates published here, make sure to always download the latest version from a wiki. All future changes and updates will be published as releases and documented in the [Release Notes](Release-Notes) page.
 
 
 # Table of Contents
 
 1. Engagement initiation:
-	- [Global Hotline](DFIR-Hotline)
-	- [Pager Duty for Global Hotline](DFIR-PagerDuty)
-	- [Triage and Scoping Call](DFIR-Triage-Scoping)
-	- [Incident Response Spin-Up Process](DFIR-SpinUp)
-	- [Digital Evidence](DFIR-Digital-Evidence)
-	- [EDR](DFIR-EDR)
+	- [Global Hotline](IR-Hotline)
+	- [Pager Duty for Global Hotline](PagerDuty-for-IR-Hotline)
+	- [Triage and Scoping Call](Triage-and-Scoping)
+	- [Incident Response Spin-Up Process](SpinUp)
+	- [Digital Evidence](Digital-Evidence)
+	- [EDR](Endpoint-Detection-and-Response)
 	- [GDPR](GDPR-for-DFIR-Engagements)
 4. Engagement Delivery:
-	- [Project Management](DFIR-Project-Management)
-	- [Resilient Ticketing](DFIR-Resilient)
-	- [Threat Intel](DFIR-Threat-Intel)
+	- [Project Management](Project-Management)
+	- [Resilient Ticketing](Resilient)
+	- [Threat Intel](Threat-Intel-for-IR)
 	- Engagement Management Documents
-	- [Engagement Tracking Sheet (ETS)](DFIR-ETS)
+	- [Engagement Tracking Sheet (ETS)](Engagement-Tracking-Sheet)
 3. Technical Analysis:
 	- Incident Response Methodology
 	- IR Procedures
@@ -41,9 +41,9 @@ This wiki is a living documentation. When using documents or templates published
 	- Digital Forensics Tools & Technologies
 5. Reporting:
 	- [Reporting Guidance](DFIR-Reporting-Style-Guide)
-	- [Reporting Templates](DFIR-Reporting-Templates)
+	- [Reporting Templates](Reporting-Templates)
 	- Example DFIR Reports
 6. Closeout:
-	- [Engagement Closeout](DFIR-Engagement-Closeout)
+	- [Engagement Closeout](Engagement-Closeout)
 7. Other:
-	- [Release Notes](DFIR-Release-Notes)
+	- [Release Notes](Release-Notes)

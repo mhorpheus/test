@@ -1,5 +1,3 @@
-# ETS
-
 This page is a DRAFT and for the time acting as a link and placeholder.
 
 Currently commonly used templates for ETS and System Timeline:

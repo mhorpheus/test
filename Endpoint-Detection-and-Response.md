@@ -1,6 +1,4 @@
 
-# EDR for DFIR 
-
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**Requesting EDR Technology**](#Requesting-EDR-Technology)

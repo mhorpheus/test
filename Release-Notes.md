@@ -1,7 +1,5 @@
-# DFIR wiki Release Notes
-
 ## [20210805] - initial release
-A *first official release* of the DFIR documentation developed under IR Standarisation initiative. Released documents do not cover full scope of DFIR activities, and further work is necessary to complete it. It contains a lot of changes in the workflows covered by released pages and for this reason it is not feasible to list all changes. All XFIR consultants should thoroughly read all released pages.
+A **first official release** of the DFIR documentation developed under IR Standarisation initiative. Released documents do not cover full scope of DFIR activities, and further work is necessary to complete it. It contains a lot of changes in the workflows covered by released pages and for this reason it is not feasible to list all changes. All XFIR consultants should thoroughly read all released pages.
 
 Following documents are published as complete:
 - Digital Evidence Handling
