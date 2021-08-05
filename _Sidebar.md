@@ -16,13 +16,6 @@
 - [Threat Intel](Threat-Intel-for-IR)
 - Engagement Management Documents
 - [ETS](Engagement-Tracking-Sheet)
-### Technical Analysis:
-- Incident Response Methodology
-- IR Procedures
-- IR Tools & Technologies
-- Digital Forensics Methodology
-- Digital Forensics Procedures
-- Digital Forensics Tools & Technologies
 ### Reporting:
 - [Reporting Guidance](DFIR-Reporting-Style-Guide)
 - [Reporting Templates](Reporting-Templates)
@@ -31,3 +24,11 @@
 - [Engagement Closeout](Engagement-Closeout)
 ### Other
 - [Release Notes](Release-Notes)
+
+### Technical Analysis:
+- Incident Response Methodology
+- IR Procedures
+- IR Tools & Technologies
+- Digital Forensics Methodology
+- Digital Forensics Procedures
+- Digital Forensics Tools & Technologies
