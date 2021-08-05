@@ -19,10 +19,10 @@ This wiki is a living documentation. When using documents or templates published
 # Table of Contents
 
 1. Engagement initiation:
-	- [Global Hotline](IR-Hotline)
+	- [Global IR Hotline](Global-IR-Hotline)
 	- [Pager Duty for Global Hotline](PagerDuty-for-IR-Hotline)
-	- [Triage and Scoping Call](Triage-and-Scoping)
-	- [Incident Response Spin-Up Process](SpinUp)
+	- [Triage and Scoping](Triage-and-Scoping)
+	- [Spin-Up Process](SpinUp)
 	- [Digital Evidence](Digital-Evidence)
 	- [EDR](Endpoint-Detection-and-Response)
 	- [GDPR](GDPR-for-DFIR-Engagements)
@@ -31,7 +31,7 @@ This wiki is a living documentation. When using documents or templates published
 	- [Resilient Ticketing](Resilient)
 	- [Threat Intel](Threat-Intel-for-IR)
 	- Engagement Management Documents
-	- [Engagement Tracking Sheet (ETS)](Engagement-Tracking-Sheet)
+	- [ETS](Engagement-Tracking-Sheet)
 3. Technical Analysis:
 	- Incident Response Methodology
 	- IR Procedures

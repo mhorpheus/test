@@ -54,7 +54,7 @@ The intention of this approach is to ensure continuity of the contact with a Cli
 
 After completing actions listed above, the on-call person is not required to participate further in the call and can drop off, unless they have been assigned any of the roles described in the Section [XFIR Representatives](#XFIR-Representatives). This leaves the on-call person free to handle new Hotline calls.
 
-Use the `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Calls and discuss any topics related to that case. Please keep in mind that the `ir-hotline` Slack channel should not be used to discuss case related topics, and is intentionally 'low traffic' to allow XFIR team members to quickly see how many calls have come in since the last time they checked. More details on differences between those channels and how they should be used can be found [here](IR-Hotline#Shift-Turnover).
+Use the `ir-triage-scoping` Slack channel to coordinate Triage and Scoping Calls and discuss any topics related to that case. Please keep in mind that the `ir-hotline` Slack channel should not be used to discuss case related topics, and is intentionally 'low traffic' to allow XFIR team members to quickly see how many calls have come in since the last time they checked. More details on differences between those channels and how they should be used can be found [here](Global-IR-Hotline#Shift-Turnover).
 
 ### XFIR Representatives
 Roles of XFIR participants during Triage and Scoping Call are defined as following:
