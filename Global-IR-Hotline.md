@@ -46,6 +46,7 @@ ___
 | New Zealand | (+64) 0800 426 111 |
 | Philippines | (+63) 1800 1611 0322 |
 | Singapore | (+65) 800 616 7095 |
+| South Korea | (+82) 798 611 4890 |
 | Taiwan | (+886) 00801 852 057 |
 | Thailand | (+66) 1800 011 806 |
 | Vietnam (Mobifone) | 121010013 |
