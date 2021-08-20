@@ -32,6 +32,7 @@ XFIR is contractually obligated to organize a Triage and Scoping Call within a c
 - Legacy Emergency Response Service (ERS) – 1 hour
 - Vision Retainer Tier 2 and Tier 3 – 1 hour
 - Vision Retainer Tier 1 – 4 hours
+- Ad-Hoc - "Best effort"
 
 Resilient should be consulted to ensure that the proposed time for a Triage and Scoping Call is not outside of that client's SLA. Equally, it is recommended to provide at least 30 minutes between the Hotline call and the Triage and Scoping Call to give time for preparation to all participants.
 
@@ -231,7 +232,7 @@ If there is no response for 24 hours, then send a follow up email or make a call
 
 ## Claiming Time
 The XFIR service is built in such a way that anyone can request assistance, mainly by calling the Hotline. Triage and Scoping Calls are offered free of charge irrespective of having a retainer or not. It is not possible to provide claiming for all Triage participants. Only Triage Call Lead should:
-- book 1 hour as "Telephone Triage", "not against subscription" in this Engagement ticket in Resilient,
+- claim 1 hour as "Telephone Triage", "not against subscription" in this Engagement ticket in Resilient,
 - claim 1 hour as "general billable" against the workID
 
 ## Ad-Hoc Assistance Request

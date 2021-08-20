@@ -1,3 +1,9 @@
 This page is a DRAFT and for the time being acting as a link and placeholder.
 
 The new report template will be ready soon, for now please reach out to your global leads for current template. 
+
+Currently
+- NA IR template: https://ibm.ent.box.com/folder/120538626573
+- EMEA IR template: https://ibm.ent.box.com/file/843299398570
+
+Report writing guidelines: https://github.ibm.com/XFIR/XFIR-master-wiki/wiki/Documentation-and-Reporting-Style-Guide
