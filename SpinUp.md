@@ -137,22 +137,20 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force I
 <p align="center" width="100%"><img src="screenshots/Slack_02.png"></p>
 
 ### Case Folder at Box
-1. Navigate to a folder containing case folder template "IR_Engagement_Folder_Template_DONOTMODIFY" https://ibm.ent.box.com/folder/63956024543
+1. Navigate to a folder containing "Case Folder" template (link provided <a href="#Internal-XFIR-Working-Environment">above</a>). 
 2. Pick "Move or Copy" from 3 dots menu for template folder
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder1.png"></p>
 3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".
-<p align="center" width="100%"><img src="screenshots/Box_engagement_folder2.png"></p>
 4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
-<p align="center" width="100%"><img src="screenshots/Box_engagement_folder3.png"></p>
-5. Rename created folder according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a>. 
-<p align="center" width="100%"><img src="screenshots/Box_engagement_folder4.png"></p>
+<p align="center" width="100%"><img src="screenshots/Box_engagement_folder2.png"></p>
+5. Rename created folder according to requirements provided for "Case Folder" in the section <a href="#Internal-XFIR-Working-Environment">above</a>. 
 
 
 ### Evidence Folder at Box
 1.  Browse to the root of your IBM Box account:  [https://ibm.ent.box.com/folder/0](https://ibm.ent.box.com/folder/0)
 2. On the right side chose "New" and then "Folder"
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder1.png"></p>
-3. Enter folder name according to requirements provided in the section <a href="#Environment-for-Data-Sharing-with-a-Client">Environment for Data Sharing with a Client</a> and click "Create". Add XFIR team members working on this case with "Co-worker" permissions.
+3. Enter folder name according to requirements provided for "Evidence Folder" in the section <a href="#Internal-XFIR-Working-Environment">above</a> and click "Create". Add XFIR team members working on this case with "Co-worker" permissions.
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder2.png"></p>
 4. Navigate to newly created folder. <br />
 5. Click "Share" on the right side to invite Client representatives.

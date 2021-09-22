@@ -21,7 +21,7 @@ The purpose of this page is to document the closeout procedure for DFIR engageme
 	3. Send password to the client's primary point of contact using separate channel, eg. text message to a mobile phone (SMS/text message).
 2. Upload attachments to the Resilient IR ticket:
 	- final report in the source docx file,
-	- final report in encrypted PDF file,
+	- final report in password protected PDF file,
 	- text file called `pass.txt` containing password for final report in encrypted PDF,
 	- final version of ETS,
 	- if the Final Report referenced external documents these should be attached in their editable form and the form sent to the client (including password).
