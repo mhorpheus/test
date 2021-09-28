@@ -3,6 +3,7 @@
 2. [**Handling Digital Evidence, Client Data and Case Data**](#Handling-Digital-Evidence-Client-Data-and-Case-Data)
 	- [Case Folder](#Case-Folder)
 	- [Evidence Folder](#Evidence-Folder)
+	- [Examples of what to store where](#Examples-of-what-to-store-where)
 
 ## Introduction
 The purpose of this page is to document Project Management approach for DFIR Engagements by XFIR. This is a living document. If there is something you want to see documented here or explained with further detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home)).
@@ -29,6 +30,7 @@ It should contain:
 - all other administrative documents (eg. hours usage summary),
 - anything being a product of the analysis performed by XFIR, eg: timelines, graphs, Intel Reports, etc.
 - malware samples and related data, the client is not the owner of malware identified,
+- used to share information with other teams, eg. Threat Intel, if needed.
 - **do not** store anything listed under the "Evidence folder".
 
 ### Evidence Folder
@@ -39,7 +41,7 @@ It should contain (in most of the cases it is a Box folder or can be lab storage
 - raw files pulled via EDR, eg. evtx.
 - raw and their processing results from company wide hunting.
 
-### Examples of what to store where:
+### Examples of what to store where
 1. EDR agent/sensor installers - `Case Folder/Shared with a Client`
 2. Status reports, daily reports and other documents produced by XFIR - `Case Folder/Shared with a Client/`
 3. Evidence (disk or memory images, logs, etc). upload - `Evidence Folder/Shared with a Client/`

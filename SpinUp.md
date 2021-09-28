@@ -61,6 +61,7 @@ Proceed with the following steps to set up a working environment for collaborati
 	1. Populate an "Owner" field in Resilient with Case Lead name.
 	2. Populate "Members" field in Resilient with consultants assigned to this case.
 	3. Add people to Slack channel from XFIR or TI or RE teams.
+	4. If TI or RE are engaged, add assigned people from those teams to "Case folder" on box.
 6. Optionally, if needed, create additional Slack channel for communication with people outside XFIR:
    - for communication with other IBMers not belonging to XFIR:
       - channel must be created within "CIO" Slack workspace (ibm-cio.slack.com), which all IBMers have access to. This ensures that anyone from IBM can be invited without any issues. 

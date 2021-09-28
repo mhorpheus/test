@@ -154,7 +154,7 @@ The "Engagement Initiation Email" is a record of what was discussed during the T
  - **allow for a smooth transition** - proper documentation is necessary when handing over cases or briefing others to work on them, either as a result of another geographic region taking a case or  multiple regions working on a case in a Follow the Sun model.
  - **ensure a common understanding with the Client** - protect XFIR against "we agreed/understood this differently" situations with Clients, as we explicitly require the Client to approve the content of the "Engagement Initiation Email", which states what actions were agreed for both sides as well as an estimate of the billable hours required for XFIR to complete their tasks.
 
-Every "Engagement Initiation Email" must contain the sections defined below. Each section should contain several **key** points. It is not necessary to document every single sentence, as it is not a transcript of the Call. Common sense is necessary from the author of the "Engagement Initiation Email", as we do not want to the Client to wait 12 hours for a summary to be prepared. A well-written "Engagement Initiation Email" will allow any member of the XFIR team (including those that did not attend the Triage and Scoping Call) to read it and understand the agreed approach, as well as what the client has agreed to provide and how many hours we have available to complete the initial tranche of work.
+Every "Engagement Initiation Email" must contain the sections defined below. Each section should contain several **key** points. It is not necessary to document every single sentence, as it is not a transcript of the Call. Common sense is necessary from the author of the "Engagement Initiation Email", as we do not want a Client to wait 12 hours for a summary to be prepared. A well-written "Engagement Initiation Email" will allow any member of the XFIR team (including those that did not attend the Triage and Scoping Call) to read it and understand the agreed approach, as well as what the client has agreed to provide and how many hours we have available to complete the initial tranche of work.
 
 The sections are as following:
 1. XFIR understanding of the incident
@@ -164,9 +164,10 @@ The sections are as following:
 3. Next steps proposed by XFIR
 	- the intention of this point is to document what we have recommended as IR steps, to avoid future conflicts, such as "you recommended this and that" or "you have not recommended" this action, and who is their owner (not actions tracker, but rather high level view of what to expect next from whom)
 	- agreed cadence - when is next meeting,
-4. Subscription hours status (not applicable to Ad-hoc engagements):
+4. Agree actions for XFIR and Client respectively.
+5. Subscription hours status (not applicable to Ad-hoc engagements):
 	- number of hours left from subscription and their expiry date (guidance how to check number of hours left can be found [here](Resilient#Tracking-Subscriptions-Hours-Usage),
-5. Estimated cost (in hours) of planned XFIR work.
+6. Estimated cost (in hours) of planned XFIR work.
 
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason and to present a consistance approach to our clients, please use the below "Engagement Initiation Email" template and do not compose a it yourself. The template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
 

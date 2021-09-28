@@ -59,7 +59,8 @@ Proceed with the below steps to engage XFTI for an Incident Response case:
 	- include Resilient Intel ticket number - Intel ticket number which was automatically created with IR ticket creation,
 	- if there are any constraints on how many hours can be used for TI, including this number in the message,
 	- make sure it is defined and posted upfront, not in the middle of the case when TI was already engaged.
-4. If RE support is needed, proceed with steps described in section [Requesting RE Support for Malware Analysis](#Requesting-RE-Support-for-Malware-Analysis).
+4. Invite assigned Threat Intel Analyst to a "case folder" to provide them access to work environment. 
+5. If RE support is needed, proceed with steps described in section [Requesting RE Support for Malware Analysis](#Requesting-RE-Support-for-Malware-Analysis).
 
 Please follow the below guidelines while engaging TI/RE teams. This is not a strict procedure, but following them should improve communication between IR and TI/RE, as well as provide better overall results:
 - if working in reactive approach, make sure you clearly define the questions/requests and notify assigned TI/RE analyst on Slack channel that you have posted them,
