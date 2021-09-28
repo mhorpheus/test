@@ -54,7 +54,7 @@ Proceed with the following steps to set up a working environment for collaborati
 		- frequency of hours reporting in Resilient.
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel,
 	- follow usage recommendation listed in the [tutorial](#Slack) below.
-4. Download Evidence Tracking Sheet (ETS) Template from [here](Engagement-Tracking-Sheet)
+4. Download Evidence Tracking Sheet (ETS) and System Analysis and Timeline Templates from [here](Engagement-Tracking-Sheet)
 	- place is the "ETS" folder within "Case Folder",
 	- update ETS filename to contains proper case number
 5. Grant access to consultants assigned to this case:
@@ -140,7 +140,7 @@ When creating your Engagement Slack channel make sure you are in the  `X-Force I
 1. Navigate to a folder containing "Case Folder" template (link provided <a href="#Internal-XFIR-Working-Environment">above</a>). 
 2. Pick "Move or Copy" from 3 dots menu for template folder
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder1.png"></p>
-3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".
+3. Pick up a destination of the folder (engagements folder specific for each geography listed above) and click "Copy".<br />
 4. Navigate to a destination where folder was created, you may receive a green pop-up at the bottom of the page with option to show newly created folder.
 <p align="center" width="100%"><img src="screenshots/Box_engagement_folder2.png"></p>
 5. Rename created folder according to requirements provided for "Case Folder" in the section <a href="#Internal-XFIR-Working-Environment">above</a>. 
