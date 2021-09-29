@@ -107,20 +107,21 @@ To find someone to make changes on your behalf please see the PD XFIR Admins lis
 
 ## Newcomer On-boarding
 Every new team member who will be supporting the Hotline must configure their mobile phone and PagerDuty profile according to following steps:
-1. Log into [PagerDuty](https://ibm.pagerduty.com/incidents) with IBM w3 Single Sign On credentials, so your account is created.
-2. Update your PD profile:
+1. Create a *Production Account* account following instruction from [here](https://w3.ibm.com/w3publisher/pagerduty/getting-started/create-an-account):
+	- Request joining to "X-Force IR" PD team;
+	- Remember that your 1st line manager needs to approve it, before you can proceed with next steps.
+2. Log into [PagerDuty](https://ibm.pagerduty.com/incidents) with IBM w3 Single Sign On credentials.
+3. Update your PD profile:
 	- Enter your IBM mobile number as "Phone number" - this is the number PD will be calling.
 	- Enter your IBM mobile number as "SMS" and your IBM email address as "email" for escalation of missed hotline calls. 
 	- Set your timezone. All timestamps in PD will be displayed according to this setting.
-3. Disable personal voicemail on your IBM mobile number.
-4. Work with your manager, regional IR Functional Lead or your regional Pager Duty admin to be added to an on-call schedules, which will include:
-	- adding you to a Global XFIR team in PD
-	- adding to the L1 schedule, L2 schedule, or both
-5. Check when you're on-call for the first time.
-6. Set up the mobile app on your IBM mobile phone.
-7. Read [Tutorials](#tutorials) section below to get familiar with using PD.
-8. Set up your PD environment according to below [Tutorials](#tutorials).
-9. Reach out to your regional IR Functional Lead or your manager if you have any further questions.
+4. Disable personal voicemail on your IBM mobile number.
+5. Work with your manager, regional IR Functional Lead or your regional Pager Duty admin to be added to an on-call schedules.
+6. Check when you're on-call for the first time.
+7. Set up the mobile app on your IBM mobile phone.
+8. Read [Tutorials](#tutorials) section below to get familiar with using PD.
+9. Set up your PD environment according to below [Tutorials](#tutorials).
+10. Reach out to your regional IR Functional Lead or your manager if you have any further questions.
 
 
 **Disabling personal voicemail is critical for Hotline operations**, and everyone should double check that they have successfully disabled it. Not doing so can cause severe consequences for XFIR. If a customer leaves a message on a personal IBM voicemail it is not accessible by other team members, who may not know a customer is trying to contact us. PD voicemail is accessible by everyone on the team and gives the XFIR team the best chance of meeting our SLAs for responding to clients. 

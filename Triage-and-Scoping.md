@@ -191,6 +191,7 @@ Your primary point of contact for this engagement will be: `<Name Surname>`
 **Expectation and goals for XFIR:**  
 	 - `<first bullet point>`  
  	 - `<second bullet point>`
+	 - `<Enter type of XFIR support expected by Client outside business hours, eg. 8x7, weekend work, only monitoring, etc.>`
  
 **Next steps proposed by XFIR:**  
 	 - `<first bullet point>`  
