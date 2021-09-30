@@ -35,6 +35,7 @@ The purpose of this page is to document the closeout procedure for DFIR engageme
 4. Notify the client when all digital evidence related to the case would be deleted:
 	- Obtain current retention time from XFIR [Data Retention Policy](Digital-Evidence#Data-Retention-Policy),
 	- Send an email message to the client's representatives using the below template, and attach this email message to the Resilient IR ticket.
+5. Ensure that all consultants working on the case have entered their hours into Resilient and claimed them on billable code.
 
 Current exception for an APAC:
 - APAC team archives final reports in a dedicated Box folder
