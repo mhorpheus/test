@@ -76,8 +76,8 @@ Remote Evidence Collection, together with all supporting materials, is documente
 
 Evidence Delivery in most of the cases is performed over the Internet. The best option is when Client shares evidence using their own infrastructure taking over the responsibility for data sharing process and data security. However, often they do not have sufficient capabilities. For this reason XFIR offers one or more of below methods:
 1. Dedicated folder for evidence upload within the scope of "Evidence Folder" at IBM Box:
-	- create an "IRYY-NNNN-Evidence/Client Upload" folder for Client originating upload:
-		- files successfully uploaded by Client to "IRYY-NNNN-Evidence/Client Upload" must be moved to "IRYY-NNNN-Evidence" folder to limit extensive access,
+	- use an "IRYY-NNNN-Evidence/Client Upload" folder for Client originating upload:
+		- files successfully uploaded by Client to "IRYY-NNNN-Evidence/Client Upload" must be moved to respective "IRYY-NNNN-Evidence" subfolders (such as disk images, triage packages, etc) to limit extensive access,
 		- invite people for an upload with "Previewer Uploader" rights, so they confirm that files have been uploaded, but can not do much beyond that,
 	- do not send Box invites to free email providers (eg. Gmail, Hotmail) as they are banned from accessing IBM's Box and will violate IBM ITCS300 Security Policy.
 2. IBM Aspera folder (optional):

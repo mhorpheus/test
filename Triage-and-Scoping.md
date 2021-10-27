@@ -118,6 +118,7 @@ To address Triage and Scoping goals listed in the [Introduction](#Introduction),
 			- is any electronic evidence already collected?
 			- if so, what tools were used?
 			- do they have necessary equipment/knowledge to collect evidence on their own or do they need assistance?
+		- initial in-scope timeframe of the investigation,
 		- containment and remediation steps already performed (e.g. system isolation, shutting down, VM snapshoot taken), 
 		- other relevant actions performed.
 	2. Open the floor for questions from XFIR Consultants so they can get better understanding of the incident.
@@ -192,6 +193,7 @@ Your primary point of contact for this engagement will be: `<Name Surname>`
 	 - `<first bullet point>`  
  	 - `<second bullet point>`
 	 - `<Enter type of XFIR support expected by Client outside business hours, eg. 8x7, weekend work, only monitoring, etc.>`
+	 - The initial in-scope timeframe for this investigation is: `<DD Month YYYY to DD Month YYYY>`.
  
 **Next steps proposed by XFIR:**  
 	 - `<first bullet point>`  
