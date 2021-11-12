@@ -115,6 +115,3 @@ When requesting new instances, make sure to mention that it needs to be located 
 
 **Carbon Black**
 Official CB documents addressing GDPR requirements are available in the Box folder: https://ibm.ent.box.com/folder/130554256709.
-
-**Crowdstrike**
-**IMPORTANT**: Even though CS can spin up EU based instance, the FFC (Falcon Forensics Collector) is executed from a USA based instance, unless CS has since managed to deploy this from an EU instance. However this still needs to be confirmed. If there is a need to use FFC, a separate explicit consent is necessary from the client, worded similarly to the template presented in the above section discussing [exception](#Exception-for-Data-Processing-Outside-EU).

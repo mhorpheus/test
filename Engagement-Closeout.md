@@ -25,6 +25,10 @@ The purpose of this page is to document the closeout procedure for DFIR engageme
 	- text file called `pass.txt` containing password for final report in encrypted PDF,
 	- final version of ETS,
 	- if the Final Report referenced external documents these should be attached in their editable form and the form sent to the client (including password).
+	- Current exception for an APAC:
+		- APAC team archives final reports in a dedicated Box folder
+		- passwords for a final reports are saved within 1Password APAC vault
+There is an ongoing discussion about unification of an APAC approach with other geos. This section will be updated accordingly when such agreement is reached. 
 3. Obtain client consent to close the IR engagement:
 	- two weeks after report delivery follow up with the client, asking whether they have any comments on the report or whether the case can be closed,
 		- in case of no response from the client send up to two follow up email messages, one week apart from each other,
@@ -35,13 +39,6 @@ The purpose of this page is to document the closeout procedure for DFIR engageme
 4. Notify the client when all digital evidence related to the case would be deleted:
 	- Obtain current retention time from XFIR [Data Retention Policy](Digital-Evidence#Data-Retention-Policy),
 	- Send an email message to the client's representatives using the below template, and attach this email message to the Resilient IR ticket.
-5. Ensure that all consultants working on the case have entered their hours into Resilient and claimed them on billable code.
-
-Current exception for an APAC:
-- APAC team archives final reports in a dedicated Box folder
-- passwords for a final reports are saved within 1Password APAC vault
-There is an ongoing discussion about unification of an APAC approach with other geos. This section will be updated accordingly when such agreement is reached. 
-
 `------------ BEGINNING OF TEMPLATE ------------`
 
 **Mail subject:** Data Retention Notification for IBM XFIR Case IR`<YY-NNNN>`
@@ -50,7 +47,7 @@ Dear `<Client Name>`,
 IBM X-Force IR would like to notify you that per our Data Retention Policy, all digital evidence related to a case IR`<YY-NNNN>` will be deleted within `<N>` days from `<DD>` `<Month name>` `<YYYY>` when we have closed this case. 
 
 `------------ END OF TEMPLATE ------------`
-
+5. Ensure that all consultants working on the case have entered their hours into Resilient and claimed them on billable code.
 5. Close IR ticket in Resilient:
 	- you do not need to populate Intel fields (and you should not be doing so),
 	- day when ticket gets closed defines the official "**IR engagement clouseout date**".

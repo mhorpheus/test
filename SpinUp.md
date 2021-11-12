@@ -82,7 +82,7 @@ Evidence Delivery in most of the cases is performed over the Internet. The best 
 	- do not send Box invites to free email providers (eg. Gmail, Hotmail) as they are banned from accessing IBM's Box and will violate IBM ITCS300 Security Policy.
 2. IBM Aspera folder (optional):
 	- folder must be named “IRYY-NNNN-Evidence”,
-	- should be considered ONLY for transition as by Aspera policy data will be deleted after 7 days:
+	- should be considered ONLY for transition stage for data:
 		- make sure smaller files (under Box size limit) are uploaded directly to "Evidence Folder" on Box,
 		- for larger files (above Box limit), download them from Aspera, split into chunks (eg. with 7zip) and upload to "Evidence Folder" on IBM Box,
 		- when files are migrated to Box, they should be deleted from Aspera.
@@ -165,7 +165,9 @@ Make sure you do not send invites to free email provider accounts, such as Gmail
 <p align="center" width="100%"><img src="screenshots/Box_upload_folder5.png"></p>
 
 ### Aspera
-Location: https://ibm.ibmaspera.com/
+- Location: https://xforce.ibmaspera.com/
+- log in using your W3ID (do not use the IBMid as this will not work)
+- for EMEA team: go into your profile settings (icon in the top right corner) and checking that the EU workspace is set as your default
 
 #### Creating a Folder for an Aspera Upload
 1. Launch Aspera in the browser and login with your IBM credentials.

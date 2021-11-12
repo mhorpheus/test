@@ -131,7 +131,7 @@ Having a TI source outside the dedicated Slack channel for IR engagement is inco
 There are several options:
 1. Access Sherlock UI:
 	- https://www.intsum.ibm.com/myintel/login
-	- Reach out to Chris Sperry to be added to a group of people with access.
+	- Reach out to Richard Emerson to be added to a group of people with access.
 2. Use Sherlock APIs
     - API Documentation: https://xfti-confluence.dal1a.cirrus.ibm.com/display/SHER/User%27s+Guide%3A+APIs 
     - Chris Sperry needs to organise anonymous access for people without Confluence accounts (probably everyone in XFIR)
