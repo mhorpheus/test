@@ -39,14 +39,14 @@ There is an ongoing discussion about unification of an APAC approach with other 
 4. Notify the client when all digital evidence related to the case would be deleted:
 	- Obtain current retention time from XFIR [Data Retention Policy](Digital-Evidence#Data-Retention-Policy),
 	- Send an email message to the client's representatives using the below template, and attach this email message to the Resilient IR ticket.
-`------------ BEGINNING OF TEMPLATE ------------`
 
+`------------ BEGINNING OF TEMPLATE ------------`
 **Mail subject:** Data Retention Notification for IBM XFIR Case IR`<YY-NNNN>`
 **Mail body:**  
 Dear `<Client Name>`,
 IBM X-Force IR would like to notify you that per our Data Retention Policy, all digital evidence related to a case IR`<YY-NNNN>` will be deleted within `<N>` days from `<DD>` `<Month name>` `<YYYY>` when we have closed this case. 
-
 `------------ END OF TEMPLATE ------------`
+
 5. Ensure that all consultants working on the case have entered their hours into Resilient and claimed them on billable code.
 5. Close IR ticket in Resilient:
 	- you do not need to populate Intel fields (and you should not be doing so),
