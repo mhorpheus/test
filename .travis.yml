@@ -5,4 +5,4 @@ deploy:
   on:
     branch: master
 notifications:
-  slack: x-forceiris:vrSyPgmDRjxFFAZ43OAdIIER
+  slack: x-forceir:aCrBcw5DiYo2SK3saElGE9Zy
