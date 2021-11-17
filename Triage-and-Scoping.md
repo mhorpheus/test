@@ -6,7 +6,7 @@
 3. [**Responsibilities of a Triage Call Lead**](#Responsibilities-of-a-Triage-Call-Lead)
 4. [**Phases of a Triage and Scoping Call**](#Phases-of-a-Triage-and-Scoping-Call)
 5. [**Engagement Initiation Email**](#Engagement-Initiation-Email)
-6. [**Claiming**](#Claiming)
+6. [**Claiming Time**](#Claiming-Time)
 7. [**Ad-Hoc Assistance Request**](#Ad-Hoc-Assistance-Request)
 
 ## Introduction
@@ -182,7 +182,7 @@ Thank you very much for participation in the Triage and Scoping Call. We would l
 
 This case has been assigned a unique identifier: IR`<YY-NNNN>`.
 
-`<If it is not you, please provide primary point of contact name, otherwise delete below sentence.`
+`<If it is not you, please provide primary point of contact name, otherwise delete below sentence.>`
 Your primary point of contact for this engagement will be: `<Name Surname>`
  
 **Our XFIR understanding of the incident:**  
