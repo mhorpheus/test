@@ -151,7 +151,7 @@ Currently, as a temporary solution we have Lastline Sandbox available for self s
 
 
 #### IMPE (not yet available)
-This is a destination platform, with potential beta testing starting in 2021Q2. IMPE is a central platform providing access to multiple Sandboxes. Introduction of IMPE should remove a need to obtain access to every Sandbox separately. Access to IMPE is granted with a JIRA Ticket Request for "Access Request" for IMPE access. It accepts password protected samples.
+This is a destination platform, with potential beta testing starting in 2021Q2. IMPE is a central platform providing access to multiple Sandboxes. Introduction of IMPE should remove a need to obtain access to every Sandbox separately. Access to IMPE is granted with a JIRA Ticket Request for "Access Request" for IMPE access. It accepts password protected samples. https://impe.mybluemix.net/
 
 ### Intel Yara Rules
 The TI and RE teams maintain a repository containing all of their YARA rules:
