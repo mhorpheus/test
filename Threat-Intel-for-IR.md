@@ -43,17 +43,17 @@ Proceed with the below steps to engage XFTI for an Incident Response case:
 	- add *Intel Threat Hunt & Discovery* team Manager to the IR case Slack channel,
 	- if RE support is needed, add *Malware RE & Development* team Manager to the IR case Slack channel.
 2. Case Lead decides on information exchange models between IR and TI analyst from *Intel Threat Hunt & Discovery* team. Available approaches are:
+	- reactive:
+		- is a default approach agreed between IR and IT,
+		- TI team responds to specific questions asked by IR team,
+		- IR team should define effort constraints (upper bound of how many hours can be charged),
+		- most common use case: smaller cases or strict constraints on how hours are used.
 	- proactive:
-		- should be treated as default, unless there are some constraints,
 		- IR team provides their findings to a Slack channel,
 		- TI picks up this information in a proactive way (without being asked for it) and attempts to enrich it,
 		- most common use case:
 			- big complicated cases with a lot of findings; IR team being very busy and not able to administrate TI team work,
 			- cases with an "open bucket" for hours usage.
-	- reactive:
-		- TI team responds to specific questions asked by IR team,
-		- IR team should define effort constraints (upper bound of how many hours can be charged),
-		- most common use case: smaller cases or strict constraints on how hours are used.
 3. Post and pin a message in the Slack channel to define IR - TI workflow (or use a current "Administrative notes" pinned message in the channel, discussed in [guidelines](SpinUp#Internal-XFIR-Working-Environment) for Internal working environment):
 	- include statement: "IR - TI workflow: [reactive|proactive] (not applicable to RE requests)"
 	- include Resilient Intel ticket number - Intel ticket number which was automatically created with IR ticket creation,

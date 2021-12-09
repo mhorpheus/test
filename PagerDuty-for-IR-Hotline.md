@@ -5,6 +5,7 @@
 	- [What Happens When a Call Reaches PagerDuty?](#What-Happens-When-a-Call-Reaches-PagerDuty)
 	- [Tracking Hotline Calls](#Tracking-Hotline-Calls)
 	- [Scheduling](#Scheduling)
+	- [Blocking Prank Numbers Calling Hotline](#Blocking-Prank-Numbers-Calling-Hotline)
  3. [**Newcomer On-boarding**](#Newcomer-on-boarding)
  4. [**Tutorials**](#tutorials)
 	 - [Setting-up Your Environment for the First Time](#Setting-up-your-environment-for-the-first-time)
@@ -28,8 +29,12 @@ PagerDuty for IBM was deployed as company-wide tool and for this reason is share
 Additional important information:
 * PagerDuty IBM instance link: [https://ibm.pagerduty.com/incidents](https://ibm.pagerduty.com/incidents) - log in using your IBM w3 Single Sign On credentials.
 * Support:
-	* inside IBM: pagerduty@us.ibm.com
-	* External: https://w3.ibm.com/w3publisher/pagerduty/support
+	* internal IBM:
+		* Slack channel `#guild-pagerduty`  (fastest approach)
+		* pagerduty@us.ibm.com
+	* External by PD: 
+		* https://w3.ibm.com/w3publisher/pagerduty/support/external-support-from-pagerduty
+		* or simply drop a mail to support@pagerduty.com
 	* PD support for mobile devices (including login instructions): https://w3.ibm.com/w3publisher/pagerduty/mobile-devices
 * Initial setup was built by Adam Smutnicki (adam.smutnicki@pl.ibm.com) from XFIR EMEA - if you have any questions reach out to him. 
 * There is an official PD mobile app (available for iOS and Android). It is recommended to install the app to help with handling Hotline calls when you're away from your computer.
@@ -104,6 +109,9 @@ Such override can be set up in advance, for any time period. An example of such 
 Due to fact that there is a single configuration for the global XFIR team and insufficiently granular rights protecting this configuration, the number of people who can schedule an override has been limited to reduce the likelihood of human error. Currently, overrides can only be set up by anyone having a 'Manager' or 'Responder' role, with most members of the team holding the role 'Observer with additional permissions'.
 
 To find someone to make changes on your behalf please see the PD XFIR Admins list in the [Introduction](#Introduction) section.
+
+### Blocking Prank Numbers Calling Hotline
+It is possible to block a number disturbing our Hotline operations. Request to block such a number should be sent to an External PD support (details [above](#Introduction)) providing our PD assigned Live Call Routing number (refereed in XFIR as PD Hotline number provided [above](#Integration-of-Legacy-Hotline-Systems)) and numbers which should be blocked. 
 
 ## Newcomer On-boarding
 Every new team member who will be supporting the Hotline must configure their mobile phone and PagerDuty profile according to following steps:
