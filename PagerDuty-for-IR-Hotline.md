@@ -35,7 +35,6 @@ Additional important information:
 	* External by PD: 
 		* https://w3.ibm.com/w3publisher/pagerduty/support/external-support-from-pagerduty
 		* or simply drop a mail to support@pagerduty.com
-	* PD support for mobile devices (including login instructions): https://w3.ibm.com/w3publisher/pagerduty/mobile-devices
 * Initial setup was built by Adam Smutnicki (adam.smutnicki@pl.ibm.com) from XFIR EMEA - if you have any questions reach out to him. 
 * There is an official PD mobile app (available for iOS and Android). It is recommended to install the app to help with handling Hotline calls when you're away from your computer.
 
@@ -127,6 +126,7 @@ Every new team member who will be supporting the Hotline must configure their mo
 5. Work with your manager, regional IR Functional Lead or your regional Pager Duty admin to be added to an on-call schedules.
 6. Check when you're on-call for the first time.
 7. Set up the mobile app on your IBM mobile phone.
+	* login instructions: https://w3.ibm.com/w3publisher/pagerduty/mobile-devices
 8. Read [Tutorials](#tutorials) section below to get familiar with using PD.
 9. Set up your PD environment according to below [Tutorials](#tutorials).
 10. Reach out to your regional IR Functional Lead or your manager if you have any further questions.
