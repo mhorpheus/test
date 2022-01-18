@@ -1,12 +1,13 @@
 ## Table of Contents
 1. [**Introduction**](#Introduction)
 2. [**Remote Evidence Collection Manuals**](#Remote-Evidence-Collection-Manuals)
-3. [**Chain of Custody**](#Chain-of-Custody)
+	- [Customised Velociraptor Evidence Collectors](#Customised-Velociraptor-Evidence-Collectors)
+4. [**Chain of Custody**](#Chain-of-Custody)
 	- [XFIR CoC Templates](#XFIR-CoC-Templates)
 	- [CoC Usage Example](#CoC-Usage-Example)
 	- [Regional CoC Information](#Regional-CoC-Information)
-4. [**Evidence Naming Policy**](#Evidence-Naming-Policy)
-5. [**Data Retention Policy**](#Data-Retention-Policy)
+5. [**Evidence Naming Policy**](#Evidence-Naming-Policy)
+6. [**Data Retention Policy**](#Data-Retention-Policy)
 
 ## Introduction
 The purpose of this page is to document how XFIR handles Digital Evidence. This is is a living document. If there is something you want to see documented here or explained with additional detail please contact your geographic Functional IR Lead (listed on the [Homepage](Home)).
@@ -25,13 +26,24 @@ XFIR one-pagers deal with most common topics related to evidence collection, suc
 - VMs imagining/exporting/RAM capture,
 - Triage data collection
 	- Live Response Collection by BriMor Labs,
-	- Velociraptor (custom build),
+	- Velociraptor (custom build)
+		- MAKE SURE to read instructions [below](#Customised-Velociraptor-Evidence-Collectors) before sending instruction to a client
 - Data disposition,
 - HDD encryption detection.
 
 Always share only the PDF version of the one-pager with a Client. All manuals are available for a download [**here**](https://github.ibm.com/XFIR/DFIR-wiki/blob/master/documents/evidence%20collection%20one%20pagers).
 
 There are several options to deliver digital evidence over the Internet to XFIR consultants. They are discussed on a [SpinUp](SpinUp#Environment-for-Data-Sharing-with-a-Client) process page.
+
+### Customised Velociraptor Evidence Collectors
+Because there are several customised Velociraptor collectors, used differently between geos, current version of one pager for Velociraptor Triage Collector does not have a direct box link. This was changed, to avoid confusion when reviewing triage results from different collector executed by a Client, versus what XFIR consultant planned. Consequently, Client is not able to obtain collector on his own and it must be provided by XFIR consultant. 
+
+A set of precompiled collectors are maintained on a dedicated github repository: https://github.ibm.com/XFIR/VelociraptorReleases. Download collector of yours choice and share it with a Client using preferred method, most common would be using "Shared with a Client" directory within case folder on Box@IBM. 
+
+Some hints on which collector to choose:
+- "Raw" version is mainly used by EMEA
+- "FastIR" and "LiveResponse" are mainly used by NA
+
 
 ## Chain of Custody
 Chain of custody (CoC), in legal contexts, is the chronological documentation or [paper trail](https://en.wiktionary.org/wiki/paper_trail "wiktionary:paper trail") that records the sequence of custody, control, transfer, analysis, and disposition of physical or electronic [evidence](https://en.wikipedia.org/wiki/Evidence "Evidence"). The CoC requires that from the moment the exhibit is collected, every transfer of an exhibit from person to person be documented **and** that it be defensible that nobody else could have accessed that evidence. It is best to keep the number of transfers as low and minimal as possible. In the courtroom, if the defendant questions the CoC, the documentation completed to date will prove that whatever evidence is being used, was the evidence collected during the incident. It is utterly vital that *any* chain of custody paperwork be completed diligently, and then checked by a second XFIR Analyst. If the chain of custody is broken, the Accused and their Legal Counsel will ask the court to exclude the exhibit as there is plausible deniability and the evidence may have been tampered with.
