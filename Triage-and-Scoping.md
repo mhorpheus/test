@@ -178,7 +178,7 @@ Few additional statements are necessary, to avoid any misunderstandings and clea
 **Mail body:**  
 Dear `<Client Name>`,  
 
-Thank you very much for participation in the Triage and Scoping Call. We would like to summarize our discussion with a note presented below. Then intention of this note is to ensure that all crucial information is captured and documented and we have a common understanding of this incident.
+Thank you very much for participation in the Triage and Scoping Call. We would like to summarize our discussion with a note presented below. The intention of this note is to ensure that all crucial information is captured and documented and we have a common understanding of this incident.
 
 This case has been assigned a unique identifier: IR`<YY-NNNN>`.
 
