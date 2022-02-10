@@ -24,7 +24,9 @@ XFIR one-pagers deal with most common topics related to evidence collection, suc
 - Linux:
 	- RAM capture,
 	- Live imaging,
-- VMs imagining/exporting/RAM capture,
+- VMs imagining/exporting/RAM capture
+	- VMware
+	- Hyper-V
 - Triage data collection
 	- Live Response Collection by BriMor Labs,
 	- Velociraptor (custom build)
