@@ -147,6 +147,7 @@ To address Triage and Scoping goals listed in the [Introduction](#Introduction),
 	- Establish regular cadence or at lest next meeting point for status updates.
 	- Agree actions for the Client, e.g. provide initial tranche of log data via Box, etc.
 	- Explain that XFIR cannot start work (and that the retainer is not formally triggered) until an email, from an Incident Declarer, approving the "Engagement Initiation Email" is received by XFIR.
+	- IMPORTANT: do NOT declare the it will require X hours to deliver work, such estimation is done during preparation of the (#Engagement-Initiation-Email).
 
 ## Engagement Initiation Email
 The "Engagement Initiation Email" is a record of what was discussed during the Triage and Scoping call. It is a crucial document for managing client expectations from the beginning of our engagement, and should be prepared with care. Its role is to:
@@ -167,7 +168,7 @@ The sections are as following:
 	- agreed cadence - when is next meeting,
 4. Agree actions for XFIR and Client respectively.
 5. Subscription hours status (not applicable to Ad-hoc engagements):
-	- number of hours left from subscription and their expiry date (guidance how to check number of hours left can be found [here](Resilient#Tracking-Subscriptions-Hours-Usage),
+	- number of hours left from subscription and their expiry date (guidance how to check number of hours left can be found [here](Resilient#Tracking-Subscriptions-Hours-Usage)),
 6. Estimated cost (in hours) of planned XFIR work.
 
 Few additional statements are necessary, to avoid any misunderstandings and clearly set up expectations. For this reason and to present a consistance approach to our clients, please use the below "Engagement Initiation Email" template and do not compose a it yourself. The template represents Phases of the Call documented above, thus should be easy to populate. Please make sure to fill in all fields and remove comments and unrelated statements.
