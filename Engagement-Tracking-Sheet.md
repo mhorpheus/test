@@ -87,26 +87,26 @@ The main goal of this workflow is to build **reliable** and **up-to-date** list 
 ![Systems of Interest and Evidence investigation](documents/ETS/XFIR_ETS_workflow-systems_of_interest_and_evidence.svg)
 
 Explanation for some of the steps:
-8. Provide Evidence Collection Manuals
+- 8. Provide Evidence Collection Manuals
 	- Use manuals (aka one pagers) available on [Digital Evidence](Digital-Evidence#Remote-Evidence-Collection-Manuals) page.
-12.2 Populate Received Date in ETS: Evidence
+- 12.2 Populate Received Date in ETS: Evidence
 	- This is a date when XFIR received evidence, eg. it was uploaded to cloud storage or physically shipped to lab or consultant's location.
-12.3 Obtain and populate "When collected" in ETS: Evidence
+- 12.3 Obtain and populate "When collected" in ETS: Evidence
 	- This is a date when evidence item was collected, not delivered or uploaded, to explain a snapshot of what moment it time this evidence item represents.
 	- For disk image, this would be date when image was created.
 	- For backups this would be date of the backup creation.
-18. Is it already in "Evidence Folder"?
+- 18. Is it already in "Evidence Folder"?
 	- "Evidence folder" in this context is defined [here](Case-Management#Handling-Digital-Evidence-Client-Data-and-Case-Data).
-33.3 Document notable findings within Slack thread per evidence item
+- 33.3 Document notable findings within Slack thread per evidence item
 	- Follow detailed guidance on documenting findings on Slack on [Case Management](Case-Management#Documenting-Findings-on-Slack) wiki page.
-33.5. Extract and Analyse all Malware samples or tools used by Threat Actor
+- 33.5. Extract and Analyse all Malware samples or tools used by Threat Actor
 	- Follow detailed process on handling malware and tools documented [below](#Malware-and-Tools-Tab).
-33.6. Document analysis in “Individual System Investigation Sheet”
-33.7. Mark notable timeline events in the “Individual System Investigation Sheet”
+- 33.6. Document analysis in “Individual System Investigation Sheet”
+- 33.7. Mark notable timeline events in the “Individual System Investigation Sheet”
 	- Follow guidelines documented in [below section](#Individual-System-Timeline-Tab) on how to tag events as notable.
-35.1. Populate summary note in Slack thread for evidence item
+- 35.1. Populate summary note in Slack thread for evidence item
 	- Update "Investigation Status Note" within Slack Thread.
-40.2. Merge notable events of individual system timeline to “ETS: timeline”
+- 40.2. Merge notable events of individual system timeline to “ETS: timeline”
 	- When approved by Investigation Lead, notable events from Individual System Investigation Sheet are moved to a master timeline in ETS.
 
 Additional guidelines on using Systems or Interest and Evidence tabs:
@@ -121,13 +121,13 @@ Below diagram explain the workflow for "Malware and Tools" tab (additional high 
 ![Malware and Tools ETS Workflow Diagram](documents/ETS/XFIR_ETS_workflow-malware_and_tools.svg)
 
 Additional explanation for some of the steps:
-9. Place sample (zip + password) to “Case Folder/Malware”:
+- 9. Place sample (zip + password) to “Case Folder/Malware”:
 	- Every single sample of tools and malware must be placed on box, even if it is not sent for RE or it is known to VT.
 	- Sample MUST be packed with password to zip or 7zip, to ensure that AntiVirus software is not picking up them.
 	- Use password 'infected'.
-12. Submit sample to IMPE Sandbox:
+- 12. Submit sample to IMPE Sandbox:
 	- Follow instruction on how to use [IMPE Sandbox](Threat-Intel-for-IR#Sandbox).
-15.1. Create RE Resilient ticket:
+- 15.1. Create RE Resilient ticket:
 	- Follow instructions on how to [create Reverse Engineering ticket](Threat-Intel-for-IR#Requesting-RE-Support-for-Malware-Analysis).
 
 ## IoCs Tab
