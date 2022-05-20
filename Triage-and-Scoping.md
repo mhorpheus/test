@@ -121,6 +121,7 @@ To address Triage and Scoping goals listed in the [Introduction](#Introduction),
 		- initial in-scope timeframe of the investigation,
 		- containment and remediation steps already performed (e.g. system isolation, shutting down, VM snapshoot taken), 
 		- other relevant actions performed.
+		- check if disk images you may want to image are encrypted (eg. Bitlocker) and if so, who is the owner of the Encryption Key and whether Client can recover a key and provide it to XFIR.
 	2. Open the floor for questions from XFIR Consultants so they can get better understanding of the incident.
 3. Identification of Client's objectives and expectations: 
 	- what is needed to perform a successful delivery,

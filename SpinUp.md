@@ -22,7 +22,7 @@ Once XFIR has been engaged for Incident Response services regardless of the scop
 All technical details describing how to perform the steps required in this section and best practices on using them, are described in the [Tutorials](#Tutorials) section at the bottom of this page.
 
 ### Internal XFIR Working Environment
-Adherer to [rules for Digital Evidence, Client Data and Case Data](Project-Managenent#Handling-Digital-Evidence-Client-Data-and-Case-Data) defining which parts of collaboration environment should be used to store different types of data.
+Adherer to [rules for Digital Evidence, Client Data and Case Data](Case-Managenent#Handling-Digital-Evidence-Client-Data-and-Case-Data) defining which parts of collaboration environment should be used to store different types of data.
 
 Proceed with the following steps to set up a working environment for collaboration within XFIR (all steps are obligatory, unless stated otherwise):
 1. Create a "**Case Folder**" on IBM Box:
@@ -54,15 +54,31 @@ Proceed with the following steps to set up a working environment for collaborati
 		- frequency of hours reporting in Resilient.
 	- for small engagements, where there is only one person assigned and working individually, there is no need to create a Slack channel,
 	- follow usage recommendation listed in the [tutorial](#Slack) below.
-4. Download Evidence Tracking Sheet (ETS) and System Analysis and Timeline Templates from [here](Engagement-Tracking-Sheet)
+4. Populate, post and pin an administrative note in the Slack channel. 
+	- Not all roles are applicable to every case, so please update it respectively. 
+	- Use below template:
+```
+Roles allocation for this IR engagement:
+- Engagement Lead: 
+- Investigation Lead:
+- Case Manager: 
+- NA Supporting Case Manager:
+- APAC Supporting Case Manager:
+- EMEA Supporting Case Manager:
+- Remediation Lead:
+- Monitoring Lead:
+
+IR - TI workflow: [reactive|proactive] (not applicable to RE requests)
+```
+5. Download Evidence Tracking Sheet (ETS) and System Analysis and Timeline Templates from [here](Engagement-Tracking-Sheet)
 	- place is the "ETS" folder within "Case Folder",
 	- update ETS filename to contains proper case number
-5. Grant access to consultants assigned to this case:
+6. Grant access to consultants assigned to this case:
 	1. Populate an "Owner" field in Resilient with Case Lead name.
 	2. Populate "Members" field in Resilient with consultants assigned to this case.
 	3. Add people to Slack channel from XFIR or TI or RE teams.
 	4. If TI or RE are engaged, add assigned people from those teams to "Case folder" on box.
-6. Optionally, if needed, create additional Slack channel for communication with people outside XFIR:
+7. Optionally, if needed, create additional Slack channel for communication with people outside XFIR:
    - for communication with other IBMers not belonging to XFIR:
       - channel must be created within "CIO" Slack workspace (ibm-cio.slack.com), which all IBMers have access to. This ensures that anyone from IBM can be invited without any issues. 
       - channel name must be equal to a case number ending with "-collab"- eg. "irYY-NNNN-collab", to indicate collaboration outside XFIR, but still within IBM

@@ -143,15 +143,17 @@ There are several options:
 	- if you need to use it, reach out to Megan Roddie for guidance.
 
 ### Sandbox
-Currently, as a temporary solution we have Lastline Sandbox available for self service:
-- [https://user.lastline.com/portal#/analyst/file](https://user.lastline.com/portal#/analyst/file)
-- To request an account, managers or leads should create a JIRA Ticket Request for “Access Request” for Lastline.
-- if JIRA is not accessible, email anne.jobmann@ibm.com or sarah.gomez-uscategui@ibm.com to request access
-- Script to submit a file to Lastline, retrieve a report and delete the file from Lastline’s cloud: https://github.ibm.com/X-Force-IRIS-Intel/OSINT-Tools-Scripts/tree/master/lastline
+The only and default solution for Sandbox analysis is IMPE. It is a central platform providing access to multiple Sandboxes. Introduction of IMPE should remove a need to obtain access to every Sandbox separately. It accepts password protected samples. 
 
+URL: https://impe-prod-ui.ggg0mxdbwif.us-south.codeengine.appdomain.cloud/search
 
-#### IMPE (not yet available)
-This is a destination platform, with potential beta testing starting in 2021Q2. IMPE is a central platform providing access to multiple Sandboxes. Introduction of IMPE should remove a need to obtain access to every Sandbox separately. Access to IMPE is granted with a JIRA Ticket Request for "Access Request" for IMPE access. It accepts password protected samples. https://impe.mybluemix.net/
+Until Lastline license expires, it is still available via IMPE. Direct access is not granted, so please do not ask for it.
+
+Access to IMPE is granted using AccessHub:
+1. Click "Request New Access"
+2. Search for IMPE and click "Request New Access"
+3. Fill out Access Request form by selecting "add" and adding your role as "User".
+4. Click "Review and Submit"
 
 ### Intel Yara Rules
 The TI and RE teams maintain a repository containing all of their YARA rules:

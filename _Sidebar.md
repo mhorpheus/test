@@ -11,24 +11,21 @@
 - [EDR](Endpoint-Detection-and-Response)
 - [GDPR](GDPR-for-DFIR-Engagements)
 ### Engagement Delivery:
-- [Project Management](Project-Management)
+- [Case Management](Case-Management)
 - [Resilient Ticketing](Resilient)
 - [Threat Intel](Threat-Intel-for-IR)
 - Engagement Management Documents
 - [ETS](Engagement-Tracking-Sheet)
 ### Reporting:
-- [Reporting Guidance](DFIR-Reporting-Style-Guide)
+- [Report Writing Guide](Report-Writing-Guide)
 - [Reporting Templates](Reporting-Templates)
 - Example DFIR Reports
+- Documenting Forensics Artifacts
+### Technical Analysis:
+- [XFIR Tools and Scripts](XFIRTools-and-Scripts)
+- [Mainframe Forensics](Mainframe-Forensics)
 ### Closeout:
 - [Engagement Closeout](Engagement-Closeout)
 ### Other
 - [Release Notes](Release-Notes)
 
-### Technical Analysis:
-- Incident Response Methodology
-- IR Procedures
-- IR Tools & Technologies
-- Digital Forensics Methodology
-- Digital Forensics Procedures
-- Digital Forensics Tools & Technologies

@@ -27,22 +27,20 @@ This wiki is a living documentation. When using documents or templates published
 	- [EDR](Endpoint-Detection-and-Response)
 	- [GDPR](GDPR-for-DFIR-Engagements)
 4. Engagement Delivery:
-	- [Project Management](Project-Management)
+	- [Case Management](Case-Management)
 	- [Resilient Ticketing](Resilient)
 	- [Threat Intel](Threat-Intel-for-IR)
 	- Engagement Management Documents
 	- [ETS](Engagement-Tracking-Sheet)
 3. Technical Analysis:
-	- Incident Response Methodology
-	- IR Procedures
-	- IR Tools & Technologies
-	- Digital Forensics Methodology
-	- Digital Forensics Procedures
-	- Digital Forensics Tools & Technologies
+	- [XFIR Tools and Scripts](XFIR-Tools-and-Scripts)
+	- [Mainframe Forensics](Mainframe-Forensics)
 5. Reporting:
-	- [Reporting Guidance](DFIR-Reporting-Style-Guide)
+### Reporting:
+	- [Report Writing Guide](Report-Writing-Guide)
 	- [Reporting Templates](Reporting-Templates)
 	- Example DFIR Reports
+	- Documenting Forensics Artifacts
 6. Closeout:
 	- [Engagement Closeout](Engagement-Closeout)
 7. Other:
