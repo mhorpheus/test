@@ -36,7 +36,6 @@ This wiki is a living documentation. When using documents or templates published
 	- [XFIR Tools and Scripts](XFIR-Tools-and-Scripts)
 	- [Mainframe Forensics](Mainframe-Forensics)
 5. Reporting:
-### Reporting:
 	- [Report Writing Guide](Report-Writing-Guide)
 	- [Reporting Templates](Reporting-Templates)
 	- Example DFIR Reports

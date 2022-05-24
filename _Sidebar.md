@@ -22,7 +22,7 @@
 - Example DFIR Reports
 - Documenting Forensics Artifacts
 ### Technical Analysis:
-- [XFIR Tools and Scripts](XFIRTools-and-Scripts)
+- [XFIR Tools and Scripts](XFIR-Tools-and-Scripts)
 - [Mainframe Forensics](Mainframe-Forensics)
 ### Closeout:
 - [Engagement Closeout](Engagement-Closeout)
