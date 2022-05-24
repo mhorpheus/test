@@ -67,9 +67,9 @@ The collected zip file contains the following:
 - GPOs  
 - Timeline
 
-Because script is very easy to use, there is no dedicated one pager instruction. Just download script from github repository provided below, and ask Client to run is as Domain Administrator on a Domain Controller.
-Script repository with documentation: [https://github.ibm.com/XFIR/Active-Directory](https://github.ibm.com/XFIR/Active-Directory)
-Recent release: [https://github.ibm.com/XFIR/Active-Directory/releases](https://github.ibm.com/XFIR/Active-Directory/releases)
+Because script is very easy to use, there is no dedicated one pager instruction. Just download script from github repository provided below, and ask Client to run is as Domain Administrator on a Domain Controller:
+- script repository with documentation: [https://github.ibm.com/XFIR/Active-Directory](https://github.ibm.com/XFIR/Active-Directory)
+- recent release: [https://github.ibm.com/XFIR/Active-Directory/releases](https://github.ibm.com/XFIR/Active-Directory/releases)
 
 ## Chain of Custody
 Chain of custody (CoC), in legal contexts, is the chronological documentation or [paper trail](https://en.wiktionary.org/wiki/paper_trail "wiktionary:paper trail") that records the sequence of custody, control, transfer, analysis, and disposition of physical or electronic [evidence](https://en.wikipedia.org/wiki/Evidence "Evidence"). The CoC requires that from the moment the exhibit is collected, every transfer of an exhibit from person to person be documented **and** that it be defensible that nobody else could have accessed that evidence. It is best to keep the number of transfers as low and minimal as possible. In the courtroom, if the defendant questions the CoC, the documentation completed to date will prove that whatever evidence is being used, was the evidence collected during the incident. It is utterly vital that *any* chain of custody paperwork be completed diligently, and then checked by a second XFIR Analyst. If the chain of custody is broken, the Accused and their Legal Counsel will ask the court to exclude the exhibit as there is plausible deniability and the evidence may have been tampered with.
