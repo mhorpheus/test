@@ -53,7 +53,7 @@ Some hints on which collector to choose:
 - "FastIR" and "LiveResponse" are mainly used by NA
 
 ### Active Directory Export
-XFIR maintains a dedicated AD Export script, which is used with following goas:
+XFIR maintains a dedicated AD Export script, which is used with following goals:
 1. create a dump at the beginning of the IR engagement, so the preserved information are as close the the incident timeline as possible
 2. immediately provide key information from AD to the analysts performing investigation, who, without having a AD dump would require going back to a Client and asking questions about those specific information (many times for different findings).
 3. be able to perform AD based analysis, eg. AD timeline.
